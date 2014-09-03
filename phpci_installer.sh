@@ -80,8 +80,13 @@ finish(){
 	name=$(echo $url | cut -d . -f1 | cut -d "/" -f3)
 	newurl=$(echo "url: 'http://$name-80.terminal.com'")
 	sed -i "s/phpci.local/$name-80.terminal.com/g" $config_file
+	echo ""
 	echo "Now please point your browser to http://$name-80.terminal.com
 	and login with the credentials that you just configured."
+	echo ""
+	echo "if this is a PHPCI snapshot use the default credentials:"
+	echo "username: admin@terminal.com"
+	echo "password: terminal.com"
 }
 
 [ -e $config_file ] && finish || echo "Can't find the config file, something failed!"
