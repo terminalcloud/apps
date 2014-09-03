@@ -1,5 +1,7 @@
 #!/bin/bash
 # Script to deploy phpci at Terminal.com
+# Base Snapshot: https://www.terminal.com/tiny/kogS0yh6GE
+
 INSTALL_PATH="/var/www"
 
 # Includes
