@@ -48,8 +48,8 @@ php5_install(){
 mysql_install(){ # Default pass for root user is "root", if no argument is given.
 	[[ -z "$1" ]] && pass="root" || pass=$1  
 	if [[ -f /etc/debian_version ]]; then
-		debconf-set-selections <<< 'mysql-server mysql-server/root_password password "$pass"'
-		debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password "$pass"'
+		debconf-set-selections <<< 'mysql-server mysql-server/root_password password $pass'
+		debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password $pass'
 		apt-get -y install mysql-server
 	else
 		echo "Sorry, On this OS install MySql manually, go manually from here" ; return 1  
