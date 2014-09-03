@@ -45,29 +45,30 @@ php5_install(){
 	fi
 }
 
-mysql_install(){ # Default pass for root user is always "root"
+mysql_install(){ # Default pass for root user is "root", if no argument is given.
+	[[ -z "$1" ]] && password="root" || pass=$1  
 	if [[ -f /etc/debian_version ]]; then
-		debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
-		debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
+		debconf-set-selections <<< 'mysql-server mysql-server/root_password password "$pass"'
+		debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password "$pass"'
 		apt-get -y install mysql-server
 	else
-		echo "Sorry, On this OS install MySql manually, go manually from here"   
+		echo "Sorry, On this OS install MySql manually, go manually from here" ; return 1  
 	fi
 }
 
-mysql_setup(){ # You need to specify all arguments: db, user, pass
-	[ -z "$1" ] && return 1 || db="$1"
-	[ -z "$2" ] && return 1 || user="$2"
-	[ -z "$3" ] && return 1 || pass="$3"
+mysql_setup(){ # Arguments: <db> <user> <pass> . Default (for empty) values = testdb test terminal
+	[ -z "$1" ] && db="testdb" || db="$1"
+	[ -z "$2" ] && user="test" || user="$2"
+	[ -z "$3" ] && pass="terminal" || pass="$3"
 	mysql -uroot -proot -e"CREATE DATABASE $db;" || return 1
 	mysql -uroot -proot -e"CREATE USER '$user'@'localhost' IDENTIFIED BY '$pass';" || return 1
 	mysql -uroot -proot -e"GRANT ALL PRIVILEGES ON $db.* to $user@localhost;" || return 1
 }
 
-apache_default_vhost(){ # Arguments: filename(.conf) DocumentRoot
+apache_default_vhost(){ # Arguments: <filename(.conf)> <DocumentRoot>. Default values = default.conf /var/www/html
 	[[ -f /etc/debian_version ]] && vpath="/etc/apache2/sites-available/" || vpath="/etc/httpd/config.d/"
-	[ -z "$1" ] && return 1 || filename="$1"
-	[ -z "$2" ]  && return 1 || DocumentRoot="$2"
+	[ -z "$1" ] && filename="default.conf" || filename="$1"
+	[ -z "$2" ]  && DocumentRoot="/var/www/html" || DocumentRoot="$2"
 	# Start filling the file
 	echo "<VirtualHost *:80>" > $vpath/$filename
 	echo "DocumentRoot $DocumentRoot" >> $vpath/$filename
@@ -82,7 +83,7 @@ apache_default_vhost(){ # Arguments: filename(.conf) DocumentRoot
 	#  RewriteCond %{REQUEST_FILENAME} !-d
 	#  RewriteRule . /index.php [L]
 	#</IfModule>
-  </Directory>
+    </Directory>
 </VirtualHost>
 _EOF_
 
