@@ -13,8 +13,8 @@ system_cleanup(){
 }
 
 basics_install(){
-	[[ -f /etc/debian_version ]] && apt-get -y install curl git \
-	|| yum -y install curl git
+	[[ -f /etc/debian_version ]] && apt-get -y install curl git software-properties-common \
+	|| yum -y install curl git 
 }
 
 puppet_install(){
@@ -96,4 +96,15 @@ _EOF_
 		[[ -f /etc/httpd/conf.d/000-default.conf ]] && rm /etc/httpd/conf.d/000-default.conf
 		service httpd restart
 	fi
+}
+
+golang_install(){
+	[[ -f /etc/debian_version ]] && apt-get -y install bison gcc make binutils build-essential mercurial\
+	yum -y install bison gcc make glibc-devel mercurial
+
+	bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+	source /root/.gvm/scripts/gvm
+	echo "export GOPATH=\$HOME/go" >> ~/.profile
+	echo "export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin" >> ~/.profile
+	source ~/.profile
 }
