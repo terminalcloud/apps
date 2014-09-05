@@ -23,7 +23,7 @@ install(){
 	}
 
 show_sample(){
-	nohup revel run github.com/revel/revel/samples/chat &
+	revel run github.com/revel/revel/samples/chat &
 	export PATH=$PATH:/srv/cloudlabs/scripts
 	browse.sh http://localhost:9000
 }
