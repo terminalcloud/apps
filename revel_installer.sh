@@ -23,7 +23,7 @@ install(){
 	}
 
 show_sample(){
-	nohup revel run github.com/revel/revel/samples/booking &
+	nohup revel run github.com/revel/revel/samples/chat &
 	export PATH=$PATH:/srv/cloudlabs/scripts
 	browse.sh http://localhost:9000
 }
@@ -32,7 +32,7 @@ show_sample(){
 if [[ -z $1 ]]; then
 	install && show_samples
 elif [[ $1 == "show" ]]; then 
-	show_samples
+	show_sample
 else
 	echo "unknown parameter specified"
 fi
