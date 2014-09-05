@@ -30,7 +30,7 @@ show_sample(){
 
 #Main
 if [[ -z $1 ]]; then
-	install && show_samples
+	install && show_sample
 elif [[ $1 == "show" ]]; then 
 	show_sample
 else
