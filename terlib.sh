@@ -99,7 +99,7 @@ _EOF_
 }
 
 golang_install(){
-	[[ -f /etc/debian_version ]] && apt-get -y install bison gcc make binutils build-essential mercurial\
+	[[ -f /etc/debian_version ]] && apt-get -y install bison gcc make binutils build-essential mercurial \
 	yum -y install bison gcc make glibc-devel mercurial
 
 	bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
