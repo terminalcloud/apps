@@ -48,7 +48,6 @@ show(){
 	wget -q https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/wordpress.md
 	export PATH=$PATH:/srv/cloudlabs/scripts
 	edit.sh wordpress.md
-	browse.sh http://localhost:80 ## This will not work for this installation
 	cd.sh /var/www/wordpress/ ## Show the Wordpress directory
 	/CL/hooks/startup.sh
 }
