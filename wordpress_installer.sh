@@ -34,8 +34,8 @@ install(){
 	cd $INSTALL_PATH/wordpress
 	cp wp-config-sample.php wp-config.php
 	sed -i "s/database_name_here/$DB_NAME/g" wp-config.php
-	sed -i "s/username_name_here/$DB_USER/g" wp-config.php
-	sed -i "s/password_name_here/$DB_PASS/g" wp-config.php
+	sed -i "s/username_here/$DB_USER/g" wp-config.php
+	sed -i "s/password_here/$DB_PASS/g" wp-config.php
 
 	mkdir $INSTALL_PATH/wordpress/wp-content/uploads
 	chown -R www-data:www-data $INSTALL_PATH/wordpress	
