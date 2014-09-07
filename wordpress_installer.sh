@@ -40,8 +40,8 @@ install(){
 	mkdir $INSTALL_PATH/wordpress/wp-content/uploads
 	chown -R www-data:www-data $INSTALL_PATH/wordpress
 	clear
-	echo "Wordpress installation finished."
-	echo "Now open a new browser window and go to http://<yourterminalname>-80.terminal.com"	
+	start_hooks_install # This to show the link to the app automatically
+	echo "Wordpress installation finished."	
 }
 
 show(){
@@ -50,8 +50,7 @@ show(){
 	edit.sh wordpress.md
 	browse.sh http://localhost:80 ## This will not work for this installation
 	cd.sh /var/www/wordpress/ ## Show the Wordpress directory
-
-
+	/CL/hooks/startup.sh
 }
 
 if [[ -z $1 ]]; then

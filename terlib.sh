@@ -112,3 +112,22 @@ golang_install(){
 	echo "export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin" >> ~/.profile
 	source ~/.profile
 }
+
+start_hooks_install(){
+	cat > /CL/hooks/startup.sh << _EOF_
+		#!/bin/bash
+		cat > /root/info.html << EOF
+		<html>
+		<head><title>Wordpress Information</title></head>
+		<body>
+		Check out your installation <a target="_blank" href="//$(hostname)-80.terminal.com">here!</a>
+		</body>
+		</html>
+		EOF
+
+		cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
+		/srv/cloudlabs/scripts/display.sh /root/info.html
+		EOF
+	_EOF_
+	chmod 755 /CL/hooks/startup.sh
+}
