@@ -10,8 +10,8 @@ pkg_update(){
 system_cleanup(){
 	[[ -f /etc/debian_version ]] && apt-get -y autoremove --purge samba* apache2* \
 	|| yum -y remove httpd* samba*
-	echo "8.8.8.8" > /etc/resolv.conf
-	echo "8.8.8.9" > /etc/resolv.conf
+	echo "8.8.8.8" >> /etc/resolv.conf
+	echo "8.8.8.9" >> /etc/resolv.conf
 }
 
 basics_install(){
