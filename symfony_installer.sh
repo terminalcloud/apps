@@ -15,6 +15,7 @@ install(){
 	# Procedure: 
 	# 1 - Get prerrequisites.
 	apache_install
+	mysql_install
 	mysql_setup symfony symfony terminal
 	php5_install
 	composer_install
@@ -22,7 +23,7 @@ install(){
 	# 2 - Install the product
 	cd $INSTALL_PATH
 	apache_default_vhost sample.conf $INSTALL_PATH/Symfony-My-Blog
-	composer create-project symfony/framework-standard-edition base_sample/ "2.5.*"
+	#composer create-project symfony/framework-standard-edition base_sample/ "2.5.*"
 	git clone https://github.com/mcapielo/Symfony-My-Blog.git
 	cd $INSTALL_PATH/Symfony-My-Blog
 	php app/console doctrine:database:create
