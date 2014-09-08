@@ -37,6 +37,15 @@ apache_install(){
 	fi
 }
 
+nginx_install(){
+	if [[ -f /etc/debian_version ]]; then
+		apt-get -y install nginx nginx-extras
+	else
+		yum -y install nginx
+	fi
+}
+
+
 php5_install(){
 	if [[ -f /etc/debian_version ]]; then
 		apt-get -y install php5 php-pear php5-gd php5-mcrypt php5-mysql php5-gd libssh2-php php5-sqlite && php5enmod mcrypt gd pdo_mysql

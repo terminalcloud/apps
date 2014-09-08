@@ -22,19 +22,26 @@ install(){
 
 	# 2 - Install the product
 	cd $INSTALL_PATH
-	apache_default_vhost sample.conf $INSTALL_PATH/Symfony-My-Blog
+	apache_default_vhost sample.conf $INSTALL_PATH/Symfony-My-Blog/web
 	#composer create-project symfony/framework-standard-edition base_sample/ "2.5.*"
-	git clone https://github.com/mcapielo/Symfony-My-Blog.git
+	wget https://github.com/mcapielo/Symfony-My-Blog/archive/quique.zip
+	unzip quique.zip
 	cd $INSTALL_PATH/Symfony-My-Blog
+	chown -R www-data:www-data $INSTALL_PATH/Symfony-My-Blog/
+	php bin/vendors install --reinstall
+	php app/console cache:clear
+	chmod -R 777 cache/*
 	php app/console doctrine:database:create
+	php app/console doctrine:schema:create
 	php app/console doctrine:fixtures:load
+
 }
 
 show(){
 	#wget -q https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/symfony.md
 	export PATH=$PATH:/srv/cloudlabs/scripts
 	#edit.sh wordpress.md
-	cd.sh /var/www/ ## Show the Wordpress directory
+	cd.sh /var/www/ ## Show the served directory
 	/CL/hooks/startup.sh
 }
 
