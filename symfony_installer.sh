@@ -24,17 +24,18 @@ install(){
 	cd $INSTALL_PATH
 	apache_default_vhost sample.conf $INSTALL_PATH/Symfony-My-Blog/web
 	#composer create-project symfony/framework-standard-edition base_sample/ "2.5.*"
-	wget https://github.com/mcapielo/Symfony-My-Blog/archive/quique.zip
-	unzip quique.zip
+	git clone https://github.com/mcapielo/Symfony-My-Blog 
 	cd $INSTALL_PATH/Symfony-My-Blog
 	chown -R www-data:www-data $INSTALL_PATH/Symfony-My-Blog/
 	php bin/vendors install --reinstall
 	php app/console cache:clear
-	chmod -R 777 cache/*
-	php app/console doctrine:database:create
+	chmod -R 777 app/cache/*
+	chmod -R 777 app/logs/*
+	# php app/console doctrine:database:create
 	php app/console doctrine:schema:create
 	php app/console doctrine:fixtures:load
-
+	sed -i "s/\#//g" /etc/apache2/sites-available/sample.conf
+	sed -i "s/index.php/app.php/g" /etc/apache2/sites-available/sample.conf
 }
 
 show(){
@@ -43,6 +44,7 @@ show(){
 	#edit.sh wordpress.md
 	cd.sh /var/www/ ## Show the served directory
 	/CL/hooks/startup.sh
+	browse localhost:80/app_dev.php
 }
 
 if [[ -z $1 ]]; then
