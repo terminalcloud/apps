@@ -2,6 +2,7 @@
 # Script to deploy PhusionPassenger at Terminal.com
 
 INSTALL_PATH="/var/www"
+NGINX_PATH="/opt/nginx"
 
 # Includes
 wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/terlib.sh
@@ -13,32 +14,22 @@ install(){
 	system_cleanup
 	basics_install
 
-	# 
-
 	# Installation
-	apt-get -y install ruby rake
-	wget http://s3.amazonaws.com/phusion-passenger/releases/passenger-4.0.50.tar.gz
-	mkdir -p /opt/passenger
-	cd /opt/passenger
-	tar -xzf ~/passenger-4.0.50.tar.gz
-	apt-get -y install build-essential libcurl4-openssl-dev libssl-dev zlib1g-dev ruby-dev
-	/usr/bin/gem install rack
-	cd /opt/passenger/passenger*
+	source ~/.rvm/scripts/rvm
+	ruby_install rails
 
 	# Compilation
-	./bin/passenger-install-nginx-module --auto --auto-download --prefix=/opt/nginx --languages ruby,python,nodejs,meteor
+	gem install passenger
+	passenger-install-nginx-module --auto --auto-download --prefix="$NGINX_PATH" --languages ruby,python,nodejs,meteor
 	
-	# Rails example setup
-	apt-get install ruby-sequel
-	gem install rails
+	# Rails example setup and stuff
 	cd $INSTALL_PATH
+	gem install serious
 
+	# Nginx conf and server block for passenger example
 
-_____
+}
 
-	/opt/nginx/sbin/nginx -c /opt/nginx/conf/nginx.conf
-
-	DocumentRoot=$(/usr/bin/passenger-config --root) # Take note of this crap
-	sed -i "s/\/usr\/share\/nginx\/html/etc/nginx/$DocumentRoot/g" /etc/nginx/sites-enabled/default
-
+show(){
+	
 }

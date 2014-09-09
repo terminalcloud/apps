@@ -15,8 +15,8 @@ system_cleanup(){
 }
 
 basics_install(){
-	[[ -f /etc/debian_version ]] && apt-get -y install curl git software-properties-common \
-	|| yum -y install curl git 
+	[[ -f /etc/debian_version ]] && apt-get -y install curl git software-properties-common unzip\
+	|| yum -y install curl git unzip
 }
 
 puppet_install(){
@@ -141,4 +141,13 @@ EOF
 
 _EOF_
 	chmod 755 /CL/hooks/startup.sh
+}
+
+ruby_install(){
+	curl -L get.rvm.io | bash -s stable # Requires Basics
+	source ~/.rvm/scripts/rvm
+	rvm install current
+	rvm use current --default
+	rvm rubygems current
+	[[ $1 == "rails" ]] && gem install rails
 }
