@@ -29,13 +29,15 @@ install(){
 	chown -R www-data:www-data $INSTALL_PATH/Symfony-My-Blog/
 	php bin/vendors install --reinstall
 	php app/console cache:clear
-	chmod -R 777 app/cache/*
-	chmod -R 777 app/logs/*
 	# php app/console doctrine:database:create
 	php app/console doctrine:schema:create
 	php app/console doctrine:fixtures:load
-	sed -i "s/\#//g" /etc/apache2/sites-available/sample.conf
-	sed -i "s/index.php/app_dev.php/g" /etc/apache2/sites-available/sample.conf
+	cd $INSTALL_PATH/Symfony-My-Blog
+	chmod -R 777 app/cache/*
+	chmod -R 777 app/logs/*
+	sed -i "s/Directory\ \//Directory\  \/var\/www\/Symfony-My-Blog\/web/g" /etc/apache2/sites-available/sample.conf
+	service apache2 restart
+
 }
 
 show(){
@@ -43,8 +45,7 @@ show(){
 	export PATH=$PATH:/srv/cloudlabs/scripts
 	#edit.sh symfony.md
 	cd.sh /var/www/ ## Show the served directory
-	/CL/hooks/startup.sh
-	browse localhost:80/app_dev.php
+	browse.sh localhost:80
 }
 
 if [[ -z $1 ]]; then
