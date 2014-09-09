@@ -12,10 +12,10 @@
 
 ## Snapshot/Container contents
 
-The Terminal.com container has a fully functional **Phusion Passenger** server installed and configured to be used with **nginx** web server and a sample blog application written in Ruby, currently server via Passenger.
+The Terminal.com container has a fully functional **Phusion Passenger** server installed and configured to be used with **Nginx** web server and a sample blog application written in Ruby, currently server via Passenger.
 
 
-The **nginx** installation has been compiled specially to be used with **Phusion Passenger** modules and it's available to be used to server any of this kind of applications:
+The **Nginx** installation has been compiled specially to be used with **Phusion Passenger** modules and it's available to be used to server any of this kind of applications:
 - Ruby/Rails Apps.
 - Python/Django Apps. 
 - Nodejs Apps.
@@ -43,6 +43,8 @@ Use `passenger-status` to monitor your application status and `passenger-memory-
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by excuting
 
 `wget -O - https://raw.githubusercontent.com/qmaxquique/terminal.com/master/phusionpassenger_install.sh | bash`
+
+**We reccomend to start at least start with a "Small" terminal due the compilation memory requirements**
 
 ---
 

@@ -32,5 +32,19 @@ install(){
 }
 
 show(){
-
+	cd $HOME
+	export PATH=$PATH:/srv/cloudlabs/scripts
+	wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/phusionpassenger.md
+	edit.sh ~/phusionpassenger.md
+	cd.sh /var/www
+	start_hooks_install
+	/CL/hooks/startup.sh
 }
+
+if [[ -z $1 ]]; then
+	install && show
+elif [[ $1 == "show" ]]; then 
+	show
+else
+	echo "unknown parameter specified"
+fi
