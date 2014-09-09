@@ -39,7 +39,7 @@ show(){
 	export PATH=$PATH:/srv/cloudlabs/scripts
 	wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/phusionpassenger.md
 	edit.sh ~/phusionpassenger.md
-	cd.sh /var/www
+	cd.sh /var/www/blog
 	start_hooks_install
 	/CL/hooks/startup.sh
 }
