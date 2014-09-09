@@ -1,6 +1,6 @@
 #!/bin/bash
 # Terminal.com
-# This simple library is intended to provide an standard method to install
+# This simple library is intended to provide a standard method to install
 # software from OS repositories.
 
 pkg_update(){

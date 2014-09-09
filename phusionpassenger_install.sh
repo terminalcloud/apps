@@ -26,6 +26,7 @@ install(){
 	cd $INSTALL_PATH
 	gem install serious
 	serious blog --public --no-git
+	chmod -R 777 blog/
 
 	# Nginx conf and server block for passenger example
 	wget -O - https://raw.githubusercontent.com/qmaxquique/terminal.com/master/others/passenger_serious_nginx.conf > "$NGINX_PATH"/conf/nginx.conf

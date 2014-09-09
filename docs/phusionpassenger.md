@@ -42,7 +42,7 @@ Use `passenger-status` to monitor your application status and `passenger-memory-
 #### Terminal.com container automatic installation
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by excuting
 
-`wget -O - https://raw.githubusercontent.com/qmaxquique/terminal.com/master/phusionpassenger_install.sh | bash`
+`wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/phusionpassenger_install.sh && bash phusionpassenger_install.sh`
 
 **We reccomend to start at least start with a "Small" terminal due the compilation memory requirements**
 
