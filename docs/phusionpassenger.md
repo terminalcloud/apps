@@ -1,7 +1,9 @@
-# Welcome to Phusion Passenger Terminal.com snapshot
+# **Phusion Passenger** Terminal.com snapshot
 
 ## About **Phusion Passenger**
 **Phusion Passenger** is a web server and application server. Designed to be fast, robust and lightweight. Makes web app deployments a lot simpler and less complex, by managing your apps' processes and resources for you.
+
+### Features
 
 - **Continous Delivery** - Continuously improving your product without any downtime. Rolling restarts allows you to deploy new versions without your users noticing.
 - **Reliable** - No more worries, just a stable server to serve all your users at any time to deliver the best product experience.
@@ -12,7 +14,7 @@
 
 ## Snapshot/Container contents
 
-The Terminal.com container has a fully functional **Phusion Passenger** server installed and configured to be used with **Nginx** web server and a sample blog application written in Ruby, currently server via Passenger.
+This Terminal.com container has a fully functional **Phusion Passenger** server installed and configured to be used with **Nginx** web server and a sample blog application written in Ruby, currently server via Passenger.
 
 
 The **Nginx** installation has been compiled specially to be used with **Phusion Passenger** modules and it's available to be used to server any of this kind of applications:
@@ -44,7 +46,7 @@ You can replicate this container from a [base snapshot](https://www.terminal.com
 
 `wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/phusionpassenger_install.sh && bash phusionpassenger_install.sh`
 
-**We reccomend to start at least start with a "Small" terminal due the compilation memory requirements**
+**We recomend to start at least start with a "Small" terminal due the compilation memory requirements**
 
 ---
 
