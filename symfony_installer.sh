@@ -41,9 +41,9 @@ install(){
 }
 
 show(){
-	#wget -q https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/symfony.md
+	wget -q https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/symfony.md
 	export PATH=$PATH:/srv/cloudlabs/scripts
-	#edit.sh symfony.md
+	edit.sh symfony.md
 	cd.sh /var/www/ ## Show the served directory
 	browse.sh localhost:80
 }
