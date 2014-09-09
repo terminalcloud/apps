@@ -35,13 +35,13 @@ install(){
 	php app/console doctrine:schema:create
 	php app/console doctrine:fixtures:load
 	sed -i "s/\#//g" /etc/apache2/sites-available/sample.conf
-	sed -i "s/index.php/app.php/g" /etc/apache2/sites-available/sample.conf
+	sed -i "s/index.php/app_dev.php/g" /etc/apache2/sites-available/sample.conf
 }
 
 show(){
 	#wget -q https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/symfony.md
 	export PATH=$PATH:/srv/cloudlabs/scripts
-	#edit.sh wordpress.md
+	#edit.sh symfony.md
 	cd.sh /var/www/ ## Show the served directory
 	/CL/hooks/startup.sh
 	browse localhost:80/app_dev.php
