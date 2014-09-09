@@ -146,7 +146,7 @@ _EOF_
 ruby_install(){
 	curl -L get.rvm.io | bash -s stable # Requires Basics
 	source /usr/local/rvm/scripts/rvm
-	rvm install current
+	rvm install 2.1.2
 	rvm use current --default
 	rvm rubygems current
 	[[ $1 == "rails" ]] && gem install rails
