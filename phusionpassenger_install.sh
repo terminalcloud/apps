@@ -15,7 +15,7 @@ install(){
 	basics_install
 
 	# Installation
-	source ~/.rvm/scripts/rvm
+	source /usr/local/rvm/scripts/rvm
 	ruby_install rails
 
 	# Compilation

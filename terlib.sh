@@ -145,7 +145,7 @@ _EOF_
 
 ruby_install(){
 	curl -L get.rvm.io | bash -s stable # Requires Basics
-	source ~/.rvm/scripts/rvm
+	source /usr/local/rvm/scripts/rvm
 	rvm install current
 	rvm use current --default
 	rvm rubygems current
