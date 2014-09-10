@@ -151,3 +151,31 @@ ruby_install(){
 	rvm rubygems current
 	[[ $1 == "rails" ]] && gem install rails
 }
+
+django_install(){ # This will install django in /opt/myenv virtual-env
+	if [[ -f /etc/debian_version ]]; then
+		apt-get -y install python-pip python2.7
+	else
+		yum -y install python-pip python2.7
+	fi
+		virtualenv /opt/myenv
+		source /opt/myenv/bin/activate
+		pip install django
+		deactivate
+}
+
+postgres_install(){
+	if [[ -f /etc/debian_version ]]; then
+		apt-get -y install libpq-dev python-dev
+		apt-get -y install postgresql postgresql-contrib
+		service postgresql start
+	else
+		yum -y install postgresql
+		service postgresql start
+	fi
+
+gunicorn_install(){ # by now assuming the virtualvend exists, otherwise going global
+	source /opt/myenv/bin/activate
+	pip install gunicorn
+}
+
