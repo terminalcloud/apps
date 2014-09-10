@@ -173,9 +173,9 @@ postgres_install(){
 		yum -y install postgresql
 		service postgresql start
 	fi
+}
 
 gunicorn_install(){ # by now assuming the virtualvend exists, otherwise going global
 	source /opt/myenv/bin/activate
 	pip install gunicorn
 }
-
