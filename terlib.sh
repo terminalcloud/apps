@@ -154,9 +154,9 @@ ruby_install(){
 
 django_install(){ # This will install django in /opt/myenv virtual-env
 	if [[ -f /etc/debian_version ]]; then
-		apt-get -y install python-pip python2.7
+		apt-get -y install python-pip python2.7 dh-virtualenv
 	else
-		yum -y install python-pip python2.7
+		yum -y install python-pip python2.7 dh-virtualenv
 	fi
 		virtualenv /opt/myenv
 		source /opt/myenv/bin/activate
