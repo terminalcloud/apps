@@ -28,6 +28,7 @@ install(){
 
 	cat > /etc/apache2/sites-enabled/000-default.conf << _EOF_
 <VirtualHost *>
+	ServerName localhost
 	WSGIDaemonProcess sampleapp python-path=/var/www/sampleapp:/var/www/sampleapp/env/lib/python2.7/site-packages
 	WSGIProcessGroup sampleapp
 	WSGIScriptAlias / /var/www/sampleapp/sampleapp/wsgi.py
@@ -44,6 +45,7 @@ show(){
 	edit.sh django.md
 	cd.sh /var/www/ ## Show the served directory
 	start_hooks_install
+	#echo "service apache2 restart" >> /CL/hooks/startup.sh
 }
 
 if [[ -z $1 ]]; then
