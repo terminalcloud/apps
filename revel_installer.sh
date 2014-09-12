@@ -5,7 +5,7 @@
 # Basic Functions
 install(){
 	# Includes
-	wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/terlib.sh
+	wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
 	source terlib.sh || (echo "cannot get the includes"; exit -1)
 
 	# Basics

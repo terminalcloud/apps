@@ -15,7 +15,7 @@ On this links you will find useful information about WordPress
 
 ### Additional Information
 #### Wordpress Terminal.com container automatic installation:
-`wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/wordpress_installer.sh && bash wordpress_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/wordpress_installer.sh && bash wordpress_installer.sh`
 #### Root MySQL Credentials
 - user: root
 - pass: root

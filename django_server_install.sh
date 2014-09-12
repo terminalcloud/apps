@@ -3,7 +3,7 @@
 INSTALL_PATH="/var/www"
 
 # Includes
-wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/terlib.sh
+wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
 source terlib.sh || (echo "cannot get the includes"; exit -1)
 
 install(){
@@ -40,7 +40,7 @@ _EOF_
 }
 
 show(){
-	wget -q https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/django.md
+	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/docs/django.md
 	export PATH=$PATH:/srv/cloudlabs/scripts
 	edit.sh django.md
 	cd.sh /var/www/ ## Show the served directory

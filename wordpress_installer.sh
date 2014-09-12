@@ -8,7 +8,7 @@ install(){
 	DB_PASS="terminal"
 
 	# Includes
-	wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/terlib.sh
+	wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
 	source terlib.sh || (echo "cannot get the includes"; exit -1)
 
 	# Basics
@@ -45,7 +45,7 @@ install(){
 }
 
 show(){
-	wget -q https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/wordpress.md
+	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/docs/wordpress.md
 	export PATH=$PATH:/srv/cloudlabs/scripts
 	edit.sh wordpress.md
 	cd.sh /var/www/wordpress/ ## Show the Wordpress directory

@@ -28,7 +28,7 @@ This container has **mod_wsgi** for Apache. You can used to host your previously
 #### Terminal.com container automatic installation
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing
 
-`wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/django_server_install.sh &&  bash django_server_install.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/django_server_install.sh &&  bash django_server_install.sh`
 
 ---
 

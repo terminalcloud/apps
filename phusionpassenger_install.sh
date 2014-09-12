@@ -5,7 +5,7 @@ INSTALL_PATH="/var/www"
 NGINX_PATH="/opt/nginx"
 
 # Includes
-wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/terlib.sh
+wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
 source terlib.sh || (echo "cannot get the includes"; exit -1)
 
 install(){
@@ -29,7 +29,7 @@ install(){
 	chmod -R 777 blog/
 
 	# Nginx conf and server block for passenger example and start Nginx
-	wget -O - https://raw.githubusercontent.com/qmaxquique/terminal.com/master/others/passenger_serious_nginx.conf > "$NGINX_PATH"/conf/nginx.conf
+	wget -O - https://raw.githubusercontent.com/terminalcloud/apps/master/others/passenger_serious_nginx.conf > "$NGINX_PATH"/conf/nginx.conf
 	"$NGINX_PATH"/sbin/nginx
 }
 
@@ -37,7 +37,7 @@ install(){
 show(){
 	cd $HOME
 	export PATH=$PATH:/srv/cloudlabs/scripts
-	wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/phusionpassenger.md
+	wget https://raw.githubusercontent.com/terminalcloud/apps/master/docs/phusionpassenger.md
 	edit.sh ~/phusionpassenger.md
 	cd.sh /var/www/blog
 	start_hooks_install
