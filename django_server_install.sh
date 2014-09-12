@@ -41,7 +41,7 @@ _EOF_
 show(){
 	wget -q https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/django.md
 	export PATH=$PATH:/srv/cloudlabs/scripts
-	edit.sh symfony.md
+	edit.sh django.md
 	cd.sh /var/www/ ## Show the served directory
 	start_hooks_install
 }
