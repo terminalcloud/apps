@@ -152,16 +152,12 @@ ruby_install(){
 	[[ $1 == "rails" ]] && gem install rails
 }
 
-django_install(){ # This will install django in /opt/myenv virtual-env
+python_install(){ # This will install django in /opt/myenv virtual-env
 	if [[ -f /etc/debian_version ]]; then
 		apt-get -y install python-pip python2.7 dh-virtualenv
 	else
 		yum -y install python-pip python2.7 dh-virtualenv
 	fi
-		virtualenv /opt/myenv
-		source /opt/myenv/bin/activate
-		pip install django
-		deactivate
 }
 
 postgres_install(){
