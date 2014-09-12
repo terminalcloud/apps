@@ -27,8 +27,8 @@ install(){
     apt-get install libapache2-mod-wsgi || yum install httpd-mod-wsgi
 
 	cat > /etc/apache2/sites-enabled/000-default.conf << _EOF_
+ServerName localhost
 <VirtualHost *>
-	ServerName localhost
 	WSGIDaemonProcess sampleapp python-path=/var/www/sampleapp:/var/www/sampleapp/env/lib/python2.7/site-packages
 	WSGIProcessGroup sampleapp
 	WSGIScriptAlias / /var/www/sampleapp/sampleapp/wsgi.py
