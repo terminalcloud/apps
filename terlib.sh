@@ -130,7 +130,7 @@ cat > /root/info.html << EOF
 <html>
 <head><title>External Browser Link</title></head>
 <body>
-Check out your installation <a target="_blank" href="//$(hostname)-80.terminal.com">here!</a>
+Check out your installation <a target="_blank" href="//\$(hostname)-80.terminal.com">here!</a>
 </body>
 </html>
 EOF
