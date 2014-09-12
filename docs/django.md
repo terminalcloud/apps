@@ -8,14 +8,14 @@ Developed by a fast-moving online-news operation, Django was designed to handle 
 
 
 ## Usage:
-Just spin up you terminal.com container based on this snapshot and you will have everything needed to develop, deploy and serve a Django Applications. 
+Just spin up you terminal.com container based on this snapshot and you will have everything needed to develop, deploy and serve Django applications. 
 
 This container has Apache web server installed, serving a sample Django App that can be the base for you new project.
 
 To write you own application just go to the installation directory at /var/www/sampleapp and use it as a base.
 You can also use virtualenv (also includded) to install Django in another directory and then change the Apache settings to serve it as well.
 
-This container also has **mod_wsgi** for Apache. You can used to host your previously developed application as well, using as example the configuration files provided.
+This container has **mod_wsgi** for Apache. You can used to host your previously developed application as well, using as example the configuration files provided.
 
 
 ## Documentation and resources
