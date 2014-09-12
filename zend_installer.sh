@@ -23,7 +23,7 @@ install(){
 	# 2 - Install the product
 	cd $INSTALL_PATH
 	apache_default_vhost sample.conf $INSTALL_PATH/Zend-Sticky/public 
-	wget https://github.com/terminalcloud/apps/raw/master/others/Zend-Sticky-master.zip
+	wget -q https://github.com/terminalcloud/apps/raw/master/others/Zend-Sticky-master.zip
 	unzip Zend-Sticky-master.zip -d Zend-Sticky 
 	composer self-update
 	cd $INSTALL_PATH/Zend-Sticky 
