@@ -45,7 +45,7 @@ show(){
 	edit.sh django.md
 	cd.sh /var/www/ ## Show the served directory
 	start_hooks_install
-	#echo "service apache2 restart" >> /CL/hooks/startup.sh
+	echo "service apache2 restart" >> /CL/hooks/startup.sh
 }
 
 if [[ -z $1 ]]; then
