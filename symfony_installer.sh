@@ -13,24 +13,6 @@ install(){
 	basics_install
 
 	# Procedure: 
-	
-	# 1 - Product Installation
-	django_install
-	nginx_install#!/bin/bash
-# Script to deploy Symfony Framework and a sample app at Terminal.com
-INSTALL_PATH="/var/www"
-
-# Includes
-wget https://raw.githubusercontent.com/qmaxquique/terminal.com/master/terlib.sh
-source terlib.sh || (echo "cannot get the includes"; exit -1)
-
-install(){
-	# Basics
-	pkg_update
-	system_cleanup
-	basics_install
-
-	# Procedure: 
 	# 1 - Get prerrequisites.
 	apache_install
 	mysql_install
@@ -58,37 +40,6 @@ install(){
 
 }
 
-show(){
-	wget -q https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/symfony.md
-	export PATH=$PATH:/srv/cloudlabs/scripts
-	edit.sh symfony.md
-	cd.sh /var/www/ ## Show the served directory
-	browse.sh localhost:80
-}
-
-if [[ -z $1 ]]; then
-	install && show
-elif [[ $1 == "show" ]]; then 
-	show
-else
-	echo "unknown parameter specified"
-fi
-	postgres_install
-	gunicorn_install
-
-	# 2 - DB Setup
-	cat >> /tmp/pinstall.sql < _EOF_
-CREATE DB mydb;
-CREATE USER myuser password 'pass';
-GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
-_EOF_
-
-	su - postgres -c psql --file=/tmp/pinstall.sql 
-	rm /tmp/pinstall.sql
-	
-
-
-}
 
 show(){
 	wget -q https://raw.githubusercontent.com/qmaxquique/terminal.com/master/docs/symfony.md
