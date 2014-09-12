@@ -45,6 +45,7 @@ show(){
 	edit.sh django.md
 	cd.sh /var/www/ ## Show the served directory
 	start_hooks_install
+	echo "echo 'Please wait..'" >> /CL/hooks/startup.sh
 	echo "sleep 3; service apache2 restart" >> /CL/hooks/startup.sh
 }
 
