@@ -43,7 +43,7 @@ show(){
 	export PATH=$PATH:/srv/cloudlabs/scripts
 	edit.sh symfony.md
 	cd.sh /var/www/ ## Show the served directory
-	browse.sh localhost:80
+	start_hooks_install
 }
 
 if [[ -z $1 ]]; then
