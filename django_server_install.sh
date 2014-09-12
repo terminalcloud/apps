@@ -47,6 +47,12 @@ show(){
 	start_hooks_install
 	echo "echo 'Please wait..'" >> /CL/hooks/startup.sh
 	echo "sleep 3; service apache2 restart" >> /CL/hooks/startup.sh
+	echo "press any key to continue"
+	read; 
+	echo "please wait.."
+	sleep 10
+	service apache2 restart
+	echo "terminal ready to use"
 }
 
 if [[ -z $1 ]]; then
