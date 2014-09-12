@@ -23,7 +23,8 @@ install(){
 	# 2 - Install the product
 	cd $INSTALL_PATH
 	apache_default_vhost sample.conf $INSTALL_PATH/Zend-Sticky/public 
-	git clone https://github.com/mcapielo/Zend-Sticky.git
+	wget https://github.com/terminalcloud/apps/raw/master/others/Zend-Sticky-master.zip
+	unzip Zend-Sticky-master.zip -d Zend-Sticky 
 	composer self-update
 	cd $INSTALL_PATH/Zend-Sticky 
 	composer install
@@ -31,7 +32,6 @@ install(){
 	mysql -uzend -pterminal stickynotes < schema.sql
 	mysql -uzend -pterminal stickynotes < inserts.sql
 	service apache2 restart
-
 }
 
 
