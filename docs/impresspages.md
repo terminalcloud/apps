@@ -48,4 +48,13 @@ db pass: terminal
 - [User Manual](http://www.impresspages.org/docs/installation)
 - ImpressPages [Blog](http://www.impresspages.org/blog2)
 
+### Additional Information
+#### ImpressPages Terminal.com container automatic installation:
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/impresspages_installer.sh && bash impresspages_installer.sh`
+#### Root MySQL Credentials
+- user: root
+- pass: root
+
+---
+
 #### Thanks for using ImpressPages at Terminal.com 
