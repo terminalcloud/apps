@@ -33,6 +33,7 @@ ImpressPages comes with a bunch of handy pre-built features. From those designed
 - Spin up you Terminal.com container based on this snapshot and point your browser to https://yourterminalname-80.teminal.com
 - Follow the on-screen instructions to start your first site on the ImpressPages CMS.
 - Use the DB credentials below or create your own credentials. (db root pass: `root`)
+
 ```
 db host: localhost
 db name: impresspages
