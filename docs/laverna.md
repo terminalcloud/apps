@@ -27,4 +27,8 @@ The application stores all your notes in your browser local storage spaces such 
 Just spin up a micro terminal instance based on this snapshot and point your browser to https://yourterminalname-80.terminal.com.
 You can also use the internal browser to use the application if you want.
 
+## Documentation
+- Check the [Laverna Website](https://laverna.cc/)
+
+
 #### Thanks for using this snapshot at Terminal.com
