@@ -48,10 +48,10 @@ nginx_install(){
 
 php5_install(){
 	if [[ -f /etc/debian_version ]]; then
-		apt-get -y install php5 php-pear php5-gd php5-mcrypt php5-mysql php5-gd libssh2-php php5-sqlite && php5enmod mcrypt gd pdo_mysql
+		apt-get -y install php5 php-pear php5-gd php5-mcrypt php5-mysql php5-gd libssh2-php php5-sqlite php5-curl && php5enmod curl mcrypt gd pdo_mysql
 		service apache2 restart 
 	else
-		yum install php php-pear php-gd php-mcrypt php-mysql libssh2-php php5-sqlite
+		yum install php php-pear php-gd php-mcrypt php-mysql libssh2-php php5-sqlite php5-curl
 		service httpd restart
 	fi
 }
