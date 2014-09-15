@@ -15,6 +15,7 @@ install(){
 	# Procedure: 
 	apache_install
 	cd "$INSTALL_PATH"
+	git clone -b gh-pages https://github.com/Laverna/static-laverna
 	mv static-laverna/ laverna
     apache_default_vhost laverna.conf $INSTALL_PATH/laverna/
 }
