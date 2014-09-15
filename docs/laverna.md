@@ -33,9 +33,6 @@ You can also use the internal browser to use the application if you want.
 ### Additional Information
 #### Laverna Terminal.com container automatic installation:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/laverna_installer.sh && bash laverna_installer.sh`
-#### Root MySQL Credentials
-- user: root
-- pass: root
 
 ---
 #### Thanks for using this snapshot at Terminal.com
