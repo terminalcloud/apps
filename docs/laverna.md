@@ -1,5 +1,5 @@
 # **Laverna** Terminal.com Snapshot
-#### *note taking web app*
+*Note taking web app*
 
 ## About **Laverna*
 Laverna is a JavaScript note-taking web application with a Markdown editor and encryption support.  

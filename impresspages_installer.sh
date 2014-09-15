@@ -25,6 +25,7 @@ install(){
 	unzip ImpressPage*.zip
 	apache_default_vhost impresspages.conf $INSTALL_PATH/ImpressPages
 	chown -R www-data:www-data $INSTALL_PATH/ImpressPages
+	sed -i 's/www/www\/html/g' /etc/apache2/apache2.conf
 	service apache2 restart
 }
 
