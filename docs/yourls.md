@@ -27,10 +27,10 @@ Running your own URL shortener is fun, geeky and useful: you own your data and d
 ## Usage
 Spin up your terminal container based on this snapshot and click over the link provided.
 
-Due the way YOURLS works, you will have to login to the system by going to /admin and authenticate using the default user and password: ` user: admin , password: password ` To change this password, 
+Due the way YOURLS works, you will have to login to the system by going to /admin and authenticate using the default user and password: ` user: admin , password: password ` To change this password just edit the user/config.php file. The passwords will be automatically encrypted during the next run.
 
 As any other URL shortener, YOURLS is intended to be used with short domain names.
-To use you own domain name in a Terminal.com container please follow the instructions [here](https://www.terminal.com/faq#cname)
+To use you own _short_ domain name in a Terminal.com container please follow the instructions [here](https://www.terminal.com/faq#cname)
 
 ### Additional Configuration
 To complete or change the system configuration you need to edit the file user/config.php. By editing that file you will be able to change basic configuration parameters as:
