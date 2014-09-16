@@ -46,6 +46,9 @@ show(){
 	edit.sh $INSTALL_PATH/YOURLS-1.7/user/config.php ## Show config file
 	edit.sh yourls.md ## Show Readme
 	cd.sh /var/www/ ## Show the served directory
+	echo "Now go to https://$(hostname)-80.terminal.com/admin and finish your configuration"
+	echo "DB is pre-configured. Please disregard installation error messages related to DB"
+	echo "Thanks!"
 }
 
 if [[ -z $1 ]]; then
