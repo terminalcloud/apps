@@ -36,18 +36,16 @@ install(){
 
 	# Reconfigure at start time
 	sed -i "s/\.com/\.com\/admin/g" /CL/hooks/startup.sh
-	echo "sed -i \"s/site.com/\$(hostname)-80.terminal.com/g\" user/config.php" >> /CL/hooks/startup.sh
+	echo "sed -i \"s/site.com/\$(hostname)-80.terminal.com/g\" $INSTALL_PATH/YOURLS-1.7/user/config.php" >> /CL/hooks/startup.sh
 
 }
 
 show(){
 	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/docs/yourls.md
 	export PATH=$PATH:/srv/cloudlabs/scripts
-	edit.sh yourls.md
-
+	edit.sh $INSTALL_PATH/YOURLS-1.7/user/config.php ## Show config file
+	edit.sh yourls.md ## Show Readme
 	cd.sh /var/www/ ## Show the served directory
-	cd $INSTALL_PATH/YOURLS-1.7
-	
 }
 
 if [[ -z $1 ]]; then
