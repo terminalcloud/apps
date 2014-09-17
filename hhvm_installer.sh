@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script to deploy Facebook HHVM at Terminal.com
-INSTALL_PATH="~/"
+INSTALL_PATH="/root"
 set -x
 # Includes
 wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
@@ -39,7 +39,7 @@ install(){
 }
 
 show(){
-	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/docs/yourls.md
+	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/docs/hhvm.md
 	export PATH=$PATH:/srv/cloudlabs/scripts
 	edit.sh hhvm.md ## Show Readme
 	cd.sh $INSTALL_PATH ## Show the served directory
