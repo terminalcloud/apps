@@ -14,6 +14,7 @@ install(){
 
 	# Procedure: .
 	nginx_install
+	php5_install
 	composer_install
 	
 	cd $INSTALL_PATH
