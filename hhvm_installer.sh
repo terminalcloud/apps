@@ -35,8 +35,10 @@ install(){
 	rm /etc/nginx/sites-enabled/default
 	cat /etc/nginx/sites-available/hack-example-site
 	read
-	service hhvm-fastcgi start
-	service nginx start
+	/usr/share/hhvm/install_fastcgi.sh
+	read
+	/etc/init.d/hhvm restart
+	service nginx restart
 }
 
 show(){
