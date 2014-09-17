@@ -14,12 +14,13 @@ install(){
 
 	# Procedure: .
 	nginx_install
-	php5_install
+	#apt-get -y install php5 php-pear php5-gd php5-mcrypt php5-curl
 	composer_install
 	
 	cd $INSTALL_PATH
 	git clone https://github.com/hhvm/hack-example-site.git
 	cd hack-example-site
+	composer update
 	composer install
 
 	cd $INSTALL_PATH
@@ -32,11 +33,10 @@ install(){
 	cp hhvm.hdf server.hdf
 	cp nginx.conf /etc/nginx/sites-available/hack-example-site
 	ln -s /etc/nginx/sites-available/hack-example-site /etc/nginx/sites-enabled/hack-example-site
-	rm /etc/nginx/sites-enabled/default
-	cat /etc/nginx/sites-available/hack-example-site
-	read
+	#rm /etc/nginx/sites-enabled/default
+	sed -i 's/\/path\/to\/site/\/root\/hack-example-site/g' /etc/nginx/sites-available/
+hack-example-site 
 	/usr/share/hhvm/install_fastcgi.sh
-	read
 	/etc/init.d/hhvm restart
 	service nginx restart
 }
