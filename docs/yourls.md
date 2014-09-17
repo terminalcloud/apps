@@ -46,9 +46,9 @@ To complete or change the system configuration you need to edit the file user/co
 
 
 ### Additional Information
-#### Wordpress Terminal.com container automatic installation:
+#### YOURLS Terminal.com container automatic installation:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/yourls_installer.sh && bash yourls_installer.sh`
 
 ---
 
-#### Thanks for using WordPress at Terminal.com!
+#### Thanks for using YOURLS at Terminal.com!
