@@ -39,10 +39,14 @@ With this application you will not miss content anymore. **Click, save, read it 
 Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here"
 To get a better performance we provide a preconfigured MySQL DB for Wallabag. 
 
-**Just the information below on the installation page**
+**Just use the information below on the installation page**
+
 - MQL host: localhost
+
 - MySQL db: wallabag
+
 - MySQL user: wallabag
+
 - MySQL Pass: terminal
 
 Once the product is installed you will be able to use it directly or throught any of their [3rd Party apps](https://www.wallabag.org/downloads/) 
