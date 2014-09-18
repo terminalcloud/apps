@@ -24,7 +24,7 @@ With this application you will not miss content anymore. **Click, save, read it 
 - You like an article? Share it by email, on twitter or in your shaarli
 - Because we are increasingly mobile, wallabag fits all your devices
 - Saving a link is so easy because we provide you many tools: extensions for Chrome and Firefox, iOS, Android and -Windows Phone application, a bookmarklet, a simple field in your config webpage. [You can download third-party applications here.](https://www.wallabag.org/downloads/)
-- RSS feeds allows you to read your saved links in your RSS agregator
+- RSS feeds allows you to read your saved links in your RSS aggregator
 - You can set tags to your entries.
 - Wallabag is multilingual: french, english, spanish, german, italian, russian, persian, czech, polish, ukrainian and slovienian.
 - You’re not the only one at home to use wallabag? it’s good, wallabag is multi users
