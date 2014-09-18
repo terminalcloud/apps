@@ -29,7 +29,7 @@ cat >> /root/info.html << EOF
 EOF
 
 # Convert links to external links
-sed -i 's/a\ href/a\ target\=\"\_blank\"/g' /root/info.html 
+sed -i 's/a\ href/a\ target\=\"\_blank\ href"/g' /root/info.html 
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
