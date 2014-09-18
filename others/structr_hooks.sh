@@ -20,7 +20,7 @@ cat > /root/info.html << EOF
 EOF
 
 # Converting markdown file
-markdown "$name" >> /root/info.html
+markdown "$name.md" >> /root/info.html
 
 # Closing file
 cat >> /root/info.html << EOF
