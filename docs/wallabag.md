@@ -49,7 +49,7 @@ To get a better performance we provide a preconfigured MySQL DB for Wallabag.
 
 - MySQL pass: terminal
 
-Once the product is installed you will be able to use it directly or throught any of their [3rd Party apps](https://www.wallabag.org/downloads/) 
+Once the product is installed you will be able to use it directly or through any of their [3rd Party apps](https://www.wallabag.org/downloads/) 
 
 
 ## Documentation
