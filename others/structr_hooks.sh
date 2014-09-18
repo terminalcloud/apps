@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name=structr
+name="structr"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
@@ -20,7 +20,7 @@ cat > /root/info.html << EOF
 EOF
 
 # Converting markdown file
-markdown $name >> /root/info.html
+markdown "$name" >> /root/info.html
 
 # Closing file
 cat >> /root/info.html << EOF
