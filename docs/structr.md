@@ -19,6 +19,7 @@ Spin up your terminal container based on this snapshot and click over the "Check
 
 Login to **Structr** using the following default credentials:
 - Username: admin
+
 - Password: admin
 
 Check documentation section for guides and tutorials. 
