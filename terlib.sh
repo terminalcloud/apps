@@ -15,8 +15,8 @@ system_cleanup(){
 }
 
 basics_install(){
-	[[ -f /etc/debian_version ]] && apt-get -y install curl git software-properties-common unzip\
-	|| yum -y install curl git unzip #libcurl4-openssl-dev
+	[[ -f /etc/debian_version ]] && apt-get -y install curl git software-properties-common unzip markdown\
+	|| yum -y install curl git unzip markdown #libcurl4-openssl-dev
 }
 
 puppet_install(){

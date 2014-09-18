@@ -6,16 +6,12 @@ GitLab CE is on-premises software that you can install and use on your server(s)
 ###Usage:
 This container has a GitLab instance auto-configurable and almost ready to use.
 
-Just start your container machine from this snapshot, provide the URL and the GitLab will be configured automatically.
+Just start your container machine from this snapshot, wait a few seconds for the program statup and then click over the link provided on the internal browser window.
 
 
-### Access:
-After the auto-configuration is finished (shouldn't take more than 1 minute) you the access URL will be provided directly on the terminal console.
-
-**Just copy and paste that URL in a new browser tab or window and start creating your GitLab repositories.**
-
+### Access Credentials:
 >Username: root
->Password: 5iveL!fe
+>Password: terminal
 
 For GitLab documentation please visit: http://doc.gitlab.com/ce/
 
