@@ -60,6 +60,10 @@ Once the product is installed you will be able to use it directly or throught an
 
 
 ### Additional Information
+### 3rd Party Apps configuration
+To configure 3rd party Apps with Wallabag you will have to provide a server address. In this case, your server address is: ** terminalservername **
+
+
 #### Wallabag Terminal.com container automatic installation:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/wallabag_installer.sh && bash wallabag_installer.sh`
 
