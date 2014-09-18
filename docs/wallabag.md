@@ -65,6 +65,7 @@ To configure 3rd party Apps with Wallabag you will have to provide a server addr
 
 
 #### Wallabag Terminal.com container automatic installation:
+You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by excuting:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/wallabag_installer.sh && bash wallabag_installer.sh`
 
 ---
