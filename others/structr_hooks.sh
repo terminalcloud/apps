@@ -5,8 +5,8 @@ name="structr"
 export PATH=$PATH:/srv/cloudlabs/scripts
 
 # Getting the doc and styles
-wget -q --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
-wget -q --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css
 
 # Making the file...
 cat > /root/info.html << EOF
