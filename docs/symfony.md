@@ -28,7 +28,7 @@ If you want to start your Symfony project from the scratch, just follow this sim
 
 ### Additional Information
 #### Terminal.com container automatic installation
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by excuting
+You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing
 
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/symfony_installer.sh &&  bash symfony_installer.sh`
 

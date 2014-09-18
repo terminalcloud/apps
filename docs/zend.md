@@ -32,7 +32,7 @@ If you want to start your Zend project from the scratch, just follow this simple
 
 ### Additional Information
 #### Terminal.com container automatic installation
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by excuting
+You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing
 
 `wget  https://raw.githubusercontent.com/terminalcloud/apps/master/zend_installer.sh &&  bash zend_installer.sh`
 

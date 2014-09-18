@@ -12,7 +12,6 @@ With this application you will not miss content anymore. **Click, save, read it 
 ![1](https://www.wallabag.org/wp-content/uploads/2014/03/homepage_grid.jpeg)
 ---
 ![2](https://www.wallabag.org/wp-content/uploads/2014/03/homepage_smartphone.png)
-![2](https://www.wallabag.org/wp-content/uploads/2014/03/article_smartphone-150x150.png)
 
 
 ### Features
@@ -49,7 +48,7 @@ To get a better performance we provide a preconfigured MySQL DB for Wallabag.
 
 - MySQL pass: terminal
 
-Once the product is installed you will be able to use it directly or through any of their [3rd Party apps](https://www.wallabag.org/downloads/) 
+Once the product is installed, you will be able to use it directly or through any of their [3rd Party apps](https://www.wallabag.org/downloads/) 
 
 
 ## Documentation
@@ -65,7 +64,7 @@ To configure 3rd party Apps with Wallabag you will have to provide a server addr
 
 
 #### Wallabag Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by excuting:
+You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/wallabag_installer.sh && bash wallabag_installer.sh`
 
 ---
