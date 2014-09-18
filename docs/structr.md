@@ -1,6 +1,8 @@
 # **Structr** Terminal.com Snapshot
 *The Award-winning Open-Source Data CMS based on Neo4j*
+
 ---
+
 ## About Structr
 **Structr** is an open source **Data CMS** based on the graph database Neo4j. 
 
