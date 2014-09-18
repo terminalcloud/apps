@@ -9,6 +9,12 @@ font-family: Arial, Helvetica, sans-serif;
 	margin-right: 12px;
 }
 
+#ac {
+	text-align: right;
+	color: black;
+	margin-right: 12px;
+
+}
 body {
     background-color: white;
 }
