@@ -20,7 +20,7 @@ install(){
 	mysql_setup wallabag wallabag terminal
 	apt-get -y install libtidy libtidy-dev || yum -y install libtidy libtidy-dev 
 	wget -q http://wllbg.org/latest
-	unzip lastest
+	unzip latest
 	mv wallabag /$INSTALL_PATH/wallabag
 	apache_install
 	apache_default_vhost wallabag $INSTALL_PATH/wallabag
