@@ -31,7 +31,7 @@ Check documentation section for guides and tutorials.
 - [Official Tutorials](http://docs.structr.org/tutorials)
 - [FAQs](http://docs.structr.org/faq)
 
-- [Demostration Video Screencast](http://vimeo.com/93482196)
+- [Demonstration Video Screencast](http://vimeo.com/93482196)
 
 ### Additional Information
 #### Structr Terminal.com container automatic installation:
