@@ -21,7 +21,7 @@ install(){
 
 show(){
 	# Get the startup script
-	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/others/structr_hooks.sh
+	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/structr_hooks.sh
 	mkdir -p /CL/hooks/
 	mv structr_hooks.sh /CL/hooks/startup.sh
 	# Execute startup script by first to get the common files
