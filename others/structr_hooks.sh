@@ -15,7 +15,7 @@ cat > /root/info.html << EOF
 <head>
 <link rel="stylesheet" type="text/css"href="termlib.css" />
 <p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8082.terminal.com"><b>Check your installation here!</b></a></p>
-<p id="ac"><a target="_blank" href="http://$(hostname)-8082.terminal.com"/root/info.html>open this in a new browser tab</a> >
+<p id="ac"><a id="ac"target="_blank" href="http://$(hostname).terminal.com"/home/root/info.html>open this in a new browser tab </a>
 </head>
 <body>
 EOF
