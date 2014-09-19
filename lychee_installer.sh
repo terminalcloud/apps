@@ -24,15 +24,7 @@ install(){
 	apache_install
 	apt-get -y install php5-imagick || yum -y install php5-imagick
 	apache_default_vhost wallabag.conf $INSTALL_PATH/lychee
-	cat > lychee/data/config.php << EOF
-<?php
-if(!defined('LYCHEE')) exit('Error: Direct access is not allowed!');
-$dbHost = 'localhost'; # Host of the database
-$dbUser = 'lychee'; # Username of the database
-$dbPassword = 'terminal'; # Password of the database
-$dbName = 'lychee'; # Database name
-$dbTablePrefix = ''; # Table prefix
-?>
+	echo "Now go to your installation and configure initial parameters"
 EOF
 }
 
