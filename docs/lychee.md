@@ -35,7 +35,7 @@ Just spin up your terminal container based on this snapshot and start using **Ly
 
 #### Lychee Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/Lychee_installer.sh && bash Lychee_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/lychee_installer.sh && bash lychee_installer.sh`
 
 ---
 
