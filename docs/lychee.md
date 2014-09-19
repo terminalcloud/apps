@@ -24,7 +24,7 @@
 ## Usage
 Just spin up your terminal container based on this snapshot and start using **Lychee** by pressing on "Check your installation here!"
 
-You will will be able to set your initial username and password on the first run by pressing the **<]** symbol in the upper left corner.
+You will will be able to set your initial username and password on the first run by pressing the **[>** symbol, in the upper left corner.
 
 ---
 
