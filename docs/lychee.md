@@ -19,7 +19,7 @@
 - **Import** - Import your photos from various sources. From you local computer, server, via URL or even from your Dropbox.
 - **Tag** - Never loose one of your photos in the depth of your albums. Tag them or mark them as important. Every single photo or all selected photos at once.
 
---
+---
 
 ## Usage
 Just spin up your terminal container based on this snapshot and start using **Lychee** by pressing on "Check your installation here!"
