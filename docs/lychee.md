@@ -26,6 +26,7 @@ Just spin up your terminal container based on this snapshot and start using **Ly
 
 You will will be able to set your initial username and password on the first run by pressing the **<]** symbol in the upper left corner.
 
+---
 
 ## Documentation
 - [Lychee official site](http://lychee.electerious.com/)
