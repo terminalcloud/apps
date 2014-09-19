@@ -22,12 +22,17 @@ install(){
 	mv Lychee lychee
 	chown -R www-data:www-data lychee
 	apache_install
+	apt-get -y install php5-imagick || yum -y install php5-imagick
 	apache_default_vhost wallabag.conf $INSTALL_PATH/lychee
-	cat > lychee/data/config << EOF
-$dbHost = localhost
-$dbUser = lychee
-$dbPassword = terminal
-$dbName = lychee
+	cat > lychee/data/config.php << EOF
+<?php
+if(!defined('LYCHEE')) exit('Error: Direct access is not allowed!');
+$dbHost = 'localhost'; # Host of the database
+$dbUser = 'lychee'; # Username of the database
+$dbPassword = 'terminal'; # Password of the database
+$dbName = 'lychee'; # Database name
+$dbTablePrefix = ''; # Table prefix
+?>
 EOF
 }
 

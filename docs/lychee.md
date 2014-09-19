@@ -7,7 +7,7 @@
 **Lychee** is a free photo-management tool, which runs on your server or web-space. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.
 
 
-![1](http://lychee.electerious.com/assets/img/example/2.png)
+![1](http://lychee.electerious.com/assets/img/showcase.png)
 ---
 
 - **Manage** - Managing your photos has never been easier. Upload, move, rename, describe, delete or search your photos in seconds. All in one place, right from your browser.
@@ -19,10 +19,12 @@
 - **Import** - Import your photos from various sources. From you local computer, server, via URL or even from your Dropbox.
 - **Tag** - Never loose one of your photos in the depth of your albums. Tag them or mark them as important. Every single photo or all selected photos at once.
 
-![2](http://lychee.electerious.com/assets/img/showcase.png)
+--
 
 ## Usage
 Just spin up your terminal container based on this snapshot and start using **Lychee** by pressing on "Check your installation here!"
+
+You will will be able to set your username and password on the first run.
 
 
 ## Documentation
