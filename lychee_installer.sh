@@ -22,10 +22,9 @@ install(){
 	mv Lychee lychee
 	chown -R www-data:www-data lychee
 	apache_install
-	apt-get -y install php5-imagick || yum -y install php5-imagick
+	apt-get -y install php5-imagick  || yum -y install php5-imagick exif
 	apache_default_vhost wallabag.conf $INSTALL_PATH/lychee
 	echo "Now go to your installation and configure initial parameters"
-EOF
 }
 
 show(){

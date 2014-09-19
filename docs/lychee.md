@@ -1,5 +1,5 @@
 # **Lychee** Terminal.com Snapshot
-*Easy to use and great looking photo-management-system, to manage and share photos*
+*Easy to use and great looking photo-management-system, to manage and share photos.*
 
 ---
 
