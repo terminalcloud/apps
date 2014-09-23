@@ -28,7 +28,7 @@ show(){
 	# Get the startup script
 	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/sugarcrm_hooks.sh
 	mkdir -p /CL/hooks/
-	mv sugarcrm.sh /CL/hooks/startup.sh
+	mv sugarcrm_hooks.sh /CL/hooks/startup.sh
 	# Execute startup script by first to get the common files
 	chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 }
