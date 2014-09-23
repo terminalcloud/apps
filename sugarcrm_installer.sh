@@ -26,9 +26,8 @@ install(){
 	apache_install
 	apache_default_vhost sugarcrm.conf $INSTALL_PATH/SugarCE
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 20M/g' /etc/php5/apache2/php.ini
-	sed -i 's/post_max_size\ \=\ 8M/g' /etc/php5/apache2/php.ini
+	sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 24M/g' /etc/php5/apache2/php.ini
 	echo "*    *    *    *    *     cd /var/www/sugarcrm; php -f cron.php > /dev/null 2>&1" >> /var/spool/cron/crontabs/root
-
 }
 
 show(){
