@@ -19,7 +19,7 @@ install(){
 	mysql_install sugArfr33
 	cd $INSTALL_PATH
 	wget -q http://downloads.sourceforge.net/project/sugarcrm/1%20-%20SugarCRM%206.5.X/SugarCommunityEdition-6.5.X/SugarCE-6.5.17.zip?r=&ts=1411493342&use_mirror=ufpr
-	unzip  
+	unzip SugarCE-6*zip*
 	rm SugarCE-6*zip*
 	mv SugarCE-Full* SugarCE
 	chown -R www-data:www-data SugarCE
@@ -27,8 +27,7 @@ install(){
 	apache_default_vhost sugarcrm.conf $INSTALL_PATH/SugarCE
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 20M/g' /etc/php5/apache2/php.ini
 	sed -i 's/post_max_size\ \=\ 8M/g' /etc/php5/apache2/php.ini
-	echo "*    *    *    *    *     cd /var/www/sugarcrm; php -f cron.php > /dev/null 2>&1" >> /var/spool/cron/
-crontabs/root
+	echo "*    *    *    *    *     cd /var/www/sugarcrm; php -f cron.php > /dev/null 2>&1" >> /var/spool/cron/crontabs/root
 
 }
 
