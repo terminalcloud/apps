@@ -6,7 +6,7 @@
 ## About Lychee
 **Lychee** is a free photo-management tool, which runs on your server or web-space. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.
 
-The perfect place to store all your photos. No storage limit, no compression, no loss in data. We even support and display your EXIF and IPTC Metadata. And if you want, you can make your photos public for your audience. With just one click.
+The perfect place to store all your photos. No storage limit, no compression, no loss in data. It even support and display your EXIF and IPTC Metadata. And if you want, you can make your photos public for your audience. With just one click.
 
 ![1](http://lychee.electerious.com/assets/img/showcase.png)
 ---
