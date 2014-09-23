@@ -9,6 +9,7 @@
 Sugar's functionality includes sales-force automation, marketing campaigns, customer support, collaboration, Mobile CRM, Social CRM and reporting.
 
 ---
+### Screenshot
 
 ![1](http://d2owqhhe2x3j50.cloudfront.net/sugar7/product/desktop-marketing-salesrep.jpg)
 
@@ -20,9 +21,11 @@ Spin up your terminal container based on this snapshot and personalize your inst
 Login with credentials:
 
 ```
+
 username: admin
 
 password: terminal
+
 ```
 
 

@@ -17,10 +17,9 @@ install(){
 	php5_install
 	mysql_install sugArfr33
 	cd $INSTALL_PATH
-	wget -q http://downloads.sourceforge.net/project/sugarcrm/1%20-%20SugarCRM%206.5.X/SugarCommunityEdition-6.5.X/SugarCE-6.5.17.zip?r=&ts=1411493342&use_mirror=ufpr
-	unzip *.zip
-	rm "SugarCE-6*zip*"
-	mv "SugarCE-Full*" SugarCE
+	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/others/SugarCE.zip
+	unzip SugarCE.zip
+	rm SugarCE.zip
 	chown -R www-data:www-data SugarCE
 	apache_install
 	apache_default_vhost sugarcrm.conf $INSTALL_PATH/SugarCE
