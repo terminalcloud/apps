@@ -15,11 +15,10 @@ install(){
 
 	# Procedure: 
 	php5_install
-	composer_install
 	mysql_install sugArfr33
 	cd $INSTALL_PATH
 	wget -q http://downloads.sourceforge.net/project/sugarcrm/1%20-%20SugarCRM%206.5.X/SugarCommunityEdition-6.5.X/SugarCE-6.5.17.zip?r=&ts=1411493342&use_mirror=ufpr
-	unzip "SugarCE-6*zip*"
+	unzip *.zip
 	rm "SugarCE-6*zip*"
 	mv "SugarCE-Full*" SugarCE
 	chown -R www-data:www-data SugarCE

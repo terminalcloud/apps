@@ -21,6 +21,7 @@ Login with credentials:
 
 ```
 username: admin
+
 password: terminal
 ```
 
