@@ -3,33 +3,32 @@
 
 ---
 
-## About Wallabag
+## About SugarCRM
 **SugarCRM**,  is a customer relationship management (CRM) system that is available in both open-source and Commercial open-source applications.
 
 Sugar's functionality includes sales-force automation, marketing campaigns, customer support, collaboration, Mobile CRM, Social CRM and reporting.
 
-### Some Screenshots
-![1](http://d2owqhhe2x3j50.cloudfront.net/sugar7/product/desktop-marketing-salesrep.jpg)
 ---
 
+![1](http://d2owqhhe2x3j50.cloudfront.net/sugar7/product/desktop-marketing-salesrep.jpg)
+
+---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here"
+Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Check your installation here"
 
-**Just use the information below on the installation page**
+Login with credentials:
 
-- MQL host: localhost
-
-- MySQL db: sugarcrm
-
-- MySQL user: sugarcrm
-
-- MySQL pass: terminal
+```
+username: admin
+password: terminal
+```
 
 
 ## Documentation
 - [SugarCRM CE Main Website](http://www.sugarcrm.com/community)
 
+---
 
 ### Additional Information
 #### SugarCRM Terminal.com container automatic installation:
