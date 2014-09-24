@@ -28,7 +28,15 @@ We get it. Your website is unique and can’t be backed into a turnkey content m
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here"
+Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here" using the database credentials provided below:
+
+´´´
+username: root
+password: terminal
+
+´´´
+
+Follow the on-screen instructions to finish your installation and, after that, access the CMS or use the framework to customize your SilverStripe site.
 
 
 ## Documentation
