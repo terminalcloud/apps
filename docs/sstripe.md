@@ -4,7 +4,7 @@
 ---
 
 ## About SilverStripe
-**SilverStripe**, create and manage your online experience with our user-friendly content management system; customise it with SilverStripe Framework, and enhance it with add-ons.
+**SilverStripe**, create and manage your online experience with a user-friendly content management system; customise it with SilverStripe Framework, and enhance it with add-ons.
 
 Built with the user in mind, SilverStripe CMS makes day-to-day content updates awesomely simple. Its flexibility makes SilverStripe CMS ideal for managing websites, intranets, and sophisticated web applications with stunning interactive design, and social and transactional features for your users.
 
