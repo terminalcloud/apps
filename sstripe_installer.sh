@@ -16,13 +16,17 @@ install(){
 	# Procedure: 
 	php5_install
 	composer_install
-	mysql_install
+	mysql_install terminal
 	mysql_setup sstripe sstripe terminal
 	cd $INSTALL_PATH
 	composer create-project silverstripe/installer silverstripe 3.1.6
 	chown -R www-data:www-data silverstripe
 	apache_install
-	apache_default_vhost sstripe.conf $INSTALL_PATH/silverstripe
+	apt-get -y install libtidy-dev php5-tidy || yum -y install libtidy libtidy-dev php-tidy
+	apache_default_vhost sstripe.conf $INSTALL_PATH/silverstripe 
+	sed -i 's/\;date\.timezone\ \=/date\.timezone\ \= America\/Los_Angeles/g' /etc/php5/apache2/php.ini
+	sed -i 's/Directory\ \//Directory\ \/var\/www\/silverstripe/g' /etc/apache2/sites-available/silverstripe.conf
+	service apache2 restart
 }
 
 show(){
