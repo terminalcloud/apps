@@ -4,14 +4,15 @@
 # software from OS repositories.
 
 pkg_update(){
-	[[ -f /etc/debian_version ]] && apt-get -y update && DEBIAN_FRONTEND=noninteractive apt-get -y upgrade 
+	[[ -f /etc/debian_version ]] && apt-get -y update 
 }
 
 system_cleanup(){
 	[[ -f /etc/debian_version ]] && apt-get -y autoremove --purge samba* apache2* \
 	|| yum -y remove httpd* samba*
 	echo "nameserver 8.8.8.8" >> /etc/resolv.conf
-	echo "nameserver 8.8.8.9" >> /etc/resolv.conf 
+	echo "nameserver 8.8.8.9" >> /etc/resolv.conf
+	[[ -f /etc/debian_version ]] && DEBIAN_FRONTEND=noninteractive apt-get -y upgrade || yum -y update
 }
 
 basics_install(){
