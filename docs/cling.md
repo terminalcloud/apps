@@ -6,6 +6,8 @@
 ## About CLING
 **Cling** is an interactive C++ interpreter, built on the top of LLVM and Clang libraries. Its advantages over the standard interpreters are that it has command line prompt and uses just-in-time (JIT) compiler for compilation. Many of the developers (e.g. Mono in their project called CSharpRepl) of such kind of software applications name them interactive compilers.
 
+
+
 One of Cling's main goals is to provide contemporary, high-performance alternative of the current C++ interpreter in the ROOT project - CINT. The backward-compatibility with CINT is major priority during the development.
 
 ---
@@ -22,6 +24,18 @@ One of Cling's main goals is to provide contemporary, high-performance alternati
 
 ## Usage
 Spin up your terminal container based on this snapshot and start using the Cling interpreter immediately!
+
+
+#### To start Cling in a new console, just ejecute 
+**`cling`**
+
+#### Other usage examples
+
+`cling '#include <stdio.h>' 'printf("Hello World!\n")'`
+
+To get started run: `cling --help` or type `cling [cling]$ .help`
+
+
 
 ### Syntax - Quick Guide
 
