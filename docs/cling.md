@@ -21,7 +21,7 @@ One of Cling's main goals is to provide contemporary, high-performance alternati
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and start using the Cling interpreter immediatelly!
+Spin up your terminal container based on this snapshot and start using the Cling interpreter immediately!
 
 ### Syntax - Quick Guide
 
@@ -53,9 +53,9 @@ The [Low Level Virtual Machine (LLVM)](http://llvm.org/) is a compiler infrastru
 [Clang](http://clang.llvm.org/) is a compiler front end for the C, C++, Objective-C and Objective-C++ programming languages. It uses the Low Level Virtual Machine (LLVM) as its back end, and as such Clang is part of LLVM releases since LLVM 2.6. Its goal is to offer a replacement to the GNU Compiler Collection (GCC). Development is sponsored by Apple. Clang is available under a free software licence.
 
 
-#### This CLING Terminal.com container automatic installation:
+#### CLING Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wwwget https://raw.githubusercontent.com/terminalcloud/apps/master/cling_installer.sh && bash cling_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/cling_installer.sh && bash cling_installer.sh`
 
 ---
 
