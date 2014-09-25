@@ -55,7 +55,7 @@ The [Low Level Virtual Machine (LLVM)](http://llvm.org/) is a compiler infrastru
 
 #### This CLING Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/cling_installer.sh && bash cling_installer.sh`
+`wwwget https://raw.githubusercontent.com/terminalcloud/apps/master/cling_installer.sh && bash cling_installer.sh`
 
 ---
 
