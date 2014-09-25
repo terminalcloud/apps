@@ -3,16 +3,6 @@
 
 ---
 
-```
-                         ______  __      ____  _   __  ______
-                        / ____/ / /     /  _/ / | / / / ____/
-                       / /     / /      / /  /  |/ / / / __
-                      / /___  / /___  _/ /  / /|  / / /_/ /
-                      \____/ /_____/ /___/ /_/ |_/  \____/
-
-```
-
-
 ## About CLING
 **Cling** is an interactive C++ interpreter, built on the top of LLVM and Clang libraries. Its advantages over the standard interpreters are that it has command line prompt and uses just-in-time (JIT) compiler for compilation. Many of the developers (e.g. Mono in their project called CSharpRepl) of such kind of software applications name them interactive compilers.
 
@@ -27,27 +17,24 @@ One of Cling's main goals is to provide contemporary, high-performance alternati
 
 - *Metaprocessor* - Cling Metaprocessor provides convenient and easy to use interface for changing the interpreter's internal state or for executing handy commands. Cling provides the following metaprocessor commands:
 
-**syntax: .(command), where command is:**
-	- .x filename.cxx - loads filename and calls void filename() if defined
-	- .L library | filename.cxx - loads library or filename.cxx
-	- .printAST - shows the abstract syntax tree after each processed entity
-	- .I path - adds an include path
 
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here" using the database credentials provided below:
+Spin up your terminal container based on this snapshot and start using the Cling interpreter immediatelly!
 
-´´´
+### Syntax - Quick Guide
 
-username: root
-password: terminal
+** .(command), where command is:**
 
+- .x filename.cxx - loads filename and calls void filename() if defined
+- .L library | filename.cxx - loads library or filename.cxx
+- .printAST - shows the abstract syntax tree after each processed entity
+- .I path - adds an include path
 
-´´´
+_Check the Resources and Doucumentation section for more information about Cling._
 
-Follow the on-screen instructions to finish your installation and access the CMS or use the framework to customize your new SilverStripe site.
-
+---
 
 ## Resources and Documentation
 - [CLING Forum](http://root.cern.ch/phpBB3/viewforum.php?f=21)

@@ -17,9 +17,6 @@ install(){
 	tar jfxv cling-Ubuntu-14.04-64bit-b714047cbb.tar.bz2
 	mv cling-Ubuntu-14.04-64bit-b714047cbb cling
 	echo "PATH=$PATH:/root/cling/bin" >> .profile
-	source .profile
-	clear
-	cling
 }
 
 show(){
@@ -29,6 +26,9 @@ show(){
 	mv cling_hooks.sh /CL/hooks/startup.sh
 	# Execute startup script by first to get the common files
 	chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
+	source .profile
+	clear
+	cling
 }
 
 if [[ -z $1 ]]; then
