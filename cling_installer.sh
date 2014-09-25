@@ -25,6 +25,8 @@ show(){
 	mkdir -p /CL/hooks/
 	mv cling_hooks.sh /CL/hooks/startup.sh
 	# Execute startup script by first to get the common files
+	clear
+	echo "PRESS ENTER TO START CLING"
 	chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 	source .profile
 	clear
