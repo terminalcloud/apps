@@ -4,7 +4,7 @@
 # software from OS repositories.
 
 pkg_update(){
-	[[ -f /etc/debian_version ]] && apt-get update 
+	[[ -f /etc/debian_version ]] && apt-get -y update && DEBIAN_FRONTEND=noninteractive apt-get -y upgrade 
 }
 
 system_cleanup(){
