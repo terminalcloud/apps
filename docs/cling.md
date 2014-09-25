@@ -36,7 +36,6 @@ Spin up your terminal container based on this snapshot and start using the Cling
 To get started run: `cling --help` or type `cling [cling]$ .help`
 
 
-
 ### Syntax - Quick Guide
 
 ** .(command), where command is:**
