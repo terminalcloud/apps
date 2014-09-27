@@ -45,13 +45,12 @@
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Check your installation here"
+Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here", and using the MySQL credentials listed below:
 
-Login with credentials:
-
-
-- username: admin
+- database host: localhost
+- username: root
 - password: terminal
+
 
 
 ## Documentation

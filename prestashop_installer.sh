@@ -15,8 +15,7 @@ install(){
 
 	# Procedure: 
 	php5_install
-	mysql_install
-	mysql_config prestashop prestashop terminal
+	mysql_install terminal
 	cd $INSTALL_PATH
 	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/others/prestashop_1.6.0.9.zip
 	unzip prestashop_1.6.0.9.zip
