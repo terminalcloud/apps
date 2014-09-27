@@ -52,7 +52,6 @@ Spin up your terminal container based on this snapshot and personalize your inst
 - password: terminal
 
 
-
 ## Documentation
 - [Getting Starter Guide](http://www.prestashop.com/en/getting-started)
 - [Developer's Guide](http://doc.prestashop.com/display/PS16/Developer+Guide)
