@@ -1,9 +1,9 @@
-# **Prestashop** Terminal.com Snapshot
+# **PrestaShop** Terminal.com Snapshot
 *Free e-commerce Solution*
 
 ---
 
-## About Prestashop
+## About PrestaShop
 **PrestaShop** is a free, open source e-commerce solution. It supports payment gateways such as DirecPay, Google Checkout, Authorize.Net, Skrill, PayPal, PayPal Payments Pro (Direct) and EBANX Checkout via their respective APIs. Further payment modules are offered commercially.
 
 
@@ -34,13 +34,13 @@
 
 - *Localization/Taxes* - PrestaShop’s advanced tracking system can detect where a customer is located and calculate taxes or promotions set by the merchant. Additionally, configure exchange rates and let customers choose their preferred currency.
 
-[View full features list](http://www.prestashop.com/download/pdf/PrestaShop-Feature-List-en.pdf)
+[View full features list](http://www.PrestaShop.com/download/pdf/PrestaShop-Feature-List-en.pdf)
 
 ---
 ### Screenshot
 
-![1](http://img-cdn.prestashop.com/features/en/14-1.jpg)
-![2](http://img-cdn.prestashop.com/features/en/5-1.jpg)
+![1](http://img-cdn.PrestaShop.com/features/en/14-1.jpg)
+![2](http://img-cdn.PrestaShop.com/features/en/5-1.jpg)
 
 ---
 
@@ -53,22 +53,22 @@ Spin up your terminal container based on this snapshot and personalize your inst
 
 
 ## Documentation
-- [Getting Starter Guide](http://www.prestashop.com/en/getting-started)
-- [Developer's Guide](http://doc.prestashop.com/display/PS16/Developer+Guide)
-- [Designer's Guide](http://doc.prestashop.com/display/PS15/Designer+Guide)
-- [User's Guide](http://doc.prestashop.com/display/PS16/User+Guide)
-- [Merchant's Guide](http://doc.prestashop.com/display/PS16/Merchant%27s+Guide)
-- [Frequent Asked Questions](http://www.prestashop.com/en/faq)
+- [Getting Starter Guide](http://www.PrestaShop.com/en/getting-started)
+- [Developer's Guide](http://doc.PrestaShop.com/display/PS16/Developer+Guide)
+- [Designer's Guide](http://doc.PrestaShop.com/display/PS15/Designer+Guide)
+- [User's Guide](http://doc.PrestaShop.com/display/PS16/User+Guide)
+- [Merchant's Guide](http://doc.PrestaShop.com/display/PS16/Merchant%27s+Guide)
+- [Frequent Asked Questions](http://www.PrestaShop.com/en/faq)
 
 ---
 
 ### Additional Information
-#### Prestashop Terminal.com container automatic installation:
+#### PrestaShop Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/prestashop_installer.sh && bash prestashop_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/PrestaShop_installer.sh && bash PrestaShop_installer.sh`
 
 Use at lease a "small" Terminal container to host this application. 
 
 ---
 
-#### Thanks for using Prestashop at Terminal.com!
+#### Thanks for using PrestaShop at Terminal.com!
