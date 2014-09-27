@@ -67,6 +67,8 @@ Spin up your terminal container based on this snapshot and personalize your inst
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/prestashop_installer.sh && bash prestashop_installer.sh`
 
+Use at lease a "small" Terminal container to host this application. 
+
 ---
 
 #### Thanks for using Prestashop at Terminal.com!
