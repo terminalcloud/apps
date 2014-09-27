@@ -37,7 +37,7 @@
 [View full features list](http://www.PrestaShop.com/download/pdf/PrestaShop-Feature-List-en.pdf)
 
 ---
-### Screenshot
+### Screenshots
 
 ![1](http://img-cdn.PrestaShop.com/features/en/14-1.jpg)
 ![2](http://img-cdn.PrestaShop.com/features/en/5-1.jpg)
