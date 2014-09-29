@@ -17,8 +17,9 @@ install(){
 	php5_install
 	mysql_install terminal
 	cd $INSTALL_PATH
+	mkdir -p $INSTALL_PATH/pimcore
 	wget https://www.pimcore.org/download/pimcore-data.zip
-	unzip pimcore-data.zip
+	unzip pimcore-data.zip -d pimcore
 	rm pimcore-data.zip
 	chown -R www-data:www-data pimcore
 	apache_install
