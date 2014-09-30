@@ -37,17 +37,22 @@ Based on its own pimcore API or the REST API it’s easy and fast to integrate p
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here". Use the MySQL credentials listed below:
+Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Check your installation here". 
 
-- database host: localhost
-- username: root
-- password: terminal
+
+To login into the administration section, please use the credentials below:
+
+- Username: admin
+- Password: terminal
 
 
 ## Documentation
 - [Pimcore Official Documentation](https://www.pimcore.org/wiki/display/PIMCORE/Pimcore+Documentation)
 - [Video Guides](https://www.pimcore.org/en/resources/videos)
 - [Pimcore Blog](https://www.pimcore.org/en/resources/blog)
+
+
+
 ---
 
 ### Additional Information
