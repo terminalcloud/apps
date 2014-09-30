@@ -18,7 +18,8 @@ install(){
 	apt-get -y remove nodejs
 	cd $INSTALL_PATH
 	git clone git://github.com/creationix/nvm.git ~/nvm
-	~/nvm/install.sh && source ~/.bashrc
+	/root/nvm/install.sh
+	source /root/.bashrc
 	nvm install v0.8.28
 	nvm use v0.8.28
 	#npm install npm -g --ca=""
