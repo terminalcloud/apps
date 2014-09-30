@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy Pimcore at Terminal.com
+# Script to deploy Cloud9 at Terminal.com
 
 INSTALL_PATH="/root"
 
@@ -18,10 +18,10 @@ install(){
 	apt-get -y remove nodejs
 	cd $INSTALL_PATH
 	git clone git://github.com/creationix/nvm.git ~/nvm
-	echo '. ~/nvm/install.sh' && source ~/.bashrc
+	~/nvm/install.sh && source ~/.bashrc
 	nvm install v0.8.28
 	nvm use v0.8.28
-	npm install npm -g --ca=""
+	#npm install npm -g --ca=""
 	npm install forever -g
 	git clone https://github.com/ajaxorg/cloud9.git cloud9
 	cd cloud9

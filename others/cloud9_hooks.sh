@@ -15,7 +15,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-3131.terminal.com"><b>Check your installation here!</b></a></p>
 </head>
 <body>
 EOF
@@ -39,4 +39,4 @@ sed -i "s/terminalservername/http\:\/\/$(hostname)\-80\.terminal\.com/g" /root/i
 cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
 /srv/cloudlabs/scripts/display.sh /root/info.html
 EOF
-forever start server.js -w ~/ -l 0.0.0.0 --username user --password terminal
+forever start /root/cloud9/server.js -w /root -l 0.0.0.0 --username user --password terminal
