@@ -60,7 +60,7 @@ To login into the administration section, please use the credentials below:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/pimcore_installer.sh && bash pimcore_installer.sh`
 
-Use at lease a "small" Terminal container to host this application. 
+Use at least a "small" Terminal container to host this application. 
 
 ---
 
