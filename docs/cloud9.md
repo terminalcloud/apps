@@ -48,7 +48,7 @@ Spin up your terminal container based on this snapshot using Cloud9 by clicking 
 ### Additional Information
 #### Cloud9 Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/cloud9_installer.sh && bash cloud_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/cloud9_installer.sh && bash cloud9_installer.sh`
 
 Use at least a "small" Terminal container to host this application. 
 
