@@ -39,4 +39,8 @@ sed -i "s/terminalservername/http\:\/\/$(hostname)\-80\.terminal\.com/g" /root/i
 cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
 /srv/cloudlabs/scripts/display.sh /root/info.html
 EOF
-forever start /root/cloud9/server.js -w /root -l 0.0.0.0 --username user --password terminal
+
+echo "Press ENTER to start Cloud9"
+
+cd /root
+source /root/.bashrc && forever start /root/cloud9/server.js -w /root -l 0.0.0.0 --username user --password terminal
