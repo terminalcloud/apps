@@ -27,6 +27,7 @@ install(){
 	cd cloud9
 	npm install packager
 	npm install
+}
 
 show(){
 	# Get the startup script
