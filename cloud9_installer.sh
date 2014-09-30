@@ -22,14 +22,12 @@ install(){
 	source /root/.bashrc
 	nvm install v0.8.28
 	nvm use v0.8.28
-	pause
-	#npm install npm -g --ca=""
 	npm install forever -g
 	git clone https://github.com/ajaxorg/cloud9.git cloud9
 	cd cloud9
 	npm install packager
 	npm install
-	echo "To start Cloud9 please execute: forever start /root/cloud9/server.js -w /root -l 0.0.0.0 --username user --password terminal"
+	echo "To start Cloud9 please execute: nvm use v0.8.28 && forever start /root/cloud9/server.js -w /root -l 0.0.0.0 --username user --password terminal"
 }
 
 show(){
