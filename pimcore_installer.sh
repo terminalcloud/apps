@@ -15,7 +15,8 @@ install(){
 
 	# Procedure: 
 	php5_install
-	mysql_install terminal
+	mysql_install
+	mysql_setup pimcore pimcore terminal
 	cd $INSTALL_PATH
 	mkdir -p $INSTALL_PATH/pimcore
 	wget https://www.pimcore.org/download/pimcore-data.zip
@@ -24,6 +25,7 @@ install(){
 	chown -R www-data:www-data pimcore
 	apache_install
 	apache_default_vhost pimcore.conf $INSTALL_PATH/pimcore
+	sed -i 's/Directory\ \//Directory\ \/var\/www\/pimcore/g' /etc/apache2/sites-available/pimcore.conf
 	service apache2 restart
 	echo "*/5 * * * * /usr/bin/php /var/www/pimcore/cli/maintenance.php" >> /var/spool/cron/crontabs/root
 }
