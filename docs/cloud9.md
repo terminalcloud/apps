@@ -36,7 +36,9 @@ Spin up your terminal container based on this snapshot using Cloud9 by clicking 
 - Password: terminal
 
 
-Cloud9 runs using "forever". If you want to stop, retart or start Cloud9 with other settings you can just kill the "forever" process and then restart it with other options. As an example, the current process run as follows:
+Cloud9 runs using "forever". If you want to stop, retart or start Cloud9 with other settings you can just kill the "forever" process and then restart it with other options. 
+
+As an example, the current process run as follows:
 `forever start /root/cloud9/server.js -w /root -l 0.0.0.0 --username user --password terminal`
 
 
