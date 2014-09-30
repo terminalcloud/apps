@@ -27,6 +27,7 @@ install(){
 	apache_default_vhost pimcore.conf $INSTALL_PATH/pimcore
 	sed -i 's/Directory\ \//Directory\ \/var\/www\/pimcore/g' /etc/apache2/sites-available/pimcore.conf
 	service apache2 restart
+	mysql -uroot -proot -e"ALTER DATABASE pimcore CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
 	echo "*/5 * * * * /usr/bin/php /var/www/pimcore/cli/maintenance.php" >> /var/spool/cron/crontabs/root
 }
 
