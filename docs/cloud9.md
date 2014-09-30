@@ -46,9 +46,9 @@ Please login to Cloud9 using the credentials below:
 ---
 
 ### Additional Information
-#### Pimcore Terminal.com container automatic installation:
+#### Cloud9 Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/pimcore_installer.sh && bash pimcore_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/cloud9_installer.sh && bash cloud_installer.sh`
 
 Use at least a "small" Terminal container to host this application. 
 
