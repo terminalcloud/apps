@@ -27,10 +27,10 @@
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Check your installation here". 
+Spin up your terminal container based on this snapshot using Cloud9 by clicking on "Check your installation here". 
 
 
-Please login to Cloud9 using the credentials below:
+####Please login to Cloud9 using the credentials below:
 
 - Username: user
 - Password: terminal
@@ -54,4 +54,4 @@ Use at least a "small" Terminal container to host this application.
 
 ---
 
-#### Thanks for using Pimcore at Terminal.com!
+#### Thanks for using Cloud9 at Terminal.com!

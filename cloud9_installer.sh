@@ -16,23 +16,17 @@ install(){
 	# Procedure:
 	apt-get install -y python-software-properties python make build-essential g++ curl libssl-dev apache2-utils git libxml2-dev
 	apt-get -y remove nodejs
-	git clone git://github.com/creationix/nvm.git ~/nvm
-	echo '. ~/nvm/nvm.sh' >> ~/.bashrc && source ~/.bashrc
-	nvm install  v0.11.10
-	nvm use v0.11.10
-	npm install npm -g --ca=""
 	cd $INSTALL_PATH
+	git clone git://github.com/creationix/nvm.git ~/nvm
+	echo '. ~/nvm/install.sh' && source ~/.bashrc
+	nvm install v0.8.28
+	nvm use v0.8.28
+	npm install npm -g --ca=""
+	npm install forever -g
 	git clone https://github.com/ajaxorg/cloud9.git cloud9
 	cd cloud9
 	npm install packager
 	npm install
-	npm install forever -g
-	$INSTALL_PATH/git/cloud9/bin/cloud9.sh 
-	cat >>  /root/.bashrc << EOF 
-source ~/.nvm/nvm.sh
-nvm use 0
-EOF
-}
 
 show(){
 	# Get the startup script

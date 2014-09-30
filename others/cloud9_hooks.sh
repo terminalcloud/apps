@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="cloud"
+name="cloud9"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
