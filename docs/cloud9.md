@@ -18,7 +18,7 @@
 
 - Highly extensible through both client-side and server-side plugins.
 
-- Sophisticated process management on the server with evented messaging
+- Sophisticated process management on the server with evented messaging.
 
 ---
 
