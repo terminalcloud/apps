@@ -6,13 +6,13 @@
 ## About Errbit
 **Errbit** is a tool for collecting and managing errors from other applications. It is Airbrake (formerly known as Hoptoad) API compliant, so if you are already using Airbrake, you can just point the airbrake gem to your Errbit server.
 
+_(See **Usage** for login and details)_
+
 ---
 
 ## Screenshots
 
 ![1](http://errbit.github.com/errbit/images/apps.png)
-![2](http://errbit.github.com/errbit/images/app_errors.png)
-![3](http://errbit.github.com/errbit/images/error_summary.png)
 ![4](http://errbit.github.com/errbit/images/error_backtrace.png)
 
 ---
