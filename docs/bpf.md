@@ -35,7 +35,7 @@ If you want, you can start a new project by moving or deleting the contents of /
 ### Additional Information
 #### Ushahidi Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/bfp_installer.sh && bash bfp_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/bpf_installer.sh && bash bpf_installer.sh`
 
 
 ---
