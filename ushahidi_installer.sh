@@ -22,7 +22,7 @@ install(){
 	git clone https://github.com/ushahidi/platform.git ushahidi
 	composer_install
 	apache_install
-	apache_default_vhost prestashop.conf $INSTALL_PATH/ushahidi
+	apache_default_vhost ushahidi.conf $INSTALL_PATH/ushahidi
 	chown -R www-data:www-data $INSTALL_PATH/ushahidi
 	curl http://npmjs.org/install.sh | sh
 	npm install bower
