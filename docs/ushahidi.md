@@ -28,14 +28,15 @@ Spin up your terminal container based on this snapshot and Customize your Ushahi
 
 Database Credentials to be used during the installation:
 
-- host: localhost
-- name: ushahidi
-- user: ushahidi
-- Pass: terminal
+- Database Name: ushahidi
+- User Name: ushahidi
+- Password: terminal
+- Database Host: localhost
+- Table Prefix: ush_
 
 Then, follow the installation wizard to finish your installation by configuring your site name, hints, admin user, etc.
 
-When the installation is complete, you can access the ushahidi admin section at http://terminalservername-80.terminal.com/admin; access the main site at http://terminalservername-80.terminal.com or [configure your own domain by CNAME](https://www.terminal.com/faq#cname).
+When the installation is complete, you can access the ushahidi [admin section](http://terminalservername-80.terminal.com/admin), access the [main site](http://terminalservername-80.terminal.com) or [configure your own domain by CNAME](https://www.terminal.com/faq#cname).
 
 
 ## Documentation
