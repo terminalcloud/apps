@@ -37,7 +37,7 @@ EOF
 	fi
 
 	# Apache conf
-	[[ -f /etc/debian_version ]] && echo "WSGIPythonPath /var/www/html/" >> /etc/apache2/apache.conf || echo "WSGIPythonPath /var/www/html/" >> /etc/httpd/httpd.conf
+	[[ -f /etc/debian_version ]] && echo "WSGIPythonPath /var/www/html/" >> /etc/apache2/apache2.conf || echo "WSGIPythonPath /var/www/html/" >> /etc/httpd/httpd.conf
 	mysql -uroot -proot -e"CREATE TABLE todo (id INTEGER PRIMARY KEY AUTO_INCREMENT, task char(100) NOT NULL, status bool NOT NULL);"
 	mysql -uroot -proot -e"INSERT INTO todo (task,status) VALUES ('This is a TEST todo Description at Terminal.com',1);"
 	mysql -uroot -proot -e"INSERT INTO todo (task,status) VALUES ('This is another TEST todo Description at Terminal.com',1);"
