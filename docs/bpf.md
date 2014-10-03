@@ -25,7 +25,7 @@ If you want, you can start a new project by moving or deleting the contents of /
 ### About the Working Example
 The Web based TODO list App is a tool to Create, Read, Update and Delete tasks developed with the Bottle Python environment Framework. It was developed using Mysql with SQLAlchemy support, a SQL Toolkit and Object Relational Mapper. The front end was developed using the most popular html, css and JS framework, Bootstrap. 
 
-You can use it at example, or staring point or just start from scratch.
+You can use it as an example, staring point or just start from scratch.
 
 
 ## Documentation
