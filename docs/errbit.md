@@ -10,10 +10,10 @@
 
 ## Screenshots
 
-![1](http://errbit.github.com/errbit/images/apps_thumb.png)
+![1](http://errbit.github.com/errbit/images/apps.png)
 ![2](http://errbit.github.com/errbit/images/app_errors.png)
-![3](http://errbit.github.com/errbit/images/error_summary_thumb.png)
-![4](http://errbit.github.com/errbit/images/error_backtrace_thumb.png)
+![3](http://errbit.github.com/errbit/images/error_summary.png)
+![4](http://errbit.github.com/errbit/images/error_backtrace.png)
 
 ---
 
