@@ -44,11 +44,11 @@ Authentication
   * In `config/config.yml`, set `github_authentication` to `true`
   * Register your instance of Errbit at: https://github.com/settings/applications
 
-If you hosted Errbit at errbit.example.com, you would fill in:
+If you hosted Errbit at errbit-10.terminal.com, you would fill in:
 
 <table>
-  <tr><th>URL:</th><td>http://errbit.example.com/</td></tr>
-  <tr><th>Callback URL:</th><td>http://errbit.example.com/users/auth/github</td></tr>
+  <tr><th>URL:</th><td>http://errbit-10.terminal.com/</td></tr>
+  <tr><th>Callback URL:</th><td>http://errbit-10.terminal.com/users/auth/github</td></tr>
 </table>
 
   * After you have registered your app, set `github_client_id` and `github_secret`
