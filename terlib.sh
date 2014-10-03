@@ -84,7 +84,7 @@ apache_default_vhost(){ # Arguments: <filename(.conf)> <DocumentRoot>. Default v
 	# Start filling the file
 	echo "<VirtualHost *:80>" > $vpath/$filename
 	echo "DocumentRoot $DocumentRoot" >> $vpath/$filename
-	echo "<Directory $DocumentRoot" >> $vpath/$filename
+	echo "<Directory $DocumentRoot >" >> $vpath/$filename
 	cat >> $vpath/$filename <<_EOF_
     Options FollowSymLinks
     AllowOverride All
