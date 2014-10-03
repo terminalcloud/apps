@@ -4,8 +4,7 @@
 ---
 
 ## About BottlePy
-Bottle is a fast, simple and lightweight WSGI micro web-framework for [Python](http://python.org/). It is distributed as a single file module and has no dependencies other than the [Python Standard Library](http://docs.python.org/library/).
-
+Bottle is a fast, simple and lightweight WSGI micro web-framework for [Python](http://python.org/).
 ### Features
 - **Routing** - Requests to function-call mapping with support for clean and dynamic URLs.
 
