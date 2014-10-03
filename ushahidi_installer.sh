@@ -25,7 +25,7 @@ install(){
 	apache_default_vhost ushahidi.conf $INSTALL_PATH/ushahidi
 	chown -R www-data:www-data $INSTALL_PATH/ushahidi
 	curl http://npmjs.org/install.sh | sh
-	npm install bower
+	npm install bundle
 	cd ushahidi
 	bin/update
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 20M/g' /etc/php5/apache2/php.ini
