@@ -19,29 +19,28 @@
 
 ---
 
-![1](http://learningforpeace.unicef.org/wp-content/uploads/2010/03/Photo_Ushahidi_Haiti_sized.jpg)
+![1](http://newswatch.nationalgeographic.com/files/2012/06/UHP2-921x700.png)
 
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot using Ushahidi by clicking on "Check your installation here". 
+Spin up your terminal container based on this snapshot and Customize your Ushahidi installation by clicking on "Finish your installation here".
 
+Database Credentials to be used during the installation:
 
-####Please login to Ushahidi by first time using the credentials below:
+- host: localhost
+- name: ushahidi
+- user: ushahidi
+- Pass: terminal
 
-- Username: demo
-- Password: testing
+Then, follow the installation wizard to finish your installation by configuring your site name, hints, admin user, etc.
 
-Once logged in this user can create further user accounts or give others admin permissions too.
-
+When the installation is complete, you can access the ushahidi admin section at http://terminalservername-80.terminal.com/admin; access the main site at http://terminalservername-80.terminal.com or [configure your own domain by CNAME](https://www.terminal.com/faq#cname).
 
 
 ## Documentation
 - [Ushahidi Main Page](http://www.ushahidi.com/)
-- [Getting Involved](https://wiki.ushahidi.com/display/WIKI/Ushahidi+v3.x+-+Getting+Involved)
-- [Developer Guide](https://wiki.ushahidi.com/display/WIKI/Ushahidi+v3.x+-+Developer+Guide)
 - [Ushahidi Wiki](https://wiki.ushahidi.com)
-
 
 
 ---
