@@ -17,7 +17,7 @@ install(){
 	# Procedure: 
 	mysql_install
 	python_install
-	mysql_setup ushahidi ushahidi terminal
+	mysql_setup tododb terminal terminal
 	apt-get -y install libapache2-mod-wsgi libmysqlclient-dev python-dev || yum -y install httpd-mod-wsgi libmysqlclient-dev python-dev
 	apache_install
 	# Vhost config
