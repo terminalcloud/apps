@@ -17,7 +17,7 @@ install(){
 	php5_install
 	mysql_install
 	mysql_setup ushahidi terminal
-	apt-get -y install php5-imap 
+	apt-get -y install php5-imap rails
 	cd $INSTALL_PATH
 	git clone https://github.com/ushahidi/platform.git ushahidi
 	composer_install
