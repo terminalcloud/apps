@@ -50,7 +50,7 @@ EOF
 	cd ..
 	wget https://github.com/mcapielo/Todo-List-Bottle-SQLAlchemy-Bootstrap/archive/master.zip
 	unzip master.zip
-	mv Todo-List-Bottle-SQLAlchemy-Bootstrap/* html
+	mv Todo-List-Bottle-SQLAlchemy-Bootstrap/* html/
 	chown -R www-data:www-data $INSTALL_PATH/
 }
 
