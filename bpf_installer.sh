@@ -45,7 +45,12 @@ EOF
 	pip install bottle
 	pip install SQLAlchemy
 	pip install mysql-python
-	git clone https://github.com/mcapielo/Todo-List-Bottle-SQLAlchemy-Bootstrap.git .
+	ln -s /etc/apache2/mods-available/wsgi.conf /etc/apache2/mods-enabled/wsgi.conf
+	ln -s /etc/apache2/mods-available/wsgi.load /etc/apache2/mods-enabled/wsgi.load
+	cd ..
+	wget https://github.com/mcapielo/Todo-List-Bottle-SQLAlchemy-Bootstrap/archive/master.zip
+	unzip master.zip
+	mv Todo-List-Bottle-SQLAlchemy-Bootstrap/* html
 	chown -R www-data:www-data $INSTALL_PATH/
 }
 
