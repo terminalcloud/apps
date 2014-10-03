@@ -35,7 +35,7 @@ install(){
 
 show(){
 	# Get the startup script
-	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/prestashop_hooks.sh
+	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/ushahidi_hooks.sh
 	mkdir -p /CL/hooks/
 	mv prestashop_hooks.sh /CL/hooks/startup.sh
 	# Execute startup script by first to get the common files
