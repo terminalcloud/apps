@@ -47,10 +47,10 @@ EOF
 	pip install mysql-python
 	ln -s /etc/apache2/mods-available/wsgi.conf /etc/apache2/mods-enabled/wsgi.conf
 	ln -s /etc/apache2/mods-available/wsgi.load /etc/apache2/mods-enabled/wsgi.load
-	cd ..
+	cd /var/www
 	wget https://github.com/mcapielo/Todo-List-Bottle-SQLAlchemy-Bootstrap/archive/master.zip
 	unzip master.zip
-	mv Todo-List-Bottle-SQLAlchemy-Bootstrap/* html/
+	mv Todo-List-Bottle-SQLAlchemy-Bootstrap-master/* html
 	chown -R www-data:www-data $INSTALL_PATH/
 }
 
@@ -59,7 +59,7 @@ show(){
 	# Get the startup script
 	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/bpf_hooks.sh
 	mkdir -p /CL/hooks/
-	mv ushahidi_hooks.sh /CL/hooks/startup.sh
+	mv bpf_hooks.sh /CL/hooks/startup.sh
 	# Execute startup script by first to get the common files
 	chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 }
