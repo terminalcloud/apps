@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="bpf"
+name="rspace"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
