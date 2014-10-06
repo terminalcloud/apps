@@ -14,8 +14,9 @@ install(){
 	basics_install
 
 	# Procedure:
-	apt-get -y autoremove --purge ruby nodejs || yum -y remove ruby nodejs 
+	apt-get -y autoremove --purge ruby || yum -y remove ruby
 	ruby_install
+	apt-get -y install nodejs || yum -y install nodejs
 	gem install sass scss-lint
 	cd $INSTALL_PATH
 	export PATH="~/.gem/ruby/2.1.2/bin:$PATH"
