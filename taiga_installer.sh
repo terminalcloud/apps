@@ -17,7 +17,9 @@ install(){
 	apt-get -y autoremove --purge ruby || yum -y remove ruby
 	ruby_install
 	apt-get -y install nodejs || yum -y install nodejs
-	gem install sass scss-lint
+	source /usr/local/rvm/scripts/rvm
+	gem install sass 
+	gem install scss-lint
 	cd $INSTALL_PATH
 	export PATH="~/.gem/ruby/2.1.2/bin:$PATH"
 	git clone https://github.com/taigaio/taiga-front.git
@@ -25,7 +27,7 @@ install(){
 	npm install -g gulp
 	npm install -g bower
 	npm install
-	bower install
+	bower --allow-root install
 	gulp
 }
 
