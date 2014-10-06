@@ -12,12 +12,12 @@ system_cleanup(){
 	|| yum -y remove httpd* samba*
 	echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 	echo "nameserver 8.8.8.9" >> /etc/resolv.conf
-	[[ -f /etc/debian_version ]] && DEBIAN_FRONTEND=noninteractive apt-get -y upgrade || yum -y update
+	#[[ -f /etc/debian_version ]] && DEBIAN_FRONTEND=noninteractive apt-get -y upgrade || yum -y update
 }
 
 basics_install(){
-	[[ -f /etc/debian_version ]] && apt-get -y install curl git software-properties-common unzip markdown\
-	|| yum -y install curl git unzip markdown #libcurl4-openssl-dev
+	[[ -f /etc/debian_version ]] && apt-get -y install curl git software-properties-common unzip markdown bash\
+	|| yum -y install curl git unzip markdown bash #libcurl4-openssl-dev
 }
 
 puppet_install(){
