@@ -28,6 +28,10 @@ ResourceSpace open source digital asset management software is the simple, fast,
 Just spin-up your container based on this snapshot and click over "Check your installation here".
 Login with your admin credentials and start using Resource Space.
 
+![1](http://www.resourcespace.org/img/content/features/web/main.png)	
+
+---
+
 ## Documentation
 - [Resource Space Main Website](http://www.resourcespace.org/)
 - [Resource Space Blog](http://www.resourcespace.org/blog)
@@ -37,9 +41,6 @@ Login with your admin credentials and start using Resource Space.
 
 ---
 
-![1](http://www.resourcespace.org/img/content/features/web/main.png)
-
----
 
 ### Additional Information
 #### Resource Space Terminal.com container automatic installation:
