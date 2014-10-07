@@ -35,6 +35,9 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
+# Update Base URL
+sed -i "s/hostname/$(hostname)/g" /var/www/rspace/include/config.php
+
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
 /srv/cloudlabs/scripts/display.sh /root/info.html

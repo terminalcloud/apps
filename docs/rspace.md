@@ -13,7 +13,7 @@ ResourceSpace open source digital asset management software is the simple, fast,
 
 - **Collaborative** - Organise files into galleries & folders then share with colleagues for fast direct download.
 
-- **Auto-Preview and Convert** - YResourceSpace's automatic resource preview & conversion tools allow you to view & edit your assets no matter the format.
+- **Auto-Preview and Convert** - ResourceSpace's automatic resource preview & conversion tools allow you to view & edit your assets no matter the format.
 
 - **Standard Based** - 100% open source, and utilising many other open source projects to greatly extend functionality.
 
@@ -27,6 +27,16 @@ ResourceSpace open source digital asset management software is the simple, fast,
 
 Just spin-up your container based on this snapshot and click over "Check your installation here".
 Login with your admin credentials and start using Resource Space.
+
+
+### Credentials:
+
+username: admin
+password: t3rminal
+
+
+
+---
 
 ![1](http://www.resourcespace.org/img/content/features/web/main.png)	
 

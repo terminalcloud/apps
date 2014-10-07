@@ -17,6 +17,7 @@ install(){
 	php5_install
 	mysql_install
 	mysql_setup rspace rspace terminal
+	apt-get -y insall ffmpeg2theora || yum -i install ffmpeg
 	cd $INSTALL_PATH
 	mkdir -p $INSTALL_PATH/rspace
 	cd $INSTALL_PATH/rspace
