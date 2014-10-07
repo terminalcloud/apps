@@ -30,45 +30,13 @@ Spin-up your container based on this snapshot and start coding directly on it.
 
 
 ### Examples includded:
-This snapshot includes a list of ExpressJS examples located in /root/express/examples as listed below:
-
-examples/
-|-- auth
-|-- big-view
-|-- content-negotiation
-|-- cookie-sessions
-|-- cookies
-|-- cors
-|-- downloads
-|-- ejs
-|-- error
-|-- error-pages
-|-- expose-data-to-client
-|-- hello-world
-|-- jade
-|-- markdown
-|-- multipart
-|-- mvc
-|-- online
-|-- params
-|-- resource
-|-- route-map
-|-- route-middleware
-|-- route-separation
-|-- search
-|-- session
-|-- static-files
-|-- vhost
-|-- view-constructor
-|-- view-locals
-`-- web-service
-
-To run these examples you may run:
+This snapshot includes a list of ExpressJS examples located in /root/express/examples 
+To play with the examples you may run:
 
 ```
 cd /root/express && npm install #One time command
 
-node examples/<example_name>
+node examples/example_name
 
 # For instance
 node examples/hello-world
@@ -77,7 +45,9 @@ node examples/hello-world
 
 And then check the working example at port 3000 [click here](http://terminalservername-3000.terminal.com)
 
+
 ---
+
 
 ## Documentation and Resources
 
