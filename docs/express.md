@@ -29,7 +29,7 @@ Spin-up your container based on this snapshot and start coding directly on it.
 - **Angular** is installed using bower and their components are located in /root/bower_components/angular
 
 
-### Examples includded:
+### Examples included:
 This snapshot includes a list of ExpressJS examples located in /root/express/examples 
 To play with the examples you may run:
 
