@@ -6,7 +6,7 @@
 ## About Orange HRM
 OrangeHRM Open Source is a HR management system that offers a wealth of modules to suit the needs of your business. This widely-used system is feature-rich, intuitive and provides an essential HR management platform along with free documentation and access to a broad community of users.
 
-### Modules provided with OrangeHRM Open Source include:
+### Modules provided with OrangeHRM Open Source:
 - **System Administration** - The System Administration module offers centralized control to your HR Manager or other personnel to carry out basic HR functions. Define your organizational structure or your pay scale with this module. Work in a secure environment to manage core information and business projects or address security issues such as user rights and permissions
 
 - **Personnel Information Management (PIM)** - s a centralized employee database, the Personal Information Management (PIM) gives you the capability to easily and productively store and utilize all aspects of your employee.
