@@ -15,7 +15,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check the work example here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check the application example here!</b></a></p>
 </head>
 <body>
 EOF
@@ -38,7 +38,10 @@ sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 # Update Base URL
 sed -i "s/hostname/$(hostname)/g" /var/www/rspace/include/config.php
 
+# Open a new terminal
+echo | /srv/cloudlabs/scripts/run_in_term.js
+
 # Showing up
-cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
+cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
 /srv/cloudlabs/scripts/display.sh /root/info.html
 EOF

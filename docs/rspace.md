@@ -31,8 +31,8 @@ Login with your admin credentials and start using Resource Space.
 
 ### Credentials:
 
-username: admin
-password: t3rminal
+- username: admin
+- password: t3rminal
 
 
 
