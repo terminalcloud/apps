@@ -20,7 +20,9 @@ OrangeHRM Open Source is a HR management system that offers a wealth of modules 
 - **Performance** - Built-in tools for administrators to save time when uploading, editing & reporting.
 
 - **Employee Self Service** - Employee self service (ESS) is a powerful module that provides employees access to pertinent information through a web-enabled PC without involving HR staff. Subject to your information and security policies, employees can view and update personal information, providing tremendous time and cost savings. The functionality of this module spans the entire system‚ making information available anywhere‚ anytime.
+
 ---
+
 
 ## Usage
 
@@ -34,10 +36,9 @@ Login with your admin credentials and start using Orange HRM.
 - password: t3rminal
 
 
-
 ---
 
-![1](http://www.orangehrm.com/images/home_test_prof1.png)	
+![1](http://www.orangehrm.com/blog/wp-content/uploads/2008/08/employeeinformation1.png)	
 
 ---
 

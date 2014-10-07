@@ -18,11 +18,9 @@ install(){
 	mysql_install
 	mysql_setup ohrm ohrm terminal
 	cd $INSTALL_PATH
-	mkdir -p $INSTALL_PATH/ohrm
-	cd $INSTALL_PATH/ohrm
-	wget http://www.orangehrm.com/OrangeHRM_Download?type=stable-zip
-	unzip "*stable.zip" && rm "*stable.zip"
-	cd $INSTALL_PATH
+	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/orangehrm-3.1.2.zip
+	unzip orangehrm-3.1.2.zip && rm orangehrm-3.1.2.zip
+	mv orangehrm-3.1.2 ohrm
 	chown -R www-data:www-data ohrm
 	apache_install
 	apache_default_vhost ohrm.conf $INSTALL_PATH/ohrm
