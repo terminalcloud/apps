@@ -26,7 +26,7 @@ OrangeHRM Open Source is a HR management system that offers a wealth of modules 
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click over "Check your application here".
 Login with your admin credentials and start using Orange HRM.
 
 
