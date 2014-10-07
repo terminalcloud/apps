@@ -41,7 +41,7 @@ node examples/example_name
 
 ```
 
-And then check the working example at port 3000 [(click here)](http://terminalservername-3000.terminal.com) to open the link in your external browser.
+And then check the working example at port 3000 ([click here](http://terminalservername-3000.terminal.com) to open the link in your external browser.)
 
 
 ---
