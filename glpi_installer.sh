@@ -19,8 +19,7 @@ install(){
 	mysql_setup glpi glpi terminal
 	cd $INSTALL_PATH
 	wget https://forge.indepnet.net/attachments/download/1811/glpi-0.84.7.tar.gz
-	gunzip glpi-0.84.7.tar.gz && tar -xf glpi-0.84.7.tar && rm glpi-0.84.7.tar
-	mv glpi-0.84.7 glpi
+	tar -xzf glpi-0.84.7.tar.gz
 	chown -R www-data:www-data glpi
 	apache_install
 	apache_default_vhost glpi.conf $INSTALL_PATH/glpi

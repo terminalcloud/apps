@@ -106,9 +106,14 @@ Login with your admin credentials and start using GLPI.
 
 ### Credentials:
 
-- username: admin
-- password: t3rminal
+**Default logins / passwords are:**
 
+- glpi/glpi for the administrator account
+- tech/tech for the technician account
+- normal/normal for the normal account
+- post-only/postonly for the postonly account
+
+*You can delete or modify these accounts as well as the initial sample data.*
 
 ---
 
