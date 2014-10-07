@@ -34,13 +34,14 @@ This snapshot includes a list of ExpressJS examples located in /root/express/exa
 To play with the examples you may run:
 
 ```
+
 cd /root/express && npm install #One time command
 
 node examples/example_name
 
 ```
 
-And then check the working example at port 3000 [click here](http://terminalservername-3000.terminal.com)
+And then check the working example at port 3000 [(click here)](http://terminalservername-3000.terminal.com) to open the link in your external browser.
 
 
 ---
