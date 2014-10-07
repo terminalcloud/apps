@@ -38,9 +38,6 @@ cd /root/express && npm install #One time command
 
 node examples/example_name
 
-# For instance
-node examples/hello-world
-
 ```
 
 And then check the working example at port 3000 [click here](http://terminalservername-3000.terminal.com)
