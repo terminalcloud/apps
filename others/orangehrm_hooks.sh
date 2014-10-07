@@ -15,7 +15,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check the application example here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check the application here!</b></a></p>
 </head>
 <body>
 EOF
