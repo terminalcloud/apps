@@ -37,6 +37,10 @@ Login with your admin credentials and start using Resource Space.
 
 ---
 
+![1](http://www.resourcespace.org/img/content/features/web/main.png)
+
+---
+
 ### Additional Information
 #### Resource Space Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:

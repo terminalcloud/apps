@@ -26,6 +26,9 @@ install(){
 	chown -R www-data:www-data rspace
 	apache_install
 	apache_default_vhost rspace.conf $INSTALL_PATH/rspace
+	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 250M/g' /etc/php5/apache2/php.ini
+	sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 256M/g' /etc/php5/apache2/php.ini
+	sed -i 's/memory_limit\ \=\ 128M/memory_limit\ \=\ 300M/g' /etc/php5/apache2/php.ini
 	service apache2 restart
 }
 
