@@ -9,7 +9,6 @@ MODX Revolution (Revo) is an easy-to-use Content Management System (CMS) and App
 
 ### Features
 - **For End-Users** - MODX offers you a system that lets you publish your offline content onto the web in any form, shape or presence you want. It also offers a completely customizable backend interface that you can make as simple (or as complex) as you like.
-
 You can setup everything from a simple site, to a blog, to a full-scale web presence with MODX, and keep your admin interface simple and usable. Drag and drop your webpages around to reorder and move them. Get a full WYSIWYG view of your Resources. Leave Resources unpublished before you finish them. Schedule Resources to publish at certain times.
 MODX helps you organize your content the way you want it, and get stellar built-in SEO results. MODX is fully, 100% Friendly URL compatible, so getting mysite.com/my/own/custom/url.html is incredibly simple, and as easy as structuring your site that way.
 
