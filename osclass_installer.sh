@@ -19,6 +19,7 @@ install(){
 	mysql_setup osclass osclass terminal
 	cd $INSTALL_PATH
 	mkdir -p $INSTALL_PATH/osclass
+	cd $INSTALL_PATH/osclass
 	wget http://static.osclass.org/download/osclass.3.4.2.zip
 	unzip osclass.3.4.2.zip && rm osclass.3.4.2.zip 
 	chown -R www-data:www-data osclass
