@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy NodeJS DevStack at Terminal.com
+# Script to deploy Mean.JS DevStack at Terminal.com
 
 INSTALL_PATH="/root"
 
@@ -16,21 +16,26 @@ install(){
 	# Procedure: 
 	# Install nodejs, npm an mongodb
 	apt-get -y install nodejs npm mongodb
-	# Install bower, express and express generator
+	# Install bower, grunt, express, express generator and Angular
 	npm install -g bower
+	npm install -g grunt-cli
 	npm install -g express
 	npm install -g express-generator@4
-	# Install angular.js
 	bower install --allow-root angular#1.2.26 
-	# Get express examples
-	git clone https://github.com/strongloop/express.git
+	# Install Mean.JS
+	git clone https://github.com/meanjs/mean.git meanjs
+	npm install
+	bower update
+	npm install -g yo
+	npm install -g generator-meanjs
+
 }
 
 show(){
 	# Get the startup script
-	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/express_hooks.sh
+	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/mean_hooks.sh
 	mkdir -p /CL/hooks/
-	mv express_hooks.sh /CL/hooks/startup.sh
+	mv mean_hooks.sh /CL/hooks/startup.sh
 	# Execute startup script by first to get the common files
 	chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 }
