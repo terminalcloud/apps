@@ -18,18 +18,17 @@ install(){
 	mysql_install
 	mysql_setup modx modx terminal
 	cd $INSTALL_PATH
-	mkdir -p $INSTALL_PATH/modx
-	cd $INSTALL_PATH/modx
 	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/modx-2.3.1-pl.zip
 	unzip modx-2.3.1-pl.zip && modx-2.3.1-pl.zip
-	cd $INSTALL_PATH
+	mv modx-2.3.1-pl modx
 	chown -R www-data:www-data modx
 	apache_install
 	apache_default_vhost modx.conf $INSTALL_PATH/modx
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 112M/g' /etc/php5/apache2/php.ini
 	sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 128M/g' /etc/php5/apache2/php.ini
 	sed -i 's/memory_limit\ \=\ 128M/memory_limit\ \=\ 256M/g' /etc/php5/apache2/php.ini
-	service apache2 restart
+	echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
+	service apache2 restart 
 }
 
 show(){
