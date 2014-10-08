@@ -22,7 +22,7 @@ install(){
 	cd $INSTALL_PATH/osclass
 	wget http://static.osclass.org/download/osclass.3.4.2.zip
 	unzip osclass.3.4.2.zip && rm osclass.3.4.2.zip 
-	chown -R www-data:www-data osclass
+	chown -R www-data:www-data $INSTALL_PATH/osclass
 	apache_install
 	apache_default_vhost osclass.conf $INSTALL_PATH/osclass
 	echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
