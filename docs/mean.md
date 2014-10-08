@@ -52,6 +52,13 @@ This snapshot includes a working example running on port 3000. ([click here](htt
 - [Learning Tutorial](https://docs.angularjs.org/tutorial)
 - [API Reference](https://docs.angularjs.org/api)
 
+#### MeanJS
+- [Official Website](http://meanjs.org/)
+- [Documentation](http://meanjs.org/docs.html)
+- [Yo Generator](http://meanjs.org/generator.html)
+- [Community](http://meanjs.org/community.html)
+- [Blog](http://blog.meanjs.org/)
+
 ---
 
 

@@ -25,7 +25,6 @@ install(){
 	# Install Mean.JS
 	git clone https://github.com/meanjs/mean.git meanjs
 	npm install
-	bower update
 	npm install -g yo
 	npm install -g generator-meanjs
 

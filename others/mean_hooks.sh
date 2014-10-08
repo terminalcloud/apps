@@ -39,7 +39,7 @@ sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 #sed -i "s/hostname/$(hostname)/g" <file>
 
 # Open a new terminal
-echo | /srv/cloudlabs/scripts/run_in_term.js
+echo "cd /root/sample && grunt"| /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
