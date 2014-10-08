@@ -4,6 +4,10 @@ name="magento"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Update URL in database
+mysql -uroot -proot magento -e"UPDATE mg_core_config_data set value = 'http://$(hostname)-80.terminal.com/' where config_id = 6;"
+mysql -uroot -proot magento -e"UPDATE mg_core_config_data set value = 'http://$(hostname)-80.terminal.com/' where config_id = 7;"
+
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/

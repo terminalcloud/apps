@@ -19,6 +19,7 @@ install(){
 	mysql_setup magento magento terminal
 	cd $INSTALL_PATH
 	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/magento.zip
+	unzip magento.zip
 	chown -R www-data:www-data magento
 	apache_install
 	apache_default_vhost magento.conf $INSTALL_PATH/magento

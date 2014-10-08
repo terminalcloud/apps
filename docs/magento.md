@@ -4,7 +4,7 @@
 ---
 
 ## About Magento
-**Magento Community Edition** is open source software used to power your online store and can be downloaded for free. Developers can modify the core code and add features and functionality by installing extensions from the [Magento Connect](http://www.magentocommerce.com/magento-connect) marketplace.
+**Magento Community Edition** is open source software used to power your online store. Developers can modify the core code and add features and functionality by installing extensions from the [Magento Connect](http://www.magentocommerce.com/magento-connect) marketplace.
 
 Businesses using Community Edition as their open source ecommerce solution to run their stores will want to have access to their own Magento experts, since Magento does not provide technical support for this software. Answers to many technical questions are available on the community [user forum](http://www.magentocommerce.com/boards). Our open source community is growing and engaged to help support running your online store.
 
