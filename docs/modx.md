@@ -34,7 +34,7 @@ Login with your admin credentials and start using  MODX Revolution CMS.
 
 
 ---
-### Some Sample sites Using MODX Revolition: 
+### Some Sample sites Using MODX Revolution: 
 
 ![1](http://cdn.modx.com/assets/i/refresh14/sites-collage.jpg)	
 
