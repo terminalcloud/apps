@@ -16,21 +16,30 @@ MEAN.JS will help you getting started and avoid useless grunt work and common pi
 
 Spin-up your container based on this snapshot and start coding directly on it !
 
-Please see the ducumentation section for more information about MeanJS.
+Please see the documentation section for more information about MeanJS.
 
+Note: If you want to run your app as root, please make sure to execute  `bower update --allow-root` on your project folder to allow bower to install JS dependencies.
 
-### Stack Characteristics:
-- **Node** is installed globally on its stable version.
-- **MongoDB** is installed and running on the standard port (27017).
-- **Express** is installed globally and accesible by the express command.
+### Technologies available to be used with MeanJS:
+- **NodeJS** 
+- **MongoDB** running on the standard port (27017).
+- **ExpressJS**  accesible by the express command.
 - **Angular** is installed using bower and their components are located in /root/bower_components/angular.
-- **MeanJS** is installed globally.
 
 
 ### Example included:
-This snapshot includes a working example running on port 3000. ([click here](http://terminalservername-3000.terminal.com) to open the link in your external browser.)
+This snapshot includes a working example running on port 3000. You can use it as starting point for your own project or just to make sure everything is in place.
+ 
 
 ## Documentation and Resources
+
+#### MeanJS
+- [Official Website](http://meanjs.org/)
+- [Documentation](http://meanjs.org/docs.html)
+- [Yo Generator](http://meanjs.org/generator.html)
+- [Community](http://meanjs.org/community.html)
+- [Blog](http://blog.meanjs.org/)
+
 
 #### NodeJs
 - [Official Documentation and Tutorials](http://nodejs.org/documentation)
@@ -52,12 +61,6 @@ This snapshot includes a working example running on port 3000. ([click here](htt
 - [Learning Tutorial](https://docs.angularjs.org/tutorial)
 - [API Reference](https://docs.angularjs.org/api)
 
-#### MeanJS
-- [Official Website](http://meanjs.org/)
-- [Documentation](http://meanjs.org/docs.html)
-- [Yo Generator](http://meanjs.org/generator.html)
-- [Community](http://meanjs.org/community.html)
-- [Blog](http://blog.meanjs.org/)
 
 ---
 
