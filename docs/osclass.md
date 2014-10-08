@@ -5,7 +5,7 @@
 
 ## About Osclass
 **OSClass** is all you need to easily create your own classifieds website. 
-It's an open sources application to create your advertisement or listings site.
+It's an open source application to create your advertisement or listings site.
 
 ---
 
