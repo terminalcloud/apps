@@ -32,7 +32,7 @@ by editing the /etc/ajenti/config.json file.
 For additional information about Ajenti please go to the [Agenti Support site](http://support.ajenti.org)
 
 ### Important Note:
-Unless you configure your own domain and HTTPS certificate in Agenti, it will only work over HTTP.
+Unless you configure your own domain and HTTPS certificate in Agenti, it will **only** work over HTTP.
 
 ---
 
