@@ -17,7 +17,7 @@ system_cleanup(){
 
 basics_install(){
 	[[ -f /etc/debian_version ]] && apt-get -y install curl git software-properties-common unzip markdown bash\
-	|| yum -y install curl git unzip markdown bash #libcurl4-openssl-dev
+	|| yum -y install curl git unzip python-markdown bash #libcurl4-openssl-dev
 }
 
 puppet_install(){

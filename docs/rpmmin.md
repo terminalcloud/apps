@@ -1,5 +1,5 @@
-# Ubuntu 14.04 with Webmin - Terminal.com Container
-*Official Ubuntu 14.04 distribution with minimal stack for running Terminal.com IDE and Webmin web administration tool.*
+# Centos 6.5 with Webmin - Terminal.com Container
+*Official Centos 6.5 distribution with minimal stack for running Terminal.com IDE and Webmin web administration tool.*
 
    
 ## Usage:
