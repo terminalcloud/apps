@@ -30,3 +30,10 @@ by editing the /etc/ajenti/config.json file.
 
 ### Documentation:
 For additional information about Ajenti please go to the [Agenti Support site](http://support.ajenti.org)
+
+### Important Note:
+Unless you configure your own domain and HTTPS certificate in Agenti, it will only work over HTTP.
+
+---
+
+#### Thanks for try this Terminal.com snapshot
