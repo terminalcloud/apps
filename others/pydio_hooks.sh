@@ -1,11 +1,8 @@
 #!/bin/bash
 
-name="moodle"
+name="pydio"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
-
-#Customize URL
-sed -i "s/yourterminalname/$(hostname)/g" /var/www/moodle/config.php
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
@@ -18,7 +15,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="https://$(hostname)-80.terminal.com/login"><b>Login Moodle here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="https://$(hostname)-80.terminal.com/pydio"><b>Login Pydio here!</b></a></p>
 </head>
 <body>
 EOF
@@ -29,15 +26,14 @@ markdown "$name.md" >> /root/info.html
 # Closing file
 cat >> /root/info.html << EOF
 </body>
-</h
-tml>
+</html>
 EOF
 
 # Convert links to external links
 sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html 
 
 # Update server URL in Docs
-sed -i "s/yourterminalname/$(hostname)/g" /root/info.html
+sed -i "s/youterminalname/$(hostname)/g" /root/info.html
 
 # Open a new terminal
 echo | /srv/cloudlabs/scripts/run_in_term.js

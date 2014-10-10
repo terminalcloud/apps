@@ -19,7 +19,7 @@ This container has installed (and running) a clean Moodle instance.
 You can use it directly and deploy your educational project without having to install anything else!
 
 ## Usage and Access
-After crating you own Terminal.com Moodle container just to go to:
+After creating you own Terminal.com Moodle container just to go to:
 **http://yourterminalname-80.terminal.com/** and login with the credentials 
 provided below:
 
