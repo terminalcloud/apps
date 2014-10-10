@@ -30,7 +30,7 @@ For more information about Pydio you can check:
 ---
 
 ### Additional Information
-#### Open Scholar Terminal.com container automatic installation:
+#### Pydio Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/pydio_installer.sh && bash pydio_installer.sh`
 

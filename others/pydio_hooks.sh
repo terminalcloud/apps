@@ -33,7 +33,7 @@ EOF
 sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html 
 
 # Update server URL in Docs
-sed -i "s/youterminalname/$(hostname)/g" /root/info.html
+sed -i "s/yourterminalname/$(hostname)/g" /root/info.html
 
 # Open a new terminal
 echo | /srv/cloudlabs/scripts/run_in_term.js
