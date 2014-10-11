@@ -17,10 +17,11 @@ install(){
 	php5_install
 	mysql_install
 	mysql_setup erpal erpal terminal
+	mysql -uroot -proot -e"set global max_allowed_packet=33554432"
 	cd $INSTALL_PATH
 	wget http://ftp.drupal.org/files/projects/erpal-7.x-2.0-core.zip
 	unzip erpal-7.x-2.0-core.zip && rm erpal-7.x-2.0-core.zip
-	mv erpal-7.x-2.0-core erpal
+	mv erpal-7.x-2.0 erpal
 	chown -R www-data:www-data erpal
 	apache_install
 	apache_default_vhost erpal.conf $INSTALL_PATH/erpal
