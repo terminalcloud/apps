@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="nodechat"
+name="erpal"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
@@ -15,7 +15,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/"><b>Use Nodechat here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
 </head>
 <body>
 EOF
@@ -33,10 +33,10 @@ EOF
 sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html 
 
 # Update server URL in Docs
-sed -i "s/yourterminalname/$(hostname)/g" /root/info.html
+sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
-# Open a new terminal and execute Nodechat
-echo "cd /root/nodechat && node app.js" | /srv/cloudlabs/scripts/run_in_term.js
+# Open a new terminal
+echo | /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
