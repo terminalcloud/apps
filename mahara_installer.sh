@@ -23,12 +23,9 @@ install(){
 	mv mahara-1.9.2/htdocs mahara && rm -r mahara-1.9.2
 	chown -R www-data:www-data mahara
 	cd mahara
-	cp config-dist.php config.php
 	mysql -uroot -proot -e"ALTER DATABASE mahara CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
-	echo "not go and edir the config.php file"
-
+	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/mahara_config.php && cp mahara_config.php config.php  
 	echo "* * * * * curl http://your-mahara-site.org/lib/cron.php" > /var/spool/cron/crontabs/root
-	
 	apache_install
 	apache_default_vhost mahara.conf $INSTALL_PATH/mahara
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
