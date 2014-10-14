@@ -35,7 +35,7 @@
 ## Usage
 
 Just spin-up your container based on this snapshot and click over "Check your installation here".
-Login with your admin credentials and start using Open Scholar.
+Login with your admin credentials and start using Open Erpal.
 
 
 ### Credentials:
@@ -67,4 +67,4 @@ You can replicate this container from a [base snapshot](https://www.terminal.com
 
 ---
 
-#### Thanks for using Open Scholar at Terminal.com!
+#### Thanks for using Erpal at Terminal.com!
