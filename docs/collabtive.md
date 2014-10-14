@@ -44,7 +44,7 @@ Login with your admin credentials and start using Collabtive.
 
 ---
 
-![1](http://www.Collabtive.info/sites/default/files/styles/banner/public/buehne_Collabtive-forserviceproviders.png)	
+![1](http://www.turnkeylinux.org/files/images/screenshots/collabtive2.jpg)	
 
 ---
 
