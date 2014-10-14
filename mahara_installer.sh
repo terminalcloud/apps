@@ -20,8 +20,15 @@ install(){
 	cd $INSTALL_PATH
 	wget https://launchpad.net/mahara/1.9/1.9.2/+download/mahara-1.9.2.zip
 	unzip mahara-1.9.2.zip && rm mahara-1.9.2.zip
-	mv mahara-1.9.2 mahara
+	mv mahara-1.9.2/htdocs mahara && rm -r mahara-1.9.2
 	chown -R www-data:www-data mahara
+	cd mahara
+	cp config-dist.php config.php
+	mysql -uroot -proot -e"ALTER DATABASE mahara CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
+	echo "not go and edir the config.php file"
+
+	echo "* * * * * curl http://your-mahara-site.org/lib/cron.php" > /var/spool/cron/crontabs/root
+	
 	apache_install
 	apache_default_vhost mahara.conf $INSTALL_PATH/mahara
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
