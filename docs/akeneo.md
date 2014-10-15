@@ -80,10 +80,6 @@ Login with your admin credentials and start using Akeneo.
 - username: admin
 - password: t3rminal
 
-### Notice
-To help to undestand the functionality of the product, this terminal has demo information loaded on it.
-Feel free to delete that information and load your own data as needed.
-
 
 ---
 
@@ -99,12 +95,15 @@ Feel free to delete that information and load your own data as needed.
 
 ---
 
-
 ### Additional Information
+
 #### Akeneo Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/akeneo_installer.sh && bash akeneo_installer.sh`
 
+### Demo information
+To help to undestand the functionality of the product, this terminal has demo information loaded on it.
+Feel free to delete that information and load your own data as needed.
 
 ---
 
