@@ -22,7 +22,7 @@ install(){
 	unzip chyrp_v2.5.zip && rm chyrp_v2.5.zip
 	chown -R www-data:www-data chyrp
 	apache_install
-	apache_default_vhost chyrp $INSTALL_PATH/chyrp 
+	apache_default_vhost chyrp.conf $INSTALL_PATH/chyrp 
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
 	sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
 	service apache2 restart
