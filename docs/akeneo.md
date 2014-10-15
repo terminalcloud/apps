@@ -80,11 +80,14 @@ Login with your admin credentials and start using Akeneo.
 - username: admin
 - password: t3rminal
 
+### Notice
+To help to undestand the functionality of the product, this terminal has demo information loaded on it.
+Feel free to delete that information and load your own data as needed.
 
 
 ---
 
-![1](http://www.turnkeylinux.org/files/images/screenshots/collabtive2.jpg)	
+![1](http://akeneo.nl/images/grid.png)	
 
 ---
 
