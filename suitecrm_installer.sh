@@ -18,8 +18,8 @@ install(){
 	mysql_install
 	mysql_setup suitecrm suitecrm terminal
 	cd $INSTALL_PATH
-	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/SuiteCRM-7.1.4_MAX
-	unzip SuiteCRM-7.1.4_MAX && rm SuiteCRM-7.1.4_MAX
+	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/SuiteCRM-7.1.4_MAX.zip
+	unzip SuiteCRM-7.1.4_MAX.zip && rm SuiteCRM-7.1.4_MAX.zip
 	mv SuiteCRM-7.1.4-MAX suitecrm
 	chown -R www-data:www-data suitecrm
 	apache_install
