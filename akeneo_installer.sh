@@ -23,7 +23,18 @@ install(){
 	mv pim-community-standard-v1.2.4-icecat akeneo
 	chown -R www-data:www-data akeneo
 	apache_install
-	apache_default_vhost akeneo.conf $INSTALL_PATH/akeneo
+
+cat > /etc/apache2/sites-enabled/akeneo.conf << EOF
+	<VirtualHost *:80>
+	DocumentRoot /var/www/akeneo/web
+	<Directory /var/www/akeneo/web >
+	    Options Indexes FollowSymLinks MultiViews
+	    AllowOverride All
+	    Require all granted
+	    </Directory>
+</VirtualHost>
+EOF
+
 
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
 	sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
@@ -32,7 +43,7 @@ install(){
 	
 	sed -i 's/memory_limit\ \=\ 128M/memory_limit\ \=\ 768M/g' /etc/php5/cli/php.ini
 	echo "date.timezone = Etc/UTC" >> /etc/php5/cli/php.ini
-
+	apt-get -y install php5-intl 
 	cd $INSTALL_PATH/akeneo
 	php app/console cache:clear --env=prod
 	php app/console pim:install --env=prod
