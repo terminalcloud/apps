@@ -16,16 +16,18 @@ install(){
 	# Procedure: 
 	php5_install
 	mysql_install
-	mysql_setup suitecrm suitecrm terminal
+	## mysql_setup suitecrm suitecrm terminal - Let the installed create the DB.
 	cd $INSTALL_PATH
 	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/SuiteCRM-7.1.4_MAX.zip
 	unzip SuiteCRM-7.1.4_MAX.zip && rm SuiteCRM-7.1.4_MAX.zip
-	mv SuiteCRM-7.1.4-MAX suitecrm
+	mv suitecrm-7.1.4-max suitecrm
 	chown -R www-data:www-data suitecrm
 	apache_install
 	apache_default_vhost suitecrm.conf $INSTALL_PATH/suitecrm
+	apt-get -y install php5-imap || yum -y install php-imap
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
 	sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
+	echo "*    *    *    *    *     cd /var/www/suitecrm; php -f cron.php > /dev/null 2>&1" >> /var/spool/cron/crontabs/root
 	service apache2 restart
 }
 
