@@ -49,7 +49,7 @@ Login with your admin credentials and start using SuiteCRM.
 ## Documentation
 - [SuiteCRM Main Website](https://suitecrm.com)
 - [Support Forum](https://suitecrm.com/index.php?option=com_kunena&view=category&Itemid=1137&layout=list)
-- [Doucmentation Center](hhttps://suitecrm.com/index.php?option=com_wrapper&view=wrapper&Itemid=1383)
+- [Documentation Center](https://suitecrm.com/index.php?option=com_wrapper&view=wrapper&Itemid=1383)
 - [Github Repo](https://github.com/salesagility/SuiteCRM)
 
 ---
