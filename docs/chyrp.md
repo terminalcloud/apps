@@ -1,5 +1,5 @@
 # **Chyrp** Terminal.com Snapshot
-*Chyrp - A lightweight bloggin platform.*
+*Chyrp - A lightweight blogging platform.*
 
 ---
 
