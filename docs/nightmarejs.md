@@ -69,7 +69,7 @@ See **Usage** for more information.
 Just spin-up your container based on this snapshot and start coding your Nightmarejs automation scripts directly on the editor window.
 An example of how to use the Terminal.com IDE to help you to see the results of your scripts using screenshots it included.
 
-Just execute: `nodejs web_search "search term"`
+Just execute: `nodejs web_search "search term"` and you will see the results in the IDE browser.
 
 For more information about the API use, please check the [Complete API documentation](https://github.com/segmentio/nightmare#api)
 
