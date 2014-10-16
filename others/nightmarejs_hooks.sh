@@ -1,15 +1,13 @@
 #!/bin/bash
 
-name="chyrp"
+name="nightmarejs"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
-
-# Update server URL in config
-sed -i "s/terminalservername/$(hostname)/g" /var/www/chyrp/includes/config.yaml.php
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
+
 
 # Making the file...
 cat > /root/info.html << EOF
@@ -17,7 +15,6 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
 </head>
 <body>
 EOF
