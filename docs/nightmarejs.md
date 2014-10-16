@@ -17,7 +17,7 @@ The goal is to expose just a few simple methods, and have an API that feels sync
 Just spin-up your container based on this snapshot and start coding your Nightmarejs automation scripts directly on the editor window. You've node (and npm) available to install all your dependencies. NightmareJS is available at ~/nightmarejs.
 
 
-We are includding an improved version of the Yahoo search script to show you how to use the Terminal.com IDE to debug your web automations.
+We are including an improved version of the Yahoo search script to show you how to use the Terminal.com IDE to debug your web automations.
 
 Just execute: `cd ~/nightmarejs && nodejs web_search.js "search term"` and you will see the results in the IDE browser.
 
