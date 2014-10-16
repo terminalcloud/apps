@@ -22,7 +22,8 @@ install(){
 	npm install phantomjs
 	npm install nightmare
 	# Get the example
-	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/nightmarejs_example.js.sh
+	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/nightmarejs_example.js
+	mv nightmarejs_example.js web_search.js
 }
 
 show(){
