@@ -14,7 +14,7 @@ The goal is to expose just a few simple methods, and have an API that feels sync
 
 Let's search on Yahoo:
 
-```js
+```
 var Nightmare = require('nightmare');
 new Nightmare()
   .goto('http://yahoo.com')
@@ -28,7 +28,7 @@ new Nightmare()
 
 Or, let's extract the entirety of Kayak's home page after everything has rendered:
 
-```js
+```
 var Nightmare = require('nightmare');
 new Nightmare()
   .goto('http://kayak.com')
@@ -42,7 +42,7 @@ new Nightmare()
 
 Or, here's how you might automate a nicely abstracted login + task on Swiftly:
 
-```js
+```
 var Nightmare = require('nightmare');
 var Swiftly = require('nightmare-swiftly');
 new Nightmare()
@@ -77,6 +77,7 @@ For more information about the API use, please check the [Complete API documenta
 
 - username: admin
 - password: t3rminal
+
 ---
 
 ## Documentation
