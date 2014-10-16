@@ -14,7 +14,7 @@ install(){
 	basics_install
 
 	# Procedure: 
-	apt-get -y install nodejs phantomjs
+	apt-get -y install build-essential nodejs phantomjs 
 	mkdir $INSTALL_PATH/nightmarejs
 	cd $INSTALL_PATH/nightmarejs
 	npm install node
