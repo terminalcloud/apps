@@ -71,7 +71,7 @@ An example of how to use the Terminal.com IDE to help you to see the results of 
 
 Just execute: `cd ~/nightmarejs && nodejs web_search.js "search term"` and you will see the results in the IDE browser.
 
-**To see this help page again, execute ~/show_help.sh**
+**To see this help page again, execute `~/show_help.sh`**
 
 For more information about the API use, please check the [Complete API documentation](https://github.com/segmentio/nightmare#api)
 
