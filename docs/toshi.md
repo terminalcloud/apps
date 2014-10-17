@@ -1,5 +1,5 @@
 # **Toshi** Terminal.com Snapshot
-*An open source Bitcoin node built to power large scale web applications. *
+*An open source Bitcoin node built to power large scale web applications.*
 
 ---
 

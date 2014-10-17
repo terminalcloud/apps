@@ -36,7 +36,10 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Start Redis in a new tab
-echo 'echo "port 2102" | redis-server -' | /srv/cloudlabs/scripts/run_in_term.js
+cat | /srv/cloudlabs/scripts/run_in_term.js	 << _EOF_
+echo "port 2102" | redis-server -
+_EOF_
+
 
 # Start Toshi in a screen session
 echo "cd /root/toshi; sleep 5; screen -dmS "toshi" foreman start" | /srv/cloudlabs/scripts/run_in_term.js
