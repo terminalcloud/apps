@@ -81,7 +81,7 @@ To access the **Toshi** interface, just click on the "See your Toshi instance ru
 
 This container is prepared to start a Thoshi instance automatically, using the Terminal startup scripts.
 
-On this case, Toshi is being launched into a (screen)[http://en.wikipedia.org/wiki/GNU_Screen] and it's live output can be examined by attaching the screen to a terminal tab by running `screen -S toshi`.
+On this case, Toshi is being launched into a (screen)[http://en.wikipedia.org/wiki/GNU_Screen] and it's live output can be examined by attaching the screen to a terminal tab by running `screen -x toshi`.
 
 
 ---
