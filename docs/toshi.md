@@ -79,7 +79,7 @@ Toshi provides access to raw blockchain data.  This allows you to do things like
 
 To access the **Toshi** interface, just click on the "See your Toshi instance running here!" link.
 
-This container is prepared to start a Thoshi intance automatically, using the Terminal startup scripts.
+This container is prepared to start a Thoshi instance automatically, using the Terminal startup scripts.
 
 On this case, Toshi is being launched into a (screen)[http://en.wikipedia.org/wiki/GNU_Screen] and it's live output can be examined by attaching the screen to a terminal tab by running `screen -S toshi`.
 
@@ -97,7 +97,7 @@ On this case, Toshi is being launched into a (screen)[http://en.wikipedia.org/wi
 
 #### Toshi Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/toshi_installer.sh && bash toshi_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/toshi_installer.sh && bash toshi_installer.sh show`
 
 
 ---
