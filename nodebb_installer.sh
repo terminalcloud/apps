@@ -22,7 +22,7 @@ install(){
 	npm install
 	npm install -g forever
 	./nodebb setup
-	forever start app.js
+	cd /root/nodebb && forever start app.js
 }
 
 show(){
