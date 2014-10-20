@@ -4,6 +4,9 @@ name="pwire"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Set current hostname in the Processwire site config
+sed -i "s/terminalservername/$(hostname)/g"  /var/www/pwire/site/config.php
+
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
@@ -15,7 +18,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/processwire"><b>ProcessWire Admin Login!</b></a></p>
 </head>
 <body>
 EOF
