@@ -1,4 +1,4 @@
-  # **Process Wire** Terminal.com Snapshot
+ # **Process Wire** Terminal.com Snapshot
 *A Friendly and Poweful Open Source CMS with an exceptionally strong Fundation*
 
 ---

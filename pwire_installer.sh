@@ -19,7 +19,7 @@ install(){
 	mysql_setup pwire pwire terminal
 	cd $INSTALL_PATH
 	wget https://github.com/ryancramerdesign/ProcessWire/archive/master.zip
-	unzip master.zip && mv master pwire
+	unzip master.zip && mv ProcessWire-master pwire
 	chown -R www-data:www-data pwire
 	apache_install
 	apache_default_vhost pwire.conf $INSTALL_PATH/pwire
