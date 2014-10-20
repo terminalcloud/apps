@@ -44,7 +44,7 @@ Login with your admin credentials and start using Vanilla.
 
 #### Vanilla Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/Vanilla_installer.sh && bash Vanilla_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/vanilla_installer.sh && bash vanilla_installer.sh`
 
 ---
 
