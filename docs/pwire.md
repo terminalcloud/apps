@@ -25,8 +25,9 @@ Login with your admin credentials and start using ProcessWire.
 
 ---
 
-![1](http://i1-scripts.softpedia-static.com/screenshots/ProcessWire_25.png)
-![2](http://www.weblantropia.com/wp-content/uploads/2014/03/processwire_fields.jpg)
+![1](http://www.weblantropia.com/wp-content/uploads/2014/03/processwire_fields.jpg)
+![2](http://i1-scripts.softpedia-static.com/screenshots/ProcessWire_25.png)
+
 
 ---
 
