@@ -16,9 +16,9 @@ install(){
 	# Procedure: 
 	php5_install
 	mysql_install
-	mysql_setup vanilla vanilla terminalcloud
+	mysql_setup vanilla vanilla terminal
 	cd $INSTALL_PATH
-	wget https://raw.githubusercontent.com/terminalcloud/apps/master/vanilla-core-2-1-3.zip
+	wget https://raw.githubusercontent.com/terminalcloud/apps/master/other/vanilla-core-2-1-3.zip
 	unzip vanilla-core-2-1-3.zip
 	chown -R www-data:www-data vanilla
 	apache_install
