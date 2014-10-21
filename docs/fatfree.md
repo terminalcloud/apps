@@ -41,10 +41,11 @@ Login with your admin credentials and start using FatFree CRM.
 ---
 
 ## Documentation
-- [FatFree CRM Main Website](http://www.FatFree CRM.com/)
-- [Users Guide](http://www.FatFree CRM.com/doc/user-guide)
-- [Developer Guide](http://docs.FatFree CRM.com/latest/index.html)
-- [Github Repo](https://github.com/FatFree CRM/pim-community-standard)
+- [FatFree CRM Main Website](http://www.fatfreecrm.com/)
+- [Usage Guides](http://guides.fatfreecrm.com/)
+- [Users Group](https://groups.google.com/forum/#!forum/fat-free-crm-users)
+- [Development Group](https://groups.google.com/forum/#!forum/fat-free-crm-dev)
+- [Github Repo](https://github.com/fatfreecrm/fat_free_crm)
 
 ---
 
