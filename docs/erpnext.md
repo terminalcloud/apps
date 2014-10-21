@@ -8,8 +8,41 @@ People who use ERPNext, swear by it. No fancy sales people, no glitzy presentati
 
 ERPNext covers most functionality required to run a small or medium sized business in Manufacturing, Retail, Distribution or Services including Financial Accounting, Inventory, CRM and Sales, Purchasing, Human Resource, Projects and a lot more.
 
+---
 
-## Feature Samples
+
+## Usage
+
+Just spin-up your container based on this snapshot and click over "Test your installation here".
+Login with your admin credentials and and configure your ERP based on your needs.
+
+
+### Credentials:
+
+- username: administrator
+- password: t3rminal
+
+
+### Additional Usage Information
+Due security reasons, ERPNext is running under a non-privileged user called "bundle", by default in the second tab of your terminal commmand line. You can stop ERPNext by pressing 'control + c' and start it again running `cd frappe-bench bench; start` as the bundle user.
+
+### Additional credentials
+- User password for bundle: t3rminal
+- MariaDB root password: root
+
+
+---
+
+## Documentation and links
+- [ERPNext Main Website](https://erpnext.com/)
+- [User's Manual](https://erpnext.com/user-guide)
+- [Forums](https://discuss.frappe.io/)
+- [Community Portal](https://frappe.io/community)
+- [Github Repo](https://github.com/frappe/erpnext)
+
+---
+
+## Features Samples
 - **Dashboard** - Here is a broad overview of how a small business making Wind Turbines uses ERPNext for running their operations right from setting up and implementation to day-to-day management-
 ![1](https://erpnext.com/assets/erpnext_org/images/features/feature-1.png)
 
@@ -45,43 +78,11 @@ ERPNext covers most functionality required to run a small or medium sized busine
 
 ---
 
-
-## Usage
-
-Just spin-up your container based on this snapshot and click over "Test your installation here".
-Login with your admin credentials and and configure your ERP based on your needs.
-
-
-### Credentials:
-
-- username: administrator
-- password: t3rminal
-
-
-### Additional Usage Information
-Due security reasons, ERPNext is running under a non-privileged user called "bundle", by default in the second tab of your terminal commmand line. You can stop ERPNext by pressing 'control + c' and start it again running `cd frappe-bench bench; start` as the bundle user.
-
-### Additional credentials
-- User password for bundle: t3rminal
-- MariaDB root password: root
-
-
----
-
-## Documentation and links
-- [ERPNext Main Website](https://erpnext.com/)
-- [User's Manual](https://erpnext.com/user-guide)
-- [Forums](https://discuss.frappe.io/)
-- [Community Portal](https://frappe.io/community)
-- [Github Repo](https://github.com/frappe/erpnext)
-
----
-
 ### Additional Information
 
 #### erpnext CRM Terminal.com container semi-automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/erpnext_installer.sh && bash erpnext_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/erpnext_installer.sh && bash erpnext_installer.sh show`
 
 ---
 
