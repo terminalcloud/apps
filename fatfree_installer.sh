@@ -37,9 +37,9 @@ install(){
 
 show(){
 	# Get the startup script
-	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/vanilla_hooks.sh
+	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/fatfree_hooks.sh
 	mkdir -p /CL/hooks/
-	mv vanilla_hooks.sh /CL/hooks/startup.sh
+	mv fatfree_hooks.sh /CL/hooks/startup.sh
 	# Execute startup script by first to get the common files
 	chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 }
