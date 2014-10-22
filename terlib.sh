@@ -176,3 +176,31 @@ gunicorn_install(){ # by now assuming the virtualvend exists, otherwise going gl
 	source /opt/myenv/bin/activate
 	pip install gunicorn
 }
+
+xforwarding_setup(){
+	# This functions will configure ssh to allow direct xforwarding.
+	sed -i 's/X11UseLocalhost\ no/X11UseLocalhost\ yes/g' /etc/ssh/sshd_config
+	sed -i 's/\#GSSAPICleanupCredentials\ yes/AddressFamily\ inet/g' /etc/ssh/sshd_config
+	touch .Xauthority
+	service ssh reload
+	echo "root:t3rminal" | chpasswd # This will set a weak password - DANGER
+}
+
+xrdp_install(){
+	# This function will setup X11rdp/Xrdp in the container
+	# It required to do a ssh tunnel between the container and the client machine
+	# For more information, check online help
+	apt-get -y install xrdp vnc4server x11-apps x11-common x11-session-utils \
+	x11-utils x11-xfs-utils 
+	mkdir -p .ssh/
+	echo "Now go and:"
+	echo "1 - Add your public key to .ssh/authorized_keys file"
+	echo "2 - Make a ssh tunnel from your computer to the local rdp port: \
+	ssh -C root@qmaxquique540.terminal.com -L 3389:qmaxquique540.terminal.com:3389"
+	echo "3 - Connect remote desktop to your local host (in your computer): rdesktop localhost"
+}
+
+xfce_install(){
+	apt-get -y install xfce4 xfce4* shimmer-themes xubuntu-icon-theme
+	echo xfce4-session >~/.xsession
+}

@@ -24,7 +24,7 @@ Login with your admin credentials and and configure your ERP based on your needs
 
 
 ### Additional Usage Information
-Due security reasons, ERPNext is running under a non-privileged user called "bundle", by default in the second tab of your terminal commmand line. You can stop ERPNext by pressing 'control + c' and start it again running `cd frappe-bench bench; start` as the bundle user.
+Due security reasons, ERPNext is running under a non-privileged user called "bundle", by default in the second tab of your terminal command line. You can stop ERPNext by pressing 'control + c' and start it again running `cd frappe-bench bench; start` as the bundle user.
 
 ### Additional credentials
 - User password for bundle: t3rminal
