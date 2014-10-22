@@ -43,4 +43,4 @@ Keep in mind that the user experience may vary depending on the remote desktop c
 
 ---
 
-#### Thanks for use this Terminal.com snapshot
+#### Thanks for use this Terminal.com snapshot!
