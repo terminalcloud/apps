@@ -5,6 +5,11 @@ It also containes X11rdp to let you connect to the machine using remote desktop.
 
 ## About XFCE:
 **Xfce** is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while still being visually appealing and user friendly.
+
+[Imgur](http://i.imgur.com/u4ABBuv.jpg)
+[Imgur](http://i.imgur.com/QBElyBe.jpg)
+
+---
    
 ## Instructions:
 Please read the instructions **carefuly**.
