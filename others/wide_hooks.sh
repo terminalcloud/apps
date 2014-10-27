@@ -36,7 +36,7 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Open a new terminal
-echo | /srv/cloudlabs/scripts/run_in_term.js
+echo wide| /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
