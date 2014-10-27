@@ -24,8 +24,8 @@ install(){
 	go get -u github.com/nsf/gocode
 	go build
 	mkdir -p /root/go/bin/data/user_workspaces/admin/src/
-	echo "Edit the conf/wide.json file before launch the wide"
-
+	cd conf
+	rm wide.json && wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/wide.json
 
 }
 
