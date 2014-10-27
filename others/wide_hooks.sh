@@ -10,7 +10,6 @@ wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/mast
 
 # Update conf file
 sed -i "s/terminalservername/$(hostname)/g" /root/wide/conf/wide.json
-cd /root/wide ; ./launch.sh
 
 # Making the file...
 cat > /root/info.html << EOF
@@ -39,7 +38,7 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Open a new terminal
-echo wide| /srv/cloudlabs/scripts/run_in_term.js
+echo "cd /root/wide ; ./launch.sh"| /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
