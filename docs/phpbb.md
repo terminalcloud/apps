@@ -1,5 +1,5 @@
 # **PHPBB** Terminal.com Snapshot
-*PHPBB *
+*PHP Bulletin Board* is the most widely used open source forums solution.
 
 ---
 
