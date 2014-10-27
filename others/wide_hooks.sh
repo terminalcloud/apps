@@ -10,6 +10,7 @@ wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/mast
 
 # Update conf file
 sed -i "s/terminalservername/$(hostname)/g" /root/wide/conf/wide.json
+cd /root/wide ; ./launch.sh
 
 # Making the file...
 cat > /root/info.html << EOF
