@@ -26,6 +26,8 @@ install(){
 	apache_default_vhost zurmo.conf $INSTALL_PATH/zurmo
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
 	sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
+	apt-get -y install php5-memcache php5-ldap php5-imap php-apc memcached
+	php5enmod imap
 	service apache2 restart
 }
 

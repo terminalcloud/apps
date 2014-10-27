@@ -1,5 +1,5 @@
 # **Zurmo** Terminal.com Snapshot
-*Zurmo is an open source Customer Relationship Management (CRM) application written in PHP utilizing jQuery, Yii Framework, and RedBeanPHP.
+*Zurmo is an open source Customer Relationship Management (CRM) application written in PHP utilizing jQuery, Yii Framework, and RedBeanPHP.*
 
 ---
 
@@ -41,7 +41,7 @@ Login with your admin credentials and start using Open Zurmo.
 
 ---
 
-![1](http://thenewtech.info/wp-content/uploads/sites/3/2012/07/Zurmo-install-8.jpg)	
+![1](http://3.bp.blogspot.com/-f7jXw6_4scg/USSk5aZjb6I/AAAAAAAAAZo/dcHxzmsHA70/s1600/zurmo-dashboard.png)	
 
 ---
 
