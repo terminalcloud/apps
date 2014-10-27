@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="wide"
+name="phpbb"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
@@ -8,8 +8,6 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
-# Update conf file
-sed -i "s/terminalservername/$(hostname)/g" /root/wide/conf/wide.json
 
 # Making the file...
 cat > /root/info.html << EOF
@@ -38,7 +36,7 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Open a new terminal
-echo "cd /root/wide ; nohup ./launch.sh &"| /srv/cloudlabs/scripts/run_in_term.js
+echo | /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
