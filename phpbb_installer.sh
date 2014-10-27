@@ -21,6 +21,7 @@ install(){
 	cd $INSTALL_PATH
 	wget https://www.phpbb.com/files/release/phpBB-3.0.12.zip
 	unzip phpBB-3.0.12.zip && rm phpBB-3.0.12.zip
+	mv phpBB3 phpbb
 	chown -R www-data:www-data phpbb
 	apache_install
 	apache_default_vhost phpbb.conf $INSTALL_PATH/phpbb
