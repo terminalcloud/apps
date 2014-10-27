@@ -8,6 +8,9 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
+# Updating tables
+mysql -uroot -proot phpbb -e"UPDATE phpbb_config SET config_value='$(hostname)-80.terminal.com' WHERE config_name='cookie_domain';"
+mysql -uroot -proot phpbb -e"UPDATE phpbb_config SET config_value='$(hostname)-80.terminal.com' WHERE server_name='cookie_domain';"
 
 # Making the file...
 cat > /root/info.html << EOF
