@@ -14,14 +14,19 @@ install(){
 	basics_install
 
 	# Procedure: 
+	cd $INSTALL_PATH
 	golang_install
+	source .bashrc
 	git clone https://github.com/b3log/wide.git
 	cd wide
-	go get -u
+	go get -u github.com/b3log/wide
 	go get -u github.com/88250/ide_stub
 	go get -u github.com/nsf/gocode
 	go build
-	#./wide
+	mkdir -p /root/go/bin/data/user_workspaces/admin/src/
+	echo "Edit the conf/wide.json file before launch the wide"
+
+
 }
 
 show(){
