@@ -76,7 +76,7 @@ Login with your admin credentials and start using Wide.
 
 #### Wide Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/wide_installer.sh && bash wide_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/wide_installer.sh && bash wide_installer.sh show`
 
 ---
 
