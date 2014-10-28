@@ -29,7 +29,7 @@ in most cases...
 
 To list all of puer's options use `puer -h`
 
-*The --no-launch option to work in a terminal. By default Puer will be listening at port 8000*
+*The —no-launch option is needed to work in a Terminal directly. By default Puer will be listening at port 8000.*
 
 **Puer will refresh the browser for you. All pages will reload when you edit them.**
 
@@ -37,7 +37,7 @@ For use case examples please check the [Puer GitHub Repo](https://github.com/lee
 
 ---
 
-## More information:
+## Documentation and source:
 - [Puer GitHub Repo](https://github.com/leeluolee/puer)
 
 ---
