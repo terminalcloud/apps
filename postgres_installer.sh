@@ -22,10 +22,12 @@ install(){
 	wget https://github.com/sosedoff/pgweb/releases/download/v0.3.0/pgweb_linux_amd64.zip
 	unzip pgweb_linux_amd64.zip && rm pgweb_linux_amd64.zip
 	chmod +x pgweb_linux_amd64
-	ln -s pgweb_linux_amd64 /bin/pgweb
+	ln -s /opt/pgweb/pgweb_linux_amd64 /bin/pgweb
 
 	# PhpPGAdmin
 	apt-get -y install phppgadmin || yum -y install phppgadmin
+	cp /etc/apache2/conf.d/phppgadmin /etc/apache2/conf-enabled/phppgadmin.conf
+	/etc/init.d/apache2 restart
 }
 
 show(){

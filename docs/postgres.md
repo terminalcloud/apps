@@ -12,9 +12,10 @@
 ## Additional Tools
 
 ### PgWeb
-**PgWeb** is Web-based PostgreSQL database browser written in Go. It requires a database with filled with some data to work and it will stick to the port 8080 by default.
+**PgWeb** is Web-based PostgreSQL database browser written in Go. It requires a database with filled with some data to work and it will listen at port 8080 by default.
 
 ```
+
 Usage:
   pgweb [OPTIONS]
 
@@ -28,6 +29,7 @@ Application Options:
       --db=      Database name (postgres)
       --ssl=     SSL option (disable)
       --listen=  HTTP server listen port (8080)
+
 ```
 
 For Demo purposes, there is a sample database to browse with pgweb installed on this Terminal.
