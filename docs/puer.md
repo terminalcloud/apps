@@ -25,10 +25,10 @@
 
 in most cases...
 
-```
-cd path/to/your/static/dir && puer --no-launch
 
-```
+`cd path/to/your/static/dir && puer --no-launch`
+
+
 *Note the --no-launch option to work in a terminal. By default Puer will be litening at port 3000*
 
 To list all of puer's options use `puer -h`
@@ -42,7 +42,7 @@ For use case examples please check the [Puer GitHub Repo](https://github.com/lee
 
 ---
 
-## Documentation
+## More information:
 - [Puer GitHub Repo](https://github.com/leeluolee/puer)
 
 ---
