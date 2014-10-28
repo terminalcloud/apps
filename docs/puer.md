@@ -35,10 +35,7 @@ To list all of puer's options use `puer -h`
 For use case examples please check the [Puer GitHub Repo](https://github.com/leeluolee/puer)
 
 
-![puer-step-1](http://leeluolee.github.io/attach/2014-10/puer-step-1.gif)
-
 **Puer will refresh the browser for you. All pages will reload when you edit them.**
-
 
 ---
 
