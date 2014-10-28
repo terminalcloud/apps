@@ -29,7 +29,7 @@ cat >> /root/static/index.html << EOF
 EOF
 
 # Convert links to external links
-sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/static/info.html 
+sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/static/index.html 
 
 # Update server URL in Docs
-sed -i "s/terminalservername/$(hostname)/g" /root/static/info.html
+sed -i "s/terminalservername/$(hostname)/g" /root/static/index.html

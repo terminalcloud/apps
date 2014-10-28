@@ -16,6 +16,7 @@ install(){
 	# Procedure: 
 	apt-get -y install nodejs npm || yum -y install nodejs npm
 	npm -g install puer
+	mkdir $INSTALL_PATH/static
 }
 
 show(){

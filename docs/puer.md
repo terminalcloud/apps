@@ -44,7 +44,7 @@ For use case examples please check the [Puer GitHub Repo](https://github.com/lee
 
 
 ### Additional Information
-#### PostgreSQL Terminal.com container automatic installation:
+#### Puer Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/puer_installer.sh && bash puer_installer.sh`
 
