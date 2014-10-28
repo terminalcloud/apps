@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="zurmo"
+name="postgres"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
@@ -8,16 +8,14 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
-# Update hostname
-sed -i "s/terminalservername/$(hostname)/g" /var/www/zurmo/app/protected/config/perInstance.php
-
 # Making the file...
 cat > /root/info.html << EOF
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com"><b>Check the PGWeb interface here</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Acess your DB with phpPgAdmin here</b></a></p>
 </head>
 <body>
 EOF
