@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="postgres"
+name="puer"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
@@ -14,7 +14,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Access your application here</b></a></p>
+<p id="exlink"<b>This page will be autoreloaded if you modify it!!</b></a></p>
 </head>
 <body>
 EOF
@@ -33,9 +33,6 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
-
-# Open a new terminal
-echo "pgweb --url postgres://postgres:t3rminal@localhost:5432/test"| /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
