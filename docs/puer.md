@@ -25,17 +25,15 @@
 
 in most cases...
 
-
 `cd path/to/your/static/dir && puer --no-launch`
 
-
-*Note the --no-launch option to work in a terminal. By default Puer will be litening at port 3000*
-
 To list all of puer's options use `puer -h`
-For use case examples please check the [Puer GitHub Repo](https://github.com/leeluolee/puer)
 
+*The --no-launch option to work in a terminal. By default Puer will be listening at port 8000*
 
 **Puer will refresh the browser for you. All pages will reload when you edit them.**
+
+For use case examples please check the [Puer GitHub Repo](https://github.com/leeluolee/puer)
 
 ---
 
