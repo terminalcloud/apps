@@ -33,9 +33,9 @@ EOF
 # Convert links to external links
 sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html 
 
-# Update server URL in Docs
-sed -i "s/terminalservername/$(hostname)/g" /root/info.html
-
+# Update server URL in keys [user may regenerate them]
+sed -i "s/terminalservername/$(hostname)/g" /home/gerrit5/gerrit/etc/ssh_host_dsa_key.pub
+sed -i "s/terminalservername/$(hostname)/g" /home/gerrit5/gerrit/etc/ssh_host_rsa_key.pub
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
