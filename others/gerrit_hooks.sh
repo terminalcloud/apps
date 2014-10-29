@@ -16,7 +16,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="https://$(hostname)-8081.terminal.com"><b>Login Gerrit here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="https://$(hostname)-8081.terminal.com"><b>Go to your Gerrit installation here!</b></a></p>
 </head>
 <body>
 EOF
