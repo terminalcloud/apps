@@ -25,7 +25,7 @@ For a complete list please visite the [Gerrit ShowCases page](https://code.googl
 ## Usage
 
 - Spin-up your container based on this snapshot and click over "Check your installation here".
-- Login with yout OpenID user [Yahoo OpenID is recommended]
+- Login with your OpenID user [Yahoo OpenID is recommended]
 - The first user to login Gerrit will be the Gerrit Admin by default. You will prompted to change your settings and set your keys.
 
 Keep in mind you will need to setup the [Terminal.com ssh proxy](https://www.terminal.com/ssh) to access your Gerrit terminal with ssh.
