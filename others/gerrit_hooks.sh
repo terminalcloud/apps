@@ -4,8 +4,7 @@ name="gerrit"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
-# Customizing URL
-sed -i "s/terminalservername/$(hostname)/g" /home/gerrit5/gerrit/etc/gerrit.config
+echo $(hostname) > /tmp/hname
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
@@ -37,10 +36,10 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
-# Start Gerrit
-/etc/init.d/gerrit start
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+sed -i "s/terminalservername/$(hostname)/g" /home/gerrit5/gerrit/etc/gerrit.config
+/etc/init.d/gerrit restart
 /srv/cloudlabs/scripts/display.sh /root/info.html
 EOF
