@@ -15,9 +15,9 @@ This snapshot was made from the Imber's git repositories as an option to the def
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your Terminal based on this snapshot and click over "Check your installation here".
 
-The process will be runing as background jobs. To send them back to the front (if you want to stop them for instance), execute `fg` in the console. 
+The process will be running as background jobs. To send them back to the front (if you want to stop them, for instance), execute `fg` in the console. 
 
 
 ### Imbers location 
