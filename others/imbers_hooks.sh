@@ -35,18 +35,10 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
-# Open a new terminal
-echo | /srv/cloudlabs/scripts/run_in_term.js
-
 # Showing up
-cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+
+cat | /srv/cloudlabs/scripts/run_in_term.js	 << _EOF_
+cd /root/imbers-backend && foreman start &
+cd /root/imbers-www && npm start &
 /srv/cloudlabs/scripts/display.sh /root/info.html
-EOF
-
-cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
-cd /root/imbers-backend && foreman start
-EOF
-
-cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
-cd /root/imbers-backend && npm start
-EOF
+_EOF_

@@ -17,6 +17,8 @@ This snapshot was made from the Imber's git repositories as an option to the def
 
 Just spin-up your container based on this snapshot and click over "Check your installation here".
 
+The process will be runing as background jobs. To send them back to the front (if you want to stop them for instance), execute `fg` in the console. 
+
 
 ### Imbers location 
 
@@ -25,7 +27,7 @@ Just spin-up your container based on this snapshot and click over "Check your in
 
 ### Start commands for Imbers
 `cd /root/imbers-backend && foreman start`
-`cd /root/imbers-frontend && npm start`
+`cd /root/imbers-www && npm start`
 
 ---
 
@@ -43,7 +45,7 @@ Just spin-up your container based on this snapshot and click over "Check your in
 
 #### Imbers Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/Imbers_installer.sh && bash Imbers_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/imbers_installer.sh && bash imbers_installer.sh`
 
 ---
 
