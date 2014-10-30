@@ -21,7 +21,7 @@ Just spin-up your container based on this snapshot and click over "Check your in
 ### Imbers location 
 
 - Backend: `/root/imbers-backend`
-- Frontend: `/root/imbers-frontend`
+- Frontend: `/root/imbers-www`
 
 ### Start commands for Imbers
 `cd /root/imbers-backend && foreman start`
