@@ -32,8 +32,12 @@ echo 1 | tee /etc/zookeeper/conf/myid
 # Functions
 
 auto_slave(){
-	sid=7d1eed993a27576f7911ffd96da39218f37c8cc815c414c25254238d1df5e1cc # Slave Sid
+	cd /root
+	# Get Slave SID and 
+	sid=c73decc557604b5ca1dd85c9dad4a18caa457f641fd8288239feb9973039030b # Slave Sid
 	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/mesos_slave.json
+	
+
 	clear
 	echo 'How many slaves do you want to create? (each slave is a new Terminal)'
 	read num
@@ -53,7 +57,8 @@ auto_slave(){
 		do 
     curl -L -X POST -H 'Content-Type: application/json' -d @mesos_slave.json api.terminal.com/v0.1/start_snapshot
    	done
-
+   	
+   	clear
    	echo "if you want to add more slaves to this cluster in the future, just start a new Mesos Slave Snapshot and provide this IP address: $IP"
    }
 

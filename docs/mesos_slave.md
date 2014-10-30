@@ -22,14 +22,14 @@ Mesos is built using the same principles as the Linux kernel, only at a differen
 
 ## About this Mesos deployment snapshot
 This Snapshot is intended to provide an easy way to deploy a Mesos Slave Server.
-Before start this snapshot please make sure that there is a Master server already running and that you know the IP address of it.  
+Before starting this snapshot, please make sure that there is a Master server already running and that you know the IP address of it.  
 
 ---
 
 # Usage
 - Spin up your Mesos Slave snapshot
-- Provide the Master Node IP to the statup script (Already running in the console)
-- Acess the Mesos Status Panel in your master node and check if this slave is registered (This process can take a couple minutes).
+- Provide the Master Node IP to the startup script (Already running in the console)
+- Access the Mesos Status Panel in your master node and check if this slave is registered (This process can take a couple minutes).
 
 ---
 
