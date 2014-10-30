@@ -7,7 +7,7 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
-wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/others/mesos_master_cfg.sh && mesos_master_cfg.sh /root/
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/others/mesos_master_cfg.sh && mv mesos_master_cfg.sh /root/
 
 # Making the file...
 cat > /root/info.html << EOF
@@ -36,5 +36,5 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
-/root/mesos_master_cfg.sh
+bash /root/mesos_master_cfg.sh
 EOF

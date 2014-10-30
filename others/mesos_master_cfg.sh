@@ -57,7 +57,7 @@ auto_slave(){
 		do 
     curl -L -X POST -H 'Content-Type: application/json' -d @mesos_slave.json api.terminal.com/v0.1/start_snapshot
    	done
-   	
+
    	clear
    	echo "if you want to add more slaves to this cluster in the future, just start a new Mesos Slave Snapshot and provide this IP address: $IP"
    }
@@ -70,11 +70,11 @@ manual_slave(){
 	echo "Please provide it to the Slave configuration Script"
 }
 
-echo "Do you want to create the slaves now?"
+echo "Do you want to create the slaves now (y/N)?"
 read n
 case $n in
-    y) echo auto_slave;;
-    n) echo manual_slave;;
+    y) auto_slave;;
+    n) manual_slave;;
     *) echo "Invalid option, assuming NO" && manual_slave;;
 esac
 
