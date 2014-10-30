@@ -51,4 +51,4 @@ We're including [Marathon](https://github.com/mesosphere/marathon) (A Cluster-wi
 
 ---
 
-#### Thanks for Apache Mesos at Terminal.com!
+#### Thanks for use Apache Mesos at Terminal.com!
