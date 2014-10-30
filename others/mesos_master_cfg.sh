@@ -81,3 +81,6 @@ esac
 
 # Open the info page
 /srv/cloudlabs/scripts/display.sh /root/info.html
+
+# Delete tokens
+rm /root/mesos_slave.json
