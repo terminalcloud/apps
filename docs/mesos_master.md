@@ -29,9 +29,10 @@ We're including [Marathon](https://github.com/mesosphere/marathon) (A Cluster-wi
 
 # Usage
 - Spin up your Mesos Master snapshot
-- Configure your cluster name using the statup script (Already running in the console)
-- Acess the Mesos Status Panel and the Marathon Framework Interface by clicking on the links provided.
-- Spin up your slave servers and configure them using the Master IP (Provided automatically by the configuration script) 
+- Configure your cluster name using the startup script (Already running in the console)
+- Select the way to spin-up your slave servers. [Automatic or manual]
+- Acess the Mesos Status Panel and the Marathon Framework Interface by clicking on the links provided. 
+
 
 ---
 
