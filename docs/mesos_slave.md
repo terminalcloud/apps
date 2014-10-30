@@ -45,7 +45,6 @@ Before starting this snapshot, please make sure that there is a Master server al
 - [Mesos Frameworks](http://mesos.apache.org/documentation/latest/mesos-frameworks/)
 - [Marathon Framework Github repo](https://github.com/mesosphere/marathon)
 
-
 ---
 
-#### Thanks for Apache Mesos at Terminal.com!
+#### Thanks for use Apache Mesos at Terminal.com!
