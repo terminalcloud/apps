@@ -29,7 +29,50 @@ service marathon restart
 # Setting Zookeeper Node ID [Simple Cluster with 1 ZK service]
 echo 1 | tee /etc/zookeeper/conf/myid
 
-clear
-echo "Now the Master Node is Configured"
-echo "This is the Master Node IP: $IP"
-echo "Please provide it to the Slave configuration Script" 
+# Functions
+
+auto_slave(){
+	sid=7d1eed993a27576f7911ffd96da39218f37c8cc815c414c25254238d1df5e1cc # Slave Sid
+	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/mesos_slave.json
+	clear
+	echo 'How many slaves do you want to create? (each slave is a new Terminal)'
+	read num
+	/srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
+	echo 'Please copy your API User token, paste it below and press enter:'
+	read utoken
+	echo 'Please copy your API Access token, paste it below and press enter: (if it does not exist please generate it)'
+	read atoken
+	echo 'Trying to generate a the Mesos Slaves at Terminal.com with the given tokens'
+
+	sed -i "s/utoken/$utoken/g" mesos_slave.json
+	sed -i "s/atoken/$atoken/g" mesos_slave.json
+	sed -i "s/sid/$sid/g" mesos_slave.json
+	sed -i "s/IP/$IP/g" mesos_slave.json
+
+	for ((i=1;i<=$num;i++));
+		do 
+    curl -L -X POST -H 'Content-Type: application/json' -d @mesos_slave.json api.terminal.com/v0.1/start_snapshot
+   	done
+
+   	echo "if you want to add more slaves to this cluster in the future, just start a new Mesos Slave Snapshot and provide this IP address: $IP"
+   }
+
+
+manual_slave(){
+	clear
+	echo "Now the Master Node is Configured"
+	echo "This is the Master Node IP: $IP"
+	echo "Please provide it to the Slave configuration Script"
+}
+
+echo "Do you want to create the slaves now?"
+read n
+case $n in
+    y) echo auto_slave;;
+    n) echo manual_slave;;
+    *) echo "Invalid option, assuming NO" && manual_slave;;
+esac
+
+
+# Open the info page
+/srv/cloudlabs/scripts/display.sh /root/info.html

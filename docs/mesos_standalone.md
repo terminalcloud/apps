@@ -1,4 +1,4 @@
-# **Mesos Standalone** Terminal.com Snapshot
+# **Apache Mesos Standalone** Terminal.com Snapshot
 *Program against a cluster like it’s a single pool of resources*
 
 ---
@@ -23,6 +23,7 @@ Mesos is built using the same principles as the Linux kernel, only at a differen
 ## About this Mesos deployment snapshot
 Mesos is a flexible and highly configurable "Distributed Systems Kernel" Cluster.
 You can use several execution [Frameworks](http://mesos.apache.org/documentation/latest/mesos-frameworks/) with it.
+
 We're including [Marathon](https://github.com/mesosphere/marathon) (A Cluster-wide init and control system [or PaaS layer] for services) as the default framework installed on this snap.  
 
 On this case, this snapshot have both services installed on it. (Master and Slave) It should be used for test and development purposes mainly.
@@ -51,4 +52,4 @@ On this case, this snapshot have both services installed on it. (Master and Slav
 
 ---
 
-#### Thanks for Apache Mesos at Terminal.com!
+#### Thanks for using Apache Mesos at Terminal.com!

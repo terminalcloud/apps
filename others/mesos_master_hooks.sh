@@ -37,5 +37,4 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
 /root/mesos_master_cfg.sh
-/srv/cloudlabs/scripts/display.sh /root/info.html
 EOF
