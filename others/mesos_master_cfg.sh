@@ -46,7 +46,7 @@ auto_slave(){
 	read utoken
 	echo 'Please copy your API Access token, paste it below and press enter: (if it does not exist please generate it)'
 	read atoken
-	echo 'Trying to generate a the Mesos Slaves at Terminal.com with the given tokens'
+	echo 'Trying to generate the Mesos Slaves at Terminal.com with the given tokens'
 
 	sed -i "s/utoken/$utoken/g" mesos_slave.json
 	sed -i "s/atoken/$atoken/g" mesos_slave.json
