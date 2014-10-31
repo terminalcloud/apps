@@ -14,7 +14,7 @@ manual_slave(){
 }
 
 manual_reboot(){
-	echo "Do you want to reboot it now?"
+	echo "Do you want to reboot it now? (y/n)"
 	read n
 	case $n in
 	    y) init 6;;
@@ -45,6 +45,3 @@ service marathon start
 echo "Slave node $IP ready"
 echo "We suggest to restart this Terminal to ensure the node configuration is applied"
 [[ -f /root/.master ]] && init 6 || manual_reboot
-
-
-/srv/cloudlabs/scripts/display.sh /root/info.html
