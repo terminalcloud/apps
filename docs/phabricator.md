@@ -13,45 +13,53 @@ Phabricator supports Git, Mercurial, and Subversion. The Phabricator server runs
 
 - **Review Code or just stare at it** 
 Review others' code with **Differential**, because they can't be trusted.
+
 ![1](http://phabricator.org/images/phabricator//differential.png)
 
 
 - **Host Git/Mercurial/SVN Repositories, or connect other hosts**
 Phabricator can host Git, Mercurial and Subversion repositories. It also works well with existing repositories (like GitHub, Bitbucket, or other repositories you already have elsewhere) without needing to host them itself.
+
 ![2](http://phabricator.org/images/repos.png)
 
 
 - **Browse and Audit Source Code**
 Use **Diffusion** to look at source code in your browser. Unnerving. You can also audit code, which lets you point things out which offend your delicate sensibilities.
+
 ![3](http://phabricator.org/images/phabricator//diffusion.png)
 
 
 
 - **Track bugs**
 Have terrible software? Keep track of all the defects and problems with your awful code using **Maniphest**.
+
 ![4](http://phabricator.org/images/phabricator//maniphest_mobile.png)
 
 
 
 - **Write Things Down**
 You can write things down with **Phriction**, which is a wiki.
+
 ![5](http://phabricator.org/images/phabricator//phriction.png)
 
 
 - **Watch for Danger**
 As your company scales, keep track of activity with **Herald**, which notifies you when things you care about happen (like a specific file being changed).
+
 ![6](http://phabricator.org/images/phabricator//herald.png)
 
 
 
 - **CLI**
 The arcanist command line tool gives you CLI access to most of Phabricator's functionality.
+
 ![7](http://phabricator.org/images/phabricator//arcanist.png)
 
 
 
 - **API**
 The **Conduit** API allows you to write scripts that interact with Phabricator over an HTTP JSON API.
+
 ![8](http://phabricator.org/images/phabricator//conduit.png)
 
 
@@ -60,7 +68,9 @@ The **Conduit** API allows you to write scripts that interact with Phabricator o
 ## Usage
 
 Just spin-up your container based on this snapshot and click over "Check your installation here".
+
 Create your own admin account and start configuring Phabricator.
+For mor information about usage please check the [User Documentation](http://www.phabricator.com/docs/phabricator/) page.
 
 
 ---
