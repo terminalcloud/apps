@@ -16,21 +16,26 @@ install(){
 	# Procedure: 
 	php5_install
 	mysql_install
-	mysql_setup phabricator phabricator terminal
 	cd $INSTALL_PATH
 	git clone https://github.com/phacility/libphutil.git
 	git clone https://github.com/phacility/arcanist.git
 	git clone https://github.com/phacility/phabricator.git
 	chown -R www-data:www-data *
+	cd phabricator
+	./bin/config set mysql.host localhost
+	./bin/config set mysql.user root
+	./bin/config set mysql.pass root
+	./bin/storage upgrade --force
 	apache_install
 	apache_default_vhost phabricator.conf /var/www/phabricator/webroot
 	cat > /etc/apache2/sites-available/phabricator.conf << EOF
 <VirtualHost *>
   DocumentRoot /var/www/phabricator/webroot
 
-	<Directory "/path/to/phabricator/webroot">
-	  Require all granted
-	</Directory>
+        <Directory "/var/www/phabricator/webroot">
+          Order allow,deny
+  Allow from all
+</Directory>
 
   RewriteEngine on
   RewriteRule ^/rsrc/(.*)     -                       [L,QSA]
