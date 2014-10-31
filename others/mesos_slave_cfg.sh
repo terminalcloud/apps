@@ -18,6 +18,8 @@ IP=$(/sbin/ifconfig $1 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $
 
 # Make sure that Master is stopped and remove ZK just in case (?)
 service mesos-master stop
+service mesos-slave stop
+service marathon stop
 echo manual | tee /etc/init/mesos-master.override
 echo $IP | tee /etc/mesos-slave/ip
 
@@ -26,7 +28,8 @@ clear
 
 echo "zk://$M_IP:2181/mesos" | tee /etc/mesos/zk
 echo $IP | tee /etc/mesos-slave/hostname
-service mesos-slave restart
+service mesos-slave start
+service marathon start
 echo "Slave node $IP ready"
 
 /srv/cloudlabs/scripts/display.sh /root/info.html
