@@ -57,7 +57,7 @@ auto_slave(){
 		do 
 	    curl -L -X POST -H 'Content-Type: application/json' -d @mesos_slave.json api.terminal.com/v0.1/start_snapshot
 	    echo "Starting Slave $i ..."
-	    sleep 20
+	    sleep 30
     done
 
    	clear
