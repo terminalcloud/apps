@@ -34,7 +34,7 @@ echo 1 | tee /etc/zookeeper/conf/myid
 auto_slave(){
 	cd /root
 	# Get Slave SID and 
-	sid=1567cc0311f255525a14317f16693c39f29810c3fbaada090e3a9b2354262a9d # Slave Sid
+	sid=264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02 # Slave Snap Sid
 	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/mesos_slave.json
 	
 
