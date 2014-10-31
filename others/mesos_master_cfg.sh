@@ -55,8 +55,10 @@ auto_slave(){
 
 	for ((i=1;i<=$num;i++));
 		do 
-    curl -L -X POST -H 'Content-Type: application/json' -d @mesos_slave.json api.terminal.com/v0.1/start_snapshot
-   	done
+		echo "Starting Slave $i"
+	    curl -L -X POST -H 'Content-Type: application/json' -d @mesos_slave.json api.terminal.com/v0.1/start_snapshot
+	    sleep 10
+    done
 
    	clear
    	echo "if you want to add more slaves to this cluster in the future, just start a new Mesos Slave Snapshot and provide this IP address: $IP"
