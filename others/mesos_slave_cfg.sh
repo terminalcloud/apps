@@ -13,6 +13,17 @@ manual_slave(){
 	read M_IP
 }
 
+manual_reboot(){
+	echo "Do you want to reboot it now?"
+	read n
+	case $n in
+	    y) init 6;;
+	    n) echo "OK";;
+	    *) echo "Invalid option, assuming NO";;
+	esac
+}
+
+
 # Server Configuration
 IP=$(/sbin/ifconfig $1 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | grep 240)
 
@@ -30,6 +41,10 @@ echo "zk://$M_IP:2181/mesos" | tee /etc/mesos/zk
 echo $IP | tee /etc/mesos-slave/hostname
 service mesos-slave start
 service marathon start
+
 echo "Slave node $IP ready"
+echo "We suggest to restart this Terminal to ensure the node configuration is applied"
+[[ -f /root/.master ]] && init 6 || manual_reboot
+
 
 /srv/cloudlabs/scripts/display.sh /root/info.html
