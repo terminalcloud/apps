@@ -29,3 +29,4 @@ echo $IP | tee /etc/mesos-slave/hostname
 service mesos-slave restart
 echo "Slave node $IP ready"
 
+/srv/cloudlabs/scripts/display.sh /root/info.html
