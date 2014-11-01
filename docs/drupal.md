@@ -68,7 +68,7 @@ Login with your admin credentials and start using Drupal.
 
 #### Drupal Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/Drupal_installer.sh && bash Drupal_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/drupal_installer.sh && bash drupal_installer.sh`
 
 ---
 
