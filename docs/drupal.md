@@ -57,10 +57,10 @@ Login with your admin credentials and start using Drupal.
 ---
 
 ## Documentation
-- [Drupal Main Website](http://www.Drupal.com/)
-- [Users Guide](http://www.Drupal.com/doc/user-guide)
-- [Developer Guide](http://docs.Drupal.com/latest/index.html)
-- [Github Repo](https://github.com/Drupal/pim-community-standard)
+- [Drupal Main Website](https://www.drupal.org/)
+- [Documentation Home](https://www.drupal.org/documentation)
+- [Developer Guide](https://www.drupal.org/documentation/develop)
+- [Theming Guide](https://www.drupal.org/documentation/theme)
 
 ---
 
@@ -69,10 +69,6 @@ Login with your admin credentials and start using Drupal.
 #### Drupal Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/Drupal_installer.sh && bash Drupal_installer.sh`
-
-### Demo information
-To help to undestand the functionality of the product, this terminal has demo information loaded on it.
-Feel free to delete that information and load your own data as needed.
 
 ---
 
