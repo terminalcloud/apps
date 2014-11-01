@@ -72,7 +72,7 @@ mysql_setup(){ # Arguments: <db> <user> <pass> . Default (for empty) values = te
 	[ -z "$1" ] && db="testdb" || db="$1"
 	[ -z "$2" ] && user="test" || user="$2"
 	[ -z "$3" ] && pass="terminal" || pass="$3"
-	mysql -uroot -proot -e"CREATE DATABASE $db;" || return 1
+	mysql -uroot -proot -e"CREATE DATABASE $db CHARACTER SET utf8 COLLATE utf8_general_ci;" || return 1
 	mysql -uroot -proot -e"CREATE USER '$user'@'localhost' IDENTIFIED BY '$pass';" || return 1
 	mysql -uroot -proot -e"GRANT ALL PRIVILEGES ON $db.* to $user@localhost;" || return 1
 }
