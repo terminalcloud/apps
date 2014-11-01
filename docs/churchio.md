@@ -1,4 +1,4 @@
-# **ChurchIO OneBody ** Terminal.com Snapshot
+# **ChurchIO OneBody** Terminal.com Snapshot
 *Free Church directory and Social Networking software for your Church*
 
 ---
@@ -30,14 +30,7 @@ Church Directory, Profiles and Groups. Eliminate that dated printed directory an
 ## Usage
 
 Just spin-up your container based on this snapshot and click over "Check your installation here".
-Login with your admin credentials and start using churchio.
-
-
-### Credentials:
-
-- username: admin
-- password: t3rminal
-
+Then, follow the on-screen instructions to configure your admin account and finish the site configuration.
 
 ---
 
