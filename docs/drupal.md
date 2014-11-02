@@ -52,10 +52,6 @@ Login with your admin credentials and start using Drupal.
 
 ---
 
-![1](https://www.drupal.org/files/styles/grid-8/public/iMac_tablet_iphone_620x440_01.png?itok=UzysFbCP)  
-
----
-
 ## Documentation
 - [Drupal Main Website](https://www.drupal.org/)
 - [Documentation Home](https://www.drupal.org/documentation)
@@ -65,6 +61,11 @@ Login with your admin credentials and start using Drupal.
 ---
 
 ### Additional Information
+
+
+#### Themes
+This Terminal snapshot has installed various themes ready to apply to your site. This Terminal snapshot has available several themes ready to be applied to your site. The default is the Business theme, with clean layout and light weight code that make it a great theme for small or medium-sized business.
+
 
 #### Drupal Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
