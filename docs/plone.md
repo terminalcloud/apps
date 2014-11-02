@@ -11,6 +11,7 @@
 Plone is among the top 2% of all open source projects worldwide, with 340 core developers and more than 300 solution providers in 57 countries. The project has been actively developed since 2001, is available in more than 40 languages, and has the best security track record of any major CMS. 
 It is owned by the Plone Foundation, a 501(c)(3) not-for-profit organization, and is available for all major operating systems.
 
+![1](http://quintagroup.com/services/support/tutorials/chameleon-skin/chameleon.png)
 
 ---
 
