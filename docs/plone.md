@@ -47,7 +47,7 @@ Login with your admin credentials and follow the on-screen instructions to creat
 
 #### Plone Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/Plone_installer.sh && bash Plone_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/plone_installer.sh && bash plone_installer.sh`
 
 
 ---
