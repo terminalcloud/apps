@@ -50,7 +50,7 @@ auto_slave(){
 	case $kind in 
 		1) sed -i "s/cpuq/100/g" mesos_slave.json && sed -i "s/ramq/1600/g" mesos_slave.json ;;
 		2) sed -i "s/cpuq/200/g" mesos_slave.json && sed -i "s/ramq/3200/g" mesos_slave.json ;;
-		3) sed -i "s/cpuq/400/g" mesos_slave.json && sed -i "s/ramq/6400/g" mesos_slave.json ;;
+		3) sed -i "s/cpuq/300/g" mesos_slave.json && sed -i "s/ramq/6400/g" mesos_slave.json ;;
 		*) echo "Invalid option, assuming Small"; sed -i "s/cpuq/100/g" mesos_slave.json && sed -i "s/ramq/1600/g" mesos_slave.json ;;
 	esac
 
