@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script to deploy web2py at Terminal.com
 
-INSTALL_PATH="/var/www"
+INSTALL_PATH="/root"
 
 # Includes
 wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh

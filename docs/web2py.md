@@ -23,15 +23,16 @@
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Check your installation here".
-Login with your admin credentials and start using Web2Py.
+Spin-up your container based on this snapshot.
+
+To see the Web2Py framework example running, please click over "Check your installation here"
+
+- Admin section password: t3rminal
+
+- Framework Start: `cd /root/web2py && python2.7 web2py.py --ip 0.0.0.0`
 
 
-### Credentials:
-
-- username: admin
-- password: t3rminal
-
+For more information about how to write your application using this framework, please check the documentation section.
 
 ---
 
