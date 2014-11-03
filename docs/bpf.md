@@ -29,7 +29,7 @@ You can use it as an example, staring point or just start from scratch.
 
 
 ## Documentation
-- [BottlePy Main Website](http://bottlepy.org/)
+- [BottlePy Official Website](http://bottlepy.org/)
 - [Mailing list](bottlepy@googlegroups.com)
 - [A simple todo-app tutorial](http://bottlepy.org/docs/dev/tutorial_app.html)
 - [Docs and Tutorials](http://bottlepy.org/docs/dev/tutorial.html)

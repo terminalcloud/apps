@@ -43,7 +43,7 @@ On this case, this snapshot have both services installed on it. (Master and Slav
 ---
 
 ## Documentation
-- [Apache Mesos Main Website](http://mesos.apache.org/)
+- [Apache Mesos Official Website](http://mesos.apache.org/)
 - [Mesos Documentation Page](http://mesos.apache.org/documentation/latest/)
 - [Mesos Community Page](http://mesos.apache.org/community/)
 - [Mesos Frameworks](http://mesos.apache.org/documentation/latest/mesos-frameworks/)

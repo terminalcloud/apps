@@ -53,7 +53,7 @@ Login with your admin credentials and start using Drupal.
 ---
 
 ## Documentation
-- [Drupal Main Website](https://www.drupal.org/)
+- [Drupal Official Website](https://www.drupal.org/)
 - [Documentation Home](https://www.drupal.org/documentation)
 - [Developer Guide](https://www.drupal.org/documentation/develop)
 - [Theming Guide](https://www.drupal.org/documentation/theme)

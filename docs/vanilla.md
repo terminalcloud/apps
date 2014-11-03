@@ -32,7 +32,7 @@ Login with your admin credentials and start using Vanilla.
 ---
 
 ## Documentation
-- [Vanilla Main Website](http://vanillaforums.org/)
+- [Vanilla Official Website](http://vanillaforums.org/)
 - [Official Documentation](http://vanillaforums.org/docs)
 - [Vanilla Community](http://vanillaforums.org/discussions)
 - [Blog](http://blog.vanillaforums.com/)

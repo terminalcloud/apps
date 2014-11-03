@@ -52,7 +52,7 @@ To access phpPgAdmin just click over the link provided and login with the postgr
 ---
 
 ## Documentation
-- [PostgreSQL Main Website](http://www.postgresql.org/)
+- [PostgreSQL Official Website](http://www.postgresql.org/)
 - [PostgreSQL Manuals](http://www.postgresql.org/docs/manuals/)
 - [PgWeb GitHub Repo](https://github.com/sosedoff/pgweb)
 - [PhpPGAdmin Website](http://phppgadmin.sourceforge.net/doku.php)

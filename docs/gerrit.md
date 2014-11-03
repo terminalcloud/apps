@@ -54,7 +54,7 @@ Gerrit PostgreSQL:
 ---
 
 ## Documentation
-- [Gerrit Main Website](https://code.google.com/p/gerrit/)
+- [Gerrit Official Website](https://code.google.com/p/gerrit/)
 - [Users Guide (for the current version)](https://gerrit-documentation.storage.googleapis.com/Documentation/2.9.1/index.html)
 
 ---

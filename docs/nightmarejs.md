@@ -28,7 +28,7 @@ For more information about the API use, please check the [Complete API documenta
 ---
 
 ## Documentation
-- [NightmareJS Main Website](http://www.nightmarejs.org/)
+- [NightmareJS Official Website](http://www.nightmarejs.org/)
 - [Complete API documentation](https://github.com/segmentio/nightmare#api)
 - [GitHub Repo](https://github.com/segmentio/nightmare)
 

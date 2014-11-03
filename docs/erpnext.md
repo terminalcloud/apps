@@ -34,7 +34,7 @@ Due security reasons, ERPNext is running under a non-privileged user called "bun
 ---
 
 ## Documentation and links
-- [ERPNext Main Website](https://erpnext.com/)
+- [ERPNext Official Website](https://erpnext.com/)
 - [User's Manual](https://erpnext.com/user-guide)
 - [Forums](https://discuss.frappe.io/)
 - [Community Portal](https://frappe.io/community)

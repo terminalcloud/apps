@@ -36,7 +36,7 @@ The process will be running as background jobs. To send them back to the front (
 ---
 
 ## Documentation
-- [Imbers Main Website](http://www.imbers.com/)
+- [Imbers Official Website](http://www.imbers.com/)
 - [GitHub Repos](https://github.com/52unicorns/)
 
 ---

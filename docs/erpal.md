@@ -52,7 +52,7 @@ Login with your admin credentials and start using Open Erpal.
 ---
 
 ## Documentation
-- [Erpal Main Website](http://www.erpal.info/)
+- [Erpal Official Website](http://www.erpal.info/)
 - [Videos](http://www.erpal.info/videos)
 - [Erpal Blog](http://www.erpal.info/blog)
 

@@ -53,7 +53,7 @@ Login with your admin credentials and start using NodeBB.
 ---
 
 ## Documentation
-- [NodeBB Main Website](https://nodebb.org)
+- [NodeBB Official Website](https://nodebb.org)
 - [Developer Guide](https://github.com/NodeBB/NodeBB/wiki)
 - [GitHub Repo](https://github.com/NodeBB/NodeBB)
 

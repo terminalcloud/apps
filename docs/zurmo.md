@@ -46,7 +46,7 @@ Login with your admin credentials and start using Open Zurmo.
 ---
 
 ## Documentation
-- [Zurmo Main Website](http://zurmo.org/)
+- [Zurmo Official Website](http://zurmo.org/)
 - [Community Page](http://zurmo.org/community)
 - [Development Area](http://zurmo.org/development)
 - [Zurmo Documentation](http://zurmo.org/documentation)

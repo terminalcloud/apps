@@ -25,7 +25,7 @@ Login with your admin credentials and start using Chyrp.
 ---
 
 ## Documentation
-- [Chyrp Main Website](http://chyrp.net/)
+- [Chyrp Official Website](http://chyrp.net/)
 - [Discuss about Chyrp](http://chyrp.net/discuss/index/)
 - [FAQ](http://chyrp.net/about/faq)
 - [Additional Extensions](http://chyrp.net/extend/index/)

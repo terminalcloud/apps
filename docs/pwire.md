@@ -33,7 +33,7 @@ Login with your admin credentials and start using ProcessWire.
 ---
 
 ## Documentation
-- [ProcessWire Main Website](http://processwire.com/)
+- [ProcessWire Official Website](http://processwire.com/)
 - [Tutorials](http://processwire.com/docs/tutorials/)
 - [Blog](http://processwire.com/blog/)
 - [Forum](https://processwire.com/talk/)

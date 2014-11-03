@@ -88,7 +88,7 @@ Login with your admin credentials and start using Akeneo.
 ---
 
 ## Documentation
-- [Akeneo Main Website](http://www.akeneo.com/)
+- [Akeneo Official Website](http://www.akeneo.com/)
 - [Users Guide](http://www.akeneo.com/doc/user-guide)
 - [Developer Guide](http://docs.akeneo.com/latest/index.html)
 - [GitHub Repo](https://github.com/akeneo/pim-community-standard)

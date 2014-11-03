@@ -122,7 +122,7 @@ Login with your admin credentials and start using GLPI.
 ---
 
 ## Documentation
-- [GLPI Main Website](http://www.glpi-project.org/spip.php?lang=en)
+- [GLPI Official Website](http://www.glpi-project.org/spip.php?lang=en)
 - [GLPI Documentation](http://www.glpi-project.org/spip.php?rubrique18)
 - [GLPI Forum ](http://www.glpi-project.org/forum/)
 - [Video and Screencasts](http://www.glpi-project.org/spip.php?rubrique85)

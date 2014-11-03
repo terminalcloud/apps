@@ -35,7 +35,7 @@ Login with your admin credentials and follow the on-screen instructions to creat
 ---
 
 ## Documentation
-- [Plone Main Website](https://plone.org/)
+- [Plone Official Website](https://plone.org/)
 - [Installing Plone Addons](http://docs.plone.org/manage/installing/installing_addons.html)
 - [Plone Styling and Theming](http://docs.plone.org/adapt-and-extend/theming/index.html)
 - [Development Guide](http://docs.plone.org/)

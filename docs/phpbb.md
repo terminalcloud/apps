@@ -40,7 +40,7 @@ Login with your admin credentials and start using Open PHPBB.
 ---
 
 ## Documentation
-- [PHPBB Main Website](https://www.phpbb.com/)
+- [PHPBB Official Website](https://www.phpbb.com/)
 - [Support and Docs](https://www.phpbb.com/support/)
 - [Development Area](https://www.phpbb.com/development/)
 - [PHPBBBlog](https://blog.phpbb.com/)

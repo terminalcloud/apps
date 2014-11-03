@@ -43,7 +43,7 @@ Login with your admin credentials and start using Resource Space.
 ---
 
 ## Documentation
-- [Resource Space Main Website](http://www.resourcespace.org/)
+- [Resource Space Official Website](http://www.resourcespace.org/)
 - [Resource Space Blog](http://www.resourcespace.org/blog)
 - [Google Group](http://www.resourcespace.org/googlegroup)
 - [Tutorial Videos](http://www.resourcespace.org/videos)

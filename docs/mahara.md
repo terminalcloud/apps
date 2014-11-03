@@ -53,7 +53,7 @@ Login with your admin credentials and start using Mahara.
 ---
 
 ## Documentation
-- [Mahara Main Website](https://mahara.org)
+- [Mahara Official Website](https://mahara.org)
 - [User Manual](https://mahara.org/documentation)
 - [Mahara Wiki](https://mahara.org/wiki)
 - [Bug-Feature Tracket](https://mahara.org/tracker)

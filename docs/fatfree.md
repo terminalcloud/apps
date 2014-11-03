@@ -41,7 +41,7 @@ Login with your admin credentials and start using FatFree CRM.
 ---
 
 ## Documentation
-- [FatFree CRM Main Website](http://www.fatfreecrm.com/)
+- [FatFree CRM Official Website](http://www.fatfreecrm.com/)
 - [Usage Guides](http://guides.fatfreecrm.com/)
 - [Users Group](https://groups.google.com/forum/#!forum/fat-free-crm-users)
 - [Development Group](https://groups.google.com/forum/#!forum/fat-free-crm-dev)

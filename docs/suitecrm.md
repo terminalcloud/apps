@@ -47,7 +47,7 @@ Login with your admin credentials and start using SuiteCRM.
 ---
 
 ## Documentation
-- [SuiteCRM Main Website](https://suitecrm.com)
+- [SuiteCRM Official Website](https://suitecrm.com)
 - [Support Forum](https://suitecrm.com/index.php?option=com_kunena&view=category&Itemid=1137&layout=list)
 - [Documentation Center](https://suitecrm.com/index.php?option=com_wrapper&view=wrapper&Itemid=1383)
 - [GitHub Repo](https://github.com/salesagility/SuiteCRM)
