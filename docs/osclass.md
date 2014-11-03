@@ -4,7 +4,7 @@
 ---
 
 ## About Osclass
-**OSClass** is all you need to easily create your own classifieds website. 
+**OSClass** is all you need to easily create your own classifieds website.
 It's an open source application to create your advertisement or listings site.
 
 ---
@@ -26,7 +26,7 @@ You may want to use your own domain with this terminal containter. Please follow
 
 ---
 
-![1](http://blog.osclass.org/wp-content/uploads/2013/04/responsive-theme-osclass.jpg)	
+![1](http://blog.osclass.org/wp-content/uploads/2013/04/responsive-theme-osclass.jpg)
 
 ---
 

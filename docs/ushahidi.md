@@ -4,7 +4,7 @@
 ---
 
 ## About Ushahidi
-**Ushahidi** is a web and mobile platform that allows you to create, visualize and share stories on a map. It allows individuals to share their stories on their own terms using the tools they already have. 
+**Ushahidi** is a web and mobile platform that allows you to create, visualize and share stories on a map. It allows individuals to share their stories on their own terms using the tools they already have.
 
 
 ### Features
@@ -51,7 +51,7 @@ When the installation is complete, you can access the ushahidi [admin section](h
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/ushahidi_installer.sh && bash ushahidi_installer.sh`
 
-Use at least a "small" Terminal container to host this application. 
+Use at least a "small" Terminal container to host this application.
 
 ---
 

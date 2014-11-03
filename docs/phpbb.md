@@ -35,7 +35,7 @@ Login with your admin credentials and start using Open PHPBB.
 
 ---
 
-![1](http://thenewtech.info/wp-content/uploads/sites/3/2012/07/phpbb-install-8.jpg)	
+![1](http://thenewtech.info/wp-content/uploads/sites/3/2012/07/phpbb-install-8.jpg)
 
 ---
 

@@ -28,7 +28,7 @@
 
 - **Central organizsation** - Realistic planning and fact-based decisions are only possible if you maintain all your project and company data in a centralized repository. ERPAL stores all your data together in one place.
 
-- **More time for the important things** - With ERPAL for Service Providers you'll reduce your administrative work so you can focus on activities that add value for your company.   
+- **More time for the important things** - With ERPAL for Service Providers you'll reduce your administrative work so you can focus on activities that add value for your company.
 
 ---
 
@@ -47,7 +47,7 @@ Login with your admin credentials and start using Open Erpal.
 
 ---
 
-![1](http://www.erpal.info/sites/default/files/styles/banner/public/buehne_erpal-forserviceproviders.png)	
+![1](http://www.erpal.info/sites/default/files/styles/banner/public/buehne_erpal-forserviceproviders.png)
 
 ---
 

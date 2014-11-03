@@ -49,7 +49,7 @@ Gerrit PostgreSQL:
 
 ---
 
-![1](http://upload.wikimedia.org/wikipedia/mediawiki/thumb/9/94/Chrome_gerrit_9332_2.png/800px-Chrome_gerrit_9332_2.png)  
+![1](http://upload.wikimedia.org/wikipedia/mediawiki/thumb/9/94/Chrome_gerrit_9332_2.png/800px-Chrome_gerrit_9332_2.png)
 
 ---
 

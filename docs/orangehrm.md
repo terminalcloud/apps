@@ -38,7 +38,7 @@ Login with your admin credentials and start using Orange HRM.
 
 ---
 
-![1](http://www.orangehrm.com/images/Download.jpg)	
+![1](http://www.orangehrm.com/images/Download.jpg)
 
 ---
 

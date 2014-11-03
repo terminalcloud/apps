@@ -8,7 +8,7 @@ Developed by a fast-moving online-news operation, Django was designed to handle 
 
 
 ## Usage:
-Just spin up you terminal.com container based on this snapshot and you will have everything needed to develop, deploy and serve Django applications. 
+Just spin up you terminal.com container based on this snapshot and you will have everything needed to develop, deploy and serve Django applications.
 
 This container has Apache web server installed, serving a sample Django App that can be the base for you new project.
 

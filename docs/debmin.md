@@ -1,7 +1,7 @@
 # Ubuntu 14.04 with Webmin - Terminal.com Container
 *Official Ubuntu 14.04 distribution with minimal stack for running Terminal.com IDE and Webmin web administration tool.*
 
-   
+
 ## Usage:
 Webmin is running on port 10000 by default.
 To access webmin just go to https://terminalservername-1000.terminal.com and login with root credentials.

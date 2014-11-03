@@ -1,7 +1,7 @@
 # Ubuntu 14.04 with XFCE4 - Terminal.com Container
 
 This container has a full Ubuntu 14.04 ready to use and install whatever you want.
-It also contains X11rdp to let you connect to the machine using remote desktop. 
+It also contains X11rdp to let you connect to the machine using remote desktop.
 
 ## About XFCE:
 **Xfce** is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while still being visually appealing and user friendly.
@@ -14,7 +14,7 @@ It also contains X11rdp to let you connect to the machine using remote desktop.
 ## Instructions:
 Please read the instructions **carefuly**.
 
-This container is configured to be used as a desktop machine, but you can also use it as a base image to install whatever you want. 
+This container is configured to be used as a desktop machine, but you can also use it as a base image to install whatever you want.
 
 The instructions are only valid for Linux, BSD or MacOS systems.
 Windows instructions coming soon.

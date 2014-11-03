@@ -12,7 +12,7 @@
 
 - *Digital Asset Management Platform* - Managing digital assets is a huge challenge, especially due to the exponential growth of digital assets in large and small organizations. As a solid and proven open-source DAM/MAM solution, pimcore offers a comprehensive and user-friendly toolbox to manage, enrich and distribute any type of digital asset.
 
-- *Product Information Management (PIM)* - The central management of product information in a consistent way is key to your multi-channel success. Pimcore provides the needed flexible master data management fundament to efficiently enable this process. Due to the unique nature and flexibility of the pimcore data model and its “connect anything” architecture, you can build data and asset management structures fitting 100% to your product information management needs across all sectors and business models. And pimcore integrates well. Very well. 
+- *Product Information Management (PIM)* - The central management of product information in a consistent way is key to your multi-channel success. Pimcore provides the needed flexible master data management fundament to efficiently enable this process. Due to the unique nature and flexibility of the pimcore data model and its “connect anything” architecture, you can build data and asset management structures fitting 100% to your product information management needs across all sectors and business models. And pimcore integrates well. Very well.
 Based on its own pimcore API or the REST API it’s easy and fast to integrate pimcore within existing IT structures like ERP, CRM or BI systems.
 
 - *Multi-Channel E-Commerce Platform* - Pimcore is the industry’s first integrated Open-Source E-Commerce & Product Information Management Platform for delivering rich and compelling e-commerce (B2C/B2B) experiences across all available channels. Based on a solid and flexible platform for managing structured and unstructured product information and any digital assets.
@@ -37,7 +37,7 @@ Based on its own pimcore API or the REST API it’s easy and fast to integrate p
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Check your installation here". 
+Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Check your installation here".
 
 
 To login into the administration section, please use the credentials below:
@@ -60,7 +60,7 @@ To login into the administration section, please use the credentials below:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/pimcore_installer.sh && bash pimcore_installer.sh`
 
-Use at least a "small" Terminal container to host this application. 
+Use at least a "small" Terminal container to host this application.
 
 ---
 

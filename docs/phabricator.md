@@ -11,7 +11,7 @@ Phabricator supports Git, Mercurial, and Subversion. The Phabricator server runs
 
 ## Key Features
 
-- **Review Code or just stare at it** 
+- **Review Code or just stare at it**
 Review others' code with **Differential**, because they can't be trusted.
 
 ![1](http://phabricator.org/images/phabricator//differential.png)
@@ -75,7 +75,7 @@ For mor information about usage please check the [User Documentation](http://www
 
 ---
 
-![10](http://phabricator.org/images/phabricator//hero.png)  
+![10](http://phabricator.org/images/phabricator//hero.png)
 
 ---
 

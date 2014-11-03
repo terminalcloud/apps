@@ -38,7 +38,7 @@ Login with your admin credentials and start using Resource Space.
 
 ---
 
-![1](http://www.resourcespace.org/img/content/features/web/main.png)	
+![1](http://www.resourcespace.org/img/content/features/web/main.png)
 
 ---
 

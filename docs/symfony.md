@@ -11,7 +11,7 @@ Supported by SensioLabs - but also by a large community - Symfony has many resou
 Available in version 2.0, Symfony already has, among the hundreds of sites and applications developed on its platform, prestigious references, such as Yahoo!, Dailymotion, Opensky.com, Exercise.com, phpBB, or Drupal.
 
 ## Usage:
-Just spin up you terminal.com container based on this snapshot and you will have everything needed to develop, deploy and serve a **Symfony Application**. 
+Just spin up you terminal.com container based on this snapshot and you will have everything needed to develop, deploy and serve a **Symfony Application**.
 
 This container have Apache web server installed, serving a sample Symfony App that can be the base for you new poject.
 

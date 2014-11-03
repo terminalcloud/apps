@@ -1,16 +1,16 @@
-#Piwik Open Analytics Platform 
-Piwik is an open analytics platform currently used by individuals, 
+#Piwik Open Analytics Platform
+Piwik is an open analytics platform currently used by individuals,
 companies and governments all over the world.
 
 ##Web Analytics Features
 
-All standard statistics reports: top keywords and search engines, websites, 
+All standard statistics reports: top keywords and search engines, websites,
 top page URLs, page titles, user countries, providers, operating system, browser
-marketshare, screen resolution, desktop VS mobile, engagement (time on site, 
-pages per visit, repeated visits), top campaigns, custom variables, top 
-entry/exit pages, downloaded files, and many more, classified into four main 
-analytics report categories – Visitors, Actions, Referrers, Goals/e-Commerce 
-(30+ reports). 
+marketshare, screen resolution, desktop VS mobile, engagement (time on site,
+pages per visit, repeated visits), top campaigns, custom variables, top
+entry/exit pages, downloaded files, and many more, classified into four main
+analytics report categories – Visitors, Actions, Referrers, Goals/e-Commerce
+(30+ reports).
 
 - Real time data updates
 - Customizable Dashboard
@@ -31,7 +31,7 @@ analytics report categories – Visitors, Actions, Referrers, Goals/e-Commerce
 - No data limit
 
 ## Usage
-- Spin up your Piwik container and point your browser to 
+- Spin up your Piwik container and point your browser to
 http://yourterminalname-80.terminal.com
 - Login with user and pass: **admin | terminal.com**
 - Go yo *Settings > Website* and add the site URL to be analyzed.

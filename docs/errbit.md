@@ -18,7 +18,7 @@ _(See **Usage** for login and details)_
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and try Erbit clicking on "Check your installation here". 
+Spin up your terminal container based on this snapshot and try Erbit clicking on "Check your installation here".
 
 
 ####Please login to Errbit using the default credentials below:
@@ -83,7 +83,7 @@ You can change the requested account permissions by setting `github_access_scope
 #### Errbit Terminal.com container automatic installation:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/errbit_installer.sh && bash errbit_installer.sh`
- 
+
 
 ---
 

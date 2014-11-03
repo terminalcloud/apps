@@ -9,7 +9,7 @@ You can use Ajenti to install packages, create users and other server
 administration task from a convenient web interface.
 
 This containter also has intalled and configured the additional *Ajenti V Plugins* . Now you can configure and publish your web sites directly from the web interface!
-   
+
 ### Usage:
 Open a new browser tab or window and go to **http://terminalservername-3000.terminal.com**
 

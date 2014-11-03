@@ -5,7 +5,7 @@
 
 ## About Puer
 
-**Puer** is a [socket.io](http://socket.io/) based live-reload server with special features that will help you with front-end develpment tasks. 
+**Puer** is a [socket.io](http://socket.io/) based live-reload server with special features that will help you with front-end develpment tasks.
 
 ---
 

@@ -41,7 +41,7 @@ Login with your admin credentials and start using Open Zurmo.
 
 ---
 
-![1](http://3.bp.blogspot.com/-f7jXw6_4scg/USSk5aZjb6I/AAAAAAAAAZo/dcHxzmsHA70/s1600/zurmo-dashboard.png)	
+![1](http://3.bp.blogspot.com/-f7jXw6_4scg/USSk5aZjb6I/AAAAAAAAAZo/dcHxzmsHA70/s1600/zurmo-dashboard.png)
 
 ---
 

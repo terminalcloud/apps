@@ -19,7 +19,7 @@ This Terminal.com container has a fully functional **Phusion Passenger** server 
 
 The **Nginx** installation has been compiled specially to be used with **Phusion Passenger** modules and it's available to be used to server any of this kind of applications:
 - Ruby/Rails Apps.
-- Python/Django Apps. 
+- Python/Django Apps.
 - Nodejs Apps.
 - Meteor Apps.
 

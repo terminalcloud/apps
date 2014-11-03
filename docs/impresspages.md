@@ -40,7 +40,7 @@ db name: impresspages
 db user: impresspages
 db pass: terminal
 
-``` 
+```
 - After configuring your site, you can start creating it using the provided CMS.
 
 ## Documentation:
@@ -58,4 +58,4 @@ db pass: terminal
 
 ---
 
-#### Thanks for using ImpressPages at Terminal.com 
+#### Thanks for using ImpressPages at Terminal.com

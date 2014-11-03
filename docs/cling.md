@@ -26,7 +26,7 @@ One of Cling's main goals is to provide contemporary, high-performance alternati
 Spin up your terminal container based on this snapshot and start using the Cling interpreter immediately!
 
 
-#### To start Cling in a new console, just ejecute 
+#### To start Cling in a new console, just ejecute
 **`cling`**
 
 #### Other usage examples
