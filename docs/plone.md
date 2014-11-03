@@ -17,7 +17,7 @@ It is owned by the Plone Foundation, a 501(c)(3) not-for-profit organization, an
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and follow the on-screen instructions to create your first Plone site.
 
 

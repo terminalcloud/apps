@@ -6,7 +6,7 @@ GitLab CE is on-premises software that you can install and use on your server(s)
 ###Usage:
 This container has a GitLab instance auto-configurable and almost ready to use.
 
-Just start your container machine from this snapshot, wait a few seconds for the program statup and then click over the link provided on the internal browser window.
+Just start your container machine from this snapshot, wait a few seconds for the program statup and then click to the link provided on the internal browser window.
 
 
 ### Access Credentials:

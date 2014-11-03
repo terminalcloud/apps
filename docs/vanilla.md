@@ -15,7 +15,7 @@ Every community is unique. Vanilla is a finely-crafted platform on which designe
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Test your installation here".
+Just spin-up your container based on this snapshot and click to "Test your installation here".
 Login with your admin credentials and start using Vanilla.
 
 

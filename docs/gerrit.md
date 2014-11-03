@@ -24,7 +24,7 @@ For a complete list please visite the [Gerrit ShowCases page](https://code.googl
 
 ## Usage
 
-- Spin-up your container based on this snapshot and click over "Check your installation here".
+- Spin-up your container based on this snapshot and click to "Check your installation here".
 - Login with your OpenID user [Yahoo OpenID is recommended]
 - The first user to login Gerrit will be the Gerrit Admin by default. You will prompted to change your settings and set your keys.
 

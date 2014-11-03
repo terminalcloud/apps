@@ -100,7 +100,7 @@ Statistics reports by month, year, total in PNG, SVG or CSV.
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your application here".
+Just spin-up your container based on this snapshot and click to "Check your application here".
 Login with your admin credentials and start using GLPI.
 
 

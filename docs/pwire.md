@@ -14,7 +14,7 @@ ProcessWire gives simpler and stronger control over your pages, fields, template
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over the "ProcessWire Admin Login" link.
+Just spin-up your container based on this snapshot and click to the "ProcessWire Admin Login" link.
 Login with your admin credentials and start using ProcessWire.
 
 

@@ -15,7 +15,7 @@
 
 
 ## Usage
-Spin up your terminal container based on this snapshot and click over the "Check your installation" link.
+Spin up your terminal container based on this snapshot and click to the "Check your installation" link.
 
 Login to **Structr** using the following default credentials:
 

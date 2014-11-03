@@ -37,7 +37,7 @@ For Demo purposes, there is a sample database to browse with pgweb installed on 
 ### PhpPGAdmin
 **phpPgAdmin** is a web-based client which leverages PHP scripting and the PostgreSQL database to provide a convenient way for users to create databases, create tables, alter tables and query their own data using industry-standard SQL.
 
-To access phpPgAdmin just click over the link provided and login with the postgress credentials.
+To access phpPgAdmin just click to the link provided and login with the postgress credentials.
 
 
 ---

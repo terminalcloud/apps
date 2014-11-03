@@ -18,9 +18,9 @@ Businesses using Community Edition as their open source ecommerce solution to ru
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over the "Magento Administration" link to start customizing your Magento site.
+Just spin-up your container based on this snapshot and click to the "Magento Administration" link to start customizing your Magento site.
 
-To check your public site, please click over the "Magento Frontend" link.
+To check your public site, please click to the "Magento Frontend" link.
 
 
 Login with your admin credentials and start using  Magento CMS.

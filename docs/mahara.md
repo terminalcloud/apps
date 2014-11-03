@@ -35,7 +35,7 @@ ePortfolio owners create Views using a 4 step process and Views have the followi
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Mahara.
 
 

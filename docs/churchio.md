@@ -29,7 +29,7 @@ Church Directory, Profiles and Groups. Eliminate that dated printed directory an
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Then, follow the on-screen instructions to configure your admin account and finish the site configuration.
 
 ---

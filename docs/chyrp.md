@@ -12,7 +12,7 @@ All of your content is powered by a unique Feathers system that allows Chyrp to 
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Use Chyrp here!".
+Just spin-up your container based on this snapshot and click to "Use Chyrp here!".
 Login with your admin credentials and start using Chyrp.
 
 

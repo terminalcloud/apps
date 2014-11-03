@@ -13,7 +13,7 @@ ERPNext covers most functionality required to run a small or medium sized busine
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Test your installation here".
+Just spin-up your container based on this snapshot and click to "Test your installation here".
 Login with your admin credentials and and configure your ERP based on your needs.
 
 

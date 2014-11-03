@@ -57,7 +57,7 @@ The **Conduit** API allows you to write scripts that interact with Phabricator o
 
 ## Usage
 
-Just spin up your Terminal based on this snapshot and click over "Check your installation here".
+Just spin up your Terminal based on this snapshot and click to "Check your installation here".
 
 Create your own admin account and start configuring Phabricator.
 For mor information about usage please check the [User Documentation](http://www.phabricator.com/docs/phabricator/) page.

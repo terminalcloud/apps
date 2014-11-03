@@ -26,7 +26,7 @@ Running your own URL shortener is fun, geeky and useful: you own your data and d
 ![2](https://yourls.org/yourls-org-images/stats-anim.gif)
 
 ## Usage
-Spin up your terminal container based on this snapshot and click over the link provided.
+Spin up your terminal container based on this snapshot and click to the link provided.
 
 Due the way YOURLS works, you will have to login to the system by going to /admin and authenticate using the default user and password: ` user: admin , password: password ` To change this password just edit the user/config.php file. The passwords will be automatically encrypted during the next run.
 

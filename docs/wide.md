@@ -51,7 +51,7 @@ A Product Information Management tool (also known as PIM, PCM or Products MDM) i
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Wide.
 
 

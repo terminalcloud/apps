@@ -30,7 +30,7 @@ SuiteCRM is powered by a flexible development and integration-ready platform tha
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using SuiteCRM.
 
 
