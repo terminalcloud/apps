@@ -25,7 +25,7 @@ ResourceSpace open source digital asset management software is the simple, fast,
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Resource Space.
 
 
@@ -38,12 +38,12 @@ Login with your admin credentials and start using Resource Space.
 
 ---
 
-![1](http://www.resourcespace.org/img/content/features/web/main.png)	
+![1](http://www.resourcespace.org/img/content/features/web/main.png)
 
 ---
 
 ## Documentation
-- [Resource Space Main Website](http://www.resourcespace.org/)
+- [Resource Space Official Website](http://www.resourcespace.org/)
 - [Resource Space Blog](http://www.resourcespace.org/blog)
 - [Google Group](http://www.resourcespace.org/googlegroup)
 - [Tutorial Videos](http://www.resourcespace.org/videos)

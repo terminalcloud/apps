@@ -28,7 +28,7 @@ Out of the box it features group collaboration, campaign and lead management, co
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using FatFree CRM.
 
 
@@ -41,11 +41,11 @@ Login with your admin credentials and start using FatFree CRM.
 ---
 
 ## Documentation
-- [FatFree CRM Main Website](http://www.fatfreecrm.com/)
+- [FatFree CRM Official Website](http://www.fatfreecrm.com/)
 - [Usage Guides](http://guides.fatfreecrm.com/)
 - [Users Group](https://groups.google.com/forum/#!forum/fat-free-crm-users)
 - [Development Group](https://groups.google.com/forum/#!forum/fat-free-crm-dev)
-- [Github Repo](https://github.com/fatfreecrm/fat_free_crm)
+- [GitHub Repo](https://github.com/fatfreecrm/fat_free_crm)
 
 ---
 

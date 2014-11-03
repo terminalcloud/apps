@@ -5,7 +5,7 @@
 ---
 
 ## About ProcessWire
-**ProcessWire** is a free PHP5 content management system and framework (open source CMS/CMF) built to save you time and work the way you do. 
+**ProcessWire** is a free PHP5 content management system and framework (open source CMS/CMF) built to save you time and work the way you do.
 
 ProcessWire gives simpler and stronger control over your pages, fields, templates and markup at any scale. And it provides a powerful template system that works the way you already do. ProcessWire’s jQuery-inspired API makes working with your content easy and enjoyable. Managing and developing a site in ProcessWire is shockingly simple–and fun–compared to what you may be used to.
 
@@ -14,7 +14,7 @@ ProcessWire gives simpler and stronger control over your pages, fields, template
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over the "ProcessWire Admin Login" link.
+Just spin-up your container based on this snapshot and click to the "ProcessWire Admin Login" link.
 Login with your admin credentials and start using ProcessWire.
 
 
@@ -33,7 +33,7 @@ Login with your admin credentials and start using ProcessWire.
 ---
 
 ## Documentation
-- [ProcessWire Main Website](http://processwire.com/)
+- [ProcessWire Official Website](http://processwire.com/)
 - [Tutorials](http://processwire.com/docs/tutorials/)
 - [Blog](http://processwire.com/blog/)
 - [Forum](https://processwire.com/talk/)

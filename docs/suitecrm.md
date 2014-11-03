@@ -30,7 +30,7 @@ SuiteCRM is powered by a flexible development and integration-ready platform tha
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using SuiteCRM.
 
 
@@ -42,15 +42,15 @@ Login with your admin credentials and start using SuiteCRM.
 
 ---
 
-![1](http://www.netcentrum.pl/images/headers/slider-suitecrm.png)	
+![1](http://www.netcentrum.pl/images/headers/slider-suitecrm.png)
 
 ---
 
 ## Documentation
-- [SuiteCRM Main Website](https://suitecrm.com)
+- [SuiteCRM Official Website](https://suitecrm.com)
 - [Support Forum](https://suitecrm.com/index.php?option=com_kunena&view=category&Itemid=1137&layout=list)
 - [Documentation Center](https://suitecrm.com/index.php?option=com_wrapper&view=wrapper&Itemid=1383)
-- [Github Repo](https://github.com/salesagility/SuiteCRM)
+- [GitHub Repo](https://github.com/salesagility/SuiteCRM)
 
 ---
 

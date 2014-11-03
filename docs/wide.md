@@ -12,22 +12,22 @@ A Product Information Management tool (also known as PIM, PCM or Products MDM) i
 ## Motivation
 
 * **Team** IDE:
-  * Safe and reliable: the project source code stored on the server in real time, the developer's machine crashes without losing any source code 
-  * Unified environment: server unified development environment configuration, the developer machine without any additional configuration 
+  * Safe and reliable: the project source code stored on the server in real time, the developer's machine crashes without losing any source code
+  * Unified environment: server unified development environment configuration, the developer machine without any additional configuration
   * Out of the box: 5 minutes to setup a server then open browser to develop, debug
-  * Version Control: each developer has its own source code repository, easy sync with the trunk 
+  * Version Control: each developer has its own source code repository, easy sync with the trunk
 * **Web based** IDE:
   * Developer needs a browser only
   * Cross-platform, even on mobile devices
-  * Easy for extensions 
+  * Easy for extensions
   * Easy integration with other systems
   * For the geeks
 * A try for commercial-open source: versions customized for enterprises, close to their development work flows respectively
-* Currently more popular Go IDE has some defects or regrets: 
-  * Text editor (vim/emacs/sublime/Atom, etc.): For the Go newbie is too complex 
+* Currently more popular Go IDE has some defects or regrets:
+  * Text editor (vim/emacs/sublime/Atom, etc.): For the Go newbie is too complex
   * Plug-in (goclipse, etc.): the need for the original IDE support, not professional
   * LiteIDE: no modern user interface :p
-  * No team development experience 
+  * No team development experience
 * There are a few of GO IDEs, and no one developed by Go itself, this is a nice try
 
 
@@ -51,7 +51,7 @@ A Product Information Management tool (also known as PIM, PCM or Products MDM) i
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Wide.
 
 
@@ -63,12 +63,12 @@ Login with your admin credentials and start using Wide.
 
 ---
 
-![1](https://camo.githubusercontent.com/56436ce77d8960bc578ee044480559c50791f44b/687474703a2f2f62336c6f672e6f72672f776964652f64656d6f2f32303134313032342e706e67)  
+![1](https://camo.githubusercontent.com/56436ce77d8960bc578ee044480559c50791f44b/687474703a2f2f62336c6f672e6f72672f776964652f64656d6f2f32303134313032342e706e67)
 
 ---
 
 ## Documentation
-- [Github Repo](https://github.com/b3log/wide)
+- [GitHub Repo](https://github.com/b3log/wide)
 
 ---
 

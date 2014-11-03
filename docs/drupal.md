@@ -40,7 +40,7 @@ Drupal's content management features make it easy to create and manage your site
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Drupal.
 
 
@@ -53,7 +53,7 @@ Login with your admin credentials and start using Drupal.
 ---
 
 ## Documentation
-- [Drupal Main Website](https://www.drupal.org/)
+- [Drupal Official Website](https://www.drupal.org/)
 - [Documentation Home](https://www.drupal.org/documentation)
 - [Developer Guide](https://www.drupal.org/documentation/develop)
 - [Theming Guide](https://www.drupal.org/documentation/theme)

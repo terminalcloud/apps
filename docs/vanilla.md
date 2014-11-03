@@ -15,7 +15,7 @@ Every community is unique. Vanilla is a finely-crafted platform on which designe
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Test your installation here".
+Just spin-up your container based on this snapshot and click to "Test your installation here".
 Login with your admin credentials and start using Vanilla.
 
 
@@ -27,16 +27,16 @@ Login with your admin credentials and start using Vanilla.
 
 ---
 
-![1](http://blog.vanillaforums.com/wp-content/uploads/2014/10/seo-vanilla-forums.png)  
+![1](http://blog.vanillaforums.com/wp-content/uploads/2014/10/seo-vanilla-forums.png)
 
 ---
 
 ## Documentation
-- [Vanilla Main Website](http://vanillaforums.org/)
+- [Vanilla Official Website](http://vanillaforums.org/)
 - [Official Documentation](http://vanillaforums.org/docs)
 - [Vanilla Community](http://vanillaforums.org/discussions)
 - [Blog](http://blog.vanillaforums.com/)
-- [Github Repo](https://github.com/vanilla/vanilla)
+- [GitHub Repo](https://github.com/vanilla/vanilla)
 
 ---
 

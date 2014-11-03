@@ -10,7 +10,7 @@
 **MongoDB** is a cross-platform document-oriented database. Classified as a NoSQL database, MongoDB eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas (MongoDB calls the format BSON), making the integration of data in certain types of applications easier and faster. Released under a combination of the GNU Affero General Public License and the Apache License, MongoDB is free and open-source software.
 
 ## About ExpressJS
-**Express** is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy. It provides a thin layer of fundamental web application features, without obscuring Node features. 
+**Express** is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy. It provides a thin layer of fundamental web application features, without obscuring Node features.
 
 ## About AngularJS
 **AngularJS** is an open-source web application framework, maintained by Google and community, that assists with creating single-page applications, which consist of one HTML page with CSS, and JavaScript on the client side. Its goal is to simplify both development and testing of web applications by providing client-side model–view–controller (MVC) capability as well as providing structure for the entire development process, from design through testing.
@@ -30,7 +30,7 @@ Spin-up your container based on this snapshot and start coding directly on it.
 
 
 ### Examples included:
-This snapshot includes a list of ExpressJS examples located in /root/express/examples 
+This snapshot includes a list of ExpressJS examples located in /root/express/examples
 To play with the examples you may run:
 
 ```
@@ -65,7 +65,7 @@ And then check the working example at port 3000 ([click here](http://terminalser
 
 #### NodeJs
 - [Official Website](https://angularjs.org/)
-- [Github Repository](https://github.com/angular/angular.js)
+- [GitHub Repository](https://github.com/angular/angular.js)
 - [Learning Tutorial](https://docs.angularjs.org/tutorial)
 - [API Reference](https://docs.angularjs.org/api)
 

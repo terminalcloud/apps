@@ -87,9 +87,9 @@ On this case, Toshi is being launched into a (screen)[http://en.wikipedia.org/wi
 ---
 
 ## Documentation
-- [Toshi Main Website](https://toshi.io/)
+- [Toshi Official Website](https://toshi.io/)
 - [Documentation](https://toshi.io/docs/)
-- [Github Repo](https://github.com/coinbase/toshi)
+- [GitHub Repo](https://github.com/coinbase/toshi)
 
 ---
 

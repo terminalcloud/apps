@@ -71,7 +71,7 @@ A Product Information Management tool (also known as PIM, PCM or Products MDM) i
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Akeneo.
 
 
@@ -83,15 +83,15 @@ Login with your admin credentials and start using Akeneo.
 
 ---
 
-![1](http://akeneo.nl/images/grid.png)  
+![1](http://akeneo.nl/images/grid.png)
 
 ---
 
 ## Documentation
-- [Akeneo Main Website](http://www.akeneo.com/)
+- [Akeneo Official Website](http://www.akeneo.com/)
 - [Users Guide](http://www.akeneo.com/doc/user-guide)
 - [Developer Guide](http://docs.akeneo.com/latest/index.html)
-- [Github Repo](https://github.com/akeneo/pim-community-standard)
+- [GitHub Repo](https://github.com/akeneo/pim-community-standard)
 
 ---
 

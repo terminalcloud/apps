@@ -23,13 +23,13 @@ Spin up your container based on this snapshot. You will see on screen the file b
 If you want, you can start a new project by moving or deleting the contents of /var/www/html and then installing the framework again executing `pip install bottle`
 
 ### About the Working Example
-The Web based TODO list App is a tool to Create, Read, Update and Delete tasks developed with the Bottle Python environment Framework. It was developed using Mysql with SQLAlchemy support, a SQL Toolkit and Object Relational Mapper. The front end was developed using the most popular html, css and JS framework, Bootstrap. 
+The Web based TODO list App is a tool to Create, Read, Update and Delete tasks developed with the Bottle Python environment Framework. It was developed using Mysql with SQLAlchemy support, a SQL Toolkit and Object Relational Mapper. The front end was developed using the most popular html, css and JS framework, Bootstrap.
 
 You can use it as an example, staring point or just start from scratch.
 
 
 ## Documentation
-- [BottlePy Main Website](http://bottlepy.org/)
+- [BottlePy Official Website](http://bottlepy.org/)
 - [Mailing list](bottlepy@googlegroups.com)
 - [A simple todo-app tutorial](http://bottlepy.org/docs/dev/tutorial_app.html)
 - [Docs and Tutorials](http://bottlepy.org/docs/dev/tutorial.html)

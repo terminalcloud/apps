@@ -29,7 +29,7 @@ Zurmo is an open source Customer Relationship Management (CRM) application writt
 
 ## Usage
 
-Just spin-up your Terminal based on this snapshot and click over "Check your installation here".
+Just spin-up your Terminal based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Open Zurmo.
 
 
@@ -41,12 +41,12 @@ Login with your admin credentials and start using Open Zurmo.
 
 ---
 
-![1](http://3.bp.blogspot.com/-f7jXw6_4scg/USSk5aZjb6I/AAAAAAAAAZo/dcHxzmsHA70/s1600/zurmo-dashboard.png)	
+![1](http://3.bp.blogspot.com/-f7jXw6_4scg/USSk5aZjb6I/AAAAAAAAAZo/dcHxzmsHA70/s1600/zurmo-dashboard.png)
 
 ---
 
 ## Documentation
-- [Zurmo Main Website](http://zurmo.org/)
+- [Zurmo Official Website](http://zurmo.org/)
 - [Community Page](http://zurmo.org/community)
 - [Development Area](http://zurmo.org/development)
 - [Zurmo Documentation](http://zurmo.org/documentation)

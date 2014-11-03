@@ -2,7 +2,7 @@
 *Note taking web app*
 
 ## About **Laverna*
-Laverna is a JavaScript note-taking web application with a Markdown editor and encryption support.  
+Laverna is a JavaScript note-taking web application with a Markdown editor and encryption support.
 
 It's built to be an **open source alternative to Evernote.**
 

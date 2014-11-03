@@ -26,7 +26,7 @@ OrangeHRM Open Source is a HR management system that offers a wealth of modules 
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your application here".
+Just spin-up your container based on this snapshot and click to "Check your application here".
 Login with your admin credentials and start using Orange HRM.
 
 
@@ -38,12 +38,12 @@ Login with your admin credentials and start using Orange HRM.
 
 ---
 
-![1](http://www.orangehrm.com/images/Download.jpg)	
+![1](http://www.orangehrm.com/images/Download.jpg)
 
 ---
 
 ## Documentation
-- [Orange HRM Main Website](http://www.orangehrm.com/)
+- [Orange HRM Official Website](http://www.orangehrm.com/)
 - [Orange HRM Admin Guide](http://www.orangehrm.com/Files/Complete-Administrative-User-Guide3.0.pdf)
 - [Orange HRM Managers Guide ](http://www.orangehrm.com/Files/User-Guide-For-Supervisors-Managers3.0.pdf)
 - [Orange HRM Users Guide](http://www.orangehrm.com/Files/User-Guide-For-Employee-Self-Service-Users3.0.pdf)

@@ -4,7 +4,7 @@
 ---
 
 ## About Structr
-**Structr** is an open source **Data CMS** based on the graph database Neo4j. 
+**Structr** is an open source **Data CMS** based on the graph database Neo4j.
 
 ### Features
 - Security and Access Control
@@ -15,7 +15,7 @@
 
 
 ## Usage
-Spin up your terminal container based on this snapshot and click over the "Check your installation" link.
+Spin up your terminal container based on this snapshot and click to the "Check your installation" link.
 
 Login to **Structr** using the following default credentials:
 
@@ -23,7 +23,7 @@ Login to **Structr** using the following default credentials:
 
 - Password: admin
 
-Check documentation section for guides and tutorials. 
+Check documentation section for guides and tutorials.
 
 
 ## Documentation

@@ -9,39 +9,39 @@ Church Directory, Profiles and Groups. Eliminate that dated printed directory an
 
 
 ## Key Features
-- Profiles  
-- Groups  
-- Email  
-- News with RSS  
-- Document Sharing  
-- Albums & Pictures  
-- Bible Verses  
-- Searchable Directory  
-- Printed Directory  
-- Business Directory  
-- Import and Export  
-- Attendance Tracking  
-- Prayer Requests  
-- Privacy Controls  
+- Profiles
+- Groups
+- Email
+- News with RSS
+- Document Sharing
+- Albums & Pictures
+- Bible Verses
+- Searchable Directory
+- Printed Directory
+- Business Directory
+- Import and Export
+- Attendance Tracking
+- Prayer Requests
+- Privacy Controls
 - Open Source
 
 ---
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Then, follow the on-screen instructions to configure your admin account and finish the site configuration.
 
 ---
 
-![1](http://church.io/img/screenshots/directory.png)  
+![1](http://church.io/img/screenshots/directory.png)
 
 ---
 
 ## Documentation
-- [ChurchIO Main Website](http://www.churchio.com/)
+- [ChurchIO Official Website](http://www.churchio.com/)
 - [OneBody Help](http://church.io/onebody/help/)
-- [Github Repo](https://github.com/churchio/onebody)
+- [GitHub Repo](https://github.com/churchio/onebody)
 
 ---
 

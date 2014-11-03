@@ -15,7 +15,7 @@ While they can be used separately, Zend Framework 2 components in the standard l
 The principal sponsor of the project ‘Zend Framework 2’ is Zend Technologies, but many companies have contributed components or significant features to the framework. Companies such as Google, Microsoft, and StrikeIron have partnered with Zend to provide interfaces to web services and other technologies they wish to make available to Zend Framework 2 developers.
 
 ## Usage:
-Just spin up you terminal.com container based on this snapshot and you will have everything needed to develop, deploy and serve a **Zend Framework 2 Application**. 
+Just spin up you terminal.com container based on this snapshot and you will have everything needed to develop, deploy and serve a **Zend Framework 2 Application**.
 
 This container have Apache web server installed, serving a sample Zend Framework 2 App that can be used to learn how a CRUD is done.
 

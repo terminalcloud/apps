@@ -1,11 +1,11 @@
 # Ubuntu 14.04 with XFCE4 and Guacamole  - Terminal.com Container
 
 This container has a full Ubuntu 14.04 ready to use and install whatever you want.
-It also contains a full configured X11vnc and Guacamole server to let you connect to this machine graphically just using your web browser. 
+It also contains a full configured X11vnc and Guacamole server to let you connect to this machine graphically just using your web browser.
 
 As Guacamole is under heavy development and still under the version 1, please use with caution.
 
-We've installed the Guacamole version that works best with Terminal but we will continue testing and deploying new versions, so keep an eye on this snap! 
+We've installed the Guacamole version that works best with Terminal but we will continue testing and deploying new versions, so keep an eye on this snap!
 
 
 ## About XFCE:
@@ -22,7 +22,7 @@ Thanks to HTML5, once Guacamole is installed on a server, all you need to access
 
 ## Instructions:
 
-This container is configured to be used as a **desktop machine**, but you can also use it as a base image to install whatever you want. 
+This container is configured to be used as a **desktop machine**, but you can also use it as a base image to install whatever you want.
 Keep in mind that the user experience may vary depending on the browser, location and network conditions.
 
 

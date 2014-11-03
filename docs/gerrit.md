@@ -24,7 +24,7 @@ For a complete list please visite the [Gerrit ShowCases page](https://code.googl
 
 ## Usage
 
-- Spin-up your container based on this snapshot and click over "Check your installation here".
+- Spin-up your container based on this snapshot and click to "Check your installation here".
 - Login with your OpenID user [Yahoo OpenID is recommended]
 - The first user to login Gerrit will be the Gerrit Admin by default. You will prompted to change your settings and set your keys.
 
@@ -49,12 +49,12 @@ Gerrit PostgreSQL:
 
 ---
 
-![1](http://upload.wikimedia.org/wikipedia/mediawiki/thumb/9/94/Chrome_gerrit_9332_2.png/800px-Chrome_gerrit_9332_2.png)  
+![1](http://upload.wikimedia.org/wikipedia/mediawiki/thumb/9/94/Chrome_gerrit_9332_2.png/800px-Chrome_gerrit_9332_2.png)
 
 ---
 
 ## Documentation
-- [Gerrit Main Website](https://code.google.com/p/gerrit/)
+- [Gerrit Official Website](https://code.google.com/p/gerrit/)
 - [Users Guide (for the current version)](https://gerrit-documentation.storage.googleapis.com/Documentation/2.9.1/index.html)
 
 ---

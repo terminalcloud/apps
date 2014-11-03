@@ -4,15 +4,15 @@
 ---
 
 ## About Osclass
-**OSClass** is all you need to easily create your own classifieds website. 
+**OSClass** is all you need to easily create your own classifieds website.
 It's an open source application to create your advertisement or listings site.
 
 ---
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over the "Osclas Admin Site" link to start customizing your Osclass site.
-To see the public frontend site click over the "Osclass Public Pass"
+Just spin-up your container based on this snapshot and click to the "Osclas Admin Site" link to start customizing your Osclass site.
+To see the public frontend site click to the "Osclass Public Pass"
 
 Login with your admin credentials and start using  Magento CMS.
 
@@ -26,7 +26,7 @@ You may want to use your own domain with this terminal containter. Please follow
 
 ---
 
-![1](http://blog.osclass.org/wp-content/uploads/2013/04/responsive-theme-osclass.jpg)	
+![1](http://blog.osclass.org/wp-content/uploads/2013/04/responsive-theme-osclass.jpg)
 
 ---
 

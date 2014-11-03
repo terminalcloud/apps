@@ -36,7 +36,7 @@ With this application you will not miss content anymore. **Click, save, read it 
 
 ## Usage
 Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here"
-To get a better performance we provide a preconfigured MySQL DB for Wallabag. 
+To get a better performance we provide a preconfigured MySQL DB for Wallabag.
 
 **Just use the information below on the installation page**
 
@@ -48,7 +48,7 @@ To get a better performance we provide a preconfigured MySQL DB for Wallabag.
 
 - MySQL pass: terminal
 
-Once the product is installed, you will be able to use it directly or through any of their [3rd Party apps](https://www.wallabag.org/downloads/) 
+Once the product is installed, you will be able to use it directly or through any of their [3rd Party apps](https://www.wallabag.org/downloads/)
 
 
 ## Documentation

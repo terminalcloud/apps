@@ -33,7 +33,7 @@ Login with credentials:
 
 
 ## Documentation
-- [SugarCRM CE Main Website](http://www.sugarcrm.com/community)
+- [SugarCRM CE Official Website](http://www.sugarcrm.com/community)
 - [Documentation and Support Resources](http://support.sugarcrm.com/)
 - [Developer Blog](http://developers.sugarcrm.com/wordpress)
 

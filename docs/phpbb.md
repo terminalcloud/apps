@@ -23,7 +23,7 @@ For a full **Features** list please visit the [PHPBB about page](https://www.php
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click over "Check your installation here".
+Just spin-up your container based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Open PHPBB.
 
 
@@ -35,12 +35,12 @@ Login with your admin credentials and start using Open PHPBB.
 
 ---
 
-![1](http://thenewtech.info/wp-content/uploads/sites/3/2012/07/phpbb-install-8.jpg)	
+![1](http://thenewtech.info/wp-content/uploads/sites/3/2012/07/phpbb-install-8.jpg)
 
 ---
 
 ## Documentation
-- [PHPBB Main Website](https://www.phpbb.com/)
+- [PHPBB Official Website](https://www.phpbb.com/)
 - [Support and Docs](https://www.phpbb.com/support/)
 - [Development Area](https://www.phpbb.com/development/)
 - [PHPBBBlog](https://blog.phpbb.com/)

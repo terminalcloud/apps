@@ -24,7 +24,7 @@ Mesos is built using the same principles as the Linux kernel, only at a differen
 Mesos is a flexible and highly configurable "Distributed Systems Kernel" Cluster.
 You can use several execution [Frameworks](http://mesos.apache.org/documentation/latest/mesos-frameworks/) with it.
 
-We're including [Marathon](https://github.com/mesosphere/marathon) (A Cluster-wide init and control system [or PaaS layer] for services) as the default framework installed on this snap.  
+We're including [Marathon](https://github.com/mesosphere/marathon) (A Cluster-wide init and control system [or PaaS layer] for services) as the default framework installed on this snap.
 
 On this case, this snapshot have both services installed on it. (Master and Slave) It should be used for test and development purposes mainly.
 
@@ -38,16 +38,16 @@ On this case, this snapshot have both services installed on it. (Master and Slav
 ---
 
 ![1](http://ampcamp.berkeley.edu/3/exercises/img/mesos-webui-all-slaves640.png)
-![2](https://dw8zztroqvu2r.cloudfront.net/assets/marathon-0.6.0/mesosphere-marathon-app-list-8d86646c69aa58ae4762d2314d8e2900.png)  
+![2](https://dw8zztroqvu2r.cloudfront.net/assets/marathon-0.6.0/mesosphere-marathon-app-list-8d86646c69aa58ae4762d2314d8e2900.png)
 
 ---
 
 ## Documentation
-- [Apache Mesos Main Website](http://mesos.apache.org/)
+- [Apache Mesos Official Website](http://mesos.apache.org/)
 - [Mesos Documentation Page](http://mesos.apache.org/documentation/latest/)
 - [Mesos Community Page](http://mesos.apache.org/community/)
 - [Mesos Frameworks](http://mesos.apache.org/documentation/latest/mesos-frameworks/)
-- [Marathon Framework Github repo](https://github.com/mesosphere/marathon)
+- [Marathon Framework GitHub repo](https://github.com/mesosphere/marathon)
 
 
 ---
