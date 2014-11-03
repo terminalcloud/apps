@@ -4,6 +4,15 @@ name="teampass"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Updating DB values
+mysql -uroot -proot teampass -e"UPDATE teampass_misc set value = 'http://$(hostname)-80.terminal.com/' where intitule = cpassman_url;"
+mysql -uroot -proot teampass -e"UPDATE teampass_misc set value = 'http://$(hostname)-80.terminal.com/favicon.ico' where intitule = favicon;"
+mysql -uroot -proot teampass -e"UPDATE teampass_misc set value = 'http://$(hostname)-80.terminal.com/upload' where intitule = url_to_upload_folder;"
+mysql -uroot -proot teampass -e"UPDATE teampass_misc set value = 'http://$(hostname)-80.terminal.com/files' where intitule = url_to_files_folder;"
+mysql -uroot -proot teampass -e"UPDATE teampass_misc set value = 'http://$(hostname)-80.terminal.com/' where intitule = email_server_url;"
+
+
+
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
@@ -30,7 +39,7 @@ cat >> /root/info.html << EOF
 EOF
 
 # Convert links to external links
-sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html 
+sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
