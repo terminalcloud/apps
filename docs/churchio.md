@@ -9,20 +9,20 @@ Church Directory, Profiles and Groups. Eliminate that dated printed directory an
 
 
 ## Key Features
-- Profiles  
-- Groups  
-- Email  
-- News with RSS  
-- Document Sharing  
-- Albums & Pictures  
-- Bible Verses  
-- Searchable Directory  
-- Printed Directory  
-- Business Directory  
-- Import and Export  
-- Attendance Tracking  
-- Prayer Requests  
-- Privacy Controls  
+- Profiles
+- Groups
+- Email
+- News with RSS
+- Document Sharing
+- Albums & Pictures
+- Bible Verses
+- Searchable Directory
+- Printed Directory
+- Business Directory
+- Import and Export
+- Attendance Tracking
+- Prayer Requests
+- Privacy Controls
 - Open Source
 
 ---
@@ -34,14 +34,14 @@ Then, follow the on-screen instructions to configure your admin account and fini
 
 ---
 
-![1](http://church.io/img/screenshots/directory.png)  
+![1](http://church.io/img/screenshots/directory.png)
 
 ---
 
 ## Documentation
 - [ChurchIO Main Website](http://www.churchio.com/)
 - [OneBody Help](http://church.io/onebody/help/)
-- [Github Repo](https://github.com/churchio/onebody)
+- [GitHub Repo](https://github.com/churchio/onebody)
 
 ---
 

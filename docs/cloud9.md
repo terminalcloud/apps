@@ -27,7 +27,7 @@
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot using Cloud9 by clicking on "Check your installation here". 
+Spin up your terminal container based on this snapshot using Cloud9 by clicking on "Check your installation here".
 
 
 ####Please login to Cloud9 using the credentials below:
@@ -36,7 +36,7 @@ Spin up your terminal container based on this snapshot using Cloud9 by clicking 
 - Password: terminal
 
 
-Cloud9 runs using "forever". If you want to stop, restart or start Cloud9 with other settings you can just kill the "forever" process and then restart it with other options. 
+Cloud9 runs using "forever". If you want to stop, restart or start Cloud9 with other settings you can just kill the "forever" process and then restart it with other options.
 
 As an example, the current process run as follows:
 `forever start /root/cloud9/server.js -w /root -l 0.0.0.0 --username user --password terminal`
@@ -50,7 +50,7 @@ As an example, the current process run as follows:
 
 ## Documentation
 - [Official C9 Website](https://c9.io/)
-- [C9 IDE Github repository](https://github.com/ajaxorg/cloud9)
+- [C9 IDE GitHub repository](https://github.com/ajaxorg/cloud9)
 - [Cloud9 Blog](https://c9.io/site/blog)
 
 
@@ -62,7 +62,7 @@ As an example, the current process run as follows:
 You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/cloud9_installer.sh && bash cloud9_installer.sh`
 
-Use at least a "small" Terminal container to host this application. 
+Use at least a "small" Terminal container to host this application.
 
 ---
 

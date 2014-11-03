@@ -35,7 +35,7 @@
 - Favourites - Anything you find interesting, favourite it and save and read it later.
 - Tags - Use topic tags to identify the essence of discussion topics.
 - Single-Sign On - Seamless SSO makes it easy for your visitors to become members.
-- Media Embedding - Embed videos and content from YouTube and Vimeo, to Github!
+- Media Embedding - Embed videos and content from YouTube and Vimeo, to GitHub!
 
 ---
 
@@ -55,7 +55,7 @@ Login with your admin credentials and start using NodeBB.
 ## Documentation
 - [NodeBB Main Website](https://nodebb.org)
 - [Developer Guide](https://github.com/NodeBB/NodeBB/wiki)
-- [Github Repo](https://github.com/NodeBB/NodeBB)
+- [GitHub Repo](https://github.com/NodeBB/NodeBB)
 
 ---
 

@@ -42,7 +42,7 @@ Login with your admin credentials and start using SuiteCRM.
 
 ---
 
-![1](http://www.netcentrum.pl/images/headers/slider-suitecrm.png)	
+![1](http://www.netcentrum.pl/images/headers/slider-suitecrm.png)
 
 ---
 
@@ -50,7 +50,7 @@ Login with your admin credentials and start using SuiteCRM.
 - [SuiteCRM Main Website](https://suitecrm.com)
 - [Support Forum](https://suitecrm.com/index.php?option=com_kunena&view=category&Itemid=1137&layout=list)
 - [Documentation Center](https://suitecrm.com/index.php?option=com_wrapper&view=wrapper&Itemid=1383)
-- [Github Repo](https://github.com/salesagility/SuiteCRM)
+- [GitHub Repo](https://github.com/salesagility/SuiteCRM)
 
 ---
 

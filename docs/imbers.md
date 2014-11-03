@@ -17,10 +17,10 @@ This snapshot was made from the Imber's git repositories as an option to the def
 
 Just spin-up your Terminal based on this snapshot and click over "Check your installation here".
 
-The process will be running as background jobs. To send them back to the front (if you want to stop them, for instance), execute `fg` in the console. 
+The process will be running as background jobs. To send them back to the front (if you want to stop them, for instance), execute `fg` in the console.
 
 
-### Imbers location 
+### Imbers location
 
 - Backend: `/root/imbers-backend`
 - Frontend: `/root/imbers-www`
@@ -31,13 +31,13 @@ The process will be running as background jobs. To send them back to the front (
 
 ---
 
-![1](http://www.imbers.com/img/header_screen.png)  
+![1](http://www.imbers.com/img/header_screen.png)
 
 ---
 
 ## Documentation
 - [Imbers Main Website](http://www.imbers.com/)
-- [Github Repos](https://github.com/52unicorns/)
+- [GitHub Repos](https://github.com/52unicorns/)
 
 ---
 

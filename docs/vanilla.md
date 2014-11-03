@@ -27,7 +27,7 @@ Login with your admin credentials and start using Vanilla.
 
 ---
 
-![1](http://blog.vanillaforums.com/wp-content/uploads/2014/10/seo-vanilla-forums.png)  
+![1](http://blog.vanillaforums.com/wp-content/uploads/2014/10/seo-vanilla-forums.png)
 
 ---
 
@@ -36,7 +36,7 @@ Login with your admin credentials and start using Vanilla.
 - [Official Documentation](http://vanillaforums.org/docs)
 - [Vanilla Community](http://vanillaforums.org/discussions)
 - [Blog](http://blog.vanillaforums.com/)
-- [Github Repo](https://github.com/vanilla/vanilla)
+- [GitHub Repo](https://github.com/vanilla/vanilla)
 
 ---
 

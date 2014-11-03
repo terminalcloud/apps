@@ -83,7 +83,7 @@ Login with your admin credentials and start using Akeneo.
 
 ---
 
-![1](http://akeneo.nl/images/grid.png)  
+![1](http://akeneo.nl/images/grid.png)
 
 ---
 
@@ -91,7 +91,7 @@ Login with your admin credentials and start using Akeneo.
 - [Akeneo Main Website](http://www.akeneo.com/)
 - [Users Guide](http://www.akeneo.com/doc/user-guide)
 - [Developer Guide](http://docs.akeneo.com/latest/index.html)
-- [Github Repo](https://github.com/akeneo/pim-community-standard)
+- [GitHub Repo](https://github.com/akeneo/pim-community-standard)
 
 ---
 

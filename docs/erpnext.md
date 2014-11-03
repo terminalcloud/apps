@@ -38,7 +38,7 @@ Due security reasons, ERPNext is running under a non-privileged user called "bun
 - [User's Manual](https://erpnext.com/user-guide)
 - [Forums](https://discuss.frappe.io/)
 - [Community Portal](https://frappe.io/community)
-- [Github Repo](https://github.com/frappe/erpnext)
+- [GitHub Repo](https://github.com/frappe/erpnext)
 
 ---
 
@@ -52,7 +52,7 @@ Due security reasons, ERPNext is running under a non-privileged user called "bun
 - **Selling** - Once your system is setup, you can keep track of communication with your Leads or Customers. You can send them Newsletters once in a while and send specific Quotations when they are ready to buy. When they place an order, you create a Sales Order.
 ![3](https://erpnext.com/assets/erpnext_org/images/features/feature-3.png)
 
-- **Buying and Inventory** - You can setup your inventory warehouses and manage the stock of your Items Batchwise or by Serial Numbers. Keep track of Items to buy by raising Material Requests, send Purchase Orders to your Customers and enter Purchase Receipts when you receive material. 
+- **Buying and Inventory** - You can setup your inventory warehouses and manage the stock of your Items Batchwise or by Serial Numbers. Keep track of Items to buy by raising Material Requests, send Purchase Orders to your Customers and enter Purchase Receipts when you receive material.
 ![4](https://erpnext.com/assets/erpnext_org/images/features/feature-4.png)
 
 - **Manufacturing** - You can plan your production and material by the Production Planning Tool. Then transfer and convert your raw materials to finshed goods.
