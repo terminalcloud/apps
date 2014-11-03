@@ -13,7 +13,7 @@ install(){
 	system_cleanup
 	basics_install
 
-	# Procedure: 
+	# Procedure:
 	php5_install
 	mysql_install
 	mysql_setup teampass teampass terminal
@@ -24,10 +24,13 @@ install(){
 	mv TeamPass-Release_2.1.21 teampass
 	chown -R www-data:www-data teampass
 	apache_install
+  apt-get -y install php5-gmp
 	apache_default_vhost teampass.conf $INSTALL_PATH/teampass
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
 	sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
 	sed -i 's/memory_limit\ \=\ 128M/memory_limit\ \=\ 256M/g' /etc/php5/apache2/php.ini
+  sed -i 's/max_execution_time\ \=\ 30/max_execution_time\ \=\ 90/g' /etc/php5/apache2/php.ini
+
 	service apache2 restart
 }
 
@@ -42,7 +45,7 @@ show(){
 
 if [[ -z $1 ]]; then
 	install && show
-elif [[ $1 == "show" ]]; then 
+elif [[ $1 == "show" ]]; then
 	show
 else
 	echo "unknown parameter specified"
