@@ -30,7 +30,7 @@ Login with your admin credentials and start using Open TeamPass.
 
 ---
 
-![1](http://i.imgur.com/6vBUlvS.png)
+![1](http://oi46.tinypic.com/3355mag.jpg)
 
 ---
 
