@@ -43,9 +43,9 @@ auto_slave(){
 	read num
 
 	echo 'What kind of slaves do you want to create?'
-	echo '\"1\" for Small [1CPU] [1.6Gb RAM]'
-	echo '\"2\" for Medium [2CPU] [3.2Gb RAM]'
-	echo '\"3\" for xLarge [4CPU] [6.4Gb RAM]'
+	echo '"1" for Small [1CPU] [1.6Gb RAM]'
+	echo '"2" for Medium [2CPU] [3.2Gb RAM]'
+	echo '"3" for xLarge [4CPU] [6.4Gb RAM]'
 	read kind
 	case $kind in 
 		1) sed -i "s/cpuq/100/g" mesos_slave.json && sed -i "s/ramq/1600/g" mesos_slave.json ;;
