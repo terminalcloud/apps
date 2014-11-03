@@ -41,6 +41,19 @@ auto_slave(){
 	clear
 	echo 'How many slaves do you want to create? (each slave is a new Terminal)'
 	read num
+
+	echo 'What kind of slaves do you want to create?'
+	echo '\"1\" for Small [1CPU] [1.6Gb RAM]'
+	echo '\"2\" for Medium [2CPU] [3.2Gb RAM]'
+	echo '\"3\" for xLarge [4CPU] [6.4Gb RAM]'
+	read kind
+	case $kind in 
+		1) sed -i "s/cpuq/100/g" mesos_slave.json && sed -i "s/ramq/1600/g" mesos_slave.json ;;
+		2) sed -i "s/cpuq/200/g" mesos_slave.json && sed -i "s/ramq/3200/g" mesos_slave.json ;;
+		3) sed -i "s/cpuq/400/g" mesos_slave.json && sed -i "s/ramq/6400/g" mesos_slave.json ;;
+		*) echo "Invalid option, assuming Small"; sed -i "s/cpuq/100/g" mesos_slave.json && sed -i "s/ramq/1600/g" mesos_slave.json ;;
+	esac
+
 	/srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
 	echo 'Please copy your API User token, paste it below and press enter:'
 	read utoken
