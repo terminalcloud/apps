@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="OpenCart"
+name="opencart"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
