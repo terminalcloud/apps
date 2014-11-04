@@ -20,7 +20,7 @@ install(){
   apt-get -y install php5-ldap php5-imap
   php5enmod imap
   cd $INSTALL_PATH
-  wget -O opencart.zip http://www.opencart.com/index.php?route=download/download/download&download_id=37
+  wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/opencart.zip
   unzip opencart.zip && rm opencart.zip
   mv opencart-2.0.0.0 opencart
   chown -R www-data:www-data opencart

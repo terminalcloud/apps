@@ -53,7 +53,7 @@ You can see your OpenCart site by clicking on the "OpenCart site" link.
 
 #### OpenCart Terminal automatic installation:
 You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/OpenCart_installer.sh && bash OpenCart_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/opencart_installer.sh && bash opencart_installer.sh`
 
 ---
 
