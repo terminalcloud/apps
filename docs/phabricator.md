@@ -1,6 +1,6 @@
 # **Phabricator** Terminal.com Snapshot
 
-*Phabricator, an open source, software engineering platform.*
+*An open source code review platform.*
 
 ---
 
@@ -8,28 +8,26 @@
 
 **Phabricator** is a collection of open source web applications that help software companies build better software.
 
-Phabricator supports Git, Mercurial, and Subversion. The Phabricator server runs on Linux or Mac OS X, but can be used on any platform. The optional, yet powerful, command line client Arcanist runs on Linux, Mac OS X or Windows. Phabricator is written mostly in PHP. Browse the latest changes if you are actually curious what we've been up to.
-
+Phabricator supports Git, Mercurial, and Subversion. The Phabricator server runs on Linux or Mac OS X, but can be used on any platform. The optional, yet powerful, command line client Arcanist runs on Linux, Mac OS X or Windows. Phabricator is written mostly in PHP.
 
 ## Key Features
 
-- **Review Code or just stare at it**
-Review others' code with **Differential**, because they can't be trusted.
+**Review code** with **Differential**.
 
 ![1](http://phabricator.org/images/phabricator//differential.png)
 
-- **Host Git/Mercurial/SVN Repositories, or connect other hosts**
+- **Host Git/Mercurial/SVN Repositories or connect other hosts**
 Phabricator can host Git, Mercurial and Subversion repositories. It also works well with existing repositories (like GitHub, Bitbucket, or other repositories you already have elsewhere) without needing to host them itself.
 
 ![2](http://phabricator.org/images/repos.png)
 
 - **Browse and Audit Source Code**
-Use **Diffusion** to look at source code in your browser. Unnerving. You can also audit code, which lets you point things out which offend your delicate sensibilities.
+Use **Diffusion** to look at source code in your browser.
 
 ![3](http://phabricator.org/images/phabricator//diffusion.png)
 
 - **Track bugs**
-Have terrible software? Keep track of all the defects and problems with your awful code using **Maniphest**.
+Legacy system? Keep track of all the defects and problems using **Maniphest**.
 
 ![4](http://phabricator.org/images/phabricator//maniphest_mobile.png)
 
