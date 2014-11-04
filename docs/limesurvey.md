@@ -26,4 +26,10 @@ Then, follow the on-screen instructions to configure your admin account and fini
 
 ---
 
+#### LimeSurvey Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/limesurvey_installer.sh && bash limesurvey_installer.sh`
+
+---
+
 #### Thanks for using LimeSurvey at Terminal.com!
