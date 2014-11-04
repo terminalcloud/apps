@@ -10,8 +10,15 @@ Build and customize your own web-based surveys with LimeSurvey. LimeSurvey has l
 
 ## Usage
 
-Just spin-up your Terminal based on this snapshot and click to "Check your installation here".
-Then, follow the on-screen instructions to configure your admin account and finish the site configuration.
+Just spin-up your Terminal based on this snapshot. Access the Admin section click over "LimeSurvey Admin login" and login with the credentials provided. Create your surveys and publish them.
+
+You can see your LimeSurvey site by clicking on the "LimeSurvey site" link.
+
+
+### Credentials
+- username: admin
+- password: t3rminal
+
 
 ---
 

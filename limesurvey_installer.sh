@@ -18,6 +18,7 @@ install(){
   mysql_install
   mysql_setup limesurvey limesurvey terminal
   apt-get -y install php5-ldap php5-imap
+  php5enmod imap
   cd $INSTALL_PATH
   wget http://www.limesurvey.org/en/stable-release/finish/25-latest-stable-release/1179-limesurvey205plus-build141020-zip
   unzip 1179-limesurvey205plus-build141020-zip
