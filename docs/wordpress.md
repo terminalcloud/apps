@@ -1,11 +1,11 @@
-# Welcome to WordPress 4 Terminal.com container
+# Welcome to WordPress 4 Terminal
 ## About WordPress
 [WordPress](http://wordpress.org/) is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
 The core software is built by hundreds of community volunteers, and when you’re ready for more there are [thousands of plugins](http://wordpress.org/plugins/) and [themes](http://wordpress.org/themes/) available to transform your site into almost [anything you can imagine](http://wordpress.org/showcase/). Over 60 million people have chosen WordPress to power the place on the web they call “home” — we’d love you to join the family.
 
 ## Usage:
 ### Basics
-Just spin up your container based on this [Terminal.com](https://www.terminal.com) snapshot and point your browser to http://yourteminalname-80.terminal.com to start configuring you wordpress instance.
+Just spin up your Terminal based on this [Terminal.com](https://www.terminal.com) snapshot and point your browser to http://yourteminalname-80.terminal.com to start configuring you wordpress instance.
 
 ### Learning WordPress
 On this links you will find useful information about WordPress
@@ -14,7 +14,7 @@ On this links you will find useful information about WordPress
 - [Code Reference](http://developer.wordpress.org/reference)
 
 ### Additional Information
-#### Wordpress Terminal.com container automatic installation:
+#### Wordpress Terminal automatic installation:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/wordpress_installer.sh && bash wordpress_installer.sh`
 #### Root MySQL Credentials
 - user: root

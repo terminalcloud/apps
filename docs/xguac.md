@@ -1,6 +1,6 @@
-# Ubuntu 14.04 with XFCE4 and Guacamole  - Terminal.com Container
+# Ubuntu 14.04 with XFCE4 and Guacamole  - Terminal
 
-This container has a full Ubuntu 14.04 ready to use and install whatever you want.
+This Terminal has a full Ubuntu 14.04 ready to use and install whatever you want.
 It also contains a full configured X11vnc and Guacamole server to let you connect to this machine graphically just using your web browser.
 
 As Guacamole is under heavy development and still under the version 1, please use with caution.
@@ -22,7 +22,7 @@ Thanks to HTML5, once Guacamole is installed on a server, all you need to access
 
 ## Instructions:
 
-This container is configured to be used as a **desktop machine**, but you can also use it as a base image to install whatever you want.
+This Terminal is configured to be used as a **desktop machine**, but you can also use it as a base image to install whatever you want.
 Keep in mind that the user experience may vary depending on the browser, location and network conditions.
 
 
@@ -43,7 +43,7 @@ To do that, you have to use a **Unix based machine** (Like Linux or MacOs), have
 
 Then,
 - Add your public ssh keys to the .ssh/authorized_keys file .
-- In your own computer execute `ssh -C root@terminalservername.terminal.com -L 5901:terminalservername:5901 `to start the ssh tunnel between your computer and the terminal container. If everything is well configured, you will see the command prompt of your terminal container.
+- In your own computer execute `ssh -C root@terminalservername.terminal.com -L 5901:terminalservername:5901 `to start the ssh tunnel between your computer and the terminal Terminal. If everything is well configured, you will see the command prompt of your terminal Terminal.
 - Select your favorite VNC client and connect to localhost using the default port (5901). [In linux you just can execute `vncviewer localhost:5901`]
 
 

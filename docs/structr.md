@@ -15,7 +15,7 @@
 
 
 ## Usage
-Spin up your terminal container based on this snapshot and click to the "Check your installation" link.
+Spin up your terminal Terminal based on this snapshot and click to the "Check your installation" link.
 
 Login to **Structr** using the following default credentials:
 
@@ -36,7 +36,7 @@ Check documentation section for guides and tutorials.
 - [Demonstration Video Screencast](http://vimeo.com/93482196)
 
 ### Additional Information
-#### Structr Terminal.com container automatic installation:
+#### Structr Terminal automatic installation:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/structr_installer.sh && bash structr_installer.sh`
 
 ---

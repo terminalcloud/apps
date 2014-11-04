@@ -18,7 +18,7 @@ Businesses using Community Edition as their open source ecommerce solution to ru
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to the "Magento Administration" link to start customizing your Magento site.
+Just spin-up your Terminal based on this snapshot and click to the "Magento Administration" link to start customizing your Magento site.
 
 To check your public site, please click to the "Magento Frontend" link.
 
@@ -50,8 +50,8 @@ You may want to use your own domain with this terminal containter. Please follow
 
 
 ### Additional Information
-#### Resource Space Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Resource Space Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/magento_installer.sh && bash magento_installer.sh`
 
 

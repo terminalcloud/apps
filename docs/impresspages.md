@@ -30,7 +30,7 @@ ImpressPages comes with a bunch of handy pre-built features. From those designed
 - Use of Widgets
 
 ## Usage
-- Spin up you Terminal.com container based on this snapshot and point your browser to https://yourterminalname-80.teminal.com
+- Spin up you Terminal based on this snapshot and point your browser to https://yourterminalname-80.teminal.com
 - Follow the on-screen instructions to start your first site on the ImpressPages CMS.
 - Use the DB credentials below or create your own credentials. (db root pass: `root`)
 
@@ -50,7 +50,7 @@ db pass: terminal
 - ImpressPages [Blog](http://www.impresspages.org/blog2)
 
 ### Additional Information
-#### ImpressPages Terminal.com container automatic installation:
+#### ImpressPages Terminal automatic installation:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/impresspages_installer.sh && bash impresspages_installer.sh`
 #### Root MySQL Credentials
 - user: root

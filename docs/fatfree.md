@@ -28,7 +28,7 @@ Out of the box it features group collaboration, campaign and lead management, co
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Check your installation here".
+Just spin-up your Terminal based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using FatFree CRM.
 
 
@@ -51,8 +51,8 @@ Login with your admin credentials and start using FatFree CRM.
 
 ### Additional Information
 
-#### FatFree CRM Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### FatFree CRM Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/fatfree_installer.sh && bash fatfree_installer.sh`
 
 ---

@@ -26,7 +26,7 @@ OrangeHRM Open Source is a HR management system that offers a wealth of modules 
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Check your application here".
+Just spin-up your Terminal based on this snapshot and click to "Check your application here".
 Login with your admin credentials and start using Orange HRM.
 
 
@@ -53,8 +53,8 @@ Login with your admin credentials and start using Orange HRM.
 
 
 ### Additional Information
-#### Orange HRM Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Orange HRM Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/orangehrm_installer.sh && bash orangehrm_installer.sh`
 
 

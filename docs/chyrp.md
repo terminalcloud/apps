@@ -12,7 +12,7 @@ All of your content is powered by a unique Feathers system that allows Chyrp to 
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Use Chyrp here!".
+Just spin-up your Terminal based on this snapshot and click to "Use Chyrp here!".
 Login with your admin credentials and start using Chyrp.
 
 
@@ -34,8 +34,8 @@ Login with your admin credentials and start using Chyrp.
 
 ### Additional Information
 
-#### Chyrp Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Chyrp Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/chyrp_installer.sh && bash chyrp_installer.sh`
 
 ---

@@ -23,7 +23,7 @@ For a full **Features** list please visit the [PHPBB about page](https://www.php
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Check your installation here".
+Just spin-up your Terminal based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Open PHPBB.
 
 
@@ -51,8 +51,8 @@ Login with your admin credentials and start using Open PHPBB.
 
 
 ### Additional Information
-#### PHPBB Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### PHPBB Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/phpbb_installer.sh && bash phpbb_installer.sh`
 
 

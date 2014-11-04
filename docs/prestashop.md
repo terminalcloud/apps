@@ -45,7 +45,7 @@
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here". Use the MySQL credentials listed below:
+Spin up your terminal Terminal based on this snapshot and personalize your installation by clicking on "Finish your installation here". Use the MySQL credentials listed below:
 
 - database host: localhost
 - username: root
@@ -63,11 +63,11 @@ Spin up your terminal container based on this snapshot and personalize your inst
 ---
 
 ### Additional Information
-#### PrestaShop Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### PrestaShop Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/PrestaShop_installer.sh && bash PrestaShop_installer.sh`
 
-Use at lease a "small" Terminal container to host this application.
+Use at lease a "small" Terminal Terminal to host this application.
 
 ---
 

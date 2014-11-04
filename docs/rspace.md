@@ -25,7 +25,7 @@ ResourceSpace open source digital asset management software is the simple, fast,
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Check your installation here".
+Just spin-up your Terminal based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Resource Space.
 
 
@@ -53,8 +53,8 @@ Login with your admin credentials and start using Resource Space.
 
 
 ### Additional Information
-#### Resource Space Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Resource Space Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/rspace_installer.sh && bash rspace_installer.sh`
 
 

@@ -27,7 +27,7 @@
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot using Cloud9 by clicking on "Check your installation here".
+Spin up your terminal Terminal based on this snapshot using Cloud9 by clicking on "Check your installation here".
 
 
 ####Please login to Cloud9 using the credentials below:
@@ -58,11 +58,11 @@ As an example, the current process run as follows:
 ---
 
 ### Additional Information
-#### Cloud9 Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Cloud9 Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/cloud9_installer.sh && bash cloud9_installer.sh`
 
-Use at least a "small" Terminal container to host this application.
+Use at least a "small" Terminal Terminal to host this application.
 
 ---
 

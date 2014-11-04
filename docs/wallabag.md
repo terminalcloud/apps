@@ -35,7 +35,7 @@ With this application you will not miss content anymore. **Click, save, read it 
 
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here"
+Spin up your terminal Terminal based on this snapshot and personalize your installation by clicking on "Finish your installation here"
 To get a better performance we provide a preconfigured MySQL DB for Wallabag.
 
 **Just use the information below on the installation page**
@@ -63,8 +63,8 @@ Once the product is installed, you will be able to use it directly or through an
 To configure 3rd party Apps with Wallabag you will have to provide a server address. In this case, your server address is: ** terminalservername **
 
 
-#### Wallabag Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Wallabag Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/wallabag_installer.sh && bash wallabag_installer.sh`
 
 ---

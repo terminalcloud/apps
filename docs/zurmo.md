@@ -55,8 +55,8 @@ Login with your admin credentials and start using Open Zurmo.
 
 
 ### Additional Information
-#### Zurmo Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Zurmo Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/zurmo_installer.sh && bash zurmo_installer.sh`
 
 

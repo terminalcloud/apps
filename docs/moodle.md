@@ -1,4 +1,4 @@
-# Welcome to Moodle Terminal.com Container
+# Welcome to Moodle Terminal
 
 ## About Moodle
 The world's free learning platform that helps you create effective online
@@ -15,11 +15,11 @@ teaching and learning experiences in a collaborative, private environment.
 - Track progress. Educators and learners can track progress and completion with an array of options for tracking individual activities or resources and at course level.
 
 ## Overview
-This container has installed (and running) a clean Moodle instance.
+This Terminal has installed (and running) a clean Moodle instance.
 You can use it directly and deploy your educational project without having to install anything else!
 
 ## Usage and Access
-After creating you own Terminal.com Moodle container just to go to:
+After creating you own Terminal.com Moodle Terminal just to go to:
 **http://yourterminalname-80.terminal.com/** and login with the credentials
 provided below:
 

@@ -11,7 +11,7 @@ It was made as an example of use, so the code is very well commented and clean.
 ---
 
 ## Usage
-Just spin up your terminal container based on this snapshot and start using **Nodechat** by pressing on "Use Nodechat here!"
+Just spin up your terminal Terminal based on this snapshot and start using **Nodechat** by pressing on "Use Nodechat here!"
 
 
 ---

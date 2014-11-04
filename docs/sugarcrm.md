@@ -23,7 +23,7 @@ Sugar's functionality includes sales-force automation, marketing campaigns, cust
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Check your installation here"
+Spin up your terminal Terminal based on this snapshot and personalize your installation by clicking on "Check your installation here"
 
 Login with credentials:
 
@@ -40,8 +40,8 @@ Login with credentials:
 ---
 
 ### Additional Information
-#### SugarCRM Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### SugarCRM Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/sugarcrm_installer.sh && bash sugarcrm_installer.sh`
 
 ---
