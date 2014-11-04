@@ -35,7 +35,7 @@ Use Drupal to build anything from a personal blog to an enterprise application. 
 
 ## Usage
 
-Just spin up a new container based on this snapshot and click to "Check your installation here". Login with your the credentials provided in the next section and start using Drupal.
+Just spin up a new Terminal based on this snapshot and click to "Check your installation here". Login with your the credentials provided in the next section and start using Drupal.
 
 
 ### Credentials

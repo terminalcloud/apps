@@ -15,7 +15,7 @@ Every community is unique. Vanilla is a finely-crafted platform on which designe
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Test your installation here".
+Just spin-up your Terminal based on this snapshot and click to "Test your installation here".
 Login with your admin credentials and start using Vanilla.
 
 
@@ -42,8 +42,8 @@ Login with your admin credentials and start using Vanilla.
 
 ### Additional Information
 
-#### Vanilla Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Vanilla Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/vanilla_installer.sh && bash vanilla_installer.sh`
 
 ---

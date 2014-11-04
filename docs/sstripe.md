@@ -28,7 +28,7 @@ We get it. Your website is unique and can’t be backed into a turnkey content m
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Finish your installation here" using the database credentials provided below:
+Spin up your terminal Terminal based on this snapshot and personalize your installation by clicking on "Finish your installation here" using the database credentials provided below:
 
 ´´´
 
@@ -52,8 +52,8 @@ Follow the on-screen instructions to finish your installation and access the CMS
 ---
 
 ### Additional Information
-#### SilverStripe Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### SilverStripe Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/sstripe_installer.sh && bash sstripe_installer.sh`
 
 ---

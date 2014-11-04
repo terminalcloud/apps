@@ -29,7 +29,7 @@ Church Directory, Profiles and Groups. Eliminate that dated printed directory an
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Check your installation here".
+Just spin-up your Terminal based on this snapshot and click to "Check your installation here".
 Then, follow the on-screen instructions to configure your admin account and finish the site configuration.
 
 ---
@@ -47,8 +47,8 @@ Then, follow the on-screen instructions to configure your admin account and fini
 
 ### Additional Information
 
-#### ChurchIO Terminal.com container semi-automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### ChurchIO Terminal semi-automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/churchio_installer.sh && bash churchio_installer.sh`
 
 

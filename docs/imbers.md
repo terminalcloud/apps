@@ -8,7 +8,7 @@
 With this application you can meet someone new every day!
 
 ## About this Imbers Snapshot
-This snapshot was made from the Imber's git repositories as an option to the default docker installation.
+This snapshot was made from the Imber's git repositories as an option to the default Docker installation.
 
 
 ---
@@ -43,8 +43,8 @@ The process will be running as background jobs. To send them back to the front (
 
 ### Additional Information
 
-#### Imbers Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Imbers Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/imbers_installer.sh && bash imbers_installer.sh`
 
 ---

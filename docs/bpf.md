@@ -18,7 +18,7 @@ Bottle is a fast, simple and lightweight WSGI micro web-framework for [Python](h
 ---
 
 ## Usage
-Spin up your container based on this snapshot. You will see on screen the file browser and editor ready to work over the working example.
+Spin up your Terminal based on this snapshot. You will see on screen the file browser and editor ready to work over the working example.
 
 If you want, you can start a new project by moving or deleting the contents of /var/www/html and then installing the framework again executing `pip install bottle`
 
@@ -37,8 +37,8 @@ You can use it as an example, staring point or just start from scratch.
 ---
 
 ### Additional Information
-#### BottlePy Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### BottlePy Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/bpf_installer.sh && bash bpf_installer.sh`
 
 

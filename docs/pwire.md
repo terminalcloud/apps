@@ -14,7 +14,7 @@ ProcessWire gives simpler and stronger control over your pages, fields, template
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to the "ProcessWire Admin Login" link.
+Just spin-up your Terminal based on this snapshot and click to the "ProcessWire Admin Login" link.
 Login with your admin credentials and start using ProcessWire.
 
 
@@ -45,8 +45,8 @@ Login with your admin credentials and start using ProcessWire.
 
 ### Additional Information
 
-#### ProcessWire Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### ProcessWire Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/pwire_installer.sh && bash pwire_installer.sh`
 
 ---

@@ -15,9 +15,9 @@ While they can be used separately, Zend Framework 2 components in the standard l
 The principal sponsor of the project ‘Zend Framework 2’ is Zend Technologies, but many companies have contributed components or significant features to the framework. Companies such as Google, Microsoft, and StrikeIron have partnered with Zend to provide interfaces to web services and other technologies they wish to make available to Zend Framework 2 developers.
 
 ## Usage:
-Just spin up you terminal.com container based on this snapshot and you will have everything needed to develop, deploy and serve a **Zend Framework 2 Application**.
+Just spin up you Terminal based on this snapshot and you will have everything needed to develop, deploy and serve a **Zend Framework 2 Application**.
 
-This container have Apache web server installed, serving a sample Zend Framework 2 App that can be used to learn how a CRUD is done.
+This Terminal have Apache web server installed, serving a sample Zend Framework 2 App that can be used to learn how a CRUD is done.
 
 If you want to start your Zend project from the scratch, just follow this simple instructions:
 - Go to the folder where you want to host your application
@@ -31,8 +31,8 @@ If you want to start your Zend project from the scratch, just follow this simple
 - [Community, mailing list and forum](http://http://framework.zend.com/participate/)
 
 ### Additional Information
-#### Terminal.com container automatic installation
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing
+#### Terminal automatic installation
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing
 
 `wget  https://raw.githubusercontent.com/terminalcloud/apps/master/zend_installer.sh &&  bash zend_installer.sh`
 

@@ -31,8 +31,8 @@ You can also use the internal browser to use the application if you want.
 - Check the [Laverna Website](https://laverna.cc/)
 
 ### Additional Information
-#### Laverna Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing: `wget https://raw.githubusercontent.com/terminalcloud/apps/master/laverna_installer.sh && bash laverna_installer.sh`
+#### Laverna Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing: `wget https://raw.githubusercontent.com/terminalcloud/apps/master/laverna_installer.sh && bash laverna_installer.sh`
 
 ---
 #### Thanks for using this snapshot at Terminal.com

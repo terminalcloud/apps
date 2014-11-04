@@ -14,7 +14,7 @@ MEAN.JS will help you getting started and avoid useless grunt work and common pi
 
 ## Usage
 
-Spin-up your container based on this snapshot and start coding directly on it !
+Spin-up your Terminal based on this snapshot and start coding directly on it !
 
 Please see the documentation section for more information about MeanJS.
 
@@ -66,8 +66,8 @@ This snapshot includes a working example running on port 3000. You can use it as
 
 
 ### Additional Information
-#### Container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/mean_installer.sh && bash mean_installer.sh`
 
 

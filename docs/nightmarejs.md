@@ -14,7 +14,7 @@ The goal is to expose just a few simple methods, and have an API that feels sync
 
 ## Usage
 
-Just spin-up your container based on this snapshot and start coding your Nightmarejs automation scripts directly on the editor window. You've node (and npm) available to install all your dependencies. NightmareJS is available at ~/nightmarejs.
+Just spin-up your Terminal based on this snapshot and start coding your Nightmarejs automation scripts directly on the editor window. You've node (and npm) available to install all your dependencies. NightmareJS is available at ~/nightmarejs.
 
 
 We are including an improved version of the Yahoo search script to show you how to use the Terminal.com IDE to debug your web automations.
@@ -36,8 +36,8 @@ For more information about the API use, please check the [Complete API documenta
 
 ### Additional Information
 
-#### Nightmarejs Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Nightmarejs Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/nightmarejs_installer.sh && bash nightmarejs_installer.sh`
 
 ---

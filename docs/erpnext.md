@@ -13,7 +13,7 @@ ERPNext covers most functionality required to run a small or medium sized busine
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Test your installation here".
+Just spin-up your Terminal based on this snapshot and click to "Test your installation here".
 Login with your admin credentials and and configure your ERP based on your needs.
 
 
@@ -80,8 +80,8 @@ Due security reasons, ERPNext is running under a non-privileged user called "bun
 
 ### Additional Information
 
-#### erpnext CRM Terminal.com container semi-automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### erpnext CRM Terminal semi-automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/erpnext_installer.sh && bash erpnext_installer.sh show`
 
 ---

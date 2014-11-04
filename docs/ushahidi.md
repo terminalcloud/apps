@@ -24,7 +24,7 @@
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and Customize your Ushahidi installation by clicking on "Finish your installation here".
+Spin up your terminal Terminal based on this snapshot and Customize your Ushahidi installation by clicking on "Finish your installation here".
 
 Database Credentials to be used during the installation:
 
@@ -47,11 +47,11 @@ When the installation is complete, you can access the ushahidi [admin section](h
 ---
 
 ### Additional Information
-#### Ushahidi Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Ushahidi Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/ushahidi_installer.sh && bash ushahidi_installer.sh`
 
-Use at least a "small" Terminal container to host this application.
+Use at least a "small" Terminal Terminal to host this application.
 
 ---
 

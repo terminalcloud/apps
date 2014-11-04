@@ -44,8 +44,8 @@ For use case examples please check the [Puer GitHub Repo](https://github.com/lee
 
 
 ### Additional Information
-#### Puer Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Puer Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/puer_installer.sh && bash puer_installer.sh`
 
 

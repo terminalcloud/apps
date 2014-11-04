@@ -61,8 +61,8 @@ To access phpPgAdmin just click to the link provided and login with the postgres
 
 
 ### Additional Information
-#### PostgreSQL Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### PostgreSQL Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/postgres_installer.sh && bash postgres_installer.sh`
 
 

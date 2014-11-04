@@ -15,7 +15,7 @@ Mesos is built using the same principles as the Linux kernel, only at a differen
 - Scales up to 10,000s of nodes.
 - Fault-tolerant replicated master and slaves using ZooKeeper.
 - Support for Docker containers.
-- Native isolation between tasks with Linux containers.
+- Native isolation between tasks with Linux Terminals.
 - Multi-resource scheduling (memory, CPU, disk and ports).
 - Java, Python and C++ APIs for developing new parallel applications.
 - Web UI for inspecting cluster state.

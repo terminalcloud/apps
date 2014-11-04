@@ -1,4 +1,4 @@
-## Pydio Terminal.com container
+## Pydio Terminal
 *Pydio allows you to instantly turn any server into a powerful file sharing platform.*
 
 ---
@@ -30,8 +30,8 @@ For more information about Pydio you can check:
 ---
 
 ### Additional Information
-#### Pydio Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Pydio Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/pydio_installer.sh && bash pydio_installer.sh`
 
 ---

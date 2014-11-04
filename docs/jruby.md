@@ -13,7 +13,7 @@ The JRuby example presented on this Terminal.com snapshot is based on the JRuby 
 ---
 
 ## Usage
-Just spin up your terminal container based on this snapshot and start using **JRuby**, as it's installed.
+Just spin up your terminal Terminal based on this snapshot and start using **JRuby**, as it's installed.
 You can browse the source code of the sample application at /root/jruby_on_rails_sample_app and check it running by pressing on "Check the Jruby example here!"
 
 Ruby, Jruby, NPM and RVM tools are installed to make your life easier when installing packages and dependences.
@@ -28,8 +28,8 @@ Ruby, Jruby, NPM and RVM tools are installed to make your life easier when insta
 
 ### Additional Information
 
-#### JRuby Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### JRuby Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/jruby_installer.sh && bash jruby_installer.sh`
 
 ---

@@ -24,7 +24,7 @@ For a complete list please visite the [Gerrit ShowCases page](https://code.googl
 
 ## Usage
 
-- Spin-up your container based on this snapshot and click to "Check your installation here".
+- Spin-up your Terminal based on this snapshot and click to "Check your installation here".
 - Login with your OpenID user [Yahoo OpenID is recommended]
 - The first user to login Gerrit will be the Gerrit Admin by default. You will prompted to change your settings and set your keys.
 
@@ -61,8 +61,8 @@ Gerrit PostgreSQL:
 
 ### Additional Information
 
-#### Gerrit Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Gerrit Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/gerrit_installer.sh && bash gerrit_installer.sh`
 
 

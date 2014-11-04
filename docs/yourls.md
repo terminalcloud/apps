@@ -26,12 +26,12 @@ Running your own URL shortener is fun, geeky and useful: you own your data and d
 ![2](https://yourls.org/yourls-org-images/stats-anim.gif)
 
 ## Usage
-Spin up your terminal container based on this snapshot and click to the link provided.
+Spin up your terminal Terminal based on this snapshot and click to the link provided.
 
 Due the way YOURLS works, you will have to login to the system by going to /admin and authenticate using the default user and password: ` user: admin , password: password ` To change this password just edit the user/config.php file. The passwords will be automatically encrypted during the next run.
 
 As any other URL shortener, YOURLS is intended to be used with short domain names.
-To use you own _short_ domain name in a Terminal.com container please follow the instructions [here](https://www.terminal.com/faq#cname)
+To use you own _short_ domain name in a Terminal please follow the instructions [here](https://www.terminal.com/faq#cname)
 
 ### Additional Configuration
 To complete or change the system configuration you need to edit the file user/config.php. By editing that file you will be able to change basic configuration parameters as:
@@ -46,7 +46,7 @@ To complete or change the system configuration you need to edit the file user/co
 
 
 ### Additional Information
-#### YOURLS Terminal.com container automatic installation:
+#### YOURLS Terminal automatic installation:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/yourls_installer.sh && bash yourls_installer.sh`
 
 ---

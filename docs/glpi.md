@@ -100,7 +100,7 @@ Statistics reports by month, year, total in PNG, SVG or CSV.
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Check your application here".
+Just spin-up your Terminal based on this snapshot and click to "Check your application here".
 Login with your admin credentials and start using GLPI.
 
 
@@ -131,8 +131,8 @@ Login with your admin credentials and start using GLPI.
 
 
 ### Additional Information
-#### GLPI Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### GLPI Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/glpi_installer.sh && bash glpi_installer.sh`
 
 

@@ -51,7 +51,7 @@ A Product Information Management tool (also known as PIM, PCM or Products MDM) i
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Check your installation here".
+Just spin-up your Terminal based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using Wide.
 
 
@@ -74,8 +74,8 @@ Login with your admin credentials and start using Wide.
 
 ### Additional Information
 
-#### Wide Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Wide Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/wide_installer.sh && bash wide_installer.sh show`
 
 ---

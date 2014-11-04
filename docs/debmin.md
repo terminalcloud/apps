@@ -1,4 +1,4 @@
-# Ubuntu 14.04 with Webmin - Terminal.com Container
+# Ubuntu 14.04 with Webmin - Terminal
 *Official Ubuntu 14.04 distribution with minimal stack for running Terminal.com IDE and Webmin web administration tool.*
 
 

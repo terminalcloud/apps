@@ -37,7 +37,7 @@ Based on its own pimcore API or the REST API it’s easy and fast to integrate p
 ---
 
 ## Usage
-Spin up your terminal container based on this snapshot and personalize your installation by clicking on "Check your installation here".
+Spin up your terminal Terminal based on this snapshot and personalize your installation by clicking on "Check your installation here".
 
 
 To login into the administration section, please use the credentials below:
@@ -56,11 +56,11 @@ To login into the administration section, please use the credentials below:
 ---
 
 ### Additional Information
-#### Pimcore Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Pimcore Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/pimcore_installer.sh && bash pimcore_installer.sh`
 
-Use at least a "small" Terminal container to host this application.
+Use at least a "small" Terminal Terminal to host this application.
 
 ---
 

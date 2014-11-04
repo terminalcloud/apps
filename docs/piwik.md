@@ -31,7 +31,7 @@ analytics report categories – Visitors, Actions, Referrers, Goals/e-Commerce
 - No data limit
 
 ## Usage
-- Spin up your Piwik container and point your browser to
+- Spin up your Piwik Terminal and point your browser to
 http://yourterminalname-80.terminal.com
 - Login with user and pass: **admin | terminal.com**
 - Go yo *Settings > Website* and add the site URL to be analyzed.

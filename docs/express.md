@@ -20,7 +20,7 @@
 
 ## Usage
 
-Spin-up your container based on this snapshot and start coding directly on it.
+Spin-up your Terminal based on this snapshot and start coding directly on it.
 
 ### Stack Characteristics:
 - **Node** is installed globally on its stable version.
@@ -73,8 +73,8 @@ And then check the working example at port 3000 ([click here](http://terminalser
 
 
 ### Additional Information
-#### Container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/express_installer.sh && bash express_installer.sh`
 
 

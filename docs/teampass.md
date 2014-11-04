@@ -19,7 +19,7 @@
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Check your installation here". Login with your admin credentials and start using Open TeamPass.
+Just spin-up your Terminal based on this snapshot and click to "Check your installation here". Login with your admin credentials and start using Open TeamPass.
 
 ### Credentials
 

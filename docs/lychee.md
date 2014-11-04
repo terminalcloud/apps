@@ -23,7 +23,7 @@ The perfect place to store all your photos. No storage limit, no compression, no
 ---
 
 ## Usage
-Just spin up your terminal container based on this snapshot and start using **Lychee** by pressing on "Check your installation here!"
+Just spin up your terminal Terminal based on this snapshot and start using **Lychee** by pressing on "Check your installation here!"
 
 You will will be able to set your initial username and password on the first run by pressing the **[>** symbol, in the upper left corner.
 
@@ -37,8 +37,8 @@ You will will be able to set your initial username and password on the first run
 
 ### Additional Information
 
-#### Lychee Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Lychee Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/lychee_installer.sh && bash lychee_installer.sh`
 
 ---

@@ -41,7 +41,7 @@
 
 ## Usage
 
-Just spin-up your container based on this snapshot and click to "Check your installation here".
+Just spin-up your Terminal based on this snapshot and click to "Check your installation here".
 Login with your admin credentials and start using NodeBB.
 
 
@@ -61,8 +61,8 @@ Login with your admin credentials and start using NodeBB.
 
 ### Additional Information
 
-#### NodeBB Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### NodeBB Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/nodebb_installer.sh && bash nodebb_installer.sh`
 
 ---

@@ -1,6 +1,6 @@
-# Ubuntu 14.04 with Ajenti - Terminal.com Container
+# Ubuntu 14.04 with Ajenti - Terminal
 
-This container has a full Ubuntu14.04 ready to use and install whatever you want.
+This Terminal has a full Ubuntu14.04 ready to use and install whatever you want.
 To administer this machine in a graphical mode, we're providing *Ajenti*
 
 ## About Ajenti:

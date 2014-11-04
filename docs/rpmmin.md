@@ -1,4 +1,4 @@
-# Centos 6.5 with Webmin - Terminal.com Container
+# Centos 6.5 with Webmin - Terminal
 *Official Centos 6.5 distribution with minimal stack for running Terminal.com IDE and Webmin web administration tool.*
 
 
