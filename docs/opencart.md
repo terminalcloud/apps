@@ -1,5 +1,5 @@
 # **OpenCart** Terminal.com Snapshot
-*Fast, resposive and easy to use e-commerce platform*
+*Fast, responsive and easy to use e-commerce platform*
 ---
 
 ## About OpenCart

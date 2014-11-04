@@ -22,7 +22,9 @@ install(){
   cd $INSTALL_PATH
   wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/opencart.zip
   unzip opencart.zip && rm opencart.zip
-  mv opencart-2.0.0.0 opencart
+  mv opencart-2.0.0.0/upload opencart
+  touch opencart/config.php
+  touch opencart/admin/config.php
   chown -R www-data:www-data opencart
   apache_install
   apache_default_vhost opencart.conf $INSTALL_PATH/opencart

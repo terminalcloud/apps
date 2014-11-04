@@ -4,6 +4,10 @@ name="opencart"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Update server URL in config files
+sed -i "s/terminalservername/$(hostname)/g" /var/www/opencart/config.php
+sed -i "s/terminalservername/$(hostname)/g" /var/www/opencart/admin/config.php
+
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
