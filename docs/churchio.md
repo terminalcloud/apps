@@ -39,7 +39,6 @@ Then, follow the on-screen instructions to configure your admin account and fini
 ---
 
 ## Documentation
-- [Official Website](http://www.churchio.com/)
 - [OneBody Help](http://church.io/onebody/help/)
 - [GitHub Repo](https://github.com/churchio/onebody)
 
