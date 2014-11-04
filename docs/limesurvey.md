@@ -1,5 +1,5 @@
 # **LimeSurvey** Terminal.com Snapshot
-*The open source survey application... reshingly easy and free*
+*The open source survey application... refreshingly easy and free*
 
 ---
 
