@@ -17,13 +17,13 @@
 
 - **Web Based IDE** - Create, modify, deploy and manage application from anywhere using your browser. One web2py instance can run multiple web sites using different databases
 
-- **Extensice Docs** - Start with some [quick examples](http://www.web2py.com/init/default/examples), then read the [manual](http://www.web2py.com/book), watch [videos](http://vimeo.com/album/178500), and join a [user group](http://www.web2py.com/init/default/usergroups) for discussion. Take advantage of the [layouts](http://www.web2py.com/layouts), [plugins](http://dev.s-cubism.com/web2py_plugins), [appliances](http://www.web2py.com/appliances), and [recipes](http://web2pyslices.com/).
+- **Extensive Docs** - Start with some [quick examples](http://www.web2py.com/init/default/examples), then read the [manual](http://www.web2py.com/book), watch [videos](http://vimeo.com/album/178500), and join a [user group](http://www.web2py.com/init/default/usergroups) for discussion. Take advantage of the [layouts](http://www.web2py.com/layouts), [plugins](http://dev.s-cubism.com/web2py_plugins), [appliances](http://www.web2py.com/appliances), and [recipes](http://web2pyslices.com/).
 
 ---
 
 ## Usage
 
-Spin-up your container based on this snapshot.
+Spin-up your Terminal based on this snapshot.
 
 To see the Web2Py framework example running, please click over "Check your installation here"
 
@@ -51,8 +51,8 @@ For more information about how to write your application using this framework, p
 
 ### Additional Information
 
-#### Web2Py Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+#### Web2Py Terminal.com automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/web2py_installer.sh && bash web2py_installer.sh`
 
 
