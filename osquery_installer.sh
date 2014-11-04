@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy treefrog at Terminal.com
+# Script to deploy osquery at Terminal.com
 
 INSTALL_PATH="/root"
 
@@ -14,16 +14,20 @@ install(){
 	basics_install
 
 	# Procedure:
-  apt-get -y install libqt4-sql-mysql libqt4-sql-psql build-essential qt4-qmake
-  wget http://downloads.sourceforge.net/project/treefrog/src/treefrog-1.7.8.tar.gz
-  tar -xzf treefrog-1.7.8.tar.gz
+  apt-get -y install libqt4-sql-mysql libqt4-sql-psql build-essential
+  cd $INSTALL_PATH
+  git clone https://github.com/facebook/osquery.git
+  make deps
+  make
+  make package
+  dpkg -i $INSTALL_PATH/osquery/build/ubuntu/osquery-0.0.1-trusty.amd64.deb
 }
 
 show(){
 	# Get the startup script
-	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/treefrog_hooks.sh
+	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/osquery_hooks.sh
 	mkdir -p /CL/hooks/
-	mv treefrog_hooks.sh /CL/hooks/startup.sh
+	mv osquery_hooks.sh /CL/hooks/startup.sh
 	# Execute startup script by first to get the common files
 	chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 }
