@@ -67,16 +67,18 @@ For mor information about usage please check the [User Documentation](http://www
 ---
 
 ## Documentation
+
 - [Phabricator Official Website](http://phabricator.org/)
 - [Applications](http://phabricator.org/applications/)
 - [User Documentation](http://www.phabricator.com/docs/phabricator/)
 
 ---
 
-### Additional Information
+## Additional Information
 
-#### Phabricator Terminal.com container automatic installation:
-You can replicate this container from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+### Snapshot Bootstrap Script
+
+This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/phabricator_installer.sh && bash phabricator_installer.sh`
 
 
