@@ -1,9 +1,9 @@
-# **ChurchIO OneBody** Terminal.com Snapshot
+# **OneBody** Terminal.com Snapshot
 *Free Church directory and Social Networking software for your Church*
 
 ---
 
-## About ChurchIO OneBody
+## About OneBody
 Church Directory, Profiles and Groups. Eliminate that dated printed directory and cut calls to your church office by making your member directory available on the web. Give your members a place to upload their own photo, personal testimony, contact info, and more. Groups connect people in Sunday School classes, Small Groups, or special projects. Use OneBody Groups for classes, special events, trip planning, elder/staff and leadership communication, or anywhere you might use an email mailing list.
 
 
@@ -39,19 +39,10 @@ Then, follow the on-screen instructions to configure your admin account and fini
 ---
 
 ## Documentation
-- [ChurchIO Official Website](http://www.churchio.com/)
+- [Official Website](http://www.churchio.com/)
 - [OneBody Help](http://church.io/onebody/help/)
 - [GitHub Repo](https://github.com/churchio/onebody)
 
 ---
 
-### Additional Information
-
-#### ChurchIO Terminal semi-automatic installation:
-You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/churchio_installer.sh && bash churchio_installer.sh`
-
-
----
-
-#### Thanks for using ChurchIO OneBody at Terminal.com!
+#### Thanks for using OneBody at Terminal.com!

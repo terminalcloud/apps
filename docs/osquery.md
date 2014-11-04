@@ -1,12 +1,12 @@
-# **Facebook's OSQuery** Terminal.com Snapshot
+# **Facebook's osquery** Terminal.com Snapshot
 *SQL powered operating system instrumentation and analytics.*
 
 ---
 
-## About OSQuery
+## About **osquery**
 With osquery, you can use SQL to query low-level operating system information. Under the hood, instead of querying static tables, these queries dynamically execute high-performance native code. The results of the SQL query are transparently returned to you quickly and easily.
 
-Facebook uses osquery to gain insight into OS X and Linux hosts. Other notable companies also use osquery because of how easy it is to deploy osquery and the advanced insight into their infrastructure that osquery can offer them
+Facebook uses osquery to gain insight into OS X and Linux hosts. Other notable companies also use osquery because of how easy it is to deploy osquery and the advanced insight into their infrastructure that osquery can offer them.
 
 ---
 
@@ -23,16 +23,16 @@ Main Features:
 
 ## Usage
 
-Just spin-up your Terminal based on this snapshot and start using **OSQuery** on the same Terminal window.
+Just spin-up your Terminal based on this snapshot and start using **osquery** on the same Terminal window.
 
-### OSQuery Commands
+### Commands
 - [Interactive SQL shell](https://github.com/facebook/osquery/wiki/using-osqueryi): `osqueryi`
 - [Host Monitoring daemon](https://github.com/facebook/osquery/wiki/using-osqueryd): `osqueryd`
 
 ---
 
 ## Documentation
-- [OSQuery Website](http://osquery.io/)
+- [Main Website](http://osquery.io/)
 - [Documentation home](https://github.com/facebook/osquery/wiki)
 - [GitHub Repo](https://github.com/facebook/osquery/)
 
@@ -40,10 +40,10 @@ Just spin-up your Terminal based on this snapshot and start using **OSQuery** on
 
 ### Additional Information
 
-#### OSQuery Terminal semi-automatic installation:
+#### osquery Terminal semi-automatic installation:
 You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/osquery_installer.sh && bash osquery_installer.sh`
 
 ---
 
-#### Thanks for trying OSQuery at Terminal.com!
+#### Thanks for trying osquery at Terminal.com!
