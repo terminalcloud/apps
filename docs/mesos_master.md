@@ -1,6 +1,6 @@
 # **Mesos Master Node** Terminal.com Snapshot
 
-*Program against a cluster like it’s a single pool of resources*
+*Program against a cluster like it’s a single pool of resources.*
 
 ---
 
