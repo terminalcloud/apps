@@ -19,11 +19,11 @@ install(){
   mysql_setup mybb mybb terminal
   apt-get -y install php5-ldap php5-imap
   php5enmod imap
-  mkdir -p $INSTALL_PATH/mybb
-  cd $INSTALL_PATH/mybb
+  cd $INSTALL_PATH
   wget http://resources.mybb.com/downloads/mybb_1801.zip
   unzip mybb_1801.zip && rm mybb_1801.zip
-  cd $INSTALL_PATH
+  mv Upload mybb
+  mv mybb/htaccess.txt mybb/.htacess
   chown -R www-data:www-data mybb
   apache_install
   apache_default_vhost mybb.conf $INSTALL_PATH/mybb

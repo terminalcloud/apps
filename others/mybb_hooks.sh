@@ -4,6 +4,9 @@ name="mybb"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Update server URL in config
+sed -i "s/terminalservername/$(hostname)/g" /var/www/mybb/inc/settings.php
+
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/

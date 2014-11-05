@@ -27,7 +27,7 @@ With everything from forums to threads, posts to private messages, search to pro
 
 ## Usage
 
-Just spin up your Terminal based on this snapshot. Access the admin section by clicking to "MyBB Admin login" and login with the credentials provided (see below).
+Just spin up your Terminal based on this snapshot. Click on "Check your installation here" and login as administrator with the credentials provided (see below).
 
 
 ### Credentials
@@ -37,14 +37,16 @@ Just spin up your Terminal based on this snapshot. Access the admin section by c
 
 ---
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/ISGervq.png)
 
 ---
 
 ## Documentation
 
-- [MyBB Website]()
-- [Documentation]()
+- [MyBB Website](http://www.mybb.com/)
+- [Documentation](http://docs.mybb.com/)
+- [Community](http://community.mybb.com/)
+- [MyBB Blog](http://blog.mybb.com/)
 
 ---
 
