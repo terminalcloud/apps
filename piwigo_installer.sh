@@ -18,7 +18,8 @@ install(){
   mysql_install
   mysql_setup piwigo piwigo terminal
   cd $INSTALL_PATH
-  wget -o piwigo.zip http://piwigo.org/download/dlcounter.php?code=latest
+  wget http://piwigo.org/download/dlcounter.php?code=latest
+  mv dlcounter* piwigo.zip
   unzip piwigo.zip && rm piwigo.zip
   chown -R www-data:www-data piwigo
   apache_install

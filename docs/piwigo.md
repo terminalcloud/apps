@@ -1,5 +1,5 @@
 # **Piwigo** Terminal.com Snapshot
-*Open source photo gallery software buitl for the web.*
+*Open source photo gallery software built for the web.*
 
 ---
 
@@ -29,6 +29,7 @@ Extensions make Piwigo easily customizable. Icing on the cake, Piwigo is free an
 
 Just spin up your Terminal based on this snapshot. Access the admin section by clicking to "Piwigo Admin login" and access with the credentials provided (see below).
 
+Once you're logged as admin, go to the Administration area to customize your site.
 
 ### Credentials
 
