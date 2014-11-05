@@ -1,5 +1,4 @@
 # **PRODUCT_NAME** Terminal.com Snapshot
-
 *MINI_DESC*
 
 ---

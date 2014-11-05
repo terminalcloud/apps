@@ -1,13 +1,11 @@
 #!/bin/bash
 
-name="zenphoto"
+name="piwigo"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
 # Update server URL in config
-sed -i "s/terminalservername/$(hostname)/g" /var/www/zenphoto/plugins/site_upgrade/closed.htm
-sed -i "s/terminalservername/$(hostname)/g" /var/www/zenphoto/plugins/site_upgrade/rss-closed.xml
-sed -i "s/terminalservername/$(hostname)/g" /var/www/zenphoto/plugins/site_upgrade/externalFeed-closed.xml
+# sed -i "s/terminalservername/$(hostname)/g" ...
 
 
 # Getting the doc and styles
@@ -20,7 +18,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/admin"><b>Zenphoto Login</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/admin"><b>Piwigo Admin login</b></a></p>
 
 </head>
 <body>
