@@ -24,7 +24,7 @@ Zenphoto is the ideal CMS for personal websites of illustrators, artists, design
 
 ## Usage
 
-Just spin up your Terminal based on this snapshot. Access your ZenPhoto instance by clicking on "Check your installation here". Login with the credentials provided (see below).
+Just spin up your Terminal based on this snapshot. Access your ZenPhoto instance by clicking on the "Zenphoto Login" link. Access with the credentials provided (see below).
 
 
 ### Credentials
@@ -35,6 +35,7 @@ Just spin up your Terminal based on this snapshot. Access your ZenPhoto instance
 ---
 
 ![1](http://www.zenphoto.org/cache/screenshots/zenphoto-admin/album_w560_h335.jpg)
+
 ![2](http://www.zenphoto.org/cache/screenshots/zenphoto-admin/images-sorting_w560_h279.jpg)
 
 ---
