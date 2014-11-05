@@ -1,11 +1,13 @@
 #!/bin/bash
 
-name="mybb"
+name="zenphoto"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
 # Update server URL in config
-#sed -i "s/terminalservername/$(hostname)/g" /var/www/...
+sed -i "s/terminalservername/$(hostname)/g" /var/www/zenphoto/plugins/site_upgrade/closed.htm
+sed -i "s/terminalservername/$(hostname)/g" /var/www/zenphoto/plugins/site_upgrade/rss-closed.xml
+sed -i "s/terminalservername/$(hostname)/g" /var/www/zenphoto/plugins/site_upgrade/externalFeed-closed.xml
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md

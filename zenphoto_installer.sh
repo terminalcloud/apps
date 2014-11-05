@@ -21,9 +21,15 @@ install(){
   php5enmod imap
   cd $INSTALL_PATH
   wget https://github.com/zenphoto/zenphoto/archive/zenphoto-1.4.6.zip
-  unzip zenphoto_1801.zip && rm zenphoto_1801.zip
-  mv zenphoto_1801 zenphoto
+  unzip zenphoto-1.4.6.zip && rm zenphoto-1.4.6.zip
+  mv zenphoto-zenphoto-1.4.6 zenphoto
   chown -R www-data:www-data zenphoto
+  export LANGUAGE=en_US.UTF-8
+  export LANG=en_US.UTF-8
+  export LC_ALL=en_US.UTF-8
+  locale-gen en_US.UTF-8
+  apt-get -y install locales
+  dpkg-reconfigure locales
   apache_install
   apache_default_vhost zenphoto.conf $INSTALL_PATH/zenphoto
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
