@@ -41,7 +41,6 @@ You can see your OpenCart public site by clicking on the "OpenCart site" link.
 - username: `admin`
 - password: `t3rminal`
 
-
 ---
 
 ![1](http://forum.opencart.com/download/file.php?id=2685)
