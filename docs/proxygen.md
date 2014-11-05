@@ -1,4 +1,4 @@
-# **Proxygen Development ** Terminal.com Snapshot
+# **Proxygen** Terminal.com Snapshot
 *A collection of C++ HTTP libraries including an easy to use HTTP server.*
 
 ---
