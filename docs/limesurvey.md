@@ -14,7 +14,6 @@ Build and customize your own web-based surveys with LimeSurvey. LimeSurvey has m
 
 Just spin up a Terminal based on this snapshot. To access the admin section click to "LimeSurvey Admin login" and login with the credentials provided below. Create your surveys and publish them.
 
-You can see your LimeSurvey site by clicking on the "LimeSurvey site" link.
 
 ### Credentials
 
