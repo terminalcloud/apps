@@ -14,11 +14,15 @@ install(){
   basics_install
 
   # Procedure:
+  mysql_install
+  mysql_setup pootle pootle terminal
   cd $INSTALL_PATH
   apt-get -y install python-pip || yum -y install python-pip
   pip install virtualenv
+  apt-get -y install python-dev libxml2-dev libxslt-dev zlib1g-dev libmysqlclient-dev python-dev
   virtualenv /var/www/pootle/env/
   source /var/www/pootle/env/bin/activate
+  pip install mysql-python
   pip install Pootle
   pootle --version
   pootle init
