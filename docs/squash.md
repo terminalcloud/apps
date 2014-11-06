@@ -29,13 +29,7 @@
 
 ## Usage
 
-Just spin up your Terminal based on this snapshot. Access Squash by clicking the "Check your installation here" link and login with the credentials provided (see below).
-
-
-### Credentials
-
-- username: `admin`
-- password: `t3rminal`
+Just spin up your Terminal based on this snapshot. Access Squash by clicking the "Check your installation here" link and create our own account in the system.
 
 ---
 
