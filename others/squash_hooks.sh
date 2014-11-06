@@ -4,6 +4,13 @@ name="squash"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Update server URL in config files
+sed -i "s/terminalservername/$(hostname)/g" /root/web/config/environments/production/dogfood.yml
+sed -i "s/terminalservername/$(hostname)/g" /root/web/config/environments/production/javascript_dogfood.yml
+sed -i "s/terminalservername/$(hostname)/g" /root/web/config/environments/production/mailer.yml
+
+
+
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
@@ -15,7 +22,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-3000.terminal.com"><b>Check your installation here!</b></a></p>
 </head>
 <body>
 EOF

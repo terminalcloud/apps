@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script to deploy Squash at Terminal.com
 
-INSTALL_PATH="/var/www"
+INSTALL_PATH="/root"
 
 # Includes
 wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
@@ -14,8 +14,13 @@ install(){
   basics_install
 
   # Procedure:
-  wget https://github.com/SquareSquash/web.git
-
+  cd $INSTALL_PATH
+  git clone https://github.com/SquareSquash/web.git
+  apt-get -y install ruby postgresql ruby1.9.1-dev libpq-dev g++
+  cd web
+  gem install bundler
+  ./setup.rb
+  # You need to make sure that the user running the installation have superuser permissions over postgreSQL.
 }
 
 show(){
