@@ -25,7 +25,7 @@ eFront is a modern learning and training platform designed to help create online
 
 ## Usage
 
-Just spin up your Terminal based on this snapshot. Access the admin section by clicking to "eFront Admin login" and login with the credentials provided (see below).
+Just spin up your Terminal based on this snapshot. Access your new eFront instance by clicking to "Check your installation here" and login with the credentials provided (see below).
 
 
 ### Credentials
@@ -35,7 +35,7 @@ Just spin up your Terminal based on this snapshot. Access the admin section by c
 
 ---
 
-![1](https://www.softaculous.net/images/softimages/screenshots/337_screenshot1.gif)
+![1](http://i.imgur.com/Rzf7D3t.png)
 
 ---
 
