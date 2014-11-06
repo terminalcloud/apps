@@ -1,10 +1,12 @@
 # **Zenphoto** Terminal.com Snapshot
-*CMS for selfhosted, gallery focused websites*
+
+*CMS for self-hosted online galleries.*
 
 ---
 
 ## About Zenphoto
-**Zenphoto** is a CMS for selfhosted, gallery focused websites. Our focus lies on being easy to use and having all the features there when you need them (but out of the way if you do not).
+
+[Zenphoto](http://www.zenphoto.org/) is a CMS for self-hosted online galleries. Their focus on being easy to use and having all the features there when you need them (but out of the way if you do not).
 
 Zenphoto is the ideal CMS for personal websites of illustrators, artists, designers, photographers, film makers and musicians.
 
@@ -15,7 +17,7 @@ Zenphoto is the ideal CMS for personal websites of illustrators, artists, design
 - Easy media website management.
 - Support image, video and audio files.
 - Manage blog and pages.
-- Multiuser.
+- Supports multiple users.
 - International sites with multiple languages.
 - Flexible design.
 - Sophisticated plugins system.
@@ -24,8 +26,7 @@ Zenphoto is the ideal CMS for personal websites of illustrators, artists, design
 
 ## Usage
 
-Just spin up your Terminal based on this snapshot. Access your ZenPhoto instance by clicking on the "Zenphoto Login" link. Access with the credentials provided (see below).
-
+Just spin up a new Terminal based on this snapshot. Access your ZenPhoto instance by clicking on the "Zenphoto Login" link. Access with the credentials provided (see below).
 
 ### Credentials
 
