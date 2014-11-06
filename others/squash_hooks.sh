@@ -10,6 +10,8 @@ sed -i "s/terminalservername/$(hostname)/g" /root/web/config/environments/produc
 sed -i "s/terminalservername/$(hostname)/g" /root/web/config/environments/production/mailer.yml
 
 
+# Starting the app
+cd /root/web && nohup rails s &
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
