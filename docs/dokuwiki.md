@@ -33,7 +33,7 @@ Just spin up your Terminal based on this snapshot. Access the admin section by c
 
 ---
 
-![1](IMAGE_URL)
+![1](http://cdn.inmotionhosting.com/support/images/stories/edu/dokuwiki/102/102-dokuwiki.gif)
 
 ---
 
