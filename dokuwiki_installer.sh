@@ -19,11 +19,10 @@ install(){
 #  mysql_setup dokuwiki dokuwiki terminal
   apt-get -y install php5-ldap php5-imap
   php5enmod imap
-  mkdir $INSTALL_PATH/dokuwiki
-  cd $INSTALL_PATH/dokuwiki
+  cd $INSTALL_PATH
   wget http://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz
   tar -xzf dokuwiki-stable.tgz && rm dokuwiki-stable.tgz
-  cd $INSTALL_PATH
+  mv dokuwiki-2* dokuwiki
   chown -R www-data:www-data dokuwiki
   apache_install
   apache_default_vhost dokuwiki.conf $INSTALL_PATH/dokuwiki
