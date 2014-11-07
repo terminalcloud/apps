@@ -23,7 +23,8 @@ You can easily manipulate the content and the layout of your pages without the n
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here!" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. See your new MicroWeber site by clicking to "Check your installation here!".
+Enter the admin aread by clicking to "Admin Area" and login with the credentials provided (see below).
 
 ### Credentials
 
