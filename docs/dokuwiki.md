@@ -47,7 +47,7 @@ Just spin up your Terminal based on this snapshot. Access the admin section by c
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/DokuWiki_installer.sh && bash DokuWiki_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/dokuwiki_installer.sh && bash dokuwiki_installer.sh`
 
 ---
 
