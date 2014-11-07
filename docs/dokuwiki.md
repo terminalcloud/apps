@@ -16,7 +16,7 @@ DokuWiki is a simple to use and highly versatile Open Source [wiki](http://en.wi
 - Unlimited page revisions.
 - Colored side by side diff support.
 - Uploading and embedding of images and other media.
-- High Usability via Section editing, toolbars and automatic save fucntions.
+- High Usability via Section editing, toolbars and automatic save functions.
 - Access Control and Anti-Spam Measures.
 - Extensible through template and plugins.
 
