@@ -6,21 +6,21 @@
 
 ## About eFront
 
-eFront is a modern learning and training platform designed to help create online learning communities with opportunities for rich interaction. It comes with a distinctive icon-based user interface that is intuitive to use. The platform offers a wide range of features from content creation, test builder, project management, extended statistics, many communication tools, payments support, social extensions and more.
+eFront is a modern learning and training platform designed to help create online learning communities with opportunities for rich interaction. It comes with a distinctive icon-based user interface that is intuitive to use. The platform offers a wide range of features from content creation, test builder, project management, extended statistics, numerous communication tools, payments support, social extensions and more.
 
 ---
 
 ## Main Features
 
-- Content & Files management
-- Assessments engine
-- Learning Paths
-- SCORM
-- Reporting features
-- Forum & Calendar
-- Themable
-- Plugin architecture
-- User roles
+- Content & files management.
+- Assessments engine.
+- Learning paths.
+- SCORM.
+- Reporting features.
+- Forum & calendar.
+- Themable.
+- Plugin architecture.
+- User roles.
 
 ---
 
