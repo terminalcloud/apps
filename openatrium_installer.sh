@@ -18,8 +18,8 @@ install(){
   mysql_install
   mysql_setup openatrium openatrium terminal
   cd $INSTALL_PATH
-  wget http://ftp.openatrium.org/files/projects/openatrium-7.x-2.23-core.tar.gz
-  tar -xzf openatrium-7.x-2.23-core.tar.g
+  wget http://ftp.drupal.org/files/projects/openatrium-7.x-2.23-core.zip
+  unzip openatrium-7.x-2.23-core.zip
   mv openatrium-7.x-2.23 openatrium
   chown -R www-data:www-data openatrium
   apache_install
