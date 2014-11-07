@@ -39,8 +39,11 @@ Just spin up your Terminal based on this snapshot. Access the admin section by c
 
 ## Documentation
 
-- [DokuWiki Website]()
-- [Documentation]()
+- [DokuWiki Website](https://www.dokuwiki.org)
+- [User Manual](https://www.dokuwiki.org/manual)
+- [FAQ](https://www.dokuwiki.org/FAQ)
+- [DokuWiki Users Forum](https://forum.dokuwiki.org/)
+
 
 ---
 
