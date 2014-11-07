@@ -17,7 +17,7 @@ PRODUCT_NAME is
 
 ## Usage
 
-Just spin up your Terminal based on this snapshot. Access the admin section by clicking to "PRODUCT_NAME Admin login" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "PRODUCT_NAME Admin login" and login with the credentials provided (see below).
 
 
 ### Credentials
