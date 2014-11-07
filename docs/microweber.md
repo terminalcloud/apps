@@ -14,7 +14,7 @@ You can easily manipulate the content and the layout of your pages without the n
 
 ## Main Features
 
-- Powerful Content Managament System.
+- Powerful Content Management System.
 - Real-time text writing and editing.
 - An Online Store Integrated.
 - And a Powerful Blogging platform.
@@ -52,7 +52,7 @@ Enter the admin aread by clicking to "Admin Area" and login with the credentials
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/microweber_installer.sh && bash microweber_installer.sh`
 
-This MicroWeber installation has the Lite template installed and also, some demo data. Feel free to channge anything as needed and use the demo site as start point for your own site.
+This snapshot has the MicroWeber Lite template installed and also, some demo data. Feel free to channge anything as needed and use the demo site as start point for your own site.
 
 ---
 
