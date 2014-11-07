@@ -52,6 +52,8 @@ Enter the admin aread by clicking to "Admin Area" and login with the credentials
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/microweber_installer.sh && bash microweber_installer.sh`
 
+This MicroWeber installation has the Lite template installed and also, some demo data. Feel free to channge anything as needed and use the demo site as start point for your own site.
+
 ---
 
 #### Thanks for using MicroWeber at Terminal.com!
