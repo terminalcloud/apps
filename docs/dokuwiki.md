@@ -24,12 +24,9 @@ DokuWiki is a simple to use and highly versatile Open Source [wiki](http://en.wi
 
 ## Usage
 
-Just spin up your Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
+Just spin up your Terminal based on this snapshot, click on "Check your installation here" and start using DokuWiki.
 
-### Credentials
-
-- username: `admin`
-- password: `t3rminal`
+Keep in mind that DokuWiki was intentionally made to be open. Unless you install and configure an [authorization backend](https://www.dokuwiki.org/auth) or restrict the access to the port on the Terminal IDE, anyone will be able to create and modify articles in your Wiki.
 
 ---
 
