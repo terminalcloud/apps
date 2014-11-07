@@ -1,4 +1,5 @@
 # **PRODUCT_NAME** Terminal.com Snapshot
+
 *MINI_DESC*
 
 ---
@@ -18,7 +19,6 @@ PRODUCT_NAME is
 ## Usage
 
 Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "PRODUCT_NAME Admin login" and login with the credentials provided (see below).
-
 
 ### Credentials
 

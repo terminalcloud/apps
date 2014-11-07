@@ -1,4 +1,5 @@
 # **eFront OpenSource Edition** Terminal.com Snapshot
+
 *Modern learning and training platform designed to help create online learning communities.*
 
 ---
@@ -25,8 +26,7 @@ eFront is a modern learning and training platform designed to help create online
 
 ## Usage
 
-Just spin up your Terminal based on this snapshot. Access your new eFront instance by clicking to "Check your installation here" and login with the credentials provided (see below).
-
+Just spin up a new Terminal based on this snapshot. Access your new eFront instance by clicking to "Check your installation here" and login with the credentials provided (see below).
 
 ### Credentials
 
