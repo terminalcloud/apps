@@ -25,9 +25,8 @@ F&ts=1415645734&use_mirror=ufpr
   chown -R www-data:www-data otrance
   apache_install
   apache_default_vhost otrance.conf $INSTALL_PATH/otrance/public
-  sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
-  sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
-  sed -i 's/memory_limit\ \=\ 128M/memory_limit\ \=\ 256M/g' /etc/php5/apache2/php.ini
+  sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 64M/g' /etc/php5/apache2/php.ini
+  sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 64M/g' /etc/php5/apache2/php.ini
   sed -i 's/16M/32M/g' /etc/mysql/my.cnf
   service mysql restart
   service apache2 restart
