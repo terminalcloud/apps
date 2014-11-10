@@ -28,12 +28,20 @@ Shinken is compatible with Nagios configuration, plugins and interfaces. It is w
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Shinken Admin login" and login with the credentials provided (see below).
+Spin up a new Terminal based on this snapshot.
+
+Access the Shinken WebUI by clicking to "Check your installation here" and login with the credentials provided (see below).
+
+The Shinken main interface is a CLI (command line interface). To start the CLI execute `shinken`.
 
 ### Credentials
 
 - username: `admin`
 - password: `t3rminal`
+
+
+
+
 
 ---
 

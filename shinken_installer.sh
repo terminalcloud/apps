@@ -17,6 +17,12 @@ install(){
   apt-get -y install python-pip python-pycurl
   useradd -m shinken
   pip install shinken
+  shinken install webui
+  sed -i 's/modules/modules\ webui/g' /etc/shinken/brokers/broker-master.cfg
+  shinken install auth-cfg-password
+  shinken install sqlitedb
+  sed -i 's/modules/modules\ auth-cfg-password,SQLitedb/g' /etc/shinken/modules/webui.cfg
+  /etc/init.d/shinken restart
 }
 
 show(){
