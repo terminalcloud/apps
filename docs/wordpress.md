@@ -34,6 +34,7 @@ This snap also includes wp-cli, which can be run direclty on the command line by
 ## Documentation
 
 On this links you will find useful information about WordPress
+
 - [Official Documentation](http://codex.wordpress.org/Main_Page)
 - [WordPress Lessons](http://codex.wordpress.org/WordPress_Lessons)
 - [Code Reference](http://developer.wordpress.org/reference)
