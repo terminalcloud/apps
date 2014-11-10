@@ -17,7 +17,7 @@ The core software is built by hundreds of community volunteers and when you’re
 
 Just spin up a new Terminal based on this snapshot. Configure your username, site details and access the admin dashboard by clicking to "Finish your installation here".
 
-This snap also includes wp-cli, which can be run direclty on the command line by executing the `wp` command.
+This snap also includes wp-cli, which can be run direclty on the command line by executing `wp`.
 
 ---
 
