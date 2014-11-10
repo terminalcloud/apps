@@ -53,6 +53,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 - [openSIS Website](http://www.opensis.com/)
 - [Documentation](http://sourceforge.net/projects/opensis-ce/)
+- [openSIS forum](http://www.opensis.com/forum.php)
 
 ---
 
