@@ -19,7 +19,7 @@ OpenAtrium’s framework allows your organization to easily integrate your exist
 - **Mobile optimized** - Create, publish and access anywhere. No app required.
 - **Worktracker** - Monitor projects, milestones & deliverables.
 - **Data security** - Granular access control, sitewide.
-- **Identity management** - Roles, Permissions & LDAP integration.
+- **Identity management** - Roles, permissions & LDAP integration.
 - **Activity streams** - Consistently  monitor work and communications at a glance.
 - **Workflow** - Appropriately manage and publish content.
 - **Notifications** - Subscribe, notify & respond in email.
@@ -28,7 +28,7 @@ OpenAtrium’s framework allows your organization to easily integrate your exist
 - **Social tools** - Follow, like, subscribe & connect.
 - **Microsites** - Easily create sub-sites & departmental landing pages.
 - **Custom dashboard** - Widgets to customize your view and filter information.
-- **Custom look & feel** - 40+ fully responsive layouts, configurable banners & unlimited colors
+- **Custom look & feel** - 40+ fully responsive layouts, configurable banners & unlimited colors.
 
 ---
 
