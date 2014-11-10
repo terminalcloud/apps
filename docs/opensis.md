@@ -36,7 +36,7 @@
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Finish your installation here" and use the DB credentials listed below (see below).
+Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Finish your installation here". Select "New installation" and use the DB credentials listed below (see below).
 
 ### DB Credentials
 
@@ -46,7 +46,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ---
 
-![1](http://www.opensis.com/screenshots/<studentDemographic_screen class="jpg"></studentDemographic_screen>)
+![1](http://i.imgur.com/C56Id5E.png)
 
 ---
 
