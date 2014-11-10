@@ -1,28 +1,27 @@
 # **Shinken** Terminal.com Snapshot
 
-*Python based monitoring framework.*
+*Monitoring framework written in Python.*
 
 ---
 
 ## About Shinken
 
-**Shinken** is a resilient monitoring framework. Fully scalable, it supervises hosts and services from an IT and business point of view. Alerting or taking action on failures and recovery.
+**Shinken** is a resilient fully scalable monitoring framework. It supervises hosts and services from an IT and business point of view. When an error (and the recovery) happens, it can alert you or take a predefined action.
 
-Shinken is compatible with Nagios configuration, plugins and interfaces. It is written in Python, so it should work under all Python supported platforms.
+Shinken is compatible with Nagios configuration, plugins and interfaces. It is written in Python.
 
 ---
 
 ## Main Features
 
-- Web 2.0 Interface named WebUI that has innovative methods to visualize the state of your systems.
-- Livestatus networked API module to provide realtime access to performance, status and configuration data.
+- Web 2.0 interface named WebUI that has innovative methods to visualize the state of your systems.
+- Live status networked API module to provide real-time access to performance, status and configuration data.
 - Provides operational or business insight.
-- Monitor Hosts and Services.
-- Contact notifications when service or host problems occur and get resolved (via email, SMS, pager, or user-defined method).
+- Monitor hosts and services.
+- Contact notifications when service or host problems occur and get resolved (via email, SMS, pager or user-defined method).
 - Ability to define event handlers to be run during service or host events for proactive problem resolution.
 - Integrates with PNP4Nagios and Graphite time-series databases for storing data, querying or displaying data.
 - Supports distributed retention modules, caches and databases to meet persistence and performance expectations.
-
 
 ---
 
@@ -38,10 +37,6 @@ The Shinken main interface is a CLI (command line interface). To start the CLI e
 
 - username: `admin`
 - password: `t3rminal`
-
-
-
-
 
 ---
 
