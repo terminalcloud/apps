@@ -17,12 +17,14 @@ install(){
   php5_install
   mysql_install
   mysql_setup otrance otrance terminal
-  cd $INSTALL_PATH
-  git clone https://github.com/DSB/oTranCe.git
-  mv oTranCe otrance
+  mkdir $INSTALL_PATH/otrance
+  cd otrance
+  wget -O otrance.zip http://downloads.sourceforge.net/project/otrance/Releases/oTranCe_1.0.0-installer.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fotrance%2
+F&ts=1415645734&use_mirror=ufpr
+  unzip otrance.zip
   chown -R www-data:www-data otrance
   apache_install
-  apache_default_vhost otrance.conf $INSTALL_PATH/otrance
+  apache_default_vhost otrance.conf $INSTALL_PATH/otrance/public
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
   sed -i 's/memory_limit\ \=\ 128M/memory_limit\ \=\ 256M/g' /etc/php5/apache2/php.ini
