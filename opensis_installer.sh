@@ -15,8 +15,7 @@ install(){
 
   # Procedure:
   php5_install
-  mysql_install
-  mysql_setup opensis opensis terminal
+  mysql_install t3rminal
   cd $INSTALL_PATH
   wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/opensis5.3.zip
   unzip opensis5.3.zip && rm opensis5.3.zip

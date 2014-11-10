@@ -1,4 +1,4 @@
-# **openSIS Community Edition ** Terminal.com Snapshot
+# **openSIS Community Edition** Terminal.com Snapshot
 
 *openSIS is a commercial grade, secure, scalable & intuitive Open Source Student Information System*
 
@@ -36,11 +36,12 @@
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Finish your installation here" and use the DB credentials listed below (see below).
 
-### Credentials
+### DB Credentials
 
-- username: `admin`
+- db host: `localhost`
+- username: `root`
 - password: `t3rminal`
 
 ---
