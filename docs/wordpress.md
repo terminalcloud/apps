@@ -23,6 +23,8 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 - username: `wordpress`
 - password: `terminal`
 
+This snap also includes wp-cli, which can be run direclty on the command line by executing the `wp` command.
+
 ---
 
 ![1](https://s.w.org/screenshots/3.9/dashboard.png)
