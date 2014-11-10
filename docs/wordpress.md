@@ -15,13 +15,7 @@ The core software is built by hundreds of community volunteers and when you’re
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Finish your installation here" and use the db credentials provided (see below).
-
-
-### MySQL DB Credentials
-
-- username: `wordpress`
-- password: `terminal`
+Just spin up a new Terminal based on this snapshot. Configure your username, site details and access the admin dashboard by clicking to "Finish your installation here".
 
 This snap also includes wp-cli, which can be run direclty on the command line by executing the `wp` command.
 
@@ -32,8 +26,6 @@ This snap also includes wp-cli, which can be run direclty on the command line by
 ---
 
 ## Documentation
-
-On this links you will find useful information about WordPress
 
 - [Official Documentation](http://codex.wordpress.org/Main_Page)
 - [WordPress Lessons](http://codex.wordpress.org/WordPress_Lessons)
