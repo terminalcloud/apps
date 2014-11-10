@@ -8,9 +8,9 @@
 - **Continous Delivery** - Continuously improving your product without any downtime. Rolling restarts allows you to deploy new versions without your users noticing.
 - **Reliable** - No more worries, just a stable server to serve all your users at any time to deliver the best product experience.
 - **Scalable** - Phusion Passenger keeps up with the growing demands of your users and customers so you can serve millions of them.
-- **Fast and Lightweight** - Optimized for performance and concurrency, designed to be infinitely horizontally scalable, and uses less than 5 MB of memory. Make your web app fly like never before.
+- **Fast and Lightweight** - Optimized for performance and concurrency, designed to be infinitely horizontally scalable and uses less than 5 MB of memory. Make your web app fly like never before.
 - **Easy to use** - No more headaches or wasting hours figuring things out. Focus on your primary task, not on micro-managing software.
-- **Developer Friendly** - Develop your app faster and with more pleasure than ever. Use our Cache API, Queue API, Background Worker API, and more.
+- **Developer Friendly** - Develop your app faster and with more pleasure than ever. Use our Cache API, Queue API, Background Worker API and more.
 
 ## Snapshot/Terminal contents
 
@@ -29,7 +29,7 @@ The sample application is a Ruby blog app called [Serious](https://github.com/co
 ## Usage
 Just spin up your Phusion Passenger Terminal and see Passenger serving a sample application.
 
-Upload or develop your own application, and configure Nginx to serve it from the Terminal.
+Upload or develop your own application and configure Nginx to serve it from the Terminal.
 
 Use `passenger-status` to monitor your application status and `passenger-memory-stats` to check your _passenger_ memory usage. (remember you can change the amount of memory and CPU assigned to your terminal Terminal anytime!)
 

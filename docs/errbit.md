@@ -59,7 +59,7 @@ After you have followed these instructions, you will be able to **Sign in with G
 
 You will also be able to link your GitHub profile to your user account on your **Edit profile** page.
 
-If you have signed in with GitHub, or linked your GitHub profile, and the App has a GitHub repo configured,
+If you have signed in with GitHub or linked your GitHub profile and the App has a GitHub repo configured,
 then you will be able to create issues on GitHub.
 You will still be able to create an issue on the App's configured issue tracker.
 

@@ -4,7 +4,7 @@
 ---
 
 ## About MEAN.JS
-**MEAN.JS** is a full-stack JavaScript solution that helps you build fast, robust and maintainble production web applications using MongoDB, Express, AngularJS, and Node.js.
+**MEAN.JS** is a full-stack JavaScript solution that helps you build fast, robust and maintainble production web applications using MongoDB, Express, AngularJS and Node.js.
 
 
 MEAN.JS will help you getting started and avoid useless grunt work and common pitfalls, while keeping your application organized. Our goal is to create and maintain a simple and readable open-source solution that you can use and trust in your projects.

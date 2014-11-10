@@ -12,7 +12,7 @@ What makes Mahara different from other ePortfolio systems is that you control wh
 
 In order to facilitate this access control, all Artefacts you wish to show to other users need to be bundled up and placed into one area. Within Mahara this compilation of selected Artefacts is called a View.
 
-You can have as many Views as you like, each with a different collection of Artefacts, and intended purpose and audience. Your audience, or the people you wish to give access to your View, can be added as individuals or as a member of a Group or Community.
+You can have as many Views as you like, each with a different collection of Artefacts and intended purpose and audience. Your audience or the people you wish to give access to your View, can be added as individuals or as a member of a Group or Community.
 
 ePortfolio owners create Views using a 4 step process and Views have the following features:
 

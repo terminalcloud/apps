@@ -1,34 +1,34 @@
 # **OpenAtrium** Terminal.com Snapshot
 
-*Open Atrium is open source collaboration software that enables organizations to securely connect their teams, projects, and knowledge*
+*OpenAtrium is an open source collaboration software enabling organizations to securely connect their teams, projects and information.*
 
 ---
 
 ## About OpenAtrium
 
-A powerful solution, Open Atrium’s framework allows your organization to easily integrate your existing software, while remaining flexible enough to change as your organization grows. With Open Atrium, you can better communicate, educate, and inform your organization by creating solutions such as an intranet, social collaboration platform, web portal, or learning management system.
+OpenAtrium’s framework allows your organization to easily integrate your existing software, while remaining flexible enough to change as your organization grows. With OpenAtrium, you can better communicate, educate and inform your organization by creating solutions such as an intranet, social collaboration platform, web portal or learning management system.
 
 ---
 
 ## Main Features
 
-- **Documents** - Create, attach, store, share, and collaborate.
+- **Documents** - Create, attach, store, share and collaborate.
 - **Events** - Manage upcoming events with integrated calendars.
-- **Discussions** - Communicate, collaborate, and exchange ideas securely.
-- **Multimedia** - Embed, store, and access files, images, & videos. Store once. Use Sitewide.
-- **Mobile Optimized** - Create, publish, and access anywhere. No app required.
-- **Worktracker** - Monitor projects, milestones, & deliverables.
-- **Data Security** - Granular access control, sitewide.
-- **Identity Management** - Roles, Permissions, & LDAP integration.
-- **Activity Streams** - Consistently  monitor work and communications at a glance.
+- **Discussions** - Communicate, collaborate and exchange ideas securely.
+- **Multimedia** - Embed, store and access files, images & videos. Store once. Use site-wide.
+- **Mobile optimized** - Create, publish and access anywhere. No app required.
+- **Worktracker** - Monitor projects, milestones & deliverables.
+- **Data security** - Granular access control, sitewide.
+- **Identity management** - Roles, Permissions & LDAP integration.
+- **Activity streams** - Consistently  monitor work and communications at a glance.
 - **Workflow** - Appropriately manage and publish content.
-- **Notifications** - Subscribe, notify, & respond in email.
-- **Tags & Taxonomies** - Content categorization for quick and seamless access.
-- **Learning Tools** - Online trainings, catalogues, and course management.
-- **Social Tools** - Follow, like, subscribe & connect.
+- **Notifications** - Subscribe, notify & respond in email.
+- **Tags & taxonomies** - Content categorization for quick and seamless access.
+- **Learning tools** - Online trainings, catalogues and course management.
+- **Social tools** - Follow, like, subscribe & connect.
 - **Microsites** - Easily create sub-sites & departmental landing pages.
-- **Custom Dashboard** - Widgets to customize your view and filter information.
-- **Custom Look & Feel** - 40+ fully responsive layouts, configurable banners, & unlimited colors
+- **Custom dashboard** - Widgets to customize your view and filter information.
+- **Custom look & feel** - 40+ fully responsive layouts, configurable banners & unlimited colors
 
 ---
 

@@ -15,7 +15,7 @@ The application stores all your notes in your browser local storage spaces such 
 * Manage your notes, even when you're offline
 * Secure - client side encryption with [SJCL] [1] and AES algorithm
 * Synchronizes with cloud storage services. At this time only Dropbox and RemoteStorage are supported
-* Three editing modes: distraction free, preview, and normal mode
+* Three editing modes: distraction free, preview and normal mode
 * WYSIWYG control buttons
 * MathJax support
 * Syntax highlighting

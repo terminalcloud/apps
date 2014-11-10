@@ -12,7 +12,7 @@
 
 - **Interactive Mapping** - One of the most powerful ways to visualize information is to display it on a map. The Ushahidi platform give you rich information mapping tools.
 
-- **Dynamic Timeline** - Track your reports on the map and over time, filter your data by time, and see when things happened and where.
+- **Dynamic Timeline** - Track your reports on the map and over time, filter your data by time and see when things happened and where.
 
 - **Multiple Data Streams** -The Ushahidi Platform allows you to easily collect information via text messages, email, twitter and web-forms.
 

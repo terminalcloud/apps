@@ -23,11 +23,11 @@
 - Pagination - For those that prefer pages over endless scrolling.
 - RSS Feeds - Subscribe to your favorite category or topic via RSS.
 - Drafts - Automatically saves where you left off writing.
-- Like, Share, Flag - Like, share, and report inappropriate content.
+- Like, Share, Flag - Like, share and report inappropriate content.
 - Drag & Drop Uploads - Uploading images has never been so easy.
 - Follow Topics - Follow interesting topics that matter to you.
-- User Presence - Change your online status to busy, away, or invisible.
-- User Groups - Permission based grouping for your public, or private community.
+- User Presence - Change your online status to busy, away or invisible.
+- User Groups - Permission based grouping for your public or private community.
 - Mentions - Allows you to auto-suggest users using @ mentions.
 - Markdown - Markdown is the best text-to-HTML conversion tool for web writers.
 - Remember - Automatically remembers where you left off reading in a topic.

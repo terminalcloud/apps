@@ -4,9 +4,9 @@
 ---
 
 ## About Chyrp
-**Chyrp** is a blogging engine designed to be very lightweight while retaining functionality. It is powered by PHP and has very powerful theme and extension engines, so you can personalize it however you want. The code is well-documented, and it has a very strong structure that's loosely based on the MVC design pattern.
+**Chyrp** is a blogging engine designed to be very lightweight while retaining functionality. It is powered by PHP and has very powerful theme and extension engines, so you can personalize it however you want. The code is well-documented and it has a very strong structure that's loosely based on the MVC design pattern.
 
-All of your content is powered by a unique Feathers system that allows Chyrp to be whatever you want it to be. You can post anything and everything, or just stick to the default Text feather and run a regular blog. Chyrp destroys the fine line between a blog and a tumblelog.
+All of your content is powered by a unique Feathers system that allows Chyrp to be whatever you want it to be. You can post anything and everything or just stick to the default Text feather and run a regular blog. Chyrp destroys the fine line between a blog and a tumblelog.
 
 ---
 

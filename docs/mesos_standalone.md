@@ -4,7 +4,7 @@
 ---
 
 ## About Mesos
-**Apache Mesos** abstracts CPU, memory, storage, and other compute resources away from machines (physical or virtual), enabling fault-tolerant and elastic distributed systems to easily be built and run effectively.
+**Apache Mesos** abstracts CPU, memory, storage and other compute resources away from machines (physical or virtual), enabling fault-tolerant and elastic distributed systems to easily be built and run effectively.
 
 Mesos is built using the same principles as the Linux kernel, only at a different level of abstraction. The Mesos kernel runs on every machine and provides applications (e.g., Hadoop, Spark, Kafka, Elastic Search) with API’s for resource management and scheduling across entire datacenter and cloud environments.
 
@@ -14,7 +14,7 @@ Mesos is built using the same principles as the Linux kernel, only at a differen
 - Fault-tolerant replicated master and slaves using ZooKeeper
 - Support for Docker containers
 - Native isolation between tasks with Linux Terminals
-- Multi-resource scheduling (memory, CPU, disk, and ports)
+- Multi-resource scheduling (memory, CPU, disk and ports)
 - Java, Python and C++ APIs for developing new parallel applications
 - Web UI for viewing cluster state
 

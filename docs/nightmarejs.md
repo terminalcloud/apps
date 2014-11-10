@@ -6,7 +6,7 @@
 ## About NightmareJS
 Nightmare is a high level wrapper for [PhantomJS](http://phantomjs.org/) that lets you automate browser tasks.
 
-The goal is to expose just a few simple methods, and have an API that feels synchronous for each block of scripting, rather than deeply nested callbacks. It's designed for automating tasks across sites that don't have APIs.
+The goal is to expose just a few simple methods and have an API that feels synchronous for each block of scripting, rather than deeply nested callbacks. It's designed for automating tasks across sites that don't have APIs.
 
 
 

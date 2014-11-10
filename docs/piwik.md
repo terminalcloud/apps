@@ -8,7 +8,7 @@ All standard statistics reports: top keywords and search engines, websites,
 top page URLs, page titles, user countries, providers, operating system, browser
 marketshare, screen resolution, desktop VS mobile, engagement (time on site,
 pages per visit, repeated visits), top campaigns, custom variables, top
-entry/exit pages, downloaded files, and many more, classified into four main
+entry/exit pages, downloaded files and many more, classified into four main
 analytics report categories – Visitors, Actions, Referrers, Goals/e-Commerce
 (30+ reports).
 

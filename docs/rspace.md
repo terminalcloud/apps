@@ -4,7 +4,7 @@
 ---
 
 ## About Resource Space
-ResourceSpace open source digital asset management software is the simple, fast, & free way to organise your digital assets
+ResourceSpace open source digital asset management software is the simple, fast & free way to organise your digital assets
 
 ### Features
 - **Web Based** - ResourceSpace is completely web based, meaning you can upload your assets from wherever your journey might take you.
@@ -15,7 +15,7 @@ ResourceSpace open source digital asset management software is the simple, fast,
 
 - **Auto-Preview and Convert** - ResourceSpace's automatic resource preview & conversion tools allow you to view & edit your assets no matter the format.
 
-- **Standard Based** - 100% open source, and utilising many other open source projects to greatly extend functionality.
+- **Standard Based** - 100% open source and utilising many other open source projects to greatly extend functionality.
 
 - **Easy Administration** - Built-in tools for administrators to save time when uploading, editing & reporting.
 

@@ -60,10 +60,10 @@ _Check the Resources and Doucumentation section for more information about Cling
 
 ### Additional Information
 
-The [Low Level Virtual Machine (LLVM)](http://llvm.org/) is a compiler infrastructure, written in C++, which is designed for compile-time, link-time, run-time, and "idle-time" optimization of programs written in arbitrary programming languages. Originally implemented for C/C++, the language-independent design (and the success) of LLVM has since spawned a wide variety of front ends, including Objective-C, Fortran, Ada, Haskell, Java bytecode, Python, Ruby, ActionScript, GLSL, and others.
+The [Low Level Virtual Machine (LLVM)](http://llvm.org/) is a compiler infrastructure, written in C++, which is designed for compile-time, link-time, run-time and "idle-time" optimization of programs written in arbitrary programming languages. Originally implemented for C/C++, the language-independent design (and the success) of LLVM has since spawned a wide variety of front ends, including Objective-C, Fortran, Ada, Haskell, Java bytecode, Python, Ruby, ActionScript, GLSL and others.
 
 
-[Clang](http://clang.llvm.org/) is a compiler front end for the C, C++, Objective-C and Objective-C++ programming languages. It uses the Low Level Virtual Machine (LLVM) as its back end, and as such Clang is part of LLVM releases since LLVM 2.6. Its goal is to offer a replacement to the GNU Compiler Collection (GCC). Development is sponsored by Apple. Clang is available under a free software licence.
+[Clang](http://clang.llvm.org/) is a compiler front end for the C, C++, Objective-C and Objective-C++ programming languages. It uses the Low Level Virtual Machine (LLVM) as its back end and as such Clang is part of LLVM releases since LLVM 2.6. Its goal is to offer a replacement to the GNU Compiler Collection (GCC). Development is sponsored by Apple. Clang is available under a free software licence.
 
 
 #### CLING Terminal automatic installation:
