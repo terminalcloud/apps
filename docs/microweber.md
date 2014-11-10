@@ -1,30 +1,29 @@
 # **MicroWeber** Terminal.com Snapshot
 
-*Create your Website and Online Shop*
+*Create your website and online shop.*
 
 ---
 
 ## About MicroWeber
 
-**Microweber** is a content management system of new generation that allows you to make your website by drag and drop.
+**Microweber** is a content management system of new generation. It allows you to create your website using drag and drop.
 
-You can easily manipulate the content and the layout of your pages without the need to write code.
+It's easy to manipulate the content and the layout of your pages without any need to write any code.
 
 ---
 
 ## Main Features
 
-- Powerful Content Management System.
+- Powerful content management system.
 - Real-time text writing and editing.
-- An Online Store Integrated.
-- And a Powerful Blogging platform.
+- An online store integrated.
+- And a powerful blogging platform.
 
 ---
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. See your new MicroWeber site by clicking to "Check your installation here!".
-Enter the admin aread by clicking to "Admin Area" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. Access your new site by clicking to "Check your installation here!". Enter the admin area by clicking to "Admin Area" and login with the credentials provided (see below).
 
 ### Credentials
 
@@ -52,7 +51,7 @@ Enter the admin aread by clicking to "Admin Area" and login with the credentials
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/microweber_installer.sh && bash microweber_installer.sh`
 
-This snapshot has the MicroWeber Lite template installed and also, some demo data. Feel free to channge anything as needed and use the demo site as start point for your own site.
+This snapshot has the MicroWeber Lite template installed.
 
 ---
 
