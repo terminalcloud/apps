@@ -41,7 +41,7 @@ On this links you will find useful information about WordPress
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/WordPress_installer.sh && bash WordPress_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/wordpress_installer.sh && bash wordpress_installer.sh`
 
 ---
 
