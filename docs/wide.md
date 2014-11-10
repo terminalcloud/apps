@@ -28,7 +28,7 @@ A Product Information Management tool (also known as PIM, PCM or Products MDM) i
   * Plug-in (goclipse, etc.): the need for the original IDE support, not professional
   * LiteIDE: no modern user interface :p
   * No team development experience
-* There are a few of GO IDEs, and no one developed by Go itself, this is a nice try
+* There are a few of GO IDEs and no one developed by Go itself, this is a nice try
 
 
 

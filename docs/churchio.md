@@ -4,7 +4,7 @@
 ---
 
 ## About OneBody
-Church Directory, Profiles and Groups. Eliminate that dated printed directory and cut calls to your church office by making your member directory available on the web. Give your members a place to upload their own photo, personal testimony, contact info, and more. Groups connect people in Sunday School classes, Small Groups, or special projects. Use OneBody Groups for classes, special events, trip planning, elder/staff and leadership communication, or anywhere you might use an email mailing list.
+Church Directory, Profiles and Groups. Eliminate that dated printed directory and cut calls to your church office by making your member directory available on the web. Give your members a place to upload their own photo, personal testimony, contact info and more. Groups connect people in Sunday School classes, Small Groups or special projects. Use OneBody Groups for classes, special events, trip planning, elder/staff and leadership communication or anywhere you might use an email mailing list.
 
 
 

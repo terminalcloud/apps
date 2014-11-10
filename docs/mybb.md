@@ -1,12 +1,12 @@
 # **MyBB** Terminal.com Snapshot
-*MyBB powers hundreds of thousands of engaging, powerful, and unique communities across the internet.*
+*MyBB powers hundreds of thousands of engaging, powerful and unique communities across the internet.*
 
 ---
 
 ## About MyBB
 
-**MyBB** is open source, intuitive, extensible, and incredibly powerful forum software.
-With everything from forums to threads, posts to private messages, search to profiles, and reputation to warnings, MyBB features everything you need to run an efficient and captivating community. Through plugins and themes, you can extend MyBB's functionality to build your community exactly as you'd like it.
+**MyBB** is open source, intuitive, extensible and incredibly powerful forum software.
+With everything from forums to threads, posts to private messages, search to profiles and reputation to warnings, MyBB features everything you need to run an efficient and captivating community. Through plugins and themes, you can extend MyBB's functionality to build your community exactly as you'd like it.
 
 ---
 
@@ -14,7 +14,7 @@ With everything from forums to threads, posts to private messages, search to pro
 
 - Ease of use.
 - Template and Theme edition.
-- Threads, Posts, and Polls.
+- Threads, Posts and Polls.
 - Reputation system.
 - Warning system.
 - Task Scheduling.

@@ -5,10 +5,10 @@
 Symfony is an Open Source PHP Web applications development framework. It was originally conceived by the interactive agency SensioLabs for the development of web sites for its own customers. Symfony was published by the agency in 2005 under MIT Open Source license and today it is among the leading frameworks available for PHP development.
 
 
-Supported by SensioLabs - but also by a large community - Symfony has many resources: plentiful documentation, community support (mailing lists, IRC, etc.), professional support (consulting, training, etc.), and so on.
+Supported by SensioLabs - but also by a large community - Symfony has many resources: plentiful documentation, community support (mailing lists, IRC, etc.), professional support (consulting, training, etc.) and so on.
 
 
-Available in version 2.0, Symfony already has, among the hundreds of sites and applications developed on its platform, prestigious references, such as Yahoo!, Dailymotion, Opensky.com, Exercise.com, phpBB, or Drupal.
+Available in version 2.0, Symfony already has, among the hundreds of sites and applications developed on its platform, prestigious references, such as Yahoo!, Dailymotion, Opensky.com, Exercise.com, phpBB or Drupal.
 
 ## Usage:
 Just spin up you Terminal based on this snapshot and you will have everything needed to develop, deploy and serve a **Symfony Application**.

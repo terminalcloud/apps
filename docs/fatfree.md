@@ -6,10 +6,10 @@
 ## About FatFree CRM
 **FatFree CRM** is an open source CRM designed to be highly customizable; elegant in simplicity..
 
-FatFree CRM is a Ruby on Rails-based customer relationship management platform. Out of the box it features group collaboration, campaign and lead management, contact lists, and opportunity tracking.
+FatFree CRM is a Ruby on Rails-based customer relationship management platform. Out of the box it features group collaboration, campaign and lead management, contact lists and opportunity tracking.
 
 ## Features
-Out of the box it features group collaboration, campaign and lead management, contact lists, and opportunity tracking.
+Out of the box it features group collaboration, campaign and lead management, contact lists and opportunity tracking.
 
 **Contacts**
 ![1](https://raw.githubusercontent.com/fatfreecrm/fatfreecrm.github.com/master/images/contact_create.png)

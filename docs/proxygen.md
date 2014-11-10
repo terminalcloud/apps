@@ -5,7 +5,7 @@
 
 ## Proxygen: Facebook's C++ HTTP Libraries
 
-This project comprises the core C++ HTTP abstractions used at Facebook. Internally, it is used as the basis for building many HTTP servers, proxies, and clients. This release focuses on the common HTTP abstractions and our simple HTTPServer framework. Future releases will provide simple client APIs as well. The framework supports HTTP/1.1, SPDY/3, and SPDY/3.1. HTTP/2 support is in progress. The goal is to provide a simple, performant, and modern C++ HTTP library.
+This project comprises the core C++ HTTP abstractions used at Facebook. Internally, it is used as the basis for building many HTTP servers, proxies and clients. This release focuses on the common HTTP abstractions and our simple HTTPServer framework. Future releases will provide simple client APIs as well. The framework supports HTTP/1.1, SPDY/3 and SPDY/3.1. HTTP/2 support is in progress. The goal is to provide a simple, performant and modern C++ HTTP library.
 
 ---
 

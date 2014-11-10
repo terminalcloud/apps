@@ -8,7 +8,7 @@
 
 **Phabricator** is a collection of open source web applications that help software companies build better software.
 
-Phabricator supports Git, Mercurial, and Subversion. The Phabricator server runs on Linux or Mac OS X, but can be used on any platform. The optional, yet powerful, command line client Arcanist runs on Linux, Mac OS X or Windows. Phabricator is written mostly in PHP.
+Phabricator supports Git, Mercurial and Subversion. The Phabricator server runs on Linux or Mac OS X, but can be used on any platform. The optional, yet powerful, command line client Arcanist runs on Linux, Mac OS X or Windows. Phabricator is written mostly in PHP.
 
 ## Key Features
 
@@ -17,7 +17,7 @@ Phabricator supports Git, Mercurial, and Subversion. The Phabricator server runs
 ![1](http://phabricator.org/images/phabricator//differential.png)
 
 - **Host Git/Mercurial/SVN Repositories or connect other hosts**
-Phabricator can host Git, Mercurial and Subversion repositories. It also works well with existing repositories (like GitHub, Bitbucket, or other repositories you already have elsewhere) without needing to host them itself.
+Phabricator can host Git, Mercurial and Subversion repositories. It also works well with existing repositories (like GitHub, Bitbucket or other repositories you already have elsewhere) without needing to host them itself.
 
 ![2](http://phabricator.org/images/repos.png)
 

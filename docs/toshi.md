@@ -6,7 +6,7 @@
 **Toshi** is a complete implementation of the Bitcoin protocol, written in Ruby and backed by PostgreSQL. It provides a RESTful API that is ideal for building scalable web applications or analyzing blockchain data.
 
 It  is designed to be fully compatible with [Bitcoin Core](https://github.com/bitcoin/bitcoin).
-It performs complete transaction and block validation, and passes 100% of TheBlueMatt's
+It performs complete transaction and block validation and passes 100% of TheBlueMatt's
 [regression test suite](https://github.com/TheBlueMatt/test-scripts).
 For much of the core protocol logic, Toshi makes use of the [bitcoin-ruby](https://github.com/lian/bitcoin-ruby)
 library written and maintained by Julian Langschaedel.
@@ -27,7 +27,7 @@ You can see Toshi running on various networks at the following URLs:
  * Complete Bitcoin node implementation
  * Fully passes TheBlueMatt's [regression test suite](https://github.com/TheBlueMatt/test-scripts)
  * PostgreSQL backed (more convenient for web applications and research)
- * JSON, Hex, and Binary API
+ * JSON, Hex and Binary API
  * Simple web [interface](https://bitcoin.toshi.io) to monitor node status
 
 ---
@@ -41,7 +41,7 @@ A Bitcoin node is simply a client on the Bitcoin peer-to-peer network. It valida
 
 **Toshi** is a Bitcoin implementation designed for building highly scalable web applications. It allows you to query the blockchain using a REST API or raw SQL. It comprises a number of individual services, using a shared database. Because Toshi saves much more information and indexes more data than Bitcoin Core, it requires much more space to store the blockchain (~220GB vs ~25GB as of September 2014). However, this makes it possible to run much richer queries that would otherwise not be possible with Bitcoin Core.
 
-**Bitcoin Core** (the reference implementation) is designed to run on a single server, and uses a mixture of raw files and LevelDB to store the blockchain. It allows you to query the blockchain using a JSON-RPC interface.
+**Bitcoin Core** (the reference implementation) is designed to run on a single server and uses a mixture of raw files and LevelDB to store the blockchain. It allows you to query the blockchain using a JSON-RPC interface.
 
 Some examples of queries which Toshi can easily answer, which are not possible with Bitcoin Core:
 

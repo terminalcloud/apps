@@ -6,9 +6,9 @@ teaching and learning experiences in a collaborative, private environment.
 
 ### Features
 - Modern, easy to use interface. Designed to be responsive and accessible,the Moodle interface is easy to navigate on both desktop and mobile devices.
-- Personalised Dashboard. Organise and display courses the way you want, and view at a glance current tasks and messages.
-- Collaborative tools and activities. Work and learn together in forums, wikis, glossaries, database activities, and much more.
-- All-in-one calendar. Moodle’s calendar tool helps you keep track of your academic or company calendar, course deadlines, group meetings, and other personal events.
+- Personalised Dashboard. Organise and display courses the way you want and view at a glance current tasks and messages.
+- Collaborative tools and activities. Work and learn together in forums, wikis, glossaries, database activities and much more.
+- All-in-one calendar. Moodle’s calendar tool helps you keep track of your academic or company calendar, course deadlines, group meetings and other personal events.
 - Convenient file management. Drop and drop files from cloud storage services including MS Skydrive, Dropbox and Google Drive.
 - Simple and intuitive text editor. Format text and conveniently add media and images with an editor that works across all web browsers and devices.
 - Notifications. When enabled, users can receive automatic alerts on new assignments and deadlines, forum posts and also send private messages.

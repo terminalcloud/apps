@@ -22,7 +22,7 @@
 - **Gradebook** - The built in grade book allows teachers to enter homework assignments, class tests and any other activity using weighted scales if desired. Automatic tallying of grades, reports to find erroneously entered grades and advanced ad hoc reporting is included. Entering final grades is as easy as a mouse click.
 
 
-- **Reports/Report Designer** - openSIS includes numerous standard reports and the ability to design custom reports using simple check boxes. Reports are output to PDF format for easy printing and viewing. Can’t produce the report you need? openSIS uses PostgreSQL, a relational database, and any industry standard reporting tool can be used to create custom reports.
+- **Reports/Report Designer** - openSIS includes numerous standard reports and the ability to design custom reports using simple check boxes. Reports are output to PDF format for easy printing and viewing. Can’t produce the report you need? openSIS uses PostgreSQL, a relational database and any industry standard reporting tool can be used to create custom reports.
 
 
 - **Health Records** - Nurses visits, immunizations, physician contact information, allergies and more are all a part of our health records. Need something we don’t have? Easily add a new field to the health records to meet your specific needs without any programming. It’s easy!

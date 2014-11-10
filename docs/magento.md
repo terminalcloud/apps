@@ -12,7 +12,7 @@ Businesses using Community Edition as their open source ecommerce solution to ru
 
 - **Themes** - Magento provides a basic theme which sets up an ecommerce website. The theme is designed for customizing all pages by adding or editing the PHP, HTML and CSS. Magento users may install themes which change the display of the website or its functionality. Without loss of content or layout of pages, themes are interchangeable with Magento installations. Themes are installed by uploading theme folders via FTP or SSH and applying them using the backend admin system.
 
-- **Modules** - Magento developers have created Magento plugins which extend its basic built-in functionality. Magento users can install modules by downloading them, and uploading them to their server, or applying a module's Extension Key through Magento Connect Manager.
+- **Modules** - Magento developers have created Magento plugins which extend its basic built-in functionality. Magento users can install modules by downloading them and uploading them to their server or applying a module's Extension Key through Magento Connect Manager.
 
 ---
 

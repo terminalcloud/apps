@@ -6,7 +6,7 @@
 ## About Vanilla
 **Vanilla** provides cloud and open source community forum software that powers discussion forums on 769,085 sites. Built for flexibility and integration, Vanilla is on of the best, most powerful community solution in the world.
 
-Vanilla was born out of the desire to create flexible, customizable, and downright entertaining community solutions. It has been used to power tens of thousands of community forums around the world and we couldn't be happier if you've decided to use Vanilla to grow yours.
+Vanilla was born out of the desire to create flexible, customizable and downright entertaining community solutions. It has been used to power tens of thousands of community forums around the world and we couldn't be happier if you've decided to use Vanilla to grow yours.
 
 Every community is unique. Vanilla is a finely-crafted platform on which designers and developers can build a custom-tailored environment that meets your community's particular needs.
 

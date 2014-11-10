@@ -8,7 +8,7 @@
 
 
 ### Features
-- *Catalog Management* - Manage a dynamic product list through the PrestaShop back-office. Whether the shop has one product or thousands, this incredible administrative interface let’s you manage the most complex inventory easily with one-click updates. Import and export quickly, set attributes, sort products, bulk discounts, and much more. Managing products has never been easier with PrestaShop.
+- *Catalog Management* - Manage a dynamic product list through the PrestaShop back-office. Whether the shop has one product or thousands, this incredible administrative interface let’s you manage the most complex inventory easily with one-click updates. Import and export quickly, set attributes, sort products, bulk discounts and much more. Managing products has never been easier with PrestaShop.
 
 - *Checkout* - An effective checkout page will push conversion rates through the roof! PrestaShop offers a one-page checkout among other features. You can customize fields to gather certain information. From design to shipping, PrestaShop checkout process makes purchasing easy for customers.
 
@@ -22,7 +22,7 @@
 
 - *Translations* - PrestaShop is a global community and is proud to have community members in over 150 countries. A single store can be translated in many different languages. Offering various translations will improve user experience and overall sales.
 
-- *Site Management* - Manage a site easily using PrestaShop. Business owners can enjoy editing content, managing product displays, and changing languages all through the back office. PrestaShop has a one-click upgrade to keep a store running at the latest version
+- *Site Management* - Manage a site easily using PrestaShop. Business owners can enjoy editing content, managing product displays and changing languages all through the back office. PrestaShop has a one-click upgrade to keep a store running at the latest version
 
 - *Payments* - PrestaShop is integrated with numerous payment options and business owners can install a desired payment option with one-click. Ensure payment is received and customers are comfortable providing their information.
 
