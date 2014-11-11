@@ -6,7 +6,7 @@
 
 ## About Subrion
 
-**Subrion** is an open source content management system that allows you to build websites for any purpose. **From blog to corporate mega portal**.
+**Subrion** is an open source content management system that allows you to build websites for any purpose. **From a blog to a corporate mega portal**.
 
 ---
 
