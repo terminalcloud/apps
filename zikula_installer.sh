@@ -18,7 +18,7 @@ install(){
   mysql_install
   mysql_setup zikula zikula terminal
   cd $INSTALL_PATH
-  wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/zicula.zip
+  wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/zikula.zip
   unzip zikula.zip && rm zikula.zip
   mv Zikula_Core-1.3.9 zikula
   chown -R www-data:www-data zikula
