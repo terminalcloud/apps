@@ -19,8 +19,9 @@ install(){
   mysql_setup xertetoolkits xertetoolkits terminal
   mkdir $INSTALL_PATH/xertetoolkits
   cd $INSTALL_PATH/xertetoolkits
-  wget http://www.nottingham.ac.uk/xerte/downloads/xertetoolkits.zip
+  wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/xertetoolkits.zip
   unzip xertetoolkits.zip && rm xertetoolkits.zip
+  cd $INSTALL_PATH
   chown -R www-data:www-data xertetoolkits
   apache_install
   apache_default_vhost xertetoolkits.conf $INSTALL_PATH/xertetoolkits
