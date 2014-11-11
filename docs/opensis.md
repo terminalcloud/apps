@@ -1,6 +1,6 @@
 # **openSIS Community Edition** Terminal.com Snapshot
 
-*openSIS is a commercial grade, secure, scalable & intuitive Open Source Student Information System*
+*openSIS is a commercial grade, secure, scalable & intuitive **o**pen **s**ource **s**tudent **i**nformation **s**ystem.*
 
 ---
 
@@ -12,25 +12,21 @@
 
 ## Main Features
 
-- **Student Demographic** - openSIS enables the tracking of numerous student demographic attributes in a permanent record and across enrollments. Need something not included in the base installation? Use our custom categories and fields that allow you to easily create any number of custom fields to capture your specific data needs.
+- **Student demographic** - openSIS enables the tracking of numerous student demographic attributes in a permanent record and across enrolments. Need something not included in the base installation? Use our custom categories and fields that allow you to easily create any number of custom fields to capture your specific data needs.
 
-- **Contact Information** - Easily add contact information for parents, relatives and authorized individuals. Designate legal guardian, bus stops and associate parents with students enabling automatic access to the openSIS parent portal.
-
+- **Contact information** - Easily add contact information for parents, relatives and authorized individuals. Designate legal guardian, bus stops and associate parents with students enabling automatic access to the openSIS parent portal.
 
 - **Scheduling** - openSIS includes a scheduler that allows you to easily input student requests and mass schedule students. You can make multiple schedule runs as you make adjustments and have multiple schedules within a school. View and print student schedules and class rosters with just a few clicks.
 
 - **Gradebook** - The built in grade book allows teachers to enter homework assignments, class tests and any other activity using weighted scales if desired. Automatic tallying of grades, reports to find erroneously entered grades and advanced ad hoc reporting is included. Entering final grades is as easy as a mouse click.
 
+- **Reports/report designer** - openSIS includes numerous standard reports and the ability to design custom reports using simple check boxes. Reports are output to PDF format for easy printing and viewing. Can’t produce the report you need? openSIS uses PostgreSQL, a relational database and any industry standard reporting tool can be used to create custom reports.
 
-- **Reports/Report Designer** - openSIS includes numerous standard reports and the ability to design custom reports using simple check boxes. Reports are output to PDF format for easy printing and viewing. Can’t produce the report you need? openSIS uses PostgreSQL, a relational database and any industry standard reporting tool can be used to create custom reports.
-
-
-- **Health Records** - Nurses visits, immunizations, physician contact information, allergies and more are all a part of our health records. Need something we don’t have? Easily add a new field to the health records to meet your specific needs without any programming. It’s easy!
+- **Health records** - Nurses visits, immunizations, physician contact information, allergies and more are all a part of our health records. Need something we don’t have? Easily add a new field to the health records to meet your specific needs without any programming. It’s easy!
 
 - **Attendance** - By period, by day, with comments and all accomplished with a only a few clicks. Customize attendance codes to meet your specific needs. Easily check attendance by using our built-in reports. Student show up late and you need to change their record? Easily done if you have the access rights.
 
-- **Parent Portal** - openSIS includes a parent portal that allows your parents to see their children, grades, attendance, discipline and more using the same intuitive web interface. And it is part of the base solution, which is free.
-
+- **Parent portal** - openSIS includes a parent portal that allows your parents to see their children, grades, attendance, discipline and more using the same intuitive web interface. And it is part of the base solution, which is free.
 
 ---
 
