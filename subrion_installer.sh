@@ -18,9 +18,10 @@ install(){
   mysql_install
   mysql_setup subrion subrion terminal
   mkdir -p $INSTALL_PATH/subrion
-  cd $INSTALL_PATH
+  cd $INSTALL_PATH/subrion
   wget -O subrion.zip http://tools.subrion.org/get/latest.zip
   unzip subrion.zip && rm subrion.zip
+  cd $INSTALL_PATH
   chown -R www-data:www-data subrion
   apache_install
   apache_default_vhost subrion.conf $INSTALL_PATH/subrion
