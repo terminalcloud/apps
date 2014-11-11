@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="zicula"
+name="zikula"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 

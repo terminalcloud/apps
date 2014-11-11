@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy Zicula at Terminal.com
+# Script to deploy Zikula at Terminal.com
 
 INSTALL_PATH="/var/www"
 
