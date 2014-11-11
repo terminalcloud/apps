@@ -1,24 +1,23 @@
 # **Zikula** Terminal.com Snapshot
 
-*OpenSource PHP application framework for your small to enterprise business or personal site.*
+*Open-source PHP extensible CMS for businesses and personal sites.*
 
 ---
 
 ## About Zikula
 
-
-**Zikula*** is an open source web application framework released under the GNU General Public License. It can be used to develop robust, secure, interactive and editable websites and web based applications. Zikula is written in object oriented PHP and it is fully modular.
+**Zikula*** is an extensible open-source CMS released under the GNU General Public License. It can be used to develop robust, secure, interactive and editable websites and web based applications. Zikula is written in object-oriented PHP and is fully modular.
 
 ---
 
 ## Main Features
 
-- Separation of Content and layout with a templating engine.
-- Flexible Theme system.
+- Separation of content and layout with a templating engine.
+- Flexible theme system.
 - WYSIWYG editors included.
 - ModuleStudio development environment for fast module creation.
-- Flexible Document Creator.
-- Built in caching.
+- Flexible document creator.
+- Built-in caching.
 
 ---
 
@@ -39,10 +38,10 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ## Documentation and Links
 
-- [Zikula Website](http://zikula.org/)
+- [Zikula website](http://zikula.org/)
 - [Blog](http://zikula.org/blog/view)
-- [Users Forum](http://zikula.org/forums/)
-- [GitHub Repository](https://github.com/zikula)
+- [Users forum](http://zikula.org/forums/)
+- [GitHub repository](https://github.com/zikula)
 
 ---
 
