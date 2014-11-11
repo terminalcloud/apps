@@ -1,12 +1,12 @@
 # **FUDforum** Terminal.com Snapshot
 
-*Light, fast and scalable discussion forum*
+*Light, fast and scalable discussion forum.*
 
 ---
 
 ## About FUDforum
 
-**FUDforum*** (Fast Uncompromising Discussion Forum) is an open source web discussion forum released under the GPL (version 2) license that is written in PHP and can be used on virtually any operating system. FUDforum combines an extensive feature set while maintaining the ability to generate forum web pages extremely fast. The forum includes i18n and templating support allowing for a complete customization of its output as well as a very capable group based permission system. FUDforum can also act as a Mailing List Manager, USENET newsreader and even an XML Feed Aggregator. This will allow you to build an instant community and consolidate all your messages into a single system.
+**FUDforum** (Fast Uncompromising Discussion Forum) is an open source web discussion forum released under the GPL (version 2) license that is written in PHP and can be used on virtually any operating system. FUDforum combines an extensive feature set while maintaining the ability to generate forum web pages extremely fast. The forum includes i18n and templating support allowing for a complete customization of its output as well as a very capable group based permission system. FUDforum can also act as a Mailing List Manager, USENET newsreader and even an XML Feed Aggregator. This will allow you to build an instant community and consolidate all your messages into a single system.
 
 ---
 
@@ -28,7 +28,7 @@
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. Access the forum by clicking to "Check your installation here" and login with the credentials provided (see below).
 
 ### Credentials
 
@@ -37,7 +37,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ---
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/8PEoKTr.png)
 
 ---
 
