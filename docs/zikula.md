@@ -1,6 +1,6 @@
 # **Zikula** Terminal.com Snapshot
 
-*OpenSource PHP application framework, for your small to enterprise business or personal site.*
+*OpenSource PHP application framework for your small to enterprise business or personal site.*
 
 ---
 
