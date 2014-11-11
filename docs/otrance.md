@@ -6,20 +6,20 @@
 
 ## About oTranCe
 
-**oTranCe** offers a ready to go and entirely web based translation platform to your project and your translators. The files you already translated can be imported easily and exported to language packages at any time. In case you are using a versioning system, updating your repository is just a mouse click.
+**oTranCe** offers a ready-to-go, entirely web based translation platform for your project and your translators. The files you already translated can be imported easily. Export to language packages at any time. In case you are using a versioning system, updating your repository is just a mouse click away.
 
 ---
 
 ## Main Features
 
-- Keep the ability to update any time.
+- Ability to update any time.
 - Create and edit languages.
 - Create and edit entries and show reference languages.
 - Easy and self explaining handling for translators.
 - Grant guest access to non-translators and improve viral spreading for your project.
 - Mature filter and search options over language keys and phrases.
 - Get automatic translations using Google Translate.
-- Import and Export language functions.
+- Import and export language functions.
 - Commit the exported files to your versioning system.
 - Fine grained settings for rights and roles per user.
 
