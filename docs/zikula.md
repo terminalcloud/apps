@@ -33,7 +33,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ---
 
-![1](http://cmscritic.com/wp-content/uploads/2009/01/zikula81.jpg)
+![1](http://i.imgur.com/816Rdzb.png)
 
 ---
 
