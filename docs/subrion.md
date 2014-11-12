@@ -1,18 +1,18 @@
 # **Subrion** Terminal.com Snapshot
 
-*Subrion is a pluggable, themable and multi-lingual content management system*
+*Subrion is an extensible, themable, multilingual content management system.*
 
 ---
 
 ## About Subrion
 
-**Subrion** is an open source content management system that allows you to build websites for any purpose. **From a blog to a corporate mega portal**.
+**Subrion** is an open-source content management system that allows you to build websites for any purpose. **From a blog to a corporate mega portal.**
 
 ---
 
 ## Main Features
 
-- Administrator Dashboard.
+- Administrator dashboard.
 - Easy content management.
 - Templates and plugins.
 - SEO inclusive.
@@ -39,9 +39,9 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ## Documentation and Links
 
-- [Subrion Website](http://www.subrion.org/)
-- [Users Forum](http://www.subrion.org/forums/)
-- [Additional plugins](http://www.subrion.org/plugins/)
+- [Subrion website](http://www.subrion.org/)
+- [Users forum](http://www.subrion.org/forums/)
+- [Addition plugins](http://www.subrion.org/plugins/)
 
 ---
 
