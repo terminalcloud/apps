@@ -41,7 +41,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 - [Subrion Website](http://www.subrion.org/)
 - [Users Forum](http://www.subrion.org/forums/)
-- [Addition plugins](http://www.subrion.org/plugins/)
+- [Additional plugins](http://www.subrion.org/plugins/)
 
 ---
 
