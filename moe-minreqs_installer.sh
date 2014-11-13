@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy NodeJS Drywall at Terminal.com
+# Script to deploy MOE-minreqs at Terminal.com
 
 INSTALL_PATH="/root"
 
@@ -14,17 +14,29 @@ install(){
 	basics_install
 
 	# Procedure:
-  echo "deb-src http://archive.ubuntu.com/ubuntu trusty main restricted universe" >> /dev/apt/
+  echo "deb-src http://archive.ubuntu.com/ubuntu trusty main restricted universe" >> /dev/apt/sources.list
   apt-get update
   apt-get -y install git software-properties-common
-  apt-get -y install build-essential cmake libboost-dev libboost-dbg python-pip python-dev
-  apt-get -y install doxygen doxypy doxygen-dbg
+  apt-get -y install build-essential cmake  python-pip python-dev
+  apt-get -y install doxygen doxypy doxygen-dbg libboost-dev libboost-dbg libboost-python-dev
   apt-get -y install ipython ipython-notebook
   apt-get build-dep python-numpy python-scipy
-
+  apt-get install mongodb
+  cd $INSTALL_PATH
   git clone https://github.com/Yelp/MOE.git
   cd MOE
   pip install requirements.txt
+  #export MOE_NO_BUILD_CPP=True
+  python setup.py install
+  cd moe
+  #rm -r build
+  #mkdir build && cd build
+  #cmake $INSTALL_PATH/MOE/moe/optimal_learning/cpp/
+  #make
+  #cp -r . $(python -c "import site; print(site.getsitepackages()[0])")/moe/.
+  #cd c$INSTALL_PATH/MOE
+  # make test
+  # open port 6543
 
 
 }
@@ -39,7 +51,7 @@ show(){
 }
 
 if [[ -z $1 ]]; then
-	install && show
+	install #&& show
 elif [[ $1 == "show" ]]; then
 	show
 else
