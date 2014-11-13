@@ -14,18 +14,18 @@ install(){
 	basics_install
 
 	# Procedure:
-  echo "deb-src http://archive.ubuntu.com/ubuntu trusty main restricted universe" >> /dev/apt/sources.list
+  echo "deb-src http://archive.ubuntu.com/ubuntu trusty main restricted universe" >> /etc/apt/sources.list
   apt-get update
   apt-get -y install git software-properties-common
   apt-get -y install build-essential cmake  python-pip python-dev
   apt-get -y install doxygen doxypy doxygen-dbg libboost-dev libboost-dbg libboost-python-dev
   apt-get -y install ipython ipython-notebook
-  apt-get build-dep python-numpy python-scipy
-  apt-get install mongodb
+  apt-get -y build-dep python-numpy python-scipy
+  apt-get -y install mongodb
   cd $INSTALL_PATH
   git clone https://github.com/Yelp/MOE.git
   cd MOE
-  pip install requirements.txt
+  pip install -r requirements.txt
   #export MOE_NO_BUILD_CPP=True
   python setup.py install
   cd moe
