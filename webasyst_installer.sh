@@ -19,8 +19,8 @@ install(){
   mysql_setup webasyst webasyst terminal
   mkdir -p $INSTALL_PATH/webasyst
   cd $INSTALL_PATH/webasyst
-  wget -O webasyst.zip http://www.webasyst.com/download/framework/
-  unzip webasyst.zip
+  wget -O webasyst.tar.gz http://www.webasyst.com/download/framework/
+  tar -xzf webasyst.tar.gz
   cd $INSTALL_PATH
   chown -R www-data:www-data webasyst
   apache_install
