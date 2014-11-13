@@ -1,11 +1,8 @@
 #!/bin/bash
 
-name="webasyst"
+name="moe"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
-
-# Update URL in config file.
-sed -i "s/terminalservername/$(hostname)/g" /var/www/webasyst/wa-config/routing.php
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
@@ -17,7 +14,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/webasyst"><b>Access the Webasyst backend here</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-6543.terminal.com/webasyst"><b>MOE Demo App</b></a></p>
 </head>
 <body>
 EOF

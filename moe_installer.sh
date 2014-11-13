@@ -23,10 +23,10 @@ install(){
   apt-get -y build-dep python-numpy python-scipy
   apt-get -y install mongodb
   cd $INSTALL_PATH
-  #git clone https://github.com/Yelp/MOE.git
-  #cd MOE
-  #pip install -r requirements.txt
-  #python setup.py install
+  git clone https://github.com/Yelp/MOE.git
+  cd MOE
+  pip install -r requirements.txt
+  python setup.py install
 
 
 }
@@ -41,7 +41,7 @@ show(){
 }
 
 if [[ -z $1 ]]; then
-	install #&& show
+	install && show
 elif [[ $1 == "show" ]]; then
 	show
 else
