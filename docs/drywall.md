@@ -26,7 +26,7 @@ Drywall is an application intended to show Node.js basic components and serve as
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the live application by clicking to "TEst Drywall here!" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. Access the live application by clicking to "Test Drywall here!" and login with the credentials provided (see below).
 
 ### Credentials
 
