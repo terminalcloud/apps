@@ -1,22 +1,22 @@
 # **Drywall** Terminal.com Snapshot
 
-*A website and user system for Node.js*
+*A website scaffolding and a user administration library for Node.js.*
 
 ---
 
 ## About Drywall
 
-Drywall is an application intended to show Node.js basic components and serve as base and example for other Node.js projects.
+Drywall is an application intended to show Node.js basic components and to serve as a base and an example for other Node.js projects.
 
 ---
 
 ## Main Features
 
-- Basic front end web pages.
-- Contact page has form to email.
-- Login system with forgot password and reset password.
-- Signup and Login with Facebook, Twitter, GitHub, Google and Tumblr.
-- Optional email verification during signup flow.
+- Basic front-end website scaffolding.
+- Contact page with an email contact form.
+- Login system with reset password functionality.
+- Signup and login with Facebook, Twitter, GitHub, Google and Tumblr.
+- Optional email verification.
 - User system with separate account and admin roles.
 - Admin groups with shared permission settings.
 - Administrator level permissions that override group permissions.
@@ -39,10 +39,10 @@ Just spin up a new Terminal based on this snapshot. Access the live application 
 
 ---
 
-## Documentation a Links
+## Links
 
-- [Drywall Website](http://jedireza.github.io/drywall/#)
-- [GitHub Repo](https://github.com/jedireza/drywall/)
+- [Drywall website](http://jedireza.github.io/drywall/#)
+- [GitHub repo](https://github.com/jedireza/drywall/)
 
 ---
 
