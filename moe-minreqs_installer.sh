@@ -4,7 +4,7 @@
 INSTALL_PATH="/root"
 
 # Includes
-wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
+wget https://raw.githubusercontent.com/terminalcloud/apps/masterterlib.sh
 source terlib.sh || (echo "cannot get the includes"; exit -1)
 
 install(){
