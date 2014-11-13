@@ -10,7 +10,7 @@
 
 ---
 
-## Applications Examples
+## Application Examples
 
 - **Optimizing a system's click-through rate (CTR).**  MOE is useful when evaluating CTR requires running an A/B test on real user traffic, and getting statistically significant results requires running this test for a substantial amount of time (hours, days, or even weeks).
 
@@ -32,8 +32,9 @@
 ## Usage
 
 Just spin up a new Terminal based on this snapshot. MOE libraries are already installed.
-
 Access the MOE demo page by clicking at "MOE Demo App"
+
+For information about libraries usage please check the Documentation section.
 
 ---
 
