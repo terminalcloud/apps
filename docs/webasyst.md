@@ -25,7 +25,9 @@ Webasyst is a free PHP framework for creating sleek multi-user web apps and for 
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Webasyst Admin login" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot and access the backend section by clicking to "Access the Webasyst backend". Login with the credentials provided (see below).
+
+Follow the documentation and tutorials to start using Webasyst.
 
 ### Credentials
 
