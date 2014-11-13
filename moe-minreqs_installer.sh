@@ -18,7 +18,7 @@ install(){
   apt-get update
   apt-get -y install git software-properties-common
   apt-get -y install build-essential cmake  python-pip python-dev
-  apt-get -y install doxygen doxypy doxygen-dbg libboost-dev libboost-dbg libboost-python-dev
+  apt-get -y install doxygen doxypy doxygen-dbg  libboost-all-dev libboost-python-dev
   apt-get -y install ipython ipython-notebook
   apt-get -y build-dep python-numpy python-scipy
   apt-get -y install mongodb
@@ -28,13 +28,14 @@ install(){
   pip install -r requirements.txt
   #export MOE_NO_BUILD_CPP=True
   python setup.py install
-  cd moe
+  #cd moe
   #rm -r build
   #mkdir build && cd build
+
   #cmake $INSTALL_PATH/MOE/moe/optimal_learning/cpp/
   #make
   #cp -r . $(python -c "import site; print(site.getsitepackages()[0])")/moe/.
-  #cd c$INSTALL_PATH/MOE
+  #cd $INSTALL_PATH/MOE
   # make test
   # open port 6543
 
