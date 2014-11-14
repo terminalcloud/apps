@@ -41,7 +41,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/Discourse_installer.sh && bash Discourse_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/discourse_installer.sh && bash discourse_installer.sh`
 
 ---
 

@@ -14,12 +14,13 @@ install(){
   basics_install
 
   # Procedure:
+  gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
   curl -L get.rvm.io | bash -s stable
   source /usr/local/rvm/scripts/rvm
   cd $INSTALL_PATH
   echo "source /usr/local/rvm/scripts/rvm" >> .bashrc
-  rvm install 2.1.2
-  rvm use 2.1.2
+  rvm install 2.1.3
+  rvm use 2.1.3
   rvm rubygems current
   apt-get -y install libpq-dev postgresql redis-server libmagick++-dev libxml2 libxml2-dev
   gem install bundler
@@ -30,6 +31,8 @@ install(){
   echo "local all all  peer" >> /etc/postgresql/9.3/main/pg_hba.conf
   echo "host  all all 127.0.0.1/32  trust" >> /etc/postgresql/9.3/main/pg_hba.conf
   service postgresql restart
+  git clone https://github.com/discourse/discourse.git
+  cd discourse
   gem install bundler
   bundle install
   bundle exec rake db:create db:migrate db:test:prepare db:seed_fu
