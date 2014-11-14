@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="moe"
+name="discourse"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
@@ -14,7 +14,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-6543.terminal.com"><b>MOE Demo App</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/webasyst"><b>Access the Webasyst backend here</b></a></p>
 </head>
 <body>
 EOF
@@ -34,10 +34,8 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
-# Showing up
-cat | /srv/cloudlabs/scripts/run_in_term.js  << EOF
-cd /root/MOE && pserve production.ini
-EOF
+# Open a new terminal
+echo | /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF

@@ -53,7 +53,7 @@ For information about libraries usage please check the Documentation section.
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/MOE_installer.sh && bash MOE_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/moe_installer.sh && bash moe_installer.sh`
 
 ---
 

@@ -27,8 +27,6 @@ install(){
   cd MOE
   pip install -r requirements.txt
   python setup.py install
-
-
 }
 
 show(){
