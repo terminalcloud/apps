@@ -16,15 +16,15 @@
 
 - **Optimizing tunable parameters of a machine-learning prediction method.**  MOE is useful if calculating the prediction error for one choice of the parameters takes a long time, which might happen because the prediction method is complex and takes a long time to train, or because the data used to evaluate the error is huge.
 
-- **Optimizing the design of an engineering system** (an airplane, the traffic network in a city, a combustion engine, a hospital).  MOE is useful if evaluating a design requires running a complex physics-based numerical simulation on a supercomputer.
+- **Optimizing the design of an engineering system** (an air-plane, the traffic network in a city, a combustion engine, a hospital).  MOE is useful if evaluating a design requires running a complex physics-based numerical simulation on a supercomputer.
 
 - **Optimizing the parameters of a real-world experiment** (a chemistry, biology, or physics experiment, a drug trial).  MOE is useful when every experiment needs to be physically created in a lab, or very few experiments can be run in parallel.
 
 ### MOE does this internally by:
 
-1. Building a Gaussian Process (GP) with the historical data.
-2. Optimizing the hyperparameters of the Gaussian Process (model selection)
-3. Finding the points of highest Expected Improvement (EI)
+1. Building a Gaussian process (GP) with the historical data.
+2. Optimizing the hyperparameters of the Gaussian process (model selection)
+3. Finding the points of highest Expected improvement (EI)
 4. Returning the points to sample, then repeat.
 
 ---
