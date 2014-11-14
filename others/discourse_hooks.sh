@@ -14,7 +14,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/webasyst"><b>Access the Webasyst backend here</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-3000.terminal.com/"><b>Try this Discourse installation here</b></a></p>
 </head>
 <body>
 EOF
