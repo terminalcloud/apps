@@ -29,6 +29,8 @@ Discourse is the 100% open source discussion platform built for the next decade 
 
 Spin up a new Terminal based on this snapshot. Check your instalation by clicking to "Try this Discourse installation here"
 
+As this is a development snapshot, please check the online Discourse documentation.
+
 
 ---
 
