@@ -14,7 +14,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-3000.terminal.com/"><b>Check the H2O web interface here</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-54321.terminal.com/"><b>Check the H2O web interface here</b></a></p>
 </head>
 <body>
 EOF
