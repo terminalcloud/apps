@@ -1,6 +1,6 @@
 # **H2O** Terminal.com Snapshot
 
-*Unique machine learning platform*
+*Predictive analytics platform*
 
 ---
 
