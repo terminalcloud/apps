@@ -17,7 +17,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/share"><b>Acecss the Alfresco administration dashboard</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/share"><b>Access the Alfresco administration dashboard</b></a></p>
 </head>
 <body>
 EOF
