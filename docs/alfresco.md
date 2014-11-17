@@ -29,7 +29,7 @@
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Access the Alfresco administration dashboard" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Alfresco administration dashboard" and login with the credentials provided (see below).
 
 ### Credentials
 
