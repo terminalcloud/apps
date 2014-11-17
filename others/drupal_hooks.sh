@@ -29,7 +29,7 @@ cat >> /root/info.html << EOF
 EOF
 
 # Convert links to external links
-sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html 
+sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
@@ -38,6 +38,6 @@ sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 echo | /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
-cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+cat | /srv/cloudlabs/scripts/run_in_term.js  << EOF
 /srv/cloudlabs/scripts/display.sh /root/info.html
 EOF

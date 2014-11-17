@@ -1,6 +1,6 @@
 # **H2O** Terminal.com Snapshot
 
-*Predictive analytics platform*
+*Fast scalable machine learning, for smarter applications.*
 
 ---
 
