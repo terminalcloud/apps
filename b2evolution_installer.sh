@@ -18,7 +18,7 @@ install(){
   mysql_install
   mysql_setup b2evolution b2evolution terminal
   cd $INSTALL_PATH
-  wget -O b2evolution.zip http://b2evolution.net/downloads/5-1-2-stable
+  wget https://raw.githubusercontent.com/terminalcloud/apps/others/b2evolution.zip
   unzip b2evolution.zip && rm b2evolution.zip
   chown -R www-data:www-data b2evolution
   apache_install
