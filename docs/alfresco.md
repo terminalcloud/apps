@@ -36,6 +36,12 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 - username: `admin`
 - password: `t3rminal`
 
+### Important Notes:
+- The Alfresco server can take up to 3 minutes to start the first time.
+
+- At least, a **medium size** Terminal is needed to run Alfresco. A x-large or Terminal is recommended to for a decent performance.
+
+
 ---
 
 ![1](http://www.componize.com/storage/Alfresco.png)
