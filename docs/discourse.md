@@ -1,12 +1,13 @@
 # **Discourse Development Box** Terminal.com Snapshot
 
-*This snap is intended to be used as a Development box for Discourse*
+*Simple, easy-to-use and mobile-ready discussion platform with support for notifications.*
 
 ---
 
 ## About Discourse
 
-Discourse is the 100% open source discussion platform built for the next decade of the Internet. It works as:
+Discourse works as:
+
 - A mailing list.
 - A discussion forum.
 - A long-form chat room.
@@ -15,13 +16,13 @@ Discourse is the 100% open source discussion platform built for the next decade 
 
 ## Main Features
 
-- 100% Open Source.
-- Designed for Mobile and Tablet.
-- Community Moderation.
-- Real Time Notifications.
-- Single Sign On.
-- Private Communities.
-- Blog Integration.
+- 100% open-source.
+- Designed for mobile and tablet.
+- Community moderation.
+- Real-time notifications.
+- Single sign-on.
+- Private communities.
+- Blog integration.
 
 ---
 
@@ -40,8 +41,8 @@ As this is a development snapshot, please check the online Discourse documentati
 
 ## Documentation
 
-- [Discourse Website](http://www.discourse.org/)
-- [GitHub Repo](https://github.com/discourse/discourse)
+- [Discourse website](http://www.discourse.org/)
+- [GitHub repository](https://github.com/discourse/discourse)
 
 ---
 
