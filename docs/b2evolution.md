@@ -31,6 +31,8 @@ b2evolution includes all the features of traditional blog tools, and extends the
 
 Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
 
+The default site is loaded with demo information. Feel free to change or delete it as needed.
+
 ### Credentials
 
 - username: `admin`

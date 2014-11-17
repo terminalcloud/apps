@@ -22,7 +22,7 @@ install(){
   unzip b2evolution.zip && rm b2evolution.zip
   chown -R www-data:www-data b2evolution
   apache_install
-  apache_default_vhost b2evolution.conf $INSTALL_PATH/b2evolution
+  apache_default_vhost b2evolution.conf $INSTALL_PATH/b2evolution/blogs
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
