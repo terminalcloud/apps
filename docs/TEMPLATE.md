@@ -33,7 +33,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ## Documentation
 
-- [PRODUCT_NAME Website]()
+- [PRODUCT_NAME website]()
 - [Documentation]()
 
 ---
