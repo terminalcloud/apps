@@ -1,15 +1,14 @@
 # **b2evolution** Terminal.com Snapshot
 
-*A fully integrated Blog/CMS, community & emailing solution.*
+*A fully integrated blog/CMS, community management & emailing solution.*
 
 ---
 
 ## About b2evolution
 
-**b2evolution** is a content and community management system written in PHP and backed by a MySQL database.
+**b2evolution** is a content and community management system written in PHP. It stores user data into a MySQL database.
 
-
-b2evolution includes all the features of traditional blog tools, and extends them with evolved features such as file & photo management, advanced skinning, multiple blogs support as well as detailed user permissions.
+b2evolution includes all the features of traditional blogging engines and extends them with evolved features such as file & photo management, advanced skinning, multiple blogs support and detailed user permissions.
 
 ---
 
@@ -19,11 +18,10 @@ b2evolution includes all the features of traditional blog tools, and extends the
 - Multiple domains.
 - Multiple users and authors.
 - Integrated stats.
-- Blog skins / themes.
+- Blog skins/themes.
 - Widgets.
 - Plugin framework.
 - Server Side Analytics (SSA).
-
 
 ---
 
@@ -46,9 +44,9 @@ The default site is loaded with demo information. Feel free to change or delete 
 
 ## Documentation
 
-- [b2evolution Website](http://b2evolution.net/)
+- [b2evolution website](http://b2evolution.net/)
 - [Documentation](http://b2evolution.net/man/)
-- [Users Forum](http://forums.b2evolution.net/)
+- [Users forum](http://forums.b2evolution.net/)
 
 ---
 
