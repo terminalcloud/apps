@@ -31,15 +31,16 @@ Keep in mind that the user experience may vary depending on the browser, locatio
 - Access your desktop directly by pressing on "See your desktop here!".
 - For additional options like cliboard interface, access the "Guacamole interface".
 
+- Password for vnc user: `t3rminal` (*sudo all* granted)
+
 You can also share your desktop screen by opening the port 8080 on the "Share access menu" in this Terminal IDE.
 
 As the web desktop interface is based in Guacamole, the clipboard exchange is managed using a clipboard text box, located on the Guacamole Interface. You can use it to copy and paste text between your own computer and the Terminal.
 
-
 ### Additional usage information [optional]:
 You can also connect to the desktop using a VNC client directly.
 
-To do that, you have to use a **Unix based machine** (Like Linux or MacOs), have **ssh** installed and configured on your system, ssh keys [installed at Terminal.com](https://www.terminal.com/settings/ssh_keys) and [ssh proxy](https://www.terminal.com/ssh) configured in your computer.
+To do that, you have to use a **Unix based machine** (Like Linux or OS X), have **ssh** installed and configured on your system, ssh keys [installed at Terminal.com](https://www.terminal.com/settings/ssh_keys) and [ssh proxy](https://www.terminal.com/ssh) configured in your computer.
 
 Then,
 - Add your public ssh keys to the .ssh/authorized_keys file .
