@@ -17,7 +17,7 @@ We've installed the Guacamole version that works best with Terminal but we will 
 **Guacamole** is a clientless remote desktop gateway. It supports standard protocols like VNC and RDP.
 Thanks to HTML5, once Guacamole is installed on a server, all you need to access your desktops is a web browser.
 
-![imgur_1](http://i.imgur.com/dOGMd8W.png)
+![imgur_1](http://i.imgur.com/wBo7pqH.png)
 
 ---
 
