@@ -9,14 +9,14 @@ We've installed the Guacamole version that works best with Terminal but we will 
 
 
 ## About Gnome Classic Desktop :
-**Gnome Classic** is a lightweight desktop environment that was introduced in Ubuntu 14.04 to replace a Gnome2-like environment. It aims to be fast and low on system resources, while still being visually appealing and user friendly.
+**Gnome Classic** is a lightweight desktop environment that was introduced in Ubuntu 14.04 to be a replacement of the olf Gnome2 environment. It aims to be fast and low on system resources.
 
 
 ## About Guacamole
 **Guacamole** is a clientless remote desktop gateway. It supports standard protocols like VNC and RDP.
 Thanks to HTML5, once Guacamole is installed on a server, all you need to access your desktops is a web browser.
 
-![imgur_1](http://i.imgur.com/6Q5NtX6.png)
+![imgur_1](http://i.imgur.com/eOwViBd.png)
 
 ---
 

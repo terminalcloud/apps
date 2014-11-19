@@ -33,7 +33,7 @@ Keep in mind that the user experience may vary depending on the browser, locatio
 
 You can also share your desktop screen by opening the port 8080 on the "Share access menu" in this Terminal IDE.
 
-As the web desktop interface is based in Guacamole, the clipboard exchange is managed using a clipboard text box, located on the first screen. You can use it to copy and paste text between your own computer and the Terminal.
+As the web desktop interface is based in Guacamole, the clipboard exchange is managed using a clipboard text box, located on the Guacamole Interface. You can use it to copy and paste text between your own computer and the Terminal.
 
 
 ### Additional usage information [optional]:
