@@ -9,7 +9,7 @@ We've installed the Guacamole version that works best with Terminal but we will 
 
 
 ## About Gnome Classic Desktop :
-**Gnome Classic** is a lightweight desktop environment that was introduced in Ubuntu 14.04 to be a replacement of the olf Gnome2 environment. It aims to be fast and low on system resources.
+**Gnome Classic** is a lightweight desktop environment that was introduced in Ubuntu 14.04 to be a replacement to the old Gnome2 environment. It aims to be fast and low on system resources.
 
 
 ## About Guacamole
