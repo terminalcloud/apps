@@ -1,16 +1,16 @@
 # **Seafile** Terminal.com Snapshot
 
-*Open Source Cloud Storage with advanced features.*
+*Open-source cloud storage with advanced features.*
 
 ---
 
 ## About Seafile
 
-**Seafile** is a next-generation open source cloud storage system with advanced support for file syncing, privacy protection and teamwork.
+**Seafile** is a next-generation open-source cloud storage system with advanced support for file syncing, privacy protection and teamwork.
 
-Collections of files are called libraries, and each library can be synced separately. A library can be encrypted with a user chosen password. This password is not stored on the server, so even the server admin cannot view a file's contents.
+Collections of files are called libraries, and each library can be synced separately. A library can be encrypted with a user-chosen password. The password is not stored on the server, so even the server admin cannot view a file's contents.
 
-Seafile allows users to create groups with file syncing, wiki, and discussion to enable easy collaboration around documents within a team.
+Seafile allows users to create groups with file syncing, wiki and discussion to enable easy collaboration around documents within a team.
 
 ---
 
@@ -19,11 +19,11 @@ Seafile allows users to create groups with file syncing, wiki, and discussion to
 ### Complete and advanced file syncing
 
 1. Selective synchronization of file libraries. Each library can be synced separately.
-2. Correct handling of file conflicts based on history instead of timestamp.
-3. Efficient bandwidth usage by only transfering contents not in the server, and incomplete transfers can be resumed.
+2. Correct handling of file conflicts based on history rather than timestamp.
+3. Efficient bandwidth usage by only transferring contents not in the server, and incomplete transfers can be resumed.
 4. Sync with two or more servers.
 5. Sync with existing folders.
-6. Sync a sub-folder.
+6. Sub-folder syncing.
 7. Full version control with configurable revision number.
 
 
@@ -38,7 +38,7 @@ Seafile allows users to create groups with file syncing, wiki, and discussion to
 
 ### Advanced privacy protection
 
-1. Library encryption with a user chosen password.
+1. Library encryption using a user chosen password.
 2. Client side encryption.
 3. Never sends the user's password to the server.
 
@@ -61,10 +61,10 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ## Documentation and links
 
-- [Seafile Website](http://seafile.com/en/home/)
-- [Servers Manual](http://manual.seafile.com/)
+- [Seafile website](http://seafile.com/en/home/)
+- [Servers manual](http://manual.seafile.com/)
 - [Wiki](https://seacloud.cc/group/3/wiki/)
-- [Users Forum](https://groups.google.com/forum/#!forum/seafile)
+- [Users forum](https://groups.google.com/forum/#!forum/seafile)
 
 ---
 

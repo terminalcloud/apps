@@ -1,12 +1,12 @@
 # **Alfresco Community Edition** Terminal.com Snapshot
 
-*Enterprise Content Management System.*
+*Enterprise content management system.*
 
 ---
 
 ## About Alfresco CE
 
-**Alfresco Community Edition** is an Enterprise CMS (ECMS) that provides a standards-compliant content repository. It includes granular access control, support for social networks, and an embedded workflow engine that integrates with business processes. federated servers, roles-based permissions and support for mobile clients.
+**Alfresco Community Edition** is an enterprise CMS (ECMS) that provides a standards-compliant content repository. It includes granular access control, support for social networks, and an embedded workflow engine that integrates with business processes. Alfresco CE supports federated servers, roles-based permissions and mobile clients.
 
 ---
 
@@ -16,13 +16,13 @@
 - Web content management.
 - Records management, including 5015.2 certification.
 - Image management.
-- Learning content management support for learning management systems (e.g. Moodle)
+- Learning content management support for learning management systems (e.g. Moodle).
 - Integrated publishing.
-- Repository access via CIFS/SMB, FTP, WebDAV, NFS and CMIS
+- Repository access via CIFS/SMB, FTP, WebDAV, NFS and CMIS.
 - Lucene search.
 - Multi-language support.
-- Portable application packaging
-- Pluggable authentication: NTLM, LDAP, Kerberos, CAS
+- Portable application packaging.
+- Pluggable authentication: NTLM, LDAP, Kerberos, CAS.
 - Multiple database support.
 
 ---
@@ -50,9 +50,9 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ## Documentation
 
-- [Alfresco Website](http://www.alfresco.com/products/community)
+- [Alfresco website](http://www.alfresco.com/products/community)
 - [Documentation](http://docs.alfresco.com/community/concepts/welcome-infocenter_community.html)
-- [Alfresco Forums](http://forums.alfresco.com/)
+- [Alfresco forums](http://forums.alfresco.com/)
 - [Wiki](http://wiki.alfresco.com/wiki/Main_Page)
 
 ---
