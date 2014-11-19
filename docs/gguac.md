@@ -1,4 +1,4 @@
-# Ubuntu 14.04 with XFCE4 and Guacamole  - Terminal
+# Ubuntu 14.04 with Gnome Classic and Guacamole  - Terminal
 
 This Terminal has a full Ubuntu 14.04 ready to use and install whatever you want.
 It also contains a full configured X11vnc and Guacamole server to let you connect to this machine graphically just using your web browser.
@@ -8,8 +8,8 @@ As Guacamole is under heavy development and still under the version 1, please us
 We've installed the Guacamole version that works best with Terminal but we will continue testing and deploying new versions, so keep an eye on this snap!
 
 
-## About XFCE:
-**Xfce** is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while still being visually appealing and user friendly.
+## About Gnome Classic Desktop :
+**Gnome Classic** is a lightweight desktop environment that was introduced in Ubuntu 14.04 to replace a Gnome2-like environment. It aims to be fast and low on system resources, while still being visually appealing and user friendly.
 
 
 ## About Guacamole
@@ -30,6 +30,7 @@ Keep in mind that the user experience may vary depending on the browser, locatio
 - Spin up a new Terminal based on this snapshot.
 - Access your desktop directly by pressing on "See your desktop here!".
 - For additional options like cliboard interface, access the "Guacamole interface".
+
 
 You can also share your desktop screen by opening the port 8080 on the "Share access menu" in this Terminal IDE.
 
