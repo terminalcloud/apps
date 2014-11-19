@@ -15,7 +15,8 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/guacamole"><b>See your Desktop here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/guacamole/client.xhtml?id=c%2FDesktop"><b>See your Desktop here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/guacamole"><b>Guacamole Interface</b></a></p>
 </head>
 <body>
 EOF
@@ -30,7 +31,7 @@ cat >> /root/info.html << EOF
 EOF
 
 # Convert links to external links
-sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html 
+sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
