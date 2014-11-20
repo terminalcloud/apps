@@ -7,8 +7,8 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 # update the server IP
 IP=$(ip a | grep "venet0:0" | awk '{print $2}' | cut -d / -f1)
 
-sed -i "s/terminalserverip/$(IP)/g" /opt/discourse-1.1.0-0/apps/discourse/htdocs/config/database.yml
-sed -i "s/terminalserverip/$(IP)/g" /opt/discourse-1.1.0-0/apps/discourse/htdocs/config/discourse.conf
+sed -i "s/terminalserverip/$IP/g" /opt/discourse-1.1.0-0/apps/discourse/htdocs/config/database.yml
+sed -i "s/terminalserverip/$IP/g" /opt/discourse-1.1.0-0/apps/discourse/htdocs/config/discourse.conf
 
 
 # Getting the doc and styles
@@ -22,7 +22,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/guacamole/client.xhtml?id=c%2FDesktop"><b>Check your installation here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/"><b>Check your installation here!</b></a></p>
 </head>
 <body>
 EOF
