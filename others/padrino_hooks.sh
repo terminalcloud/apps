@@ -36,7 +36,7 @@ sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Open a new terminal
 cat | /srv/cloudlabs/scripts/run_in_term.js  << EOF_
-cd /root/myapp && padrino start
+cd /root/myapp && padrino start -h 0.0.0.0
 EOF_
 
 # Showing up
