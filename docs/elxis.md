@@ -1,6 +1,6 @@
 # **Elxis** Terminal.com Snapshot
 
-*Fully featured Open Source CMS*
+*Fully featured Open Source CMS.*
 
 ---
 

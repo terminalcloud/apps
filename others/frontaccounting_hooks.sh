@@ -1,13 +1,8 @@
 #!/bin/bash
 
-name="elxis"
+name="frontaccounting"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
-
-# Config update
-sed -i "s/terminalservername/$(hostname)/g" /var/www/elxis/configuration.php
-sed -i "s/terminalservername/$(hostname)/g" /root/elxis.sql
-mysql -uroot -proot elxis < /root/elxis.sql
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
@@ -20,7 +15,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/"><b>Check your installation here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/admin"><b>Elxis Admin login!</b></a></p>
 </head>
 <body>
 EOF
