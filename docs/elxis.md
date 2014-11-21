@@ -1,18 +1,56 @@
 # **Elxis** Terminal.com Snapshot
 
-*MINI_DESC.*
+*Fully featured *
 
 ---
 
 ## About Elxis
 
-Elxis is
+**Elxis** is a free Content Management System (CMS) that allows you to easily create websites of any scale from small personal websites and blogs to complex corporate websites and portals without the need of having programming skills.
 
 ---
 
 ## Main Features
 
-- FEATURES
+**Core**
+- PDO database layer (officially supported databases: MySQL, PostgreSQL)
+- Small file-system footprint
+- Easy to use libraries for all core features makes developer work extremely easy.
+- Multiligual user interface and content including support for RTL languages.
+- Multi-sites support (multiple sites under 1 Elxis installation).
+- Site off-line for all users except administrators.
+- Easy and powerful internal linking system and search engine friendly URLs (Elxis URIs).
+- Custom routing
+
+**FrontEnd**
+- HTML5, CSS3, jQuery ready.
+- Responsive design.
+- Mobile phones and tablets friendly version.
+- Built-in commentary system.
+- RSS/ATOM feeds per category.
+- Open search - search through your browser's search box.
+- Automatic generation and expansion of sub-menus.
+- Users central, members list and rich user profile.
+- External authentication methods like Twitter, Gmail, Open Id, etc...
+- Visitors can display dates based on their own location.
+- Powerful templating system.
+- Visitors native language detection.
+
+**Administration**
+- One-click extension install/update/un-install.
+- Site traffic statistics.
+- Media manager.
+- WYSIWYG editor with many features like spell checker, image uploading, styling.
+
+**Security**
+- Elxis Defender (built-in, fully automatic, protection against web attacks and filesystem changes detection)
+- System logs (errors, security alerts, install/update/un-install actions, and more).
+- Problem notification (automatic email notifications to site's technical manager on security alerts, fatal errors, and more).
+- Encryption for sensitive data (like sessions).
+- System debug with many report levels.
+- Extendible and configurable user groups and permissions.
+- Extended authentication check for the administration interface.
+
 
 ---
 
