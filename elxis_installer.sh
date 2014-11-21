@@ -23,11 +23,10 @@ install(){
   unzip elxis.zip && rm elxis.zip
   chown -R www-data:www-data elxis
   apache_install
-  apache_default_vhost elxis.conf $INSTALL_PATH/elxis/blogs
+  apache_default_vhost elxis.conf $INSTALL_PATH/elxis
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
-  sed -i 's/memory_limit\ \=\ 128M/memory_limit\ \=\ 256M/g' /etc/php5/apache2/php.ini
   service apache2 restart
 }
 
