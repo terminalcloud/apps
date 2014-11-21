@@ -22,14 +22,13 @@ install(){
 
   ruby_install
   source .bash_rc
+  rvm install ruby-1.9.3-p194
+  rvm use ruby-1.9.3-p194 --default
   gem install bundler
 
   git clone git://github.com/ooyala/barkeep.git ~/barkeep
   cd ~/barkeep && bundle install
-
-  debconf-set-selections <<< "mysql-server mysql-server/root_password password ''"
-  debconf-set-selections <<< "mysql-server mysql-server/root_password_again password ''"
-  DEBIAN_FRONTEND=noninteractive apt-get -y install mysql-server
+  apt-get install mysql-server
 
   mysqladmin -u root --password='' create barkeep
   cd ~/barkeep && ./script/run_migrations.rb
