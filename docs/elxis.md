@@ -1,6 +1,6 @@
 # **Elxis** Terminal.com Snapshot
 
-*Fully featured *
+*Fully featured Open Source CMS*
 
 ---
 
@@ -13,6 +13,7 @@
 ## Main Features
 
 **Core**
+
 - PDO database layer (officially supported databases: MySQL, PostgreSQL)
 - Small file-system footprint
 - Easy to use libraries for all core features makes developer work extremely easy.
@@ -23,6 +24,7 @@
 - Custom routing
 
 **FrontEnd**
+
 - HTML5, CSS3, jQuery ready.
 - Responsive design.
 - Mobile phones and tablets friendly version.
@@ -37,12 +39,14 @@
 - Visitors native language detection.
 
 **Administration**
+
 - One-click extension install/update/un-install.
 - Site traffic statistics.
 - Media manager.
 - WYSIWYG editor with many features like spell checker, image uploading, styling.
 
 **Security**
+
 - Elxis Defender (built-in, fully automatic, protection against web attacks and filesystem changes detection)
 - System logs (errors, security alerts, install/update/un-install actions, and more).
 - Problem notification (automatic email notifications to site's technical manager on security alerts, fatal errors, and more).
@@ -56,7 +60,7 @@
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Elxis Admin login" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
 
 ### Credentials
 
