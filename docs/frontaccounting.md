@@ -1,20 +1,35 @@
 # **FrontAccounting** Terminal.com Snapshot
 
-*MINI_DESC.*
+*"Accounting on the Web has never been easier..."*
 
 ---
 
 ## About FrontAccounting
 
-FrontAccounting is
+FrontAccounting is a simple, but powerful, system for the entire ERP chain and covers:
+
+- Purchase Orders
+- Goods Receivable Notes
+- Supplier Invoices/Credit Notes
+- Payments
+- Allocations
+- Accounts Payable
+- Items and Inventory
+- Stock
+- Manufacturing
+- Sales Orders
+- Customer Invoices/Credit Notes
+- Deposits
+- Allocations
+- Accounts Receivable
+- Dimensions
+- General Ledger with Budget
+- Languages
+- Currencies
+- Several Companies
 
 ---
 
-## Main Features
-
-- FEATURES
-
----
 
 ## Usage
 
@@ -27,14 +42,17 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ---
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/cWvVH3s.png)
 
 ---
 
 ## Documentation
 
-- [FrontAccounting website]()
-- [Documentation]()
+- [FrontAccounting website](http://frontaccounting.com/)
+- [Documentation](http://frontaccounting.com/wb3/pages/download.php)
+- [Users Forum](http://frontaccounting.com/punbb/)
+- [FAQs](http://frontaccounting.com/wb3/pages/faq.php)
+- [Wiki](http://frontaccounting.com/fawiki/)
 
 ---
 
