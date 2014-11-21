@@ -224,3 +224,7 @@ java7_oracle_install(){
   apt-get -y install oracle-java7-installer
   update-java-alternatives -s java-7-oracle
 }
+
+config_prep(){
+  sed -i "s/$(hostname)/terminalservername/g" $1
+}
