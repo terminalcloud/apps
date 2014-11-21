@@ -13,7 +13,7 @@ Just spin up this terminal.com snapshot and start using a clean **Pydio** instal
 
 You can access your **Pydio** interface at http://yourterminalname-80/pydio with admin credentials:
 
-- username: root
+- username: admin
 - password: t3rminal
 
 
