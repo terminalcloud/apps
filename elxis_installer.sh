@@ -18,6 +18,7 @@ install(){
   mysql_install
   mysql_setup elxis elxis terminal
   cd $INSTALL_PATH
+  mkdir elxis && cd elxis
   wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/elxis.zip
   unzip elxis.zip && rm elxis.zip
   chown -R www-data:www-data elxis
