@@ -71,8 +71,9 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ## Documentation
 
-- [Elxis website]()
-- [Documentation]()
+- [Elxis website](http://www.elxis.org/)
+- [Documentation](http://www.elxis.org/support.html)
+- [Blog](http://www.elxis.org/blog/)
 
 ---
 
