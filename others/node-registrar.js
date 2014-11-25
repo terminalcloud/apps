@@ -14,40 +14,34 @@ var fs = require('fs');
 
 var key = fs.readFileSync(KEY_file,'utf8').trim();
 var nginx_PID = fs.readFileSync(PID_file,'utf8').trim();
-var ip =  execSync("echo 10.0.0.1");
 
 function register(req, res, next) {
   var values = req.params.data.split(',');
-  // Basic checks
-  if (values.length != 5) {
-    console.log('Malformed URL - '+'Expecting 5 values but receiving ' + values.length);
-    res.send('Malformed URL: We expect {key,ip,port,maxfails,timeout;}');
-    next();
-  } else if (values[1].split('.').length != 4) {
-    console.log('IP not valid');
-    res.send('Malformed URL - IP not valid');
-    next();
-  }
-
+  // Vars everywhere to keep it clean
   var getkey = values[0];
   var ip = values[1];
   var port = values[2];
   var maxfails = values[3];
   var timeout = values[4];
 
-
-  if (getkey == key){
-    console.log('key is ok');
-  } else
-    console.log('the key should be ' + key);
+  // Basic checks
+  if (values.length != 5) {
+    console.log('Malformed URL - '+'Expecting 5 values but receiving ' + values.length);
+    res.send(400);
+  } else if (values[1].split('.').length != 4) {
+    console.log('IP not valid');
+    res.send(400);
+  } else if (getkey != key){
+    console.log('Unauthorized try');
+    res.send(401);
+  } else {
+    // Change nginx config file
+    console.log('Everything seems to be right');
+    execSync("sed -i '7i server "+ ip + ":" + port + " max_fails=" + maxfails + " timeout=" + timeout + "s;' " + nginx_configfile);
+    console.log('Sending a HUP signal to ' + nginx_PID);
+    //execSync("kill -HUP " + nginx_PID);
+    res.send(200);
   }
-
-  // Change nginx config file
-  execSync("sed -i '7i server "+ ip + ":" + port + " max_fails=" + maxfails + " timeout=" + timeout + "s;' " + nginx_configfile);
-  console.log('Sending a HUP signal to' + pid);
-  execSync("kill -HUP " + nginx_PID);
-  res.send(200);
-  next();
 }
 
 
