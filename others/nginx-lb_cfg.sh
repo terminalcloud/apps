@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to Configure a Nginx Load balancer at Terminal.com
+# Script to Configure a Nginx Load balancer at Terminal.com with automatic app servers generation
 
 # Includes
 wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
@@ -12,6 +12,11 @@ IP=$(/sbin/ifconfig $1 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $
 KEY_file="/opt/loadbalancer/etc/server.key"
 SERVERKEY=$(date | md5sum | cut -d " " -f1)
 [ ! -f "KEY_file" ] && echo $SERVERKEY > "$KEY_file"
+
+# Set defaults
+PORT='80'
+TRIES='3'
+TIMEOUT='60'
 
 # Stacks
 UBUNTU="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
@@ -26,8 +31,6 @@ MYSQL="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
 MYSQLC="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
 MONGODB="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
 
-
-
 select_sid(){
   cd /root
   wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/lb_stack.json
@@ -39,15 +42,15 @@ select_sid(){
   '"4" for Node.js on Ubuntu'
   '"5" for Ruby on Rails on Ubuntu'
   '"6" for DJANGO Stack on Ubuntu'
-  '"0" OTHER - Enter your snapshot ID'
-  read option
+  '"0" OTHER - You have to Enter your snapshot ID'
+  read -p '> ' option
   case $option in
-    1) sed -i "s/sid/$UBUNTU/g" lb_stack.json ;;
-    2) sed -i "s/sid/$CENTOS/g" lb_stack.json ;;
-    3) sed -i "s/sid/$PHP/g" lb_stack.json ;;
-    4) sed -i "s/sid/$NODEJS/g" lb_stack.json ;;
-    5) sed -i "s/sid/$RUBY/g" lb_stack.json ;;
-    6) sed -i "s/sid/$DJANGO/g" lb_stack.json ;;
+    1) sed -i "s/sid/$UBUNTU/g" lb_stack.json && PORT='80' ;;
+    2) sed -i "s/sid/$CENTOS/g" lb_stack.json && PORT='80' ;;
+    3) sed -i "s/sid/$PHP/g" lb_stack.json && PORT='80' ;;
+    4) sed -i "s/sid/$NODEJS/g" lb_stack.json && PORT='3000' ;;
+    5) sed -i "s/sid/$RUBY/g" lb_stack.json && PORT='8000' ;;
+    6) sed -i "s/sid/$DJANGO/g" lb_stack.json && PORT='3000' ;;
     0) custom_sid ;;
     *) echo "Invalid option, assuming 1, Ubuntu basic Image"; sed -i "s/sid/$UBUNTU/g" lb_stack.json ;;
   esac
@@ -55,13 +58,13 @@ select_sid(){
 
 select_number(){
   echo 'How many slaves do you want to create? (each slave is a new Terminal)'
-  read num
+  read -p '> ' num
 
   echo 'What kind of slaves do you want to create?'
   echo '"1" for Small [1CPU] [1.6Gb RAM]'
   echo '"2" for Medium [2CPU] [3.2Gb RAM]'
   echo '"3" for xLarge [4CPU] [6.4Gb RAM]'
-  read kind
+  read -p '> ' kind
   case $kind in
     1) sed -i "s/cpuq/100/g" lb_stack.json && sed -i "s/ramq/1600/g" lb_stack.json ;;
     2) sed -i "s/cpuq/200/g" lb_stack.json && sed -i "s/ramq/3200/g" lb_stack.json ;;
@@ -82,6 +85,13 @@ get_tokens(){
   sed -i "s/atoken/$atoken/g" lb_stack.json
   sed -i "s/sid/$sid/g" lb_stack.json
   sed -i "s/IP/$IP/g" lb_stack.json
+}
+
+
+lb_questions(){
+  read -p "Enter the application port number [Default=$PORT]" port ; port=${port:-$PORT}; PORT=port
+  read -p "Enter the application Max Retries [Default=$TRIES] " tries ; tries=${tries:-$TRIES}; TRIES=tries
+  read -p "Enter the application Timeout [Default=$TIMEOUT seconds] " timeout ; timeout=${timeout:-$TIMEOUT}; TIMEOUT=timeout
 }
 
 create_nodes(){
@@ -105,20 +115,19 @@ custom_sid(){
   echo "Enter the snapshot ID and press \"enter\""
   read sid
   sed -i "s/sid/$sid/g" lb_stack.json ;;
+  echo "Enter the port where your application is listening"
+  read PORT
 }
 
 
 config_curl(){
-  echo "pass"
+  sed -i "s/IP/$IP/g" lb_stack.json
+  sed -i "s/SERVERKEY/$SERVERKEY/g" lb_stack.json
+  sed -i "s/PORT/$PORT/g" lb_stack.json
+  sed -i "s/TRIES/$TRIES/g" lb_stack.json
+  sed -i "s/TIMEOUT/$TIMEOUT/g" lb_stack.json
 }
 
-
-manual_slave(){
-	clear
-	echo "You've selected to create your application nodes manually "
-	echo "You can register your web application server against this load balancer by executing:"
-  echo "curl $IP:5500/$SERVERKEY,application_ip,application_port,load_balancer_retries,load_balancer_timeout"
-}
 
 select_db(){
   rm lb_stack.json
@@ -127,13 +136,21 @@ select_db(){
   '"1" for MySQL on Ubuntu'
   '"2" for MySQL on CentOS'
   '"3" for MongoDB on Ubuntu'
-  read option
+  read -p '> ' option
   case $option in
     1) sed -i "s/sid/$MYSQL/g" lb_stack.json ;;
     2) sed -i "s/sid/$MYSQLC/g" lb_stack.json ;;
     3) sed -i "s/sid/$MONGODB/g" lb_stack.json ;;
     *) echo "Invalid option, assuming 1, MySQL on Ubuntu"; sed -i "s/sid/$MYSQL/g" lb_stack.json ;;
   esac
+}
+
+
+manual_slave(){
+  clear
+  echo "You've selected to create your application nodes manually "
+  echo "You can register your web application server against this load balancer by executing:"
+  echo "curl $IP:5500/$SERVERKEY,application_ip,application_port,load_balancer_retries,load_balancer_timeout"
 }
 
 
