@@ -7,10 +7,15 @@ source terlib.sh || (echo "cannot get the includes"; exit -1)
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+
 # Server Configuration
-IP=$(/sbin/ifconfig $1 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | grep 240)
-KEY_file="/opt/loadbalancer/etc/server.key"
-SERVERKEY=$(date | md5sum | cut -d " " -f1)
+IP="$(/sbin/ifconfig $1 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}' | grep 240)"
+wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/lb_stack.json
+WORKDIR='/root'
+
+# KEY_file (used as LB identification)
+KEY_file='/opt/loadbalancer/etc/server.key'
+SERVERKEY="$(date | md5sum | cut -d " " -f1)"
 [ ! -f "KEY_file" ] && echo $SERVERKEY > "$KEY_file"
 
 # Set defaults
@@ -31,10 +36,9 @@ MYSQL="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
 MYSQLC="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
 MONGODB="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
 
+# Functions
+
 select_sid(){
-  cd /root
-  wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/lb_stack.json
-  clear
   echo 'Please select the basic image for your application'
   '"1" for Ubuntu Basic Image'
   '"2" for CentOS Basic Image'
@@ -45,48 +49,40 @@ select_sid(){
   '"0" OTHER - You have to Enter your snapshot ID'
   read -p '> ' option
   case $option in
-    1) sed -i "s/sid/$UBUNTU/g" lb_stack.json && PORT='80' ;;
-    2) sed -i "s/sid/$CENTOS/g" lb_stack.json && PORT='80' ;;
-    3) sed -i "s/sid/$PHP/g" lb_stack.json && PORT='80' ;;
-    4) sed -i "s/sid/$NODEJS/g" lb_stack.json && PORT='3000' ;;
-    5) sed -i "s/sid/$RUBY/g" lb_stack.json && PORT='8000' ;;
-    6) sed -i "s/sid/$DJANGO/g" lb_stack.json && PORT='3000' ;;
+    1) sid = "$UBUNTU" && PORT='80' ;;
+    2) sid = "$CENTOS" && PORT='80' ;;
+    3) sid = "$PHP"  && PORT='80' ;;
+    4) sid = "$NODEJS" && PORT='3000' ;;
+    5) sid = "$RUBY" && PORT='8000' ;;
+    6) sid = "$DJANGO" && PORT='3000' ;;
     0) custom_sid ;;
-    *) echo "Invalid option, assuming 1, Ubuntu basic Image"; sed -i "s/sid/$UBUNTU/g" lb_stack.json ;;
+    *) echo "Invalid option, assuming 1, Ubuntu basic Image"; sid = "$UBUNTU" && PORT='80' ;;
   esac
 }
 
 select_number(){
-  echo 'How many slaves do you want to create? (each slave is a new Terminal)'
-  read -p '> ' num
+  read -p 'How many servers do you want to create? (each server is a new Terminal): ' num
+}
 
-  echo 'What kind of slaves do you want to create?'
+select_size(){
+  echo 'Select the size of your server/s'
   echo '"1" for Small [1CPU] [1.6Gb RAM]'
   echo '"2" for Medium [2CPU] [3.2Gb RAM]'
   echo '"3" for xLarge [4CPU] [6.4Gb RAM]'
   read -p '> ' kind
   case $kind in
-    1) sed -i "s/cpuq/100/g" lb_stack.json && sed -i "s/ramq/1600/g" lb_stack.json ;;
-    2) sed -i "s/cpuq/200/g" lb_stack.json && sed -i "s/ramq/3200/g" lb_stack.json ;;
-    3) sed -i "s/cpuq/400/g" lb_stack.json && sed -i "s/ramq/6400/g" lb_stack.json ;;
-    *) echo "Invalid option, assuming Small"; sed -i "s/cpuq/100/g" lb_stack.json && sed -i "s/ramq/1600/g" lb_stack.json ;;
+    1) cpuq = '100' && ramq = '1600' ;;
+    2) cpuq = '200' && ramq = '3200' ;;
+    3) cpuq = '400' && ramq = '6400' ;;
+    *) echo "Invalid option, assuming Small"; cpuq = '100' && ramq = '1600' ;;
   esac
 }
 
 get_tokens(){
   /srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
-  echo 'Please copy your API User token, paste it below and press enter:'
-  read utoken
-  echo 'Please copy your API Access token, paste it below and press enter: (if it does not exist please generate it)'
-  read atoken
-  echo 'Trying to generate your application servers'
-
-  sed -i "s/utoken/$utoken/g" lb_stack.json
-  sed -i "s/atoken/$atoken/g" lb_stack.json
-  sed -i "s/sid/$sid/g" lb_stack.json
-  sed -i "s/IP/$IP/g" lb_stack.json
+  read -p  'Please copy your API User token, paste it here and press enter: ' utoken
+  read -p  'Please copy your API Access token, paste it here and press enter: (if it does not exist please generate it)' atoken
 }
-
 
 lb_questions(){
   read -p "Enter the application port number [Default=$PORT]" port ; port=${port:-$PORT}; PORT=port
@@ -112,20 +108,7 @@ custom_sid(){
   echo "For instance, the Ubuntu snapshot URL is: https://www.terminal.com/snapshot/987f8d702dc0a6e8158b48ccd3dec24f819a7ccb2756c396ef1fd7f5b34b7980"
   echo "and the snapshot ID is 987f8d702dc0a6e8158b48ccd3dec24f819a7ccb2756c396ef1fd7f5b34b7980"
   echo ""
-  echo "Enter the snapshot ID and press \"enter\""
-  read sid
-  sed -i "s/sid/$sid/g" lb_stack.json ;;
-  echo "Enter the port where your application is listening"
-  read PORT
-}
-
-
-config_curl(){
-  sed -i "s/IP/$IP/g" lb_stack.json
-  sed -i "s/SERVERKEY/$SERVERKEY/g" lb_stack.json
-  sed -i "s/PORT/$PORT/g" lb_stack.json
-  sed -i "s/TRIES/$TRIES/g" lb_stack.json
-  sed -i "s/TIMEOUT/$TIMEOUT/g" lb_stack.json
+  read -p "Enter the snapshot ID: " sid
 }
 
 
@@ -145,21 +128,38 @@ select_db(){
   esac
 }
 
+config_json(){
+  sed -i "s/utoken/$utoken/g" lb_stack.json
+  sed -i "s/atoken/$atoken/g" lb_stack.json
+  sed -i "s/sid/$sid/g" lb_stack.json
+  sed -i "s/cpuq/$cupq/g" lb_stack.json
+  sed -i "s/ramq/$ramq/g" lb_stack.json
+  sed -i "s/IP/$IP/g" lb_stack.json
+  sed -i "s/SERVERKEY/$SERVERKEY/g" lb_stack.json
+  sed -i "s/PORT/$PORT/g" lb_stack.json
+  sed -i "s/TRIES/$TRIES/g" lb_stack.json
+  sed -i "s/TIMEOUT/$TIMEOUT/g" lb_stack.json
+}
 
-manual_slave(){
+start_listener(){
+  cat | /srv/cloudlabs/scripts/run_in_term.js   << EOF
+  forever /opt/loadbalancer/bin/node-registrar.js
+EOF
+}
+
+manual_proc(){
   clear
   echo "You've selected to create your application nodes manually "
   echo "You can register your web application server against this load balancer by executing:"
   echo "curl $IP:5500/$SERVERKEY,application_ip,application_port,load_balancer_retries,load_balancer_timeout"
 }
 
-
 clear
-echo "Do you want to create the your application Terminals now (y/N)?"
-read n
+read -p "Do you want to create the your application Terminals now (y/N)?" n
+
 case $n in
-    y) auto_slave;;
-    n) manual_slave;;
+    y) auto_proc ;;
+    n) manual_proc ;;
     *) echo "Invalid option, assuming NO" && manual_slave;;
 esac
 
