@@ -121,10 +121,10 @@ select_db(){
   '"3" for MongoDB on Ubuntu'
   read -p '> ' option
   case $option in
-    1) sed -i "s/sid/$MYSQL/g" lb_stack.json ;;
-    2) sed -i "s/sid/$MYSQLC/g" lb_stack.json ;;
-    3) sed -i "s/sid/$MONGODB/g" lb_stack.json ;;
-    *) echo "Invalid option, assuming 1, MySQL on Ubuntu"; sed -i "s/sid/$MYSQL/g" lb_stack.json ;;
+    1) sid = "$MYSQL" ;;
+    2) sid = "$MYSQLC" ;;
+    3) sid = "$MONGODB" ;;
+    *) echo "Invalid option, assuming 1, MySQL on Ubuntu"; sid = "$MYSQL" ;;
   esac
 }
 
@@ -141,11 +141,27 @@ config_json(){
   sed -i "s/TIMEOUT/$TIMEOUT/g" lb_stack.json
 }
 
-start_listener(){
-  cat | /srv/cloudlabs/scripts/run_in_term.js   << EOF
-  forever /opt/loadbalancer/bin/node-registrar.js
-EOF
+# Main Functions
+
+auto_proc(){
+  select_sid
+  select_number
+  select_size
+  get_tokens
+  lb_questions
+  config_json
+  create_nodes
+  read -p "Do you want to create DB servers? [y/N]: " db ; db=${db:-"n"};
+  if ["$db" == "y"]; then
+    select_db
+    select_number
+    select_size
+    config_json
+    create_nodes
+  fi
 }
+
+
 
 manual_proc(){
   clear
@@ -160,7 +176,7 @@ read -p "Do you want to create the your application Terminals now (y/N)?" n
 case $n in
     y) auto_proc ;;
     n) manual_proc ;;
-    *) echo "Invalid option, assuming NO" && manual_slave;;
+    *) echo "Invalid option, assuming NO" && manual_proc;;
 esac
 
 
