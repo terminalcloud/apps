@@ -6,7 +6,7 @@
 
 
 var nginx_configfile = 'testfile.conf';
-var KEY_file = 'key.txt';
+var KEY_file = 'server.key';
 var PID_file = 'nginx.pid';
 var restify = require('restify');
 var execSync = require("exec-sync");
