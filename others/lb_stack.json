@@ -1,0 +1,12 @@
+{
+  "user_token": "utoken",
+  "access_token": "atoken",
+  "snapshot_id": "sid",
+  "cpu": cpuq,
+  "ram": ramq,
+  "temporary": false,
+  "name": "balanced node",
+  "autopause": false,
+  "startup_script": "curl IP:5500/SERVERKEY,$(/sbin/ifconfig $1 | grep 'inet addr' | awk -F: '{print $2}' | awk '{print $1}' | grep 240),PORT,TRIES,TIMEOUT",
+  "custom_data": "balanced node"
+}
