@@ -86,9 +86,9 @@ get_tokens(){
 }
 
 lb_questions(){
-  read -p "Enter the application port number [Default=$PORT]" port ; port=${port:-$PORT}; PORT=port
-  read -p "Enter the application Max Retries [Default=$TRIES] " tries ; tries=${tries:-$TRIES}; TRIES=tries
-  read -p "Enter the application Timeout [Default=$TIMEOUT seconds] " timeout ; timeout=${timeout:-$TIMEOUT}; TIMEOUT=timeout
+  read -p "Enter the application port number [Default=$PORT]" port ; port=${port:-$PORT}; PORT=$port
+  read -p "Enter the application Max Retries [Default=$TRIES] " tries ; tries=${tries:-$TRIES}; TRIES=$tries
+  read -p "Enter the application Timeout [Default=$TIMEOUT seconds] " timeout ; timeout=${timeout:-$TIMEOUT}; TIMEOUT=$timeout
 }
 
 create_nodes(){
@@ -142,6 +142,10 @@ config_json(){
   sed -i "s/PORT/$PORT/g" lb_stack.json
   sed -i "s/TRIES/$TRIES/g" lb_stack.json
   sed -i "s/TIMEOUT/$TIMEOUT/g" lb_stack.json
+
+  echo $PORT
+  echo $TIMEOUT
+  echo $TRIES
 }
 
 # Main Functions
