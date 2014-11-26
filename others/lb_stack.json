@@ -7,6 +7,6 @@
   "temporary": false,
   "name": "balanced node",
   "autopause": false,
-  "startup_script": "apt-get update; apt-get -y install curl; curl IP:5500/reg/SERVERKEY,$(/sbin/ifconfig $1 | grep 'inet addr' | awk -F: '{print $2}' | awk '{print $1}' | grep 240),PORT,TRIES,TIMEOUT",
+  "startup_script": "command",
   "custom_data": "balanced node"
 }
