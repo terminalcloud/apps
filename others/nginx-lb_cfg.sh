@@ -115,7 +115,7 @@ custom_sid(){
 
 select_db(){
   rm lb_stack.json
-  wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/lb_stack.json
+  wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/others/lb_stack.json
   echo "Select the DB server flavor"
   echo '"1" for MySQL on Ubuntu'
   echo '"2" for MySQL on CentOS'
