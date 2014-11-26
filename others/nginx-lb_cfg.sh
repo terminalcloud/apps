@@ -165,6 +165,7 @@ auto_proc(){
     select_number
     select_size
     config_json
+    sed -i '10d' lb_stack.json
     create_nodes
     ;;
   esac
