@@ -23,9 +23,11 @@ install(){
   cd $INSTALL_PATH/bin
   wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/node-registrar.js
   wget -q -N  https://raw.githubusercontent.com/terminalcloud/apps/master/others/nginx-lb_cfg.sh
-  apt-get -y install nodejs npm build-essential libssl-dev
+  chmod +x *
+  apt-get -y install nodejs npm build-essential libssl-dev nginx
   npm install exec-sync restify
   npm install -g forever
+  ln -s $INSTALL_PATH/etc/nginx-lb.conf /etc/nginx/sites-enabled/nginx-lb.conf
 }
 
 show(){

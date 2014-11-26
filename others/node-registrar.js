@@ -5,9 +5,9 @@
 // values (csv) = key,ip,port,maxfails,timeout
 
 
-var nginx_configfile = 'testfile.conf';
-var KEY_file = 'server.key';
-var PID_file = 'nginx.pid';
+var nginx_configfile = '/opt/loadbalancer/etc/nginx-lb.conf';
+var KEY_file = '/opt/loadbalancer/etc/server.key';
+var PID_file = '/opt/loadbalancer/etc/nginx.pid';
 var restify = require('restify');
 var execSync = require("exec-sync");
 var fs = require('fs');
@@ -39,7 +39,7 @@ function register(req, res, next) {
     console.log('Everything seems to be right');
     execSync("sed -i '7i server "+ ip + ":" + port + " max_fails=" + maxfails + " timeout=" + timeout + "s;' " + nginx_configfile);
     console.log('Sending a HUP signal to ' + nginx_PID);
-    //execSync("kill -HUP " + nginx_PID);
+    execSync("kill -HUP " + nginx_PID);
     res.send(200);
   }
 }

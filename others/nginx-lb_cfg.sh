@@ -18,23 +18,24 @@ KEY_file='/opt/loadbalancer/etc/server.key'
 SERVERKEY="$(date | md5sum | cut -d " " -f1)"
 [ ! -f "KEY_file" ] && echo $SERVERKEY > "$KEY_file"
 
+
 # Set defaults
 PORT='80'
 TRIES='3'
 TIMEOUT='60'
 
 # Stacks
-UBUNTU="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
-CENTOS="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
-PHP="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
-NODEJS="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
-RUBY="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
-DJANGO="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
+UBUNTU="987f8d702dc0a6e8158b48ccd3dec24f819a7ccb2756c396ef1fd7f5b34b7980"
+CENTOS="2dca905d923d8154c555c5271cbba75927cb3fd705aba1eb9d93cbd59e3ef100"
+PHP="987f8d702dc0a6e8158b48ccd3dec24f819a7ccb2756c396ef1fd7f5b34b7980"
+NODEJS="79dd00f681c09622a5271cc45213ef642f9e8efb790ca5235a3955192ae2b332" # This includes Mongo!
+RUBY="eba99a0089ffe462b0327492eb5687af5b8cb71b09b250876732301726d497f3"
+DJANGO="3727fc9eda723e827a6f7a4dadb452158bb7b9952a6fcfe7f4ce2e177515e66f"
 
 # DBs
-MYSQL="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
-MYSQLC="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
-MONGODB="264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02"
+MYSQL="987f8d702dc0a6e8158b48ccd3dec24f819a7ccb2756c396ef1fd7f5b34b7980"
+MYSQLC="2dca905d923d8154c555c5271cbba75927cb3fd705aba1eb9d93cbd59e3ef100"
+MONGODB="79dd00f681c09622a5271cc45213ef642f9e8efb790ca5235a3955192ae2b332"
 
 # Functions
 
@@ -104,7 +105,7 @@ create_nodes(){
    }
 
 custom_sid(){
-  echo "Please provide the snapshot ID to be used as application server image, based on the snapshot URL"
+  echo "Please provide the snapshot ID to be used as server image, based on the snapshot URL"
   echo "For instance, the Ubuntu snapshot URL is: https://www.terminal.com/snapshot/987f8d702dc0a6e8158b48ccd3dec24f819a7ccb2756c396ef1fd7f5b34b7980"
   echo "and the snapshot ID is 987f8d702dc0a6e8158b48ccd3dec24f819a7ccb2756c396ef1fd7f5b34b7980"
   echo ""
@@ -119,11 +120,13 @@ select_db(){
   '"1" for MySQL on Ubuntu'
   '"2" for MySQL on CentOS'
   '"3" for MongoDB on Ubuntu'
+  '"0" OTHER - You have to Enter your snapshot ID'
   read -p '> ' option
   case $option in
     1) sid = "$MYSQL" ;;
     2) sid = "$MYSQLC" ;;
     3) sid = "$MONGODB" ;;
+    0) custom_sid ;;
     *) echo "Invalid option, assuming 1, MySQL on Ubuntu"; sid = "$MYSQL" ;;
   esac
 }
