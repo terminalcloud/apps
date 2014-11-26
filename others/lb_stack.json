@@ -7,6 +7,6 @@
   "temporary": false,
   "name": "balanced node",
   "autopause": false,
-  "startup_script": "wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/nginx-lb_reg.sh && bash nginx-lb_reg.sh SERVERKEY PORT TRIES TIMEOUT",
+  "startup_script": "wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/nginx-lb_reg.sh && bash nginx-lb_reg.sh IP SERVERKEY PORT TRIES TIMEOUT",
   "custom_data": "balanced node"
 }
