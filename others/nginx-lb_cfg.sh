@@ -135,7 +135,7 @@ config_json(){
   sed -i "s/utoken/$utoken/g" lb_stack.json
   sed -i "s/atoken/$atoken/g" lb_stack.json
   sed -i "s/sid/$sid/g" lb_stack.json
-  sed -i "s/cpuq/$cupq/g" lb_stack.json
+  sed -i "s/cpuq/$cpuq/g" lb_stack.json
   sed -i "s/ramq/$ramq/g" lb_stack.json
   sed -i "s/IP/$IP/g" lb_stack.json
   sed -i "s/SERVERKEY/$SERVERKEY/g" lb_stack.json
@@ -155,13 +155,15 @@ auto_proc(){
   config_json
   create_nodes
   read -p "Do you want to create DB servers? [y/N]: " db ; db=${db:-"n"};
-  if ["$db" == "y"]; then
+  case $db in
+    y)
     select_db
     select_number
     select_size
     config_json
     create_nodes
-  fi
+    ;;
+  esac
 }
 
 
@@ -170,7 +172,7 @@ manual_proc(){
   clear
   echo "You've selected to create your application nodes manually "
   echo "You can register your web application server against this load balancer by executing:"
-  echo "curl $IP:5500/$SERVERKEY,application_ip,application_port,load_balancer_retries,load_balancer_timeout"
+  echo "curl $IP:5500/reg/$SERVERKEY,application_ip,application_port,load_balancer_retries,load_balancer_timeout"
 }
 
 clear
