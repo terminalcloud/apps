@@ -1,9 +1,8 @@
 #!/bin/bash
 # Script to register a client node to a terminal.com load balancer (made from the nginx load balancer snapshot)
 
-#Install dependences
-apt-get update
-apt-get -y install curl
+# Check/Install dependences
+which curl || apt-get -y install curl || yum -y install curl
 
 # Get command line arguments
 HOST=$1
