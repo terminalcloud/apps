@@ -7,7 +7,7 @@
 
 var nginx_configfile = '/opt/loadbalancer/etc/nginx-lb.conf';
 var KEY_file = '/opt/loadbalancer/etc/server.key';
-var PID_file = '/opt/loadbalancer/etc/nginx.pid';
+var PID_file = '/var/run/nginx.pid';
 var restify = require('restify');
 var execSync = require("exec-sync");
 var fs = require('fs');

@@ -41,13 +41,13 @@ MONGODB="79dd00f681c09622a5271cc45213ef642f9e8efb790ca5235a3955192ae2b332"
 
 select_sid(){
   echo 'Please select the basic image for your application'
-  '"1" for Ubuntu Basic Image'
-  '"2" for CentOS Basic Image'
-  '"3" for PHP and Apache on Ubuntu'
-  '"4" for Node.js on Ubuntu'
-  '"5" for Ruby on Rails on Ubuntu'
-  '"6" for DJANGO Stack on Ubuntu'
-  '"0" OTHER - You have to Enter your snapshot ID'
+  echo '"1" for Ubuntu Basic Image'
+  echo '"2" for CentOS Basic Image'
+  echo '"3" for PHP and Apache on Ubuntu'
+  echo '"4" for Node.js on Ubuntu'
+  echo '"5" for Ruby on Rails on Ubuntu'
+  echo '"6" for DJANGO Stack on Ubuntu'
+  echo '"0" OTHER - You have to Enter your snapshot ID'
   read -p '> ' option
   case $option in
     1) sid = "$UBUNTU" && PORT='80' ;;
@@ -117,10 +117,10 @@ select_db(){
   rm lb_stack.json
   wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/lb_stack.json
   echo "Select the DB server flavor"
-  '"1" for MySQL on Ubuntu'
-  '"2" for MySQL on CentOS'
-  '"3" for MongoDB on Ubuntu'
-  '"0" OTHER - You have to Enter your snapshot ID'
+  echo '"1" for MySQL on Ubuntu'
+  echo '"2" for MySQL on CentOS'
+  echo '"3" for MongoDB on Ubuntu'
+  echo '"0" OTHER - You have to Enter your snapshot ID'
   read -p '> ' option
   case $option in
     1) sid = "$MYSQL" ;;
