@@ -4,9 +4,9 @@
 
 ---
 
-## About PRODUCT_NAME
+## About nginx-lb
 
-PRODUCT_NAME is
+nginx-lb is
 
 ---
 
@@ -18,12 +18,7 @@ PRODUCT_NAME is
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "PRODUCT_NAME Admin login" and login with the credentials provided (see below).
-
-### Credentials
-
-- username: `admin`
-- password: `t3rminal`
+Usage Section
 
 ---
 
@@ -33,7 +28,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ## Documentation
 
-- [PRODUCT_NAME website]()
+- [nginx-lb website]()
 - [Documentation]()
 
 ---
@@ -41,8 +36,8 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/PRODUCT_NAME_installer.sh && bash PRODUCT_NAME_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/nginx-lb_installer.sh && bash nginx-lb_installer.sh`
 
 ---
 
-#### Thanks for using PRODUCT_NAME at Terminal.com!
+#### Thanks for using nginx-lb at Terminal.com!
