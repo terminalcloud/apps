@@ -28,6 +28,8 @@ install(){
   npm install exec-sync restify
   npm install -g forever
   ln -s $INSTALL_PATH/etc/nginx-lb.conf /etc/nginx/sites-enabled/nginx-lb.conf
+  ln -s /var/run/nginx/nginx.pid $INSTALL_PATH/etc/nginx.pid
+  service nginx restart
 }
 
 show(){
