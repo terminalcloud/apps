@@ -50,14 +50,14 @@ select_sid(){
   echo '"0" OTHER - You have to Enter your snapshot ID'
   read -p '> ' option
   case $option in
-    1) sid = "$UBUNTU" && PORT='80' ;;
-    2) sid = "$CENTOS" && PORT='80' ;;
-    3) sid = "$PHP"  && PORT='80' ;;
-    4) sid = "$NODEJS" && PORT='3000' ;;
-    5) sid = "$RUBY" && PORT='8000' ;;
-    6) sid = "$DJANGO" && PORT='3000' ;;
+    1) sid="$UBUNTU" && PORT='80' ;;
+    2) sid="$CENTOS" && PORT='80' ;;
+    3) sid="$PHP"  && PORT='80' ;;
+    4) sid="$NODEJS" && PORT='3000' ;;
+    5) sid="$RUBY" && PORT='8000' ;;
+    6) sid="$DJANGO" && PORT='3000' ;;
     0) custom_sid ;;
-    *) echo "Invalid option, assuming 1, Ubuntu basic Image"; sid = "$UBUNTU" && PORT='80' ;;
+    *) echo "Invalid option, assuming 1, Ubuntu basic Image"; sid="$UBUNTU" && PORT='80' ;;
   esac
 }
 
@@ -72,10 +72,10 @@ select_size(){
   echo '"3" for xLarge [4CPU] [6.4Gb RAM]'
   read -p '> ' kind
   case $kind in
-    1) cpuq = '100' && ramq = '1600' ;;
-    2) cpuq = '200' && ramq = '3200' ;;
-    3) cpuq = '400' && ramq = '6400' ;;
-    *) echo "Invalid option, assuming Small"; cpuq = '100' && ramq = '1600' ;;
+    1) cpuq='100' && ramq='1600' ;;
+    2) cpuq='200' && ramq='3200' ;;
+    3) cpuq='400' && ramq='6400' ;;
+    *) echo "Invalid option, assuming Small"; cpuq='100' && ramq='1600' ;;
   esac
 }
 
@@ -123,11 +123,11 @@ select_db(){
   echo '"0" OTHER - You have to Enter your snapshot ID'
   read -p '> ' option
   case $option in
-    1) sid = "$MYSQL" ;;
-    2) sid = "$MYSQLC" ;;
-    3) sid = "$MONGODB" ;;
+    1) sid="$MYSQL" ;;
+    2) sid="$MYSQLC" ;;
+    3) sid="$MONGODB" ;;
     0) custom_sid ;;
-    *) echo "Invalid option, assuming 1, MySQL on Ubuntu"; sid = "$MYSQL" ;;
+    *) echo "Invalid option, assuming 1, MySQL on Ubuntu"; sid="$MYSQL" ;;
   esac
 }
 
