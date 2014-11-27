@@ -33,8 +33,8 @@ RUBY="eba99a0089ffe462b0327492eb5687af5b8cb71b09b250876732301726d497f3"
 DJANGO="3727fc9eda723e827a6f7a4dadb452158bb7b9952a6fcfe7f4ce2e177515e66f"
 
 # DBs
-MYSQL="987f8d702dc0a6e8158b48ccd3dec24f819a7ccb2756c396ef1fd7f5b34b7980"
-MYSQLC="2dca905d923d8154c555c5271cbba75927cb3fd705aba1eb9d93cbd59e3ef100"
+MYSQL="4e6ce561ffd506c8daff31f702a22ce366c91b35fe84cc537ffd172847914f60"
+MARIADB="2dca905d923d8154c555c5271cbba75927cb3fd705aba1eb9d93cbd59e3ef100"
 MONGODB="79dd00f681c09622a5271cc45213ef642f9e8efb790ca5235a3955192ae2b332"
 
 # Functions
@@ -118,9 +118,9 @@ select_db(){
   rm lb_stack.json
   wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/others/lb_stack.json
   echo "Select the DB server flavor"
-  echo '"1" for MySQL on Ubuntu'
-  echo '"2" for MySQL on CentOS'
-  echo '"3" for MongoDB on Ubuntu'
+  echo '"1" for MySQL Server'
+  echo '"2" for MariaDB'
+  echo '"3" for MongoDB'
   echo '"0" OTHER - You have to Enter your snapshot ID'
   read -p '> ' option
   case $option in
