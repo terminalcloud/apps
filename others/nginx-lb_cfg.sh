@@ -82,7 +82,7 @@ select_size(){
 get_tokens(){
   /srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
   read -p  'Please copy your API User token, paste it here and press enter: ' utoken
-  read -p  'Please copy your API Access token, paste it here and press enter: (if it does not exist please generate it)' atoken
+  read -p  'Please copy your API Access token, paste it here and press enter: (if it does not exist please generate it) ' atoken
 }
 
 lb_questions(){
