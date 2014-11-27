@@ -76,4 +76,4 @@ This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/F
 
 ---
 
-#### Thanks for using nginx-lb at Terminal.com!
+#### Thanks for using this snapshot at Terminal.com!
