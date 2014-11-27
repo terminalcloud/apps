@@ -40,9 +40,9 @@ function register(req, res, next) {
     execSync("sed -i '7i server "+ ip + ":" + port + " max_fails=" + maxfails + " fail_timeout=" + timeout + "s;' " + nginx_configfile);
     console.log('Sending a HUP signal to ' + nginx_PID);
     execSync("kill -HUP " + nginx_PID);
-    console.log("exporting NFS share to " + ip)
-    execSync("sed -i '1i /shared    " + ip + "(rw,sync,no_subtree_check)' /etc/exports");
-    execSync("exportfs -a")
+    //console.log("exporting NFS share to " + ip)
+    //execSync("sed -i '1i /shared    " + ip + "(rw,sync,no_subtree_check)' /etc/exports");
+    //execSync("exportfs -a")
     res.send(200);
   }
 }

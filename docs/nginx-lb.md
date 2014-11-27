@@ -65,7 +65,7 @@ A tipical registration request using the `curl` command is: ` # curl $LB_IP:5500
 
 ## Documentation
 
-- [Nginx Documetation](http://nginx.org/en/docs/)
+- [Nginx Documentation](http://nginx.org/en/docs/)
 
 ---
 

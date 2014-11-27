@@ -30,8 +30,8 @@ install(){
   ln -s $INSTALL_PATH/etc/nginx-lb.conf /etc/nginx/sites-enabled/nginx-lb.conf
   rm /etc/nginx/sites-enabled/default
   ln -s /var/run/nginx.pid $INSTALL_PATH/etc/nginx.pid
-  apt-get -y install nfs-server
-  mkdir -p /shared
+  #apt-get -y install nfs-server
+  #mkdir -p /shared
 }
 
 show(){

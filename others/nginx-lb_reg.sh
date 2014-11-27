@@ -3,7 +3,7 @@
 
 # Check/Install dependences
 which curl || apt-get -y install curl || yum -y install curl
-apt-get -y install nfs-common || yum -y install nfs-utils
+# apt-get -y install nfs-common || yum -y install nfs-utils
 
 # Get command line arguments
 HOST=$1
