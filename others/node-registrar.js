@@ -41,7 +41,7 @@ function register(req, res, next) {
     console.log('Sending a HUP signal to ' + nginx_PID);
     execSync("kill -HUP " + nginx_PID);
     console.log("exporting NFS share to " + ip)
-    execSync("echo '/shared    " + ip + "(rw,sync,no_subtree_check)' >> /etc/exports");
+    execSync("sed '1i /shared    " + ip + "(rw,sync,no_subtree_check)' /etc/exports");
     execSync("exportfs -a")
     res.send(200);
   }
