@@ -1,6 +1,6 @@
 # **Nginx Automated Load Balancer** Terminal.com Snapshot
 
-*A customized load-balancer snapshot with automation add-ons*
+*A customized Nginx load-balancer snapshot with automation add-ons*
 
 ---
 
@@ -43,7 +43,7 @@ This was created to show how to use Terminal.com to extend your infrastructure e
 
 ### Basics
 
-You can use this snapshot in different ways. Use the automatic Terminal generation or just use it as base for you own load-balancerd environment configuration.
+You can use this snapshot in different ways. Use the automatic Terminal generation or just use it as base for you own "load-balanced" environment configuration.
 
 - Just start a new Terminal from this snapshot and follow the on-screen instructions.
 - Use the script to create new snapshots for your application servers directly from shared or custom snapshots.
@@ -59,7 +59,7 @@ A tipical registration request using the `curl` command is: ` # curl $LB_IP:5500
 - $APP_IP is your application server node IP (the node to be registered against the Load Balancer).
 - $APP_PORT is the port where your application is listening on the application server node to be registered.
 - $LB_RETRIES is a integer value that represents the amount of retries that Nginx will try to make to the current node before mark it as faulted.
-- $LB_TIMEOUR is a integer value that represents the amount of time, in seconds that Nginx will wait before mark the current node as faulted if it does not respond.
+- $LB_TIMEOUT is a integer value that represents the amount of time, in seconds that Nginx will wait before mark the current node as faulted if it does not respond.
 
 ---
 
