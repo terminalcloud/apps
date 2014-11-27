@@ -26,6 +26,7 @@ This was created to show how to use Terminal.com to extend your infrastructure e
 
 ## Main Features
 
+- Nginx load balancer configuration ready to use.
 - Automatic load balancer nodes creation based on common stacks (Lamp on Ubuntu, Lamp on Centos, NodeJS, Ruby, etc)
 - Automatic load balancer registration.
 - Automatic NFS share authorization.
@@ -40,18 +41,31 @@ This was created to show how to use Terminal.com to extend your infrastructure e
 
 ## Usage
 
-Usage Section
+### Basics
 
----
+You can use this snapshot in different ways. Use the automatic Terminal generation or just use it as base for you own load-balancerd environment configuration.
 
-![1](IMAGE_URL)
+- Just start a new Terminal from this snapshot and follow the on-screen instructions.
+- Use the script to create new snapshots for your application servers directly from shared or custom snapshots.
+- Use the Node.js registration app to add other working Terminals and balance your web load accross your infrastructure.
+
+
+### Advanced usage - Automatic registration
+In the second tap, the Node.js registration server is listening. You can use cURL ro register new servers on this load balancer from clients.
+A tipical registration request using the `curl` command is: ` # curl $LB_IP:5500/reg/$SERVER_KEY,$APP_IP,$APP_PORT,$LB_RETRIES,$LB_TIMEOUT`; where:
+
+- $LB_IP is the Load Balancer server IP.
+- $SERVER_KEY is a string generated at the time your Load Balancer Terminal is created. You can find it at /opt/loadbalancer/etc/server.key.
+- $APP_IP is your application server node IP (the node to be registered against the Load Balancer).
+- $APP_PORT is the port where your application is listening on the application server node to be registered.
+- $LB_RETRIES is a integer value that represents the amount of retries that Nginx will try to make to the current node before mark it as faulted.
+- $LB_TIMEOUR is a integer value that represents the amount of time, in seconds that Nginx will wait before mark the current node as faulted if it does not respond.
 
 ---
 
 ## Documentation
 
-- [nginx-lb website]()
-- [Documentation]()
+- [Nginx Documetation](http://nginx.org/en/docs/)
 
 ---
 

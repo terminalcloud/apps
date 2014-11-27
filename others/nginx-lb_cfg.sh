@@ -142,10 +142,6 @@ config_json(){
   sed -i "s/PORT/$PORT/g" lb_stack.json
   sed -i "s/TRIES/$TRIES/g" lb_stack.json
   sed -i "s/TIMEOUT/$TIMEOUT/g" lb_stack.json
-
-  echo $PORT
-  echo $TIMEOUT
-  echo $TRIES
 }
 
 # Main Functions
