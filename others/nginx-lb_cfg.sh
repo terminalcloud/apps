@@ -162,6 +162,7 @@ auto_proc(){
     select_size
     config_json
     sed -i '10d' lb_stack.json
+    sed -i 's/balanced\ node/database\ server/g' lb_stack.json
     create_nodes
     ;;
   esac
