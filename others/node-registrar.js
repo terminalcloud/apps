@@ -36,10 +36,13 @@ function register(req, res, next) {
     res.send(401);
   } else {
     // Change nginx config file
-    console.log('Everything seems to be right, Registering $ip as a load-balanced node');
+    console.log('Everything seems to be right, Registering ' + ip + ' as a load-balanced node');
     execSync("sed -i '7i server "+ ip + ":" + port + " max_fails=" + maxfails + " fail_timeout=" + timeout + "s;' " + nginx_configfile);
     console.log('Sending a HUP signal to ' + nginx_PID);
     execSync("kill -HUP " + nginx_PID);
+    console.log("exporting NFS share to " + ip)
+    execSync("echo '/shared    " + ip + "(rw,sync,no_subtree_check)'");
+    execSync("exportfs -a")
     res.send(200);
   }
 }

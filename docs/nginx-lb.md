@@ -1,12 +1,24 @@
-# **Nginx load balanced environment wrapper** Terminal.com Snapshot
+# **Nginx Automated Load Balancer** Terminal.com Snapshot
 
-*MINI_DESC.*
+*A customized load-balancer snapshot with automation add-ons*
 
 ---
 
-## About nginx-lb
+## About this snapshot
 
-nginx-lb is
+This was created to show how to use Terminal.com to extend your infrastructure easily and automatically in a simple way by using simple shell scripts and a trivial node.js application.
+
+
+## Contents
+
+- A wizard script: When you create this snapshot by the first time, a wizard script will be running in a Terminal tab. This script will ask you for some simple questions that will guide you creating new Terminals based on existing snapshots.
+
+- A Node.js node registration server: This is a simple rest API application running on your second tab. This application is running on the port 5500 and will react to a get request with specific parameters. This simple application is located at /opt/loadbalancer/bin/node-registrar.js and you can execute it directly using 'forever' or 'node' commands. All Node dependencies are installed on that specific folder.
+
+- A Nginx server pre-configured: Nginx is already installed on this snapshot and using a configuration file prepared to make it work as a load-balanced proxy. The configuration file is loacated at /opt/loadbalancer/nginx-lb.conf. You may want to chang some parameters and do fine-tune on it based on your application characteristics.
+
+- A client side registration script: Anytime you create a new application Terminal node with the wizard script, this script will run. Using some parameters passed to the Terminal.com API during the Terminals creation, this script will register the node against the load-balancer and it will be automatically.
+
 
 ---
 
