@@ -3,6 +3,7 @@
 
 # Check/Install dependences
 which curl || apt-get -y install curl || yum -y install curl
+apt-get install nfs-common || yum -y install nfs-utils
 
 # Get command line arguments
 HOST=$1
@@ -14,3 +15,6 @@ set -x
 IP=$(ip a | grep 240| awk '{print $2}' | cut -d / -f1)
 # Execute registration
 curl $HOST:5500/reg/"$SERVERKEY,$IP,$PORT,$TRIES,$TIMEOUT"
+mkdir -p /mnt/share
+sleep 2
+mount $HOST:/share /mnt/share
