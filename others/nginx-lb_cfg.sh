@@ -102,6 +102,7 @@ create_nodes(){
     clear
     echo "if you want to add more application servers in the future, you can register them against this load balancer by executing:"
     echo "curl $IP:5500/$SERVERKEY,application_ip,application_port,load_balancer_retries,load_balancer_timeout"
+    echo "Your servers will be regitered in a moment"
    }
 
 custom_sid(){
@@ -191,4 +192,5 @@ esac
 /srv/cloudlabs/scripts/display.sh /root/info.html
 
 # Delete tokens
-rm /root/tokens.json
+[ -f "/root/tokens.json" ] && rm /root/tokens.json
+[ -f "/root/lb_stack.json"] && rm /root/lb_stack.json
