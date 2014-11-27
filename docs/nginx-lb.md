@@ -19,9 +19,6 @@ This was created to show how to use Terminal.com to extend your infrastructure e
 
 - A client side registration script: Anytime you create a new application Terminal node with the wizard script, this script will run. Using some parameters passed to the Terminal.com API during the Terminals creation, this script will register the node against the load-balancer and it will be automatically.
 
-- NFS file server - By default, a NFS server is installed on the load balancer snapshot - The NFS clients will be authorized via the Node.js registration server. When a new Terminal is registered against the load balancer, the local /share folder will be mounted on the client on /mnt/share.
-
-
 ---
 
 ## Main Features
@@ -29,8 +26,6 @@ This was created to show how to use Terminal.com to extend your infrastructure e
 - Nginx load balancer configuration ready to use.
 - Automatic load balancer nodes creation based on common stacks (Lamp on Ubuntu, Lamp on Centos, NodeJS, Ruby, etc)
 - Automatic load balancer registration.
-- Automatic NFS share authorization.
-- Automatic NFS share mounts on clients.
 - Automatic database servers creation based on common images (Mysql, MongoDB, etc)
 - Custom snapshots support for application and db servers.
 - After installation scripts usage.
