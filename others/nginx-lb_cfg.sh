@@ -35,7 +35,8 @@ DJANGO="3727fc9eda723e827a6f7a4dadb452158bb7b9952a6fcfe7f4ce2e177515e66f"
 # DBs
 MYSQL="4e6ce561ffd506c8daff31f702a22ce366c91b35fe84cc537ffd172847914f60"
 MARIADB="a30b5c817de6f45b7ecf9ed183cf8b03500a66c17db4f0217ee36a7789594403"
-MONGODB="79dd00f681c09622a5271cc45213ef642f9e8efb790ca5235a3955192ae2b332"
+MONGODB="c43865e1bb088d2216526addb8f1764744709196ae0e0259a0d7949c9ef43fef"
+REDIS="f4f4b0850772b60573571769552e7f9831b1e18dbbf243f261307e08d92d83de"
 
 # Functions
 
@@ -121,12 +122,14 @@ select_db(){
   echo '"1" for MySQL Server'
   echo '"2" for MariaDB'
   echo '"3" for MongoDB'
+  echo '"4" for Redis'
   echo '"0" OTHER - You have to Enter your snapshot ID'
   read -p '> ' option
   case $option in
     1) sid="$MYSQL" ;;
     2) sid="$MYSQLC" ;;
     3) sid="$MONGODB" ;;
+    4) sid="$REDIS" ;;
     0) custom_sid ;;
     *) echo "Invalid option, assuming 1, MySQL on Ubuntu"; sid="$MYSQL" ;;
   esac
