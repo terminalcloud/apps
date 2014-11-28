@@ -46,7 +46,7 @@ You can use this snapshot in different ways. Use the automatic Terminal generati
 
 
 ### Advanced usage - Automatic registration
-In the second tap, the Node.js registration server is listening. You can use cURL ro register new servers on this load balancer from clients.
+In the second tab, the Node.js registration server is listening. You can use cURL to register new servers on this load balancer from clients.
 A tipical registration request using the `curl` command is: ` # curl $LB_IP:5500/reg/$SERVER_KEY,$APP_IP,$APP_PORT,$LB_RETRIES,$LB_TIMEOUT`; where:
 
 - $LB_IP is the Load Balancer server IP.
