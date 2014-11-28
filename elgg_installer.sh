@@ -22,7 +22,8 @@ install(){
   wget http://elgg.org/download/elgg-1.9.5.zip
   unzip elgg-1.9.5.zip
   mv elgg-1.9.5 elgg
-  chown -R www-data:www-data elgg
+  mkdir /var/www/data
+  chown -R www-data:www-data /var/www
   apache_install
   apache_default_vhost elgg.conf $INSTALL_PATH/elgg
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini

@@ -7,6 +7,7 @@
 ## About Elgg
 
 **Elgg** is an open source social networking engine that provides a robust framework on which to build all kinds of social environments, from a campus wide social network for your university, school or college or an internal collaborative platform for your organization through to a brand-building communications tool for your company and its clients.
+
 ---
 
 ## Main Features
