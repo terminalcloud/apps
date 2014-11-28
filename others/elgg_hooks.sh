@@ -4,6 +4,9 @@ name="elgg"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Update domain in db
+mysql -uroot -proot elgg -e"UPDATE elgg_sites_entity SET url='http://$(hostname)-80.terminal.com/' WHERE guid='1';"
+
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
