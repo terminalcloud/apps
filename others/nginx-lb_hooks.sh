@@ -38,7 +38,7 @@ sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Run the configuration utility
 cat | /srv/cloudlabs/scripts/run_in_term.js  << EOF
-sleep 3
+sleep 2 && clear
 /opt/loadbalancer/bin/nginx-lb_cfg.sh
 EOF
 
