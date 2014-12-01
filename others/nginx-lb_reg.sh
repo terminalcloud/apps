@@ -15,6 +15,3 @@ set -x
 IP=$(ip a | grep 240| awk '{print $2}' | cut -d / -f1)
 # Execute registration
 curl $HOST:5500/reg/"$SERVERKEY,$IP,$PORT,$TRIES,$TIMEOUT"
-mkdir -p /mnt/share
-sleep 2
-mount $HOST:/share /mnt/share
