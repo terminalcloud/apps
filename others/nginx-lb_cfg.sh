@@ -196,4 +196,4 @@ esac
 
 # Delete tokens
 [ -f "/root/tokens.json" ] && rm /root/tokens.json
-[ -f "/root/lb_stack.json" ] && rm /root/lb_stack.json
+[ -f "/root/lb_stack.json" ] && echo "rm /root/lb_stack.json"
