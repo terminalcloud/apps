@@ -6,9 +6,7 @@
 
 ## About Tarantula
 
-Tarantula is
-
-Tarantula is a free tool for managing software testing. It's licensed as open source software under GNU GPLv3.
+**Tarantula** is a free tool for managing software testing. It's licensed as open source software under GNU GPLv3.
 
 Tarantula aims to be the best open source test management tool, especially in:
 - Agile Testing
