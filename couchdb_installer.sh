@@ -15,7 +15,8 @@ install(){
   # Procedure:
   add-apt-repository ppa:couchdb/stable -y
   apt-get update
-  apt-get -y install apache-couchdb
+  apt-get -y install couchdb
+  sed -i 's/127\.0\.0\.1/0\.0\.0\.0/g' /etc/couchdb/default.ini
 }
 
 show(){

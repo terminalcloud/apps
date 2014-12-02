@@ -14,7 +14,7 @@ CouchDB is often categorized as a “NoSQL” database, a term that became incre
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Web Administration Console" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Web administration console" and login with the credentials provided (look for "login" in the lower right corner of the web administration console).
 
 ### Credentials
 
