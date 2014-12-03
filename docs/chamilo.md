@@ -6,7 +6,7 @@
 
 ## About Chamilo
 
-**Chamilo** is a project that opts for free software (meaning open source with a high ethical goal). It aims at bringing you the best e-learning and collaboration platform in the open source world. Chamilo LMS is an improved, mature and freeer version of a software created in 2001.
+**Chamilo** is a project that opts for free software (meaning open source with a high ethical goal). It aims at bringing you the best e-learning and collaboration platform in the open source world. Chamilo LMS is an improved, mature and freer version of a software created in 2001.
 
 ---
 
@@ -35,7 +35,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ---
 
-![1](http://i.imgur.com/LzLiKft.png)
+![1](http://i.imgur.com/nEWYDjg.png)
 
 ---
 
