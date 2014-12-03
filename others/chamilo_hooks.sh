@@ -4,8 +4,9 @@ name="chamilo"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
-sed -i "s/terminalservername/$(hostname)/g" main/inc/conf/configuration.dist.php
-sed -i "s/terminalservername/$(hostname)/g" main/inc/conf/configuration.php
+# Update URLS
+sed -i "s/terminalservername/$(hostname)/g" /var/www/chamilo/main/inc/conf/configuration.dist.php
+sed -i "s/terminalservername/$(hostname)/g" /var/www/chamilo/main/inc/conf/configuration.php
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
