@@ -4,9 +4,8 @@ name="x2crm"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
-
 # Update URL in config files
-#sed -i "s/terminalservername/$(hostname)/g" /var/www/iko/applications/config.php
+sed -i "s/terminalservername/$(hostname)/g" /var/www/x2crm/webConfig.php
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md

@@ -6,13 +6,23 @@
 
 ## About X2CRM - X2Engine CE
 
-X2CRM is a free open source CRM software project created by X2Engine, Inc. in Santa Cruz, CA. X2Engine CRM offers a full and powerful customer relationship management application, freely sharing the open source code through a git repository for everyone to utilize and customize. X2Engine also offers commercial editions of the application which build on the open source CRM to include marketing and sales force automation, advanced web and email tracking, enterprise level user security, and more. Open Source X2CRM has expanded across the globe, reaching over ten thousand installations across more than 160 countries.
+X2CRM is a free open source CRM software project created by X2Engine, Inc. in Santa Cruz, CA. X2Engine CRM offers a full and powerful customer relationship management application, freely sharing the open source code through a git repository for everyone to utilize and customize.
+
+X2Engine also offers commercial editions of the application which build on the open source CRM to include marketing and sales force automation, advanced web and email tracking, enterprise level user security, and more. Open Source X2CRM has expanded across the globe, reaching over ten thousand installations across more than 160 countries.
 
 ---
 
 ## Main Features
 
-- FEATURES
+- Full contact management.
+- Account management.
+- Tasks management.
+- Service module.
+- Developer tools. (Import/Exporter and X2Packager)
+- Administration tools.
+- Marketing tools.
+- Workflow process funnel and process pipeline.
+- Time tracking, call logging and event scheduler.
 
 ---
 
