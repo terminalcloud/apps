@@ -1,6 +1,6 @@
 # **Fedena** Terminal.com Snapshot
 
-*School management software, made to fit the needs of students, professors and institutions*
+*School management software, made to fit the needs of students, professors and institutions.*
 
 ---
 
