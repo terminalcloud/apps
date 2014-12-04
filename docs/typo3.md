@@ -11,6 +11,7 @@
 It's used internationally to build and manage websites of all types, from small sites for non-profits to multilingual enterprise solutions for large corporations.
 
 No matter if you want to start a small but fancy website for your business or non-profit organization, need to grow your business by building a large and scaleable multi-lingual portal for your global enterprise or want to publish content across all kinds of devices including mobile, TYPO3 CMS is an excellent choice, enabling you to manage your content and assets.
+
 ---
 
 ## Main Features
@@ -25,6 +26,7 @@ No matter if you want to start a small but fancy website for your business or no
 - Granular Access Rights.
 - HTML5 & Mobile Ready.
 - High Extendibility. Around 6,000 free extensions.
+
 ---
 
 ## Usage
