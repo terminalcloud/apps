@@ -1,18 +1,13 @@
 # **Tattler** Terminal.com Snapshot
 
-*MINI_DESC.*
+*Open source topic web monitoring tool.*
 
 ---
 
 ## About Tattler
 
-Tattler is
-
----
-
-## Main Features
-
-- FEATURES
+**Tattler** is an open source topic monitoring tool for today's Web. Tattler finds and aggregates content from the Web on the topics you want. Using semantic Web technologies, Tattler mines news, websites, blogs, multimedia sites, and other social media like Twitter, to find mentions of the issues most relevant to a journalist, researcher, advocate or communications professional.
+Built and distributed on open source Drupal, Tattler's allows a user to easily filter, organize and share content gathered from the Web.
 
 ---
 

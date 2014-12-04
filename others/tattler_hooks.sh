@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="typo3"
+name="tattler"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
