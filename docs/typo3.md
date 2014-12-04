@@ -33,14 +33,17 @@ No matter if you want to start a small but fancy website for your business or no
 
 Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "TYPO3 Admin login" and login with the credentials provided (see below).
 
+On your fist run, you will need to select a package to install or just start from a clean theme. The installation of a new package can take up to two minutes.
+
 ### Credentials
 
 - username: `admin`
 - password: `t3rminal`
 
+
 ---
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/AZKsk4Q.png)
 
 ---
 
