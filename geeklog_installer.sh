@@ -17,7 +17,7 @@ install(){
   mysql_install
   mysql_setup geeklog geeklog terminal
   cd $INSTALL_PATH
-  wget -O geeklog-2.1.0.tar.gz https://www.geeklog.net/filemgmt/upload_dir/geeklog-2.1.0.tar.gz
+  wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/geeklog-2.1.0.tar.gz
   tar -xzf geeklog-2.1.0.tar.gz && rm geeklog-2.1.0.tar.gz
   mv geeklogcms-src-master geeklog
   chown -R www-data:www-data geeklog
