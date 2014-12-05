@@ -1,6 +1,6 @@
 # **Balero CMS** Terminal.com Snapshot
 
-*Balero CMS - Your professional website, instantly*
+*Balero CMS - Your professional website, in minutes*
 
 ---
 
