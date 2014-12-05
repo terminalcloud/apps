@@ -14,15 +14,29 @@ install(){
 
   # Procedure:
   php5_install
-  mysql_install
-  mysql_setup codiad codiad terminal
   cd $INSTALL_PATH
   wget https://github.com/Codiad/Codiad/archive/v.2.4.2.zip
   unzip v.2.4.2.zip && rm v.2.4.2.zip
   mv Codiad-v.2.4.2 codiad
+
+  # Install some plugins
+  cd codiad/plugins
+  wget https://github.com/Codiad/Codiad-Collaborative/archive/master.zip
+  unzip master.zip && rm master.zip
+  wget https://github.com/daeks/Codiad-GitAdmin/archive/master.zip
+  unzip master.zip && rm master.zip
+  wget https://github.com/Andr3as/Codiad-Beautify/archive/master.zip
+  unzip master.zip && rm master.zip
+  wget https://github.com/daeks/Codiad-Together/archive/master.zip
+  unzip master.zip && rm master.zip
+  wget https://github.com/Fluidbyte/Codiad-Terminal/archive/master.zip
+  unzip master.zip && rm master.zip
+
+  # Finish installation
+  cd $INSTALL_PATH
   chown -R www-data:www-data codiad
   apache_install
-  apache_default_vhost codiad.conf $INSTALL_PATH/codiad/public_html/
+  apache_default_vhost codiad.conf $INSTALL_PATH/codiad/
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 50M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 64M/g' /etc/php5/apache2/php.ini
