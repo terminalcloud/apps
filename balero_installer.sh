@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy Tattler at Terminal.com
+# Script to deploy Balero CMS at Terminal.com
 
 INSTALL_PATH="/var/www"
 
@@ -15,24 +15,26 @@ install(){
   # Procedure:
   php5_install
   mysql_install
-  mysql_setup tattler tattler terminal
+  mysql_setup balero balero terminal
   cd $INSTALL_PATH
-  wget http://tattlerapp.com/sites/default/files/releases/tattler-1.0RC1-156.zip
-  unzip tattler-1.0RC1-156.zip && rm tattler-1.0RC1-156.zip.zip
-  chown -R www-data:www-data tattler
+  wget -O balero.zip https://github.com/BaleroCMS/balerocms-src/archive/master.zip
+  unzip balero.zip && rm balero.zip
+  mv balerocms-src-master balero
+  chown -R www-data:www-data balero
   apache_install
-  apache_default_vhost tattler.conf $INSTALL_PATH/tattler/
+  apache_default_vhost balero.conf $INSTALL_PATH/balero/
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 30M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
+  sed -i 's/max_execution_time\ \=\ 30/max_execution_time\ \=\ 60/g' /etc/php5/apache2/php.ini
   service apache2 restart
 }
 
 show(){
   # Get the startup script
-  wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/tattler_hooks.sh
+  wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/balero_hooks.sh
   mkdir -p /CL/hooks/
-  mv tattler_hooks.sh /CL/hooks/startup.sh
+  mv balero_hooks.sh /CL/hooks/startup.sh
   # Execute startup script by first to get the common files
   chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 }

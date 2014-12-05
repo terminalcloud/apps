@@ -13,7 +13,7 @@ Built and distributed on open source Drupal, Tattler's allows a user to easily f
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Tattler Admin login" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
 
 ### Credentials
 
