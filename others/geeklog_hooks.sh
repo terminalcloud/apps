@@ -5,7 +5,8 @@ name="geeklog"
 export PATH=$PATH:/srv/cloudlabs/scripts
 
 # Update server URL in Docs
-sed -i "s/terminalservername/$(hostname)/g" /var/www/balero/site/etc/balero.config.xml
+sed -i "s/terminalservername/$(hostname)/g" geeklog/public_html/sitemap.xml
+sed -i "s/terminalservername/$(hostname)/g" geeklog/public_html/backend/geeklog.rss
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md

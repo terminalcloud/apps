@@ -19,10 +19,10 @@ install(){
   cd $INSTALL_PATH
   wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/geeklog-2.1.0.tar.gz
   tar -xzf geeklog-2.1.0.tar.gz && rm geeklog-2.1.0.tar.gz
-  mv geeklogcms-src-master geeklog
+  mv geeklog-2.1.0 geeklog
   chown -R www-data:www-data geeklog
   apache_install
-  apache_default_vhost geeklog.conf $INSTALL_PATH/geeklog/
+  apache_default_vhost geeklog.conf $INSTALL_PATH/geeklog/public_html/
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 30M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
