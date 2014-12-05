@@ -37,7 +37,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ---
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/5Gfakw7.png)
 
 ---
 
