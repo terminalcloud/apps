@@ -4,6 +4,9 @@ name="balero"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Update server URL in Docs
+sed -i "s/terminalservername/$(hostname)/g" /var/www/balero/site/etc/balero.config.xml
+
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
