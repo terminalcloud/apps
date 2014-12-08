@@ -1,0 +1,11 @@
+{
+  "user_token": "utoken",
+  "access_token": "atoken",
+  "snapshot_id": "sid",
+  "cpu": cpuq,
+  "ram": ramq,
+  "temporary": false,
+  "name": "Mesos Slave",
+  "autopause": true,
+  "startup_script": "echo IP > /root/.master",
+  "custom_data": "Mesos Slave" }

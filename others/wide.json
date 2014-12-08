@@ -1,0 +1,29 @@
+{
+    "Server": "terminalservername-80.terminal.com:80",
+    "StaticServer": "http://terminalservername-80.terminal.com:80",
+    "EditorChannel": "ws://terminalservername-80.terminal.com:80",
+    "OutputChannel": "ws://terminalservername-80.terminal.com:80",
+    "ShellChannel": "ws://terminalservername-80.terminal.com:80",
+    "SessionChannel": "ws://terminalservername-80.terminal.com:80",
+    "HTTPSessionMaxAge": 86400,
+    "StaticResourceVersion": "201410271700",
+    "MaxProcs": 4,
+    "RuntimeMode": "dev",
+    "Pwd": "{pwd}",
+    "Workspace": "{pwd}/data/workspace",
+    "Locale": "en_US",
+    "Users": [
+        {
+            "Name": "admin",
+            "Password": "t3rminal",
+            "Workspace": "{pwd}/data/user_workspaces/admin",
+            "Locale": "en_US",
+            "GoFormat": "gofmt",
+            "LatestSessionContent": {
+                "FileTree": [],
+                "Files": [],
+                "CurrentFile": ""
+            }
+        }
+    ]
+}
