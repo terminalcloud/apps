@@ -20,6 +20,7 @@ install(){
   wget -O booked.zip http://downloads.sourceforge.net/project/phpscheduleit/Booked/2.5/booked-2.5.12.zip
   unzip booked.zip && rm booked.zip
   chown -R www-data:www-data booked
+  cp booked/config/config.dist.php booked/config/config.php
   apache_install
   apache_default_vhost booked.conf $INSTALL_PATH/booked/
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
