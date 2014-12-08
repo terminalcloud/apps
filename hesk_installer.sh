@@ -18,7 +18,7 @@ install(){
   mysql_setup hesk hesk terminal
   cd $INSTALL_PATH
   mkdir hesk && cd hesk
-  wget -O hesk.zip http://hesk.com/download.php
+  wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/hesk.zip
   unzip hesk.zip && rm hesk.zip
   cd $INSTALL_PATH
   chown -R www-data:www-data hesk
