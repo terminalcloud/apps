@@ -13,7 +13,7 @@
 ## Main features
 - Server-side AJAX-powered application, user only needs a web browser.
 - Free software, licensed under GNU GPLv3
-- Supports
+- Supports:
   - feed aggregation / syndication,
   - keyboard shortcuts,
   - OPML import/export,
