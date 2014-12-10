@@ -228,3 +228,9 @@ java7_oracle_install(){
 config_prep(){
   sed -i "s/$(hostname)/terminalservername/g" $1
 }
+
+pulldocker_install(){
+  wget https://www.terminal.com/pulldocker.tgz
+  tar -xzf pulldocker.tgz -C /usr/local/bin
+  chmod +x /usr/local/bin/pulldocker
+}
