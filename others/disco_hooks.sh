@@ -1,11 +1,8 @@
 #!/bin/bash
 
-name="hesk"
+name="disco"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
-
-# Update server URL in config
-sed -i "s/terminalservername/$(hostname)/g" /var/www/hesk/hesk_settings.inc.php
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
