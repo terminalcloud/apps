@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="ttrss_hooks"
+name="ttrss"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
