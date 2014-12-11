@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="hi5ai"
+name="h5ai"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 

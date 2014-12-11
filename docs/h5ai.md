@@ -1,16 +1,16 @@
-# **hi5ai** Terminal.com Snapshot
+# **h5ai** Terminal.com Snapshot
 
 *A modern web server index. *
 
 ---
 
-## About hi5ai
+## About h5ai
 
 **h5ai** is a modern file indexer for HTTP web servers with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. Initially h5ai was an acronym for HTML5 Apache Index but now it supports other web servers too.
 
 ---
 
-This Terminal snapshot was created with [Pulldocker](http://blog.terminal.com/docker-without-containers-pulldocker/) from the [clue/hi5ai](https://registry.hub.docker.com/u/clue/hi5ai/) docker image.
+This Terminal snapshot was created with [Pulldocker](http://blog.terminal.com/docker-without-containers-pulldocker/) from the [clue/h5ai](https://registry.hub.docker.com/u/clue/h5ai/) docker image.
 
 ---
 
@@ -49,7 +49,7 @@ Just spin up a new Terminal based on this snapshot and check your app working by
 
 ## Documentation
 
-- [hi5ai website](http://larsjung.de/h5ai/)
+- [h5ai website](http://larsjung.de/h5ai/)
 - [GitHub Repo](https://github.com/lrsjng/h5ai)
 
 ---
@@ -57,8 +57,8 @@ Just spin up a new Terminal based on this snapshot and check your app working by
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/hi5ai_installer.sh && bash hi5ai_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/h5ai_installer.sh && bash h5ai_installer.sh`
 
 ---
 
-#### Thanks for using hi5ai at Terminal.com!
+#### Thanks for using h5ai at Terminal.com!

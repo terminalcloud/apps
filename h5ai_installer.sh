@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to hi5ai at Terminal.com
+# Script to h5ai at Terminal.com
 
 INSTALL_PATH="/root"
 
@@ -17,30 +17,30 @@ install(){
   cd $INSTALL_PATH
 
   # Get the app docker dump
-  pulldocker clue/hi5ai
+  pulldocker clue/h5ai
 
   # Link the data directory to the data folder outside the jail
   # (this is like exposing path with docker, using VOLUME)
-  ln -s clue/hi5ai/var/www data
+  ln -s clue/h5ai/var/www data
 
   # Create a startup script for the App jail
-  cat > clue/hi5ai/start.sh << EOF
+  cat > clue/h5ai/start.sh << EOF
 cd /var/www
 supervisord -c /etc/supervisor/conf.d/supervisord.conf
 EOF
 
   # Fix permissions
-  chroot clue/hi5ai chown -R www-data:www-data /var/www
+  chroot clue/h5ai chown -R www-data:www-data /var/www
   # Create startup script to launch the jail:
-  echo 'echo "Starting app jail" ; chroot clue/hi5ai sh start.sh&' > start.sh
+  echo 'echo "Starting app jail" ; chroot clue/h5ai sh start.sh&' > start.sh
   chmod +x start.sh
 }
 
 show(){
   # Get the startup script
-  wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/hi5ai_hooks.sh
+  wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/h5ai_hooks.sh
   mkdir -p /CL/hooks/
-  mv hi5ai_hooks.sh /CL/hooks/startup.sh
+  mv h5ai_hooks.sh /CL/hooks/startup.sh
   # Execute startup script by first to get the common files
   chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 }
