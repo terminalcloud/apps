@@ -1,6 +1,6 @@
 # **Tiny Tiny RSS** Terminal.com Snapshot
 
-*The Tiny Tiny RSS feed reader allows you to access your RSS/atom feeds from everywhere, through the web or mobile apps.*
+*Access your RSS/atom feeds from everywhere, through the web or mobile apps.*
 
 ---
 
