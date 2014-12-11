@@ -31,7 +31,7 @@ This Terminal snapshot was created with [Pulldocker]() from the [clue/archeologi
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot, provide the https git clone url to the startup script and access the application by clicking to "Check your installation here".
+Just spin up a new Terminal based on this snapshot, provide the https git clone URL to the startup script and access the application by clicking to "Check your installation here".
 
 To update the repository data just stop the application by pressing crontol+c and execute the startup script again.
 
