@@ -24,7 +24,7 @@ Therefore:
 
 ---
 
-This Terminal snapshot was created with [Pulldocker]() from the [clue/ttrss](https://registry.hub.docker.com/u/clue/ttrss/) docker image.
+This Terminal snapshot was created with [Pulldocker]() from the [clue/archeologit](https://registry.hub.docker.com/u/clue/archeologit/) docker image.
 
 ---
 

@@ -27,10 +27,15 @@ cd /home/archeologit/ArcheoloGit
 EOF
 
   # Fix permissions
-  chroot clue/archeologit chown -R www-data:archeologit /home/archeologit/
+  chroot clue/archeologit chown -R archeologit:archeologit /home/archeologit/
 
   # Create startup script
 cat > start.sh << EOF
+pkill -u 1000
+rm -r clue/archeologit/data
+read -p 'enter the https address of the git repository to be analyzed: ' repo
+git clone $repo clue/archeologit/data/.
+chroot clue/archeologit chown -R archeologit:archeologit /data
 echo 'starting app jail'
 chroot --userspec=archeologit clue/archeologit bash /start.sh&
 EOF
