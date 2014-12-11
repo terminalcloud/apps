@@ -31,13 +31,14 @@ EOF
 
   # Create startup script
 cat > start.sh << EOF
+clear
 pkill -u 1000
 rm -r clue/archeologit/data
-read -p 'enter the https address of the git repository to be analyzed: ' repo
+read -p 'Enter the https address of the git repository to be analyzed: ' repo
 git clone $repo clue/archeologit/data/.
 chroot clue/archeologit chown -R archeologit:archeologit /data
 echo 'starting app jail'
-chroot --userspec=archeologit clue/archeologit bash /start.sh&
+chroot --userspec=archeologit clue/archeologit bash /start.sh
 EOF
 
   chmod +x start.sh
