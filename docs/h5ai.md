@@ -1,6 +1,6 @@
 # **h5ai** Terminal.com Snapshot
 
-*A modern web server index. *
+*A modern web server index.*
 
 ---
 
