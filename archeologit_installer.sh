@@ -31,9 +31,9 @@ EOF
 
   # Create startup script
 cat > start.sh << EOF
-clear
 pkill -u 1000
 rm -r clue/archeologit/data || true
+clear
 mkdir clue/archeologit/data
 read -p 'Enter the https clone address of the git repository to be analyzed: ' repo
 git clone $repo clue/archeologit/data/.
