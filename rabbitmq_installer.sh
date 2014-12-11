@@ -20,6 +20,9 @@ install(){
   pulldocker tutum/rabbitmq
   chmod +x tutum/rabbitmq/run.sh
 
+  # Fix some permissions
+  chroot tutum/rabbitmq chown -R rabbitmq:rabbitmq /var/log/rabbitmq/
+
   # Create startup script to launch the jail:
   echo 'echo "Starting app jail" ; chroot tutum/rabbitmq/ sh run.sh&' > start.sh
   chmod +x start.sh

@@ -31,6 +31,9 @@ RabbitMQ is a messaging broker - an intermediary for messaging. It gives your ap
 
 Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "RabbitMQ Admin login" and login with the credentials provided (see below).
 
+The local API port is: 5672. You can access that port externally at http://terminalservername-5672.terminal.com . Remember to open that port if you want to use cURL directly.
+
+
 ### Credentials
 
 - username: `admin`
