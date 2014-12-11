@@ -31,14 +31,16 @@ This Terminal snapshot was created with [Pulldocker]() from the [clue/archeologi
 
 ## Usage
 
-ust spin up a new Terminal based on this snapshot and access the application by clicking to "Check your installation here".
+Just spin up a new Terminal based on this snapshot, provide the https git clone url to the startup script and access the application by clicking to "Check your installation here".
+
+To update the repository data just stop the application by pressing crontol+c and execute the startup script again.
 
 ---
 
 ## Documentation
 
-- [ArcheoloGit website]()
-- [Documentation]()
+- [ArcheoloGit introductory blog post](http://marmelab.com/blog/2014/05/15/archeologit.html)
+- [GitHub repository](https://github.com/marmelab/ArcheoloGit)
 
 ---
 
