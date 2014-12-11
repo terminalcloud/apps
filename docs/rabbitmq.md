@@ -59,6 +59,8 @@ The local API port is: 5672. You can access that port externally at http://termi
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/rabbitmq_installer.sh && bash rabbitmq_installer.sh`
 
+This Terminal snapshot was created with [Pulldocker](http://blog.terminal.com/docker-without-containers-pulldocker/) from the [tutum/rabbitmq](https://registry.hub.docker.com/u/tutum/rabbitmq/) docker image.
+
 ---
 
 #### Thanks for using RabbitMQ at Terminal.com!
