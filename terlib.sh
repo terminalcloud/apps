@@ -230,7 +230,7 @@ config_prep(){
 }
 
 pulldocker_install(){
-  wget https://www.terminal.com/pulldocker.tgz
+  wget --no-check-certificate https://www.terminal.com/pulldocker.tgz
   tar -xzf pulldocker.tgz -C /usr/local/bin
   chmod +x /usr/local/bin/pulldocker
 }
