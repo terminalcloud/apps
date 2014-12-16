@@ -4,6 +4,8 @@ name="opendocman"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+sed -i "s/terminalservername/$(hostname)/g" /root/opendocman.sql
+mysql -uopendocman -pterminal opendocman < /root/opendocman.sql
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
