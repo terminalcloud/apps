@@ -4,6 +4,7 @@ name="opendocman"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Update the terminal URL in DB
 sed -i "s/terminalservername/$(hostname)/g" /root/opendocman.sql
 mysql -uopendocman -pterminal opendocman < /root/opendocman.sql
 
