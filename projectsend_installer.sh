@@ -24,6 +24,10 @@ install(){
   chown -R www-data:www-data projectsend
   apache_install
   apache_default_vhost projectsend.conf $INSTALL_PATH/projectsend/
+  cp $INSTALL_PATH/projectsend/includes/sys.config.sample.php $INSTALL_PATH/projectsend/includes/sys.config.php
+  sed -i 's/database/projectsend/g' $INSTALL_PATH/projectsend/includes/sys.config.php
+  sed -i 's/username/projectsend/g' $INSTALL_PATH/projectsend/includes/sys.config.php
+  sed -i 's/password/terminal/g' $INSTALL_PATH/projectsend/includes/sys.config.php
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 30M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
