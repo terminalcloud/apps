@@ -24,7 +24,9 @@ install(){
   cd $INSTALL_PATH
   chown -R www-data:www-data opendocman
   apache_install
-  apache_default_vhost opendocman.conf $INSTALL_PATH/opendocman/
+  apache_default_vhost opendocman.conf $INSTALL_PATH/opendocman/opendocman
+  mkdir $INSTALL_PATH/odm_data/
+  chown -R www-data:www-data odm_data
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 30M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
