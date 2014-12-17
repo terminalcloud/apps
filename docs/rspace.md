@@ -65,3 +65,4 @@ You can replicate this Terminal from a [base snapshot](https://www.terminal.com/
 ---
 
 #### Thanks for using ResourceSpace at Terminal.com!
+
