@@ -13,16 +13,9 @@ Its goal is to enable you to develop projects much faster than you could if you 
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "CodeIgniter Admin login" and login with the credentials provided (see below).
+Spin up a new Terminal based on this snapshot and start coding CodeIgnigter directly on the Terminal IDE!
 
-### Credentials
-
-- username: `admin`
-- password: `t3rminal`
-
----
-
-![1](IMAGE_URL)
+For more information please check the documentation section.
 
 ---
 
