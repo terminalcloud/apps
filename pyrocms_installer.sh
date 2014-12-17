@@ -24,9 +24,6 @@ install(){
   apache_install
   apache_default_vhost pyrocms.conf $INSTALL_PATH/pyrocms/
   cp $INSTALL_PATH/pyrocms/includes/sys.config.sample.php $INSTALL_PATH/pyrocms/includes/sys.config.php
-  sed -i 's/database/pyrocms/g' $INSTALL_PATH/pyrocms/includes/sys.config.php
-  sed -i 's/username/pyrocms/g' $INSTALL_PATH/pyrocms/includes/sys.config.php
-  sed -i 's/password/terminal/g' $INSTALL_PATH/pyrocms/includes/sys.config.php
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   service apache2 restart
 }
