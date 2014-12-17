@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy pyrocms at Terminal.com
+# Script to deploy codeigniter3 at Terminal.com
 
 INSTALL_PATH="/var/www"
 
@@ -15,24 +15,23 @@ install(){
   # Procedure:
   php5_install
   mysql_install
-  mysql_setup pyrocms pyrocms terminal
+  mysql_setup codeigniter codeigniter terminal
   cd $INSTALL_PATH
-  wget -O pyrocms.zip https://codeload.github.com/pyrocms/pyrocms/legacy.zip/v2.2.5
-  unzip pyrocms.zip && rm pyrocms.zip
-  mv pyrocms-pyrocms-* pyrocms
-  chown -R www-data:www-data pyrocms
+  wget -O codeigniter.zip https://codeload.github.com/bcit-ci/CodeIgniter/zip/develop
+  unzip codeigniter.zip && rm codeigniter.zip
+  mv CodeIgniter-develop codeigniter
+  chown -R www-data:www-data codeigniter
   apache_install
-  apache_default_vhost pyrocms.conf $INSTALL_PATH/pyrocms/
-  cp $INSTALL_PATH/pyrocms/includes/sys.config.sample.php $INSTALL_PATH/pyrocms/includes/sys.config.php
+  apache_default_vhost codeigniter.conf $INSTALL_PATH/codeigniter/
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   service apache2 restart
 }
 
 show(){
   # Get the startup script
-  wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/pyrocms_hooks.sh
+  wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/codeigniter_hooks.sh
   mkdir -p /CL/hooks/
-  mv pyrocms_hooks.sh /CL/hooks/startup.sh
+  mv codeigniter_hooks.sh /CL/hooks/startup.sh
   # Execute startup script by first to get the common files
   chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 }

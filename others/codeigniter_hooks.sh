@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="pyrocms"
+name="codeigniter"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
