@@ -17,7 +17,7 @@ install(){
   mysql_install
   mysql_setup fluxbb fluxbb terminal
   cd $INSTALL_PATH
-  wget -O fluxbb.zip file:///home/concien1/Downloads/fluxbb-1.5.7.zip
+  wget -O fluxbb.zip http://fluxbb.org/download/releases/1.5.7/fluxbb-1.5.7.zip
   unzip fluxbb.zip && rm fluxbb.zip
   mv fluxbb-1.5.7 fluxbb
   chown -R www-data:www-data fluxbb
