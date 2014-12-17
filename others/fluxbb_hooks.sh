@@ -8,6 +8,8 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
+# Update hostname in config file
+sed -i "s/terminalservername/$(hostname)/g" /var/www/fluxbb/cache/cache_config.php
 
 # Making the file...
 cat > /root/info.html << EOF
