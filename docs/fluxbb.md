@@ -12,11 +12,11 @@
 
 ## Main Features
 
-- *Easy to use* - Simplicity is the key. Featuring a beautiful, clean interface, FluxBB is focused completely on ease-of-use and usability.
-- *Blazing speed* - FluxBB focuses on the most essential features a forum needs and comes without the bloat many other systems bring along, so that you can enjoy the speed.
-- *Clean admin interface* - Take full control over your forum, easily editing permissions, changing board-wide options and rearranging the structure of your forum.
-- *Flexible permission system* - FluxBB comes with a flexible permission system designed to give you full control over your user groups. Allow them to view different sections of your forum, give privileged users moderator status (multiple moderator groups are supported).
-- *Powerful moderator tools* - Administer your board with ease using powerful moderator tools to manage users, banning, censoring, reported posts, forums and topics. Do it yourself or delegate these tasks to moderators as you see fit.
+- **Easy to use** - Simplicity is the key. Featuring a beautiful, clean interface, FluxBB is focused completely on ease-of-use and usability.
+- **Blazing speed** - FluxBB focuses on the most essential features a forum needs and comes without the bloat many other systems bring along, so that you can enjoy the speed.
+- **Clean admin interface** - Take full control over your forum, easily editing permissions, changing board-wide options and rearranging the structure of your forum.
+- **Flexible permission system** - FluxBB comes with a flexible permission system designed to give you full control over your user groups. Allow them to view different sections of your forum, give privileged users moderator status (multiple moderator groups are supported).
+- **Powerful moderator tools** - Administer your board with ease using powerful moderator tools to manage users, banning, censoring, reported posts, forums and topics. Do it yourself or delegate these tasks to moderators as you see fit.
 
 
 Unlike many forum softwares, FluxBB is designed to be smaller and lighter without many of the less essential features. Often features which aren't included in the core are implemented by the community and released as modifications.
