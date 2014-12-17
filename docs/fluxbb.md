@@ -1,24 +1,33 @@
 # **FluxBB** Terminal.com Snapshot
 
-*MINI_DESC.*
+*FluxBB is fast, light, user-friendly forum software for your website.*
 
 ---
 
 ## About FluxBB
 
-FluxBB is
+**FluxBB** is designed as a lighter, faster alternative to some of the traditional feature heavy forum applications. It is easy to use and has a proven track record of stability and security making it an ideal choice of forum for your website.
 
 ---
 
 ## Main Features
 
-- FEATURES
+- *Easy to use* - Simplicity is the key. Featuring a beautiful, clean interface, FluxBB is focused completely on ease-of-use and usability.
+- *Blazing speed* - FluxBB focuses on the most essential features a forum needs and comes without the bloat many other systems bring along, so that you can enjoy the speed.
+- *Clean admin interface* - Take full control over your forum, easily editing permissions, changing board-wide options and rearranging the structure of your forum.
+- *Flexible permission system* - FluxBB comes with a flexible permission system designed to give you full control over your user groups. Allow them to view different sections of your forum, give privileged users moderator status (multiple moderator groups are supported).
+- *Powerful moderator tools* - Administer your board with ease using powerful moderator tools to manage users, banning, censoring, reported posts, forums and topics. Do it yourself or delegate these tasks to moderators as you see fit.
+
+
+Unlike many forum softwares, FluxBB is designed to be smaller and lighter without many of the less essential features. Often features which aren't included in the core are implemented by the community and released as modifications.
+
+Check the full features list [here](http://fluxbb.org/about/features.html).
 
 ---
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "FluxBB Admin login" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
 
 ### Credentials
 
