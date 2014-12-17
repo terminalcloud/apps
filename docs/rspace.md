@@ -1,25 +1,33 @@
-# **Resource Space** Terminal.com Snapshot
+# **ResourceSpace** Terminal.com Snapshot
 *Open Source Digital Asset Management*
 
 ---
 
 ## About Resource Space
-ResourceSpace open source digital asset management software is the simple, fast & free way to organise your digital assets
+ResourceSpace open source digital asset management software is the simple, fast & free way to organise your digital assets.
 
 ### Features
-- **Web Based** - ResourceSpace is completely web based, meaning you can upload your assets from wherever your journey might take you.
+- Pure web interface
+- Intelligent search ordering - Resources are scored against each keyword using user search activity
+- Organisation, collaboration and distribution - Tools to organise resources, share with colleagues on projects and distribute to others.
+- Automatic image resizing.
+- Themes - Pre-selected groups of resources.
+- Permissions - Set resource access level by user group
+- Research services - Allows specific requests to be made to a central resources team
+- Archiving - Resources can be archived and are then not visible in the main search
+- User contributions - Allows users to submit resources to the system.
+- Multilingual - The application is multilingual capable with most major languages supported.
+- Automatic thumbnail creation for most image and video file types including JPEG, GIF, PNG, PDF, TTF, Photoshop PSD, AVI, MOV, MPEG.
+- Comprehensive Exif/IPTC/XMP header import and export using ExifTool.
+- Automatic GPS tag import and geolocation searching via OpenLayers / OpenStreetMap / Google Maps.
+- Multiple file uploads.
+- Creates preview 'contact sheets' using FPDF.
+- Plugin support - Third party developers can create plugins to extend functionality.
 
-- **Quick and Easy Search** - Locate your digital assets fast with ResourceSpace's simple search panel & comprehensive advanced search features.
+---
 
-- **Collaborative** - Organise files into galleries & folders then share with colleagues for fast direct download.
+*Literally adapted text from [this Wikipedia article](http://en.wikipedia.org/wiki/ResourceSpace). Attribution rights to its author. Available under the Creative Commons [Attribution-ShareAlike License](http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License); additional terms may apply.*
 
-- **Auto-Preview and Convert** - ResourceSpace's automatic resource preview & conversion tools allow you to view & edit your assets no matter the format.
-
-- **Standard Based** - 100% open source and utilising many other open source projects to greatly extend functionality.
-
-- **Easy Administration** - Built-in tools for administrators to save time when uploading, editing & reporting.
-
-- **Multilingual** - ResourceSpace currently supports over 20 languages & it's easy to add more.
 
 ---
 
@@ -38,13 +46,9 @@ Login with your admin credentials and start using Resource Space.
 
 ---
 
-![1](http://www.resourcespace.org/img/content/features/web/main.png)
-
----
-
 ## Documentation
-- [Resource Space Official Website](http://www.resourcespace.org/)
-- [Resource Space Blog](http://www.resourcespace.org/blog)
+- [ResourceSpace Official Website](http://www.resourcespace.org/)
+- [Blog](http://www.resourcespace.org/blog)
 - [Google Group](http://www.resourcespace.org/googlegroup)
 - [Tutorial Videos](http://www.resourcespace.org/videos)
 - [Help and Docs](http://www.resourcespace.org/help)
@@ -60,4 +64,4 @@ You can replicate this Terminal from a [base snapshot](https://www.terminal.com/
 
 ---
 
-#### Thanks for using Resource Space at Terminal.com!
+#### Thanks for using ResourceSpace at Terminal.com!
