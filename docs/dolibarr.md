@@ -1,6 +1,6 @@
 # **Dolibarr** Terminal.com Snapshot
 
-*ERP and CRM*
+*ERP and CRM for small and medium companies.*
 
 ---
 
@@ -45,7 +45,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ---
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/jJ0pwpi.png)
 
 ---
 

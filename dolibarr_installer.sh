@@ -21,6 +21,7 @@ install(){
   unzip dolibarr.zip && rm dolibarr.zip
   mv dolibarr-3.6.1 dolibarr
   touch $INSTALL_PATH/dolibarr/htdocs/conf/conf.php
+  mkdir -p $INSTALL_PATH/dolibarr/documents
   chown -R www-data:www-data dolibarr
   apache_install
   apache_default_vhost dolibarr.conf $INSTALL_PATH/dolibarr/htdocs
