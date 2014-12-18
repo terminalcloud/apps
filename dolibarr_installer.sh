@@ -20,9 +20,10 @@ install(){
   wget -O dolibarr.zip http://ufpr.dl.sourceforge.net/project/dolibarr/Dolibarr%20ERP-CRM/3.6.1/dolibarr-3.6.1.zip
   unzip dolibarr.zip && rm dolibarr.zip
   mv dolibarr-3.6.1 dolibarr
+  touch $INSTALL_PATH/dolibarr/htdocs/conf/conf.php
   chown -R www-data:www-data dolibarr
   apache_install
-  apache_default_vhost dolibarr.conf $INSTALL_PATH/dolibarr/
+  apache_default_vhost dolibarr.conf $INSTALL_PATH/dolibarr/htdocs
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
   service apache2 restart
