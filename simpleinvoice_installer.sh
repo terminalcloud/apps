@@ -17,7 +17,7 @@ install(){
   mysql_install
   mysql_setup simpleinvoice simpleinvoice terminal
   cd $INSTALL_PATH
-  wget -O simpleinvoice.zip https://bbuseruploads.s3.amazonaws.com/simpleinvoices/simpleinvoices/downloads/simpleinvoices.2011.1.zip
+  wget -O simpleinvoice.zip https://raw.githubusercontent.com/terminalcloud/apps/master/others/simpleinvoices.zip
   unzip simpleinvoice.zip && rm simpleinvoice.zip
   chown -R www-data:www-data simpleinvoice
   apache_install
