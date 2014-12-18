@@ -15,13 +15,13 @@ install(){
   # Procedure:
   php5_install
   mysql_install
-  mysql_setup simpleinvoice simpleinvoice terminal
+  mysql_setup simpleinvoices simpleinvoices terminal
   cd $INSTALL_PATH
-  wget -O simpleinvoice.zip https://raw.githubusercontent.com/terminalcloud/apps/master/others/simpleinvoices.zip
-  unzip simpleinvoice.zip && rm simpleinvoice.zip
-  chown -R www-data:www-data simpleinvoice
+  wget -O simpleinvoices.zip https://raw.githubusercontent.com/terminalcloud/apps/master/others/simpleinvoices.zip
+  unzip simpleinvoices.zip && rm simpleinvoices.zip
+  chown -R www-data:www-data simpleinvoices
   apache_install
-  apache_default_vhost simpleinvoice.conf $INSTALL_PATH/simpleinvoice
+  apache_default_vhost simpleinvoices.conf $INSTALL_PATH/simpleinvoices
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
   service apache2 restart
