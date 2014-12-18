@@ -24,23 +24,19 @@ Simple Invoices is a web based invoicing developed by the community, for the com
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
-
-### Credentials
-
-- username: `admin`
-- password: `t3rminal`
+Just spin up a new Terminal based on this snapshot and start configuring your invoices application by clicking to "Check your installation here".
 
 ---
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/ZOkS8xi.png)
 
 ---
 
 ## Documentation
 
-- [Simple Invoices website]()
-- [Documentation]()
+- [Simple Invoices website](http://simpleinvoices.org/)
+- [Blog](http://www.simpleinvoices.org/blog)
+- [Users forum](http://www.simpleinvoices.org/forum/)
 
 ---
 
