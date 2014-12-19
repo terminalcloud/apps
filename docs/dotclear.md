@@ -35,7 +35,9 @@ See the full features list [here](http://dotclear.org/about#features).
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot how a basic blog looks like.
+
+Access the blog admin section by clicking to [here](http://terminalservername/admin) and login with the credentials provided (see below).
 
 ### Credentials
 

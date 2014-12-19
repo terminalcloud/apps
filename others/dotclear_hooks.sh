@@ -4,6 +4,10 @@ name="dotclear"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Update URL in config
+sed -i "s/terminalservername/$(hostname)/g" /var/www/dotclear/inc/config.php
+sed -i "s/terminalservername/$(hostname)/g" /root/dotclear.sql
+mysql -udotclear -pterminal dotclear < /root/dotclear.sql
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
