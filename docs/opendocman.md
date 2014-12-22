@@ -6,15 +6,13 @@
 
 ## About OpenDocMan
 
-**OpenDocMan** is a free, web-based, open source document management system (DMS) written in PHP designed to comply with ISO 17025 and OIE standard for document management. It features web based access, fine grained control of access to files, and automated install and upgrades.
-
-
+**OpenDocMan** is a free, web-based, open source document management system (DMS) written in PHP designed to comply with ISO 17025 and OIE standard for document management. It features web-based access, fine grained control of access to files, and automated installation and upgrades.
 
 ---
 
 ## Main Features
 
-- Document Management
+- Document Management:
   - Add any file type to the system.
   - No FTP required. Upload directly from your browser.
   - Meta data fields for each file.
@@ -25,18 +23,18 @@
   - File expiration.
   - Create custom document properties to match your companies needs.
 
-- Document Workflow
+- Document Workflow:
   - Automated document review process.
   - Automated file expiration process.
   - Reviewer can approve or reject a new document or a changed document.
   - E-mail notification options prior to and after a review.
 
-- Documents Search
+- Documents Search:
   - Quick-browse search by author, department, or category.
   - Full search by meta-data, author, department, category, file name, comments,etc.
   - No external indexing processes required.
 
-- Security
+- Security:
   - Secure URL feature to obfuscate URL parameters.
   - Fine grained user access control for each file.
   - Departmental access control for each file.
