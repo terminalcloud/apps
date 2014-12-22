@@ -1,12 +1,12 @@
 # **ProjectSend** Terminal.com Snapshot
 
-*Share files, with your clients!*
+*Share files with your clients.*
 
 ---
 
 ## About ProjectSend
 
-**ProjectSend** is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!
+**ProjectSend** is a self-hosted application that let you upload files and assign them to specific clients that you create yourself. Secure, private and easy. You don't have to depend on external services or e-mail to send your files.
 
 ---
 
@@ -16,7 +16,7 @@
 - Share with clients or groups.
 - Your clients can upload too.
 - Detailed log of actions.
-- Statistics, inactive user and clients accounts, templates, languages, and a growing community of awesome users, translators and developers that are helping ProjectSend grow day by day.
+- Statistics, inactive user and clients accounts, templates, languages and a growing community of awesome users, translators and developers that are helping ProjectSend grow day by day.
 
 ---
 
