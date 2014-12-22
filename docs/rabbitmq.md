@@ -1,6 +1,6 @@
 # **RabbitMQ** Terminal.com Snapshot
 
-*Robust messaging engine for applications.*
+*Messaging that just works.*
 
 ---
 
