@@ -1,12 +1,12 @@
 # **FluxBB** Terminal.com Snapshot
 
-*FluxBB is fast, light, user-friendly forum software for your website.*
+*FluxBB is a fast, light and user-friendly forum software.*
 
 ---
 
 ## About FluxBB
 
-**FluxBB** is designed as a lighter, faster alternative to some of the traditional feature heavy forum applications. It is easy to use and has a proven track record of stability and security making it an ideal choice of forum for your website.
+**FluxBB** is designed as a lighter and faster alternative to the traditional feature-heavy forum applications. It is easy to use and has a proven track record of stability and security making it an ideal choice of forum for any website.
 
 ---
 
@@ -18,8 +18,7 @@
 - **Flexible permission system** - FluxBB comes with a flexible permission system designed to give you full control over your user groups. Allow them to view different sections of your forum, give privileged users moderator status (multiple moderator groups are supported).
 - **Powerful moderator tools** - Administer your board with ease using powerful moderator tools to manage users, banning, censoring, reported posts, forums and topics. Do it yourself or delegate these tasks to moderators as you see fit.
 
-
-Unlike many forum softwares, FluxBB is designed to be smaller and lighter without many of the less essential features. Often features which aren't included in the core are implemented by the community and released as modifications.
+Unlike many forum software, FluxBB is designed to be smaller and lighter without many of the less essential features. Often features which aren't included in the core are implemented by the community and released as modifications.
 
 Check the full features list [here](http://fluxbb.org/about/features.html).
 
