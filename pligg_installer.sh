@@ -20,6 +20,8 @@ install(){
   wget -O pligg.zip https://raw.githubusercontent.com/terminalcloud/apps/master/others/pligg.zip
   unzip pligg.zip && rm pligg.zip
   mv pligg-cms-master pligg
+  cp pligg/settings.php.default pligg/settings.php
+  cp pligg/libs/dbconnect.php.default pligg/libs/dbconnect.php
   chown -R www-data:www-data pligg
   apache_install
   apache_default_vhost pligg.conf $INSTALL_PATH/pligg/
