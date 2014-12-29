@@ -4,7 +4,8 @@
 ---
 
 ## About Pligg
-**Pligg CMS** enables you to create on online community where users can submit articles, vote on them, and leave comments. While most content management systems are designed for only a handful of authors, Pligg CMS was designed from the ground up as a way for a large number of contributors to submit and moderate content. Registered users, as well as visitors in some circumstances, are in control of the website’s content.
+
+**Pligg CMS** enables you to create an online community where users can submit articles, vote on them, and leave comments. While most content management systems are designed for only a handful of authors, Pligg CMS was designed from the ground up as a way for a large number of contributors to submit and moderate content. Registered users, as well as visitors in some circumstances, are in control of the website’s content.
 
 ---
 
