@@ -15,34 +15,59 @@ install(){
 
 	# Backend:
 	cd $INSTALL_PATH
-  # Installing rbenv and ruby-build
+  apt-get -y install build-essential libmysqlclient-dev
+  mysql_install
+  mysql_setup autolab autolab terminal # db user pass
+
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
   echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
   git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-  source ~/.bash_profile
+
+  gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
+  curl -L get.rvm.io | bash -s stable # Requires Basics
+  echo "source /usr/local/rvm/scripts/rvm" >> ~/.bash_rc
+  source ~/.bash_rc
+
   git clone https://github.com/autolab/Autolab.git
   RVERSION=$(cat ~/Autolab/.ruby-version | head -1)
-  rbenv install "$RVERSION"
+
+  rvm install $RVERSION
+  rvm use $RVERSION
+
+
   gem install bundler
-  cd "~/Autolab"
+  gem install mysql2 -v '0.3.17'
+
+  cd ~/Autolab
   rbenv rehash
   bundle install
 
-  mysql_install
-  mysql_setup autolab autolab terminal # db user pass
-
   cp config/database.yml.template config/database.yml
-  sed -i 's/\<username\>_autolab_development/autolab/g' config/database.yml
-  sed -i 's/\<username\>/autolab/g' config/database.yml
-  sed -i 's/\<password\>/terminal/g' config/database.yml
+  sed -i 's/<username>_autolab_development/autolab/g' config/database.yml
+  sed -i 's/<username>/autolab/g' config/database.yml
+  sed -i 's/<password>/terminal/g' config/database.yml
+
+  cp lib/autoConfig.rb.template lib/autoConfig.rb
+  sed -i 's/<tango_host>/localhost/g' lib/autoConfig.rb
+  sed -i 's/<tango_port>/3001/g' lib/autoConfig.rb
+  sed -i 's/<restful_key>/restful_key/g' lib/autoConfig.rb
+  sed -i 's/<restful_courselab>/restful_courselab/g' lib/autoConfig.rb
+
 
   bundle exec rake db:create
   bundle exec rake db:migrate
 
   bundle exec rake autolab:populate # Optional. Populate Db with sample data
 
-  bundle exec rails s -p 3000
+  #bundle exec rails s -p 3001 -b 0.0.0.0
+
+  # Installing Tango
+  git clone https://github.com/autolab/Tango.git
+  cd autodriver
+  make clean; make
+  cp autodriver /usr/bin/autodriver
+  useradd autograde
 }
 
 
