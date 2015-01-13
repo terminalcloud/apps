@@ -64,9 +64,14 @@ install(){
     #bundle exec rails s -p 3001 -b 0.0.0.0
 
     # Installing Tango
+<<<<<<< HEAD
     cd ~
     git clone https://github.com/autolab/Tango.git
     cd Tango/autodriver
+=======
+    git clone https://github.com/autolab/Tango.git
+    cd autodriver
+>>>>>>> 2b1dd059e3c583ea71e9f8af713204702b5a837b
     make clean; make
     cp autodriver /usr/bin/autodriver
     useradd autograde
