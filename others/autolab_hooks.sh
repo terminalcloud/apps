@@ -15,7 +15,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-3001.terminal.com"><b>Check your installation here!</b></a></p>
 </head>
 <body>
 EOF
@@ -41,4 +41,9 @@ echo | /srv/cloudlabs/scripts/run_in_term.js
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
 /srv/cloudlabs/scripts/display.sh /root/info.html
+cd /root/Tango/ ; /root/Tango/startTangoREST.sh
 EOF
+
+cat | /srv/cloudlabs/scripts/run_in_term.js	 << _EOF_
+cd /root/Autolab; bundle exec rails s -p 3001 -b 0.0.0.0
+_EOF_

@@ -20,8 +20,13 @@ Spin up a new Terminal based on this snapshot and access the developer section w
 
 - Development login: `admin@foo.bar`
 
----
+### Command line execution
+- The Tango server can be executed by running: `cd /root/Tango/ ; /root/Tango/startTangoREST.sh`
+- The Autolab application is executed by running: `cd /root/Autolab; bundle exec rails s -p 3001 -b 0.0.0.0`
 
+*Tango port: 3000, Autolab port: 3001*
+
+---
 
 ## Documentation
 
