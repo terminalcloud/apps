@@ -1,0 +1,110 @@
+#!/bin/bash
+#SNAP: https://www.terminal.com/snapshot/f2f554a3d2c7a899be901334ec6926c9d1a062ada1b7c3fdc31622d43649fec8
+# Script to deploy Bottle Python Framework at Terminal.com
+
+INSTALL_PATH="/var/www/html"
+
+# Includes
+wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
+source terlib.sh || (echo "cannot get the includes"; exit -1)
+
+
+install(){
+	# Basics
+	pkg_update
+	system_cleanup
+	basics_install
+
+	# Procedure: 
+	mysql_install
+	python_install
+	mysql_setup tododb terminal terminal
+	apt-get -y install libapache2-mod-wsgi libmysqlclient-dev python-dev || yum -y install httpd-mod-wsgi libmysqlclient-dev python-dev
+	apache_install
+	# Vhost config
+	[[ -f /etc/debian_version ]] && vpath="/etc/apache2/sites-available/" || vpath="/etc/httpd/config.d/"
+	cat > $vpath/todo.conf << EOF
+<VirtualHost *:80>
+        WSGIScriptAlias / /var/www/html/todo.py
+</VirtualHost>
+EOF
+	if [[ -f /etc/debian_version ]]; then
+		[[ -f /etc/apache2/sites-enabled/000-default.conf ]] && rm /etc/apache2/sites-enabled/000-default.conf
+		ln -s /etc/apache2/sites-available/todo.conf /etc/apache2/sites-enabled/todo.conf 
+		service apache2 restart 
+	else
+		[[ -f /etc/httpd/conf.d/000-default.conf ]] && rm /etc/httpd/conf.d/000-default.conf
+		service httpd restart
+	fi
+
+	# Apache conf
+	[[ -f /etc/debian_version ]] && echo "WSGIPythonPath /var/www/html/" >> /etc/apache2/apache2.conf || echo "WSGIPythonPath /var/www/html/" >> /etc/httpd/httpd.conf
+	mysql -uroot -proot -e"CREATE TABLE todo (id INTEGER PRIMARY KEY AUTO_INCREMENT, task char(100) NOT NULL, status bool NOT NULL);"
+	mysql -uroot -proot -e"INSERT INTO todo (task,status) VALUES ('This is a TEST todo Description at Terminal.com',1);"
+	mysql -uroot -proot -e"INSERT INTO todo (task,status) VALUES ('This is another TEST todo Description at Terminal.com',1);"
+	cd $INSTALL_PATH
+	pip install bottle
+	pip install SQLAlchemy
+	pip install mysql-python
+	ln -s /etc/apache2/mods-available/wsgi.conf /etc/apache2/mods-enabled/wsgi.conf
+	ln -s /etc/apache2/mods-available/wsgi.load /etc/apache2/mods-enabled/wsgi.load
+	cd /var/www
+	wget https://github.com/mcapielo/Todo-List-Bottle-SQLAlchemy-Bootstrap/archive/master.zip
+	unzip master.zip
+	mv Todo-List-Bottle-SQLAlchemy-Bootstrap-master/* html
+	chown -R www-data:www-data $INSTALL_PATH/
+}
+
+
+install_hooks(){
+    mkdir -p /CL/hooks/
+    cat > /CL/hooks/startup.sh << ENDOFFILE
+
+#!/bin/bash
+
+name="bpf"
+
+export PATH=$PATH:/srv/cloudlabs/scripts
+
+# Getting the doc and styles
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
+
+
+# Making the file...
+cat > /root/info.html << EOF
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="termlib.css" />
+<p id="exlink"><a id="exlink" target="_blank" href="http://$\(hostname)-80.terminal.com"><b>Check the work example here!</b></a></p>
+</head>
+<body>
+EOF
+
+# Converting markdown file
+markdown "$name.md" >> /root/info.html
+
+# Closing file
+cat >> /root/info.html << EOF
+</body>
+</html>
+EOF
+
+# Convert links to external links
+sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
+
+# Update server URL in Docs
+sed -i "s/terminalservername/$\(hostname)/g" /root/info.html
+
+# Showing up
+cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
+/srv/cloudlabs/scripts/display.sh /root/info.html
+EOF
+ENDOFFILE
+chmod 777 /CL/hooks/startup.sh
+}
+
+install && install_hooks
+
+#RUN: echo "Installation done"
