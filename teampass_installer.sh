@@ -19,7 +19,7 @@ install(){
 	mysql_setup teampass teampass terminal
 	mysql -uroot -proot -e"set global max_allowed_packet=33554432"
 	cd $INSTALL_PATH
-	wget https://github.com/nilsteampassnet/TeamPass/archive/Release_2.1.21.zip
+	wget https://github.com/nilsteampassnet/TeamPass/archive/master.zip
 	unzip Release_2.1.21.zip && rm Release_2.1.21.zip
 	mv TeamPass-Release_2.1.21 teampass
 	chown -R www-data:www-data teampass
