@@ -17,7 +17,7 @@ install(){
 	add-apt-repository ppa:chris-lea/node.js
 	apt-get -y update
 	apt-get -y install nodejs redis-server imagemagick
-	git clone -b v0.5.x https://github.com/NodeBB/NodeBB.git nodebb
+	git clone https://github.com/NodeBB/NodeBB.git nodebb
 	cd nodebb
 	npm install
 	npm install -g forever
