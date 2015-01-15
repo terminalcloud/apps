@@ -53,6 +53,11 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/balero_installer.sh && bash balero_installer.sh`
 
+#### Installation data (for manual installation)
+
+- mysql user: balero
+- mysql default pass: terminal
+
 ---
 
 #### Thanks for using Balero CMS at Terminal.com!
