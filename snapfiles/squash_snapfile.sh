@@ -32,7 +32,7 @@ install_hooks(){
 
 name="squash"
 
-export PATH=$PATH:/srv/cloudlabs/scripts
+export PATH=\$PATH:/srv/cloudlabs/scripts
 
 # Update server URL in config files
 sed -i "s/terminalservername/\$(hostname)/g" /root/web/config/environments/production/dogfood.yml
@@ -44,7 +44,7 @@ sed -i "s/terminalservername/\$(hostname)/g" /root/web/config/environments/produ
 cd /root/web && nohup rails s &
 
 # Getting the doc and styles
-wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"\$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
 
@@ -60,7 +60,7 @@ cat > /root/info.html << EOF
 EOF
 
 # Converting markdown file
-markdown "$name.md" >> /root/info.html
+markdown "\$name.md" >> /root/info.html
 
 # Closing file
 cat >> /root/info.html << EOF

@@ -47,7 +47,7 @@ install_hooks(){
 
 name="zenphoto"
 
-export PATH=$PATH:/srv/cloudlabs/scripts
+export PATH=\$PATH:/srv/cloudlabs/scripts
 
 # Update server URL in config
 sed -i "s/terminalservername/\$(hostname)/g" /var/www/zenphoto/plugins/site_upgrade/closed.htm
@@ -56,7 +56,7 @@ sed -i "s/terminalservername/\$(hostname)/g" /var/www/zenphoto/plugins/site_upgr
 
 
 # Getting the doc and styles
-wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"\$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
 # Making the file...
@@ -72,7 +72,7 @@ cat > /root/info.html << EOF
 EOF
 
 # Converting markdown file
-markdown "$name.md" >> /root/info.html
+markdown "\$name.md" >> /root/info.html
 
 # Closing file
 cat >> /root/info.html << EOF
