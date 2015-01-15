@@ -57,6 +57,7 @@ This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/F
 
 - mysql user: balero
 - mysql default pass: terminal
+- mysql db_name: balero
 
 ---
 
