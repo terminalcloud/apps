@@ -44,10 +44,10 @@ install_hooks(){
 
 name="errbit"
 
-export PATH=$PATH:/srv/cloudlabs/scripts
+export PATH=\$PATH:/srv/cloudlabs/scripts
 
 # Getting the doc and styles
-wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"\$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
 
@@ -63,7 +63,7 @@ cat > /root/info.html << EOF
 EOF
 
 # Converting markdown file
-markdown "$name.md" >> /root/info.html
+markdown "\$name.md" >> /root/info.html
 
 # Closing file
 cat >> /root/info.html << EOF
@@ -78,7 +78,7 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/http\:\/\/\$(hostname)\-3000\.terminal\.com/g" /root/info.html
 
 # Update Errbit config
-sed -i 's/errbit.example.com/$(hostname)\-3000.terminal.com/g' /root/errbit/config/config.yml
+sed -i 's/errbit.example.com/\$(hostname)\-3000.terminal.com/g' /root/errbit/config/config.yml
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js << EOF

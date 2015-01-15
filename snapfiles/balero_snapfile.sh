@@ -17,14 +17,14 @@ install(){
   php5_install
   mysql_install
   mysql_setup balero balero terminal
-  cd $INSTALL_PATH
+  cd ${INSTALL_PATH}
   wget -O balero.zip https://github.com/BaleroCMS/balerocms-src/archive/master.zip
   unzip balero.zip && rm balero.zip
   mv balerocms-src-master balero
   chown -R www-data:www-data balero
   mv /var/www/balero/site/etc/balero.config.xml.blank /var/www/balero/site/etc/balero.config.xml
   apache_install
-  apache_default_vhost balero.conf $INSTALL_PATH/balero/
+  apache_default_vhost balero.conf ${INSTALL_PATH}/balero/
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 30M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
@@ -40,13 +40,13 @@ install_hooks(){
 
 name="balero"
 
-export PATH=$PATH:/srv/cloudlabs/scripts
+export PATH=\$PATH:/srv/cloudlabs/scripts
 
 # Update server URL in Docs
-sed -i "s/terminalservername/\$(hostname)/g" /var/www/balero/site/etc/balero.config.xml
+sed -i "s/http.*com/http:\/\/\$(hostname)-80\.terminal\.com/g" /var/www/balero/site/etc/balero.config.xml
 
 # Getting the doc and styles
-wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"\$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
 # Making the file...
@@ -61,7 +61,7 @@ cat > /root/info.html << EOF
 EOF
 
 # Converting markdown file
-markdown "$name.md" >> /root/info.html
+markdown "\$name.md" >> /root/info.html
 
 # Closing file
 cat >> /root/info.html << EOF
@@ -73,7 +73,7 @@ EOF
 sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 # Update server URL in Docs
-sed -i "s/terminalservername/$(hostname)/g" /root/info.html
+sed -i "s/terminalservername/\$(hostname)/g" /root/info.html
 
 # Open a new terminal
 echo | /srv/cloudlabs/scripts/run_in_term.js

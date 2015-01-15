@@ -15,7 +15,7 @@ install(){
   pulldocker_install
 
   # Procedure:
-  cd $INSTALL_PATH
+  cd ${INSTALL_PATH}
 
   # Get the app docker dump
   pulldocker clue/archeologit
@@ -36,7 +36,7 @@ rm -r clue/archeologit/data || true
 clear
 mkdir clue/archeologit/data
 read -p 'Enter the https clone address of the git repository to be analyzed: ' repo
-git clone $repo clue/archeologit/data/.
+git clone ${repo} clue/archeologit/data/.
 chroot clue/archeologit chown -R archeologit:archeologit /data
 echo 'starting app jail'
 chroot --userspec=archeologit clue/archeologit bash /start.sh
@@ -56,7 +56,7 @@ name="archeologit"
 export PATH=$PATH:/srv/cloudlabs/scripts
 
 # Getting the doc and styles
-wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"${name}".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
 
@@ -72,7 +72,7 @@ cat > /root/info.html << EOF
 EOF
 
 # Converting markdown file
-markdown "$name.md" >> /root/info.html
+markdown "${name}.md" >> /root/info.html
 
 # Closing file
 cat >> /root/info.html << EOF
