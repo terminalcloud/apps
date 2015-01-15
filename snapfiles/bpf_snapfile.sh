@@ -53,6 +53,7 @@ EOF
 	unzip master.zip
 	mv Todo-List-Bottle-SQLAlchemy-Bootstrap-master/* html
 	chown -R www-data:www-data $INSTALL_PATH/
+	service apache2 restart
 }
 
 
@@ -74,7 +75,7 @@ wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/mast
 # Making the file...
 cat > /root/info.html << EOF
 <!DOCTYPE html>
-<html>e
+<html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
 <p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-80.terminal.com"><b>Check the work example here!</b></a></p>

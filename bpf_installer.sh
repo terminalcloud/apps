@@ -52,6 +52,7 @@ EOF
 	unzip master.zip
 	mv Todo-List-Bottle-SQLAlchemy-Bootstrap-master/* html
 	chown -R www-data:www-data $INSTALL_PATH/
+	service apache2 restart
 }
 
 
