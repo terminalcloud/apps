@@ -41,6 +41,13 @@ You will will be able to set your initial username and password on the first run
 You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/lychee_installer.sh && bash lychee_installer.sh`
 
+#### Default DB settings (only needed when installing via script or Snapfile):
+- Hostname: localhost
+- Username: lychee
+- Password: terminal
+- Database: lychee
+
+
 ---
 
 #### Thanks for using Lychee at Terminal.com!

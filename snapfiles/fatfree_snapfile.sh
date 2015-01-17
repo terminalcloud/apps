@@ -22,18 +22,20 @@ install(){
 	# You should have the database file modified
 	cp fat_free_crm/config/database.mysql.yml fat_free_crm/config/database.yml
 	mysql_install
-	apt-get -y install build-essential libmysqlclient-dev c
+	apt-get -y install build-essential libmysqlclient-dev
 	gem install mysql2
 	gem install activerecord-mysql2-adapter
 	apt-get -y install libmagick++-dev libxml2 libxml2-dev libxslt1.1 libxslt1-dev libpq-dev # libyaml-de
 	cd fat_free_crm
-	# Modify the Gemfile to use mysql2 adapter instead of pg 
+	gem install nokogiri -v '1.6.5'
+	sed -i 's/pg/mysql2/g' Gemfile
+	sed -i 's/password\:/password\:\ root/g' ./config/database.yml
 	bundle install
-	rake db:create
+    rake db:create
 	rake db:migrate
 	rake ffcrm:setup:admin USERNAME=admin PASSWORD=t3rminal EMAIL=admin@example.com
 	rake ffcrm:demo:load # Only for Demo version
-	# rails server # This run from the hook script
+	rails server &
 }
 
 install_hooks(){
@@ -91,4 +93,4 @@ chmod 777 /CL/hooks/startup.sh
 
 install && install_hooks
 
-#RUN: "/root/start_server.sh"
+#RUN: echo "installation complete"

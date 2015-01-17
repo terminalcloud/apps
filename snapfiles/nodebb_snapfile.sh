@@ -15,15 +15,14 @@ install(){
 	basics_install
 
 	# Procedure: 
-	add-apt-repository ppa:chris-lea/node.js
+	add-apt-repository -y ppa:chris-lea/node.js
 	apt-get -y update
-	apt-get -y install nodejs redis-server imagemagick
+	apt-get -y install nodejs redis-server imagemagick build-essential
 	git clone  https://github.com/NodeBB/NodeBB.git nodebb
 	cd nodebb
 	npm install
 	npm install -g forever
-	./nodebb setup
-	cd /root/nodebb && forever start app.js
+
 }
 
 install_hooks(){
@@ -68,7 +67,7 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/\$(hostname)/g" /root/info.html
 
 # Open a new terminal
-echo | /srv/cloudlabs/scripts/run_in_term.js
+echo "cd /root/nodebb && ./nodebb setup &&  forever start app.js" | /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF

@@ -22,7 +22,7 @@
 
 ---
 
-![1](https://d6ff1xmuve0sx.cloudfront.net/nc-3.0.305-f90fcd9e/static/homepage/images/c9-web/top-carrousel-1.png)
+![1](http://i.imgur.com/EV3U4au.png)
 
 ---
 

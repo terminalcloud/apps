@@ -1,5 +1,6 @@
 #!/bin/bash
 #SNAP: https://www.terminal.com/snapshot/f2f554a3d2c7a899be901334ec6926c9d1a062ada1b7c3fdc31622d43649fec8
+#REQUIRES: SMALL
 # Script to deploy the Fb's Proxygen Library at Terminal.com
 
 INSTALL_PATH="/root"
@@ -17,8 +18,9 @@ install(){
   # Procedure:
   git clone https://github.com/facebook/proxygen.git
   apt-get -y install build-essential
-  cd proxygen/proxigen
-  ./deps.sh
+  cd proxygen/proxygen
+  sed -i 's/apt-get\ install/apt-get\ install\ -y/g' deps.sh
+  ./deps.sh && ./reinstall.sh
 }
 
 install_hooks(){

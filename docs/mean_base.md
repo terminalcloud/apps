@@ -1,0 +1,71 @@
+# **MeanJS DevStack** Terminal.com Snapshot
+*Open-Source Full-Stack Solution For MEAN Applications*
+
+---
+
+## About MEAN.JS
+**MEAN.JS** is a full-stack JavaScript solution that helps you build fast, robust and maintainble production web applications using MongoDB, Express, AngularJS and Node.js.
+
+
+MEAN.JS will help you getting started and avoid useless grunt work and common pitfalls, while keeping your application organized. Our goal is to create and maintain a simple and readable open-source solution that you can use and trust in your projects.
+
+---
+
+## Usage
+
+Spin-up your Terminal based on this snapshot and start coding directly on it !
+
+Please see the documentation section for more information about MeanJS.
+
+Note: If you want to run your app as root, please make sure to execute  `bower update --allow-root` on your project folder to allow bower to install JS dependencies.
+
+### Technologies available to be used with MeanJS:
+- **NodeJS**
+- **MongoDB** running on the standard port (27017).
+- **ExpressJS**  accesible by the express command.
+- **Angular** is installed using bower and their components are located in /root/bower_components/angular.
+
+
+## Documentation and Resources
+
+#### MeanJS
+- [Official Website](http://meanjs.org/)
+- [Documentation](http://meanjs.org/docs.html)
+- [Yo Generator](http://meanjs.org/generator.html)
+- [Community](http://meanjs.org/community.html)
+- [Blog](http://blog.meanjs.org/)
+
+
+#### NodeJs
+- [Official Documentation and Tutorials](http://nodejs.org/documentation)
+- [NodeJS Community Learning Sources](http://nodejs.org/community)
+
+#### MongoDB
+- [Manual and Docs](http://docs.mongodb.org)
+- [Community Resources](http://www.mongodb.org/get-involved)
+- [Blog](http://blog.mongodb.org)
+
+#### ExpressJS
+- [Official Website](http://expressjs.com/)
+- ["Getting Started" Guide](http://expressjs.com/guide.html)
+- [API Reference (current)](http://expressjs.com/4x/api.html#application)
+
+#### AngularJS
+- [Official Website](https://angularjs.org/)
+- [GitHub Repository](https://github.com/angular/angular.js)
+- [Learning Tutorial](https://docs.angularjs.org/tutorial)
+- [API Reference](https://docs.angularjs.org/api)
+
+
+---
+
+
+### Additional Information
+#### Terminal automatic installation:
+You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/mean_installer.sh && bash mean_installer.sh`
+
+
+---
+
+#### Thanks for using this development VM at Terminal.com!

@@ -24,8 +24,6 @@ install(){
 	bundle
 	rake assets:precompile
 	warble executable war
-
-
 }
 
 install_hooks(){

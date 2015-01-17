@@ -19,9 +19,9 @@ install(){
 	mysql_install
 	apt-get -y install build-essential libreadline-dev libcurl4-openssl-dev nodejs libmysqlclient-dev software-properties-common
 	apt-get -y install libaprutil1-dev libapr1-dev apache2-threaded-dev libapache2-mod-xsendfile imagemagick
-	apt-add-repository -y ppa:brightbox/ruby-ng
-	apt-get update
-	apt-get install -y ruby2.1 ruby2.1-dev
+	ruby_install
+	rvm install ruby-2.1.2
+	rvm default 2.1.2
 	cd $INSTALL_PATH
 	git clone git://github.com/churchio/onebody.git
 	cd onebody
@@ -33,18 +33,29 @@ install(){
 	gem install bundler
 	bundle install --deployment
 	cp config/secrets.yml{.example,}
-	vi config/secrets.yml
+	RANDOM = $(date | md5sum | cut -d " " -f1)
+	sed -i "s/SOMETHING_RANDOM_HERE/$RANDOM/g" config/secrets.yml
 	#change salt value
 	RAILS_ENV=production bundle exec rake db:migrate db:seed
 	RAILS_ENV=production bundle exec rake assets:precompile
 	apt-get update
-	apt-get install libapache2-mod-passenger
+	apt-get -y install libapache2-mod-passenger
 	a2enmod passenger
 	a2enmod xsendfile
 	apache_default_vhost onebody.conf /var/www/onebody/public
-	vi /etc/apache2/sites-available/onebody.conf
-	#XSendFile On
-	#XSendFilePath /var/www/onebody/public/system
+	cat > /etc/apache2/sites-available/onebody.conf << EOF
+<VirtualHost *:80>
+DocumentRoot /var/www/onebody/public
+<Directory /var/www/onebody/public >
+    Options FollowSymLinks
+    AllowOverride All
+    </Directory>
+ XSendFile On
+ XSendFilePath /var/www/onebody/public/system
+</VirtualHost>
+EOF
+    rm /usr/bin/ruby
+    ln -s /usr/local/rvm/rubies/ruby-2.1.2/bin/ruby  /usr/bin/ruby
 	service apache2 restart
 }
 
@@ -55,7 +66,7 @@ install_hooks(){
 
 name="churchio"
 
-export PATH=$PATH:/srv/cloudlabs/scripts
+export PATH=\$PATH:/srv/cloudlabs/scripts
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"\$name".md
@@ -68,13 +79,13 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$\(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
 </head>
 <body>
 EOF
 
 # Converting markdown file
-markdown "$name.md" >> /root/info.html
+markdown "\$name.md" >> /root/info.html
 
 # Closing file
 cat >> /root/info.html << EOF
@@ -86,7 +97,7 @@ EOF
 sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 # Update server URL in Docs
-sed -i "s/terminalservername/$\(hostname)/g" /root/info.html
+sed -i "s/terminalservername/\$(hostname)/g" /root/info.html
 
 # Open a new terminal
 echo | /srv/cloudlabs/scripts/run_in_term.js

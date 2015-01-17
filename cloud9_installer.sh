@@ -27,7 +27,9 @@ install(){
 	cd cloud9
 	npm install packager
 	npm install
-	echo "To start Cloud9 please execute: nvm use v0.8.28 && forever start /root/cloud9/server.js -w /root -l 0.0.0.0 --username user --password terminal"
+	forever start /root/cloud9/server.js -w /root -l 0.0.0.0 --username user --password terminal&
+
+
 }
 
 show(){

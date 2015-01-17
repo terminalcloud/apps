@@ -28,7 +28,8 @@ install(){
 	# PhpPGAdmin
 	apt-get -y install phppgadmin || yum -y install phppgadmin
 	cp /etc/apache2/conf.d/phppgadmin /etc/apache2/conf-enabled/phppgadmin.conf
-	/etc/init.d/apache2 restart
+	sed  -i 's/^allow.*/allow\ from\ all/g' /etc/apache2/conf-enabled/phppgadmin.conf
+	service apache2 restart
 }
 
 install_hooks(){
@@ -51,7 +52,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-80.terminal.com"><b>Access your application here</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-80.terminal.com/phppgadmin"><b>Access phppgadmin here</b></a></p>
 </head>
 <body>
 EOF

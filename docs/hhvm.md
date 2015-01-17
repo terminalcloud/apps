@@ -24,9 +24,18 @@ HHVM uses a just-in-time (JIT) compilation approach to achieve superior performa
 ## Usage
 
 This snap contains HHVM installed and configured with nginx server.
-Just spin up a new Terminal based on this snapshot and start using HHVM.
-A example site is includded at "/root/hack-example-site". You can check it by clicking in the "sample page" link.
+Just spin up a new Terminal based on this snapshot, copy your application code in */var/www/html/* and restart hhvm and nginx as follows:
 
+```
+# service hhvm restart
+# service nginx stop; service nginx start
+
+```
+
+Logs location:
+
+- hhvm : `/var/log/hhvm/`
+- nginx: `/var/log/nginx/`
 
 ---
 

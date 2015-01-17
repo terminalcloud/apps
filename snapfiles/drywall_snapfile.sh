@@ -23,10 +23,8 @@ install(){
   cd drywall
   npm install bcrypt
   npm install
-  bower install --allow-root
+  bower install --config.interactive=false --allow-root
   mv ./config.example.js ./config.js
-  echo "Set mongodb as in: https://github.com/jedireza/drywall/ setup section and press enter"
-  read
 }
 
 install_hooks(){
@@ -70,6 +68,9 @@ sed -i "s/terminalservername/\$(hostname)/g" /root/info.html
 
 # Open a new terminal
 cat | /srv/cloudlabs/scripts/run_in_term.js  << EOF
+echo "To finishe your installation"
+echo "Set mongodb as in: https://github.com/jedireza/drywall/ setup section and press enter"
+read
 cd /root/drywall && grunt
 EOF
 

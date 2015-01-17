@@ -25,6 +25,8 @@ It's easy to manipulate the content and the layout of your pages without any nee
 
 Just spin up a new Terminal based on this snapshot. Access your new site by clicking to "Check your installation here!". Enter the admin area by clicking to "Admin Area" and login with the credentials provided (see below).
 
+*This snapshot has the MicroWeber Lite template installed.*
+
 ### Credentials
 
 - username: `admin`
@@ -51,7 +53,12 @@ Just spin up a new Terminal based on this snapshot. Access your new site by clic
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/microweber_installer.sh && bash microweber_installer.sh`
 
-This snapshot has the MicroWeber Lite template installed.
+
+#### Default DB settings (only needed when installing via script or Snapfile):
+- Hostname: localhost
+- Username: microwever
+- Password: terminal
+- Database: microwever
 
 ---
 

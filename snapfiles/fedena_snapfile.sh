@@ -9,6 +9,7 @@ source terlib.sh || (echo "cannot get the includes"; exit -1)
 
 install(){
   # Basics
+  pkg_update
   system_cleanup
   basics_install
 
@@ -53,7 +54,7 @@ export PATH=\$PATH:/srv/cloudlabs/scripts
 
 
 # Getting the doc and styles
-wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"\$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
 

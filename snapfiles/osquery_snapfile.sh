@@ -1,5 +1,7 @@
 #!/bin/bash
 #SNAP: https://www.terminal.com/snapshot/f2f554a3d2c7a899be901334ec6926c9d1a062ada1b7c3fdc31622d43649fec8
+#REQUIRES: SMALL
+
 # Script to deploy osquery at Terminal.com
 
 INSTALL_PATH="/root"
@@ -18,6 +20,7 @@ install(){
   apt-get -y install libqt4-sql-mysql libqt4-sql-psql build-essential
   cd $INSTALL_PATH
   git clone https://github.com/facebook/osquery.git
+  cd osquery
   make deps
   make
   make package

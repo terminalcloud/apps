@@ -44,6 +44,7 @@ install(){
   RewriteRule ^(.*)$          /index.php?__path__=$1  [B,L,QSA]
 </VirtualHost>
 EOF
+
 	a2enmod rewrite
 	service apache2 restart
 }

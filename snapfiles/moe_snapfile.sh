@@ -1,6 +1,7 @@
 #!/bin/bash
 #SNAP: https://www.terminal.com/snapshot/f2f554a3d2c7a899be901334ec6926c9d1a062ada1b7c3fdc31622d43649fec8
 # Script to deploy MOE at Terminal.com
+# See https://github.com/Yelp/MOE/issues/422
 
 INSTALL_PATH="/root"
 
@@ -27,6 +28,7 @@ install(){
   git clone https://github.com/Yelp/MOE.git
   cd MOE
   pip install -r requirements.txt
+  # See https://github.com/Yelp/MOE/issues/422 !!!
   python setup.py install
 }
 
@@ -59,7 +61,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://\\$(hostname)-6543.terminal.com"><b>MOE Demo App</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http:\/\/\$(hostname)-6543.terminal.com"><b>MOE Demo App</b></a></p>
 </head>
 <body>
 EOF

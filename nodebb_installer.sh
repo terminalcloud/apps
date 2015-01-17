@@ -14,9 +14,9 @@ install(){
 	basics_install
 
 	# Procedure: 
-	add-apt-repository ppa:chris-lea/node.js
+	add-apt-repository -y ppa:chris-lea/node.js
 	apt-get -y update
-	apt-get -y install nodejs redis-server imagemagick
+	apt-get -y install nodejs redis-server imagemagick build-essential
 	git clone https://github.com/NodeBB/NodeBB.git nodebb
 	cd nodebb
 	npm install
