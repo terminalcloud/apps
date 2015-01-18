@@ -49,6 +49,12 @@ Login with your admin credentials and start using ProcessWire.
 You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/pwire_installer.sh && bash pwire_installer.sh`
 
+#### Default DB settings (only needed when installing via script or Snapfile):
+- Hostname: localhost
+- Username: pwire
+- Password: terminal
+- Database: pwire
+
 ---
 
 #### Thanks for using ProcessWire at Terminal.com!

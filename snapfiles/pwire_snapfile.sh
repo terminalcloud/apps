@@ -54,6 +54,7 @@ cat > /root/info.html << EOF
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
 <p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-80.terminal.com/processwire"><b>ProcessWire Admin Login!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-80.terminal.com/processwire"><b>ProcessWire base (installation)</b></a></p>
 </head>
 <body>
 EOF

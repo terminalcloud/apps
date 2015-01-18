@@ -17,7 +17,8 @@ install(){
 	# Procedure: 
 	cd $INSTALL_PATH
 	golang_install
-	source .bashrc
+	echo 'export GOPATH="/usr/share/go/"' >> ~/.bashrc
+	source ~/.bashrc
 	git clone https://github.com/b3log/wide.git
 	cd wide
 	go get -u github.com/b3log/wide

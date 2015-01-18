@@ -20,8 +20,6 @@ install(){
   apt-get -y install ruby postgresql ruby1.9.1-dev libpq-dev g++
   cd web
   gem install bundler
-  ./setup.rb
-  # You need to make sure that the user running the installation have superuser permissions over postgreSQL.
 }
 
 install_hooks(){
@@ -35,13 +33,8 @@ name="squash"
 export PATH=\$PATH:/srv/cloudlabs/scripts
 
 # Update server URL in config files
-sed -i "s/terminalservername/\$(hostname)/g" /root/web/config/environments/production/dogfood.yml
-sed -i "s/terminalservername/\$(hostname)/g" /root/web/config/environments/production/javascript_dogfood.yml
-sed -i "s/terminalservername/\$(hostname)/g" /root/web/config/environments/production/mailer.yml
-
 
 # Starting the app
-cd /root/web && nohup rails s &
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"\$name".md
@@ -75,7 +68,12 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/\$(hostname)/g" /root/info.html
 
 # Open a new terminal
-echo | /srv/cloudlabs/scripts/run_in_term.js
+echo | /srv/cloudlabs/scripts/run_in_term.js << EOF
+echo "Next steps:"
+echo " 1 - Make sure that the user running the installation have superuser permissions over postgreSQL"
+echo " 2 - To finish the setup execute: cd /root/web && ./setup.rb"
+echo " 3 - Run Squash by executing: cd /root/web && nohup rails s & "
+EOF
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
