@@ -147,8 +147,8 @@ _EOF_
 ruby_install(){
   gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
   curl -L get.rvm.io | bash -s stable # Requires Basics
-  echo "source /usr/local/rvm/scripts/rvm" >> ~/.bash_rc
-  source ~/.bash_rc
+  echo "source /usr/local/rvm/scripts/rvm" >> ~/.bashrc
+  source ~/.bashrc
   rvm install 2.1.2
   rvm use current --default
   rvm rubygems current

@@ -49,6 +49,12 @@ To complete or change the system configuration you need to edit the file user/co
 #### YOURLS Terminal automatic installation:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/yourls_installer.sh && bash yourls_installer.sh`
 
+### DB information
+
+- DB default name: yourls
+- DB default user: yourls
+- DB default pass: terminal
+
 ---
 
 #### Thanks for using YOURLS at Terminal.com!

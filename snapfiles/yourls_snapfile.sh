@@ -35,23 +35,65 @@ install(){
 	start_hooks_install
 	service apache2 restart
 
-	# Reconfigure at start time
-	sed -i "s/\.com/\.com\/admin/g" /CL/hooks/startup.sh
 	echo "sed -i \"s/site.com/\$(hostname)-80.terminal.com/g\" $INSTALL_PATH/YOURLS-1.7/user/config.php" >> /CL/hooks/startup.sh
 
 }
 
-show(){
-	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/docs/yourls.md
-	export PATH=$PATH:/srv/cloudlabs/scripts
-	edit.sh $INSTALL_PATH/YOURLS-1.7/user/config.php ## Show config file
-	edit.sh yourls.md ## Show Readme
-	cd.sh /var/www/ ## Show the served directory
-	echo "Now go to https://$(hostname)-80.terminal.com/admin and finish your configuration"
-	echo "DB is pre-configured. Please disregard installation error messages related to DB"
-	echo "Thanks!"
+install_hooks(){
+    mkdir -p /CL/hooks/
+    cat > /CL/hooks/startup.sh << ENDOFFILE
+
+#!/bin/bash
+
+name="yourls"
+
+export PATH=\$PATH:/srv/cloudlabs/scripts
+
+# Getting the doc and styles
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"\$name".md
+wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
+
+# Update conf file
+sed -i \"s/site.com/\$(hostname)-80.terminal.com/g\" $INSTALL_PATH/YOURLS-1.7/user/config.php
+
+# Making the file...
+cat > /root/info.html << EOF
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="termlib.css" />
+<p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-80.terminal.com/admin/install.php"><b>Finish your installation here!</b></a></p>
+</head>
+<body>
+EOF
+
+# Converting markdown file
+markdown "\$name.md" >> /root/info.html
+
+# Closing file
+cat >> /root/info.html << EOF
+</body>
+</html>
+EOF
+
+# Convert links to external links
+sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
+
+# Update server URL in Docs
+sed -i "s/terminalservername/\$(hostname)/g" /root/info.html
+
+# Open a new terminal
+echo "cd /root/wide ; nohup ./launch.sh &"| /srv/cloudlabs/scripts/run_in_term.js
+
+# Showing up
+cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+/srv/cloudlabs/scripts/display.sh /root/info.html
+EOF
+ENDOFFILE
+
+chmod 777 /CL/hooks/startup.sh
 }
 
-install && show
+install && install_hooks
 
 #RUN: echo "Installation done"
