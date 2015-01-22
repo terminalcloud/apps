@@ -13,15 +13,17 @@ install(){
 	system_cleanup
 	basics_install
 
-	# Installing hoodie and prerrequisites:
+	# Install hoodie and prerrequisites:
 	add-apt-repository -y ppa:chris-lea/node.js
 	apt-get update
     apt-get install -y nodejs
     apt-get install -y couchdb
+    service couchdb restart
     npm install -g hoodie-cli
 
-    # Getting the demo
-    git clone https://github.com/oliveiraa/blog-toptalCommunity.git hoodie-demo
+    # Get the demo and install it
+    git clone https://github.com/oliveiraa/blog-toptalCommunity.git
+    hoodie new toptalCommunity
 }
 
 
@@ -46,7 +48,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-80.terminal.com"><b>Check the running demo here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-6001.terminal.com"><b>Check the running demo here!</b></a></p>
 </head>
 <body>
 EOF
@@ -67,7 +69,13 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/\$(hostname)/g" /root/info.html
 
 # Open a new terminal
-echo | /srv/cloudlabs/scripts/run_in_term.js
+cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+cd /root
+cd toptalCommunity
+export COUCH_URL=http://localhost:5984
+export HOODIE_BIND_ADDRESS=0.0.0.0
+hoodie start -n
+EOF
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
