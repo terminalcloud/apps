@@ -1,6 +1,6 @@
 # **Hoodie** Terminal.com Snapshot
 
-*Hoodie is a free and Open Source Software for building applications for the web and iOS. \
+*Hoodie is a free and Open Source Software for building applications for the web and iOS.
 It is a complete backend for your apps, ready for you to get creative.*
 
 ---
@@ -16,20 +16,20 @@ It works immediately out-of-the-box: develop your frontend code, plug it into [H
 ## About this Terminal
 
 This Terminal was created in order to make easier test Hoodie.
-It includes a demo, to be used with this exceptional tutorial from the [Toptal's Engineering Blog.](http://www.toptal.com/front-end/introducing-hoodie-full-stack-app-development-for-front-end-developers).
+It includes a demo, to be used with this exceptional tutorial from [Toptal's Engineering Blog.](http://www.toptal.com/front-end/introducing-hoodie-full-stack-app-development-for-front-end-developers).
 
 
 ---
 
 ## Usage
 
-Take a look to the console tab, you need to setup an initial admin password first.
+Take a look at the console tab, you need to setup an initial admin password first.
 
 - If you want to see the demo code running, [click here](https://terminalservername-6001.terminal.com).
 - If you want to take a look to the admin section, [click here](https://terminalservername-6002.terminal.com).
 
-We suggest to follow the [Toptal's Blog post](http://www.toptal.com/front-end/introducing-hoodie-full-stack-app-development-for-front-end-developers) 
-to know more about Hoodie and this particular demo.
+We suggest to [Toptal's Blog post](http://www.toptal.com/front-end/introducing-hoodie-full-stack-app-development-for-front-end-developers) 
+to learn more about Hoodie and this particular demo.
 
 
 ---
