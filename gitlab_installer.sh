@@ -16,9 +16,9 @@ install(){
 	debconf-set-selections <<< "postfix postfix/mailname string terminal.com"
 	debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
 	apt-get -y install postfix
-	wget https://downloads-packages.s3.amazonaws.com/ubuntu-14.04/gitlab_7.2.1-omnibus-1_amd64.deb
+	wget https://downloads-packages.s3.amazonaws.com/ubuntu-14.04/gitlab_7.7.2-omnibus.5.4.2.ci-1_amd64.deb
 	apt-get -y install openssh-server
-	dpkg -i gitlab_7.2.1-omnibus-1_amd64.deb
+	dpkg -i gitlab_7.7.2-omnibus.5.4.2.ci-1_amd64.deb
 	gitlab-ctl stop
 	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/others/gitlab_hooks.sh
 	mkdir -p /CL/hooks
