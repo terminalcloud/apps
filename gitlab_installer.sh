@@ -29,8 +29,9 @@ install(){
 if [[ \$1 == "" ]]
 then echo "external_url \"http://\$(hostname)-80.terminal.com\"" > /etc/gitlab/gitlab.rb
 else
-"external_url \"\$1\"" > /etc/gitlab/gitlab.rb
-# gitlab-ctl reconfigure
+echo "external_url \"\$1\"" > /etc/gitlab/gitlab.rb
+fi
+gitlab-ctl reconfigure
 EOF
     chmod +x /usr/local/bin/gilab-domain-update
 }

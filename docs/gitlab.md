@@ -50,7 +50,15 @@ It integrates with issue trackers, continuous integration services and our Enter
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
+Just spin up a new Terminal based on this snapshot. 
+Access the admin section by clicking to "Check your installation here" and login with the credentials provided (see below).
+
+To reconfigure Gitlab to a custom domain, please execute:
+
+```
+gilab-domain-update <DomainName>
+
+```
 
 ### Credentials
 
