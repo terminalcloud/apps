@@ -4,10 +4,6 @@ name="gitlab"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
-# Reconfiguring GitLab
-echo "external_url \"http://$(hostname)-80.terminal.com\"" > /etc/gitlab/gitlab.rb
-gitlab-ctl reconfigure
-gitlab-ctl start
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
@@ -20,7 +16,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check the application here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="https://$(hostname)-80.terminal.com"><b>Check the application here!</b></a></p>
 </head>
 <body>
 EOF
@@ -42,7 +38,11 @@ sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 
 # Open a new terminal
-echo | /srv/cloudlabs/scripts/run_in_term.js
+cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
+echo "external_url \"http://$(hostname)-80.terminal.com\"" > /etc/gitlab/gitlab.rb
+gitlab-ctl reconfigure
+gitlab-ctl start
+EOF
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF

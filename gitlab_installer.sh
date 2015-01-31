@@ -11,8 +11,7 @@ install(){
 	system_cleanup
 	basics_install
 
-	# Procedure: 
-
+	# Procedure:
 	debconf-set-selections <<< "postfix postfix/mailname string terminal.com"
 	debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
 	apt-get -y install postfix
@@ -23,12 +22,22 @@ install(){
 	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/others/gitlab_hooks.sh
 	mkdir -p /CL/hooks
 	mv gitlab_hooks.sh /CL/hooks/startup.sh
+	chmod +x /CL/hooks/startup.sh
+
+	cat > /usr/local/bin/gilab-domain-update << EOF
+#!/bin/bash
+if [[ $1 == "" ]]
+then echo "external_url \"http://\$(hostname)-80.terminal.com\"" > /etc/gitlab/gitlab.rb
+else
+"external_url \"\$1\"" > /etc/gitlab/gitlab.rb
+# gitlab-ctl reconfigure
+EOF
+    chmod +x /usr/local/bin/gilab-domain-update
 }
 
 show(){
 	wget -q https://raw.githubusercontent.com/terminalcloud/apps/master/docs/gitlab.md
 	export PATH=$PATH:/srv/cloudlabs/scripts
-	edit.sh gitlab.md ## Show Readme
 	cd.sh /root ## Show the served directory
 }
 

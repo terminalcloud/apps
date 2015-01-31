@@ -54,12 +54,12 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ### Credentials
 
-- username: `admin`
-- password: `t3rminal`
+- username: `root`
+- password: `5iveL!fe`
 
----
+--- 
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/QLTcBYq.png)
 
 ---
 
@@ -69,6 +69,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 - [Documentation](http://doc.gitlab.com/ce/)
 - [Community pages](https://about.gitlab.com/community/)
 - [Blog](https://about.gitlab.com/blog/)
+
 ---
 
 ### Snapshot Bootstrap Script
