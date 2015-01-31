@@ -60,7 +60,8 @@ gilab-domain-update <DomainName>
 
 ```
 
-To go back to the default domain (http<s>://subdomain-80.terminal.com) execute `gilab-domain-update` without any additional arguments. 
+
+To go back to the default domain (http://subdomain-80.terminal.com) execute `gilab-domain-update` without any additional arguments. 
 
 ### Credentials
 
