@@ -39,8 +39,7 @@ sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Open a new terminal
 cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
-echo "external_url \"http://$(hostname)-80.terminal.com\"" > /etc/gitlab/gitlab.rb
-gitlab-ctl reconfigure
+/usr/local/bin/gilab-domain-update
 gitlab-ctl start
 EOF
 

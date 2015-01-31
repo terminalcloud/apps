@@ -26,7 +26,7 @@ install(){
 
 	cat > /usr/local/bin/gilab-domain-update << EOF
 #!/bin/bash
-if [[ $1 == "" ]]
+if [[ \$1 == "" ]]
 then echo "external_url \"http://\$(hostname)-80.terminal.com\"" > /etc/gitlab/gitlab.rb
 else
 "external_url \"\$1\"" > /etc/gitlab/gitlab.rb
