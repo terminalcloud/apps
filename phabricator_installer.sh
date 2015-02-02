@@ -70,17 +70,18 @@ EOF
 
 }
 
-show(){
+install_hooks(){
 	# Get the startup script
 	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/phabricator_hooks.sh
 	mkdir -p /CL/hooks/
 	mv phabricator_hooks.sh /CL/hooks/startup.sh
-	# Execute startup script by first to get the common files
-	chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
+	chmod 777 /CL/hooks/startup.sh
 }
 
+
+
 if [[ -z $1 ]]; then
-	install #&& show
+	install && install_hooks
 elif [[ $1 == "show" ]]; then 
 	show
 else
