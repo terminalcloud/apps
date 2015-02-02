@@ -4,6 +4,9 @@ name="phabricator"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Set base URL
+/var/www/phabricator/bin/config set phabricator.base-uri "http://$(hostname)-80.terminal.com/"
+
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/

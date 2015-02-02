@@ -56,9 +56,14 @@ The **Conduit** API allows you to write scripts that interact with Phabricator o
 ## Usage
 
 Just spin up your Terminal based on this snapshot and click to "Check your installation here".
-
 Create your own admin account and start configuring Phabricator.
-For mor information about usage please check the [User Documentation](http://www.phabricator.com/docs/phabricator/) page.
+Phabricator provides various authentication methods like user/pass, Amazon, Facebook, Google, GitHub, etc. Configure yours at http://yourterminalname-80.terminal.com/auth/
+
+For more information about usage please check the [User Documentation](http://www.phabricator.com/docs/phabricator/) page.
+
+##### Changing default URL
+
+If you want to change the Phabricator URL, execute: `/var/www/phabricator/bin/config set phabricator.base-uri "new URL"`
 
 ---
 
