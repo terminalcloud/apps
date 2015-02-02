@@ -56,12 +56,12 @@ Access the admin section by clicking to "Check your installation here" and login
 To reconfigure Gitlab to a custom domain, please execute:
 
 ```
-gilab-domain-update <DomainName>
+gitlab-domain-update NewDomainName
 
 ```
 
 
-To go back to the default domain (http://subdomain-80.terminal.com) execute `gilab-domain-update` without any additional arguments. 
+To go back to the default domain (http://subdomain-80.terminal.com) execute `gitlab-domain-update` without any additional arguments. 
 
 ### Credentials
 

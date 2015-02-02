@@ -39,7 +39,7 @@ sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Open a new terminal
 cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
-/usr/local/bin/gilab-domain-update
+/usr/local/bin/gitlab-domain-update
 gitlab-ctl start
 EOF
 

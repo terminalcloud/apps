@@ -24,7 +24,7 @@ install(){
 	mv gitlab_hooks.sh /CL/hooks/startup.sh
 	chmod +x /CL/hooks/startup.sh
 
-	cat > /usr/local/bin/gilab-domain-update << EOF
+	cat > /usr/local/bin/gitlab-domain-update << EOF
 #!/bin/bash
 if [[ \$1 == "" ]]
 then echo "external_url \"http://\$(hostname)-80.terminal.com\"" > /etc/gitlab/gitlab.rb
@@ -33,7 +33,7 @@ echo "external_url \"\$1\"" > /etc/gitlab/gitlab.rb
 fi
 gitlab-ctl reconfigure
 EOF
-    chmod +x /usr/local/bin/gilab-domain-update
+    chmod +x /usr/local/bin/gitlab-domain-update
 }
 
 show(){
