@@ -5,7 +5,7 @@ name="phabricator"
 export PATH=$PATH:/srv/cloudlabs/scripts
 
 # Set base URL
-/var/www/phabricator/bin/config set phabricator.base-uri "http://$(hostname)-80.terminal.com/"
+/var/www/phabricator/bin/config set phabricator.base-uri "https://$(hostname)-80.terminal.com/"
 /var/www/phabricator/bin/phd restart
 
 # Getting the doc and styles
@@ -19,7 +19,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="https://$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
 </head>
 <body>
 EOF

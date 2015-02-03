@@ -65,6 +65,7 @@ EOF
     service mysql restart
     mysql -uroot -proot -e 'REPAIR TABLE phabricator_search.search_documentfield;'
     ./bin/phd start
+    echo "PATH=\$PATH:/var/www/arcanist/bin/" >> ~/.bashrc
 	service apache2 restart
 
 
