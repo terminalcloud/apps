@@ -55,9 +55,10 @@ Access the admin section by clicking to "Check your installation here" and login
 
 To reconfigure Gitlab to a custom domain, please execute:
 
-`gitlab-domain-update new_url`
+`gitlab-domain-update [new_url]`
 
-for instance: gitlab-domain-update http://gitlab.yourdomain.com
+for instance: `gitlab-domain-update http://gitlab.yourdomain.com`.
+
 To go back to the default domain execute `gitlab-domain-update` without any additional arguments. 
 
 ### Credentials
