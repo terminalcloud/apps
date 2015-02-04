@@ -8,6 +8,14 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
+## Create init file
+cat > /root/init.sh << EOF
+echo "GitSMC initial configuration"
+echo -n "Please enter your first GIT user and press [ENTER]: "
+read user
+git-adduser $user
+service lighttps restart
+EOF
 
 # Making the file...
 cat > /root/info.html << EOF
@@ -15,7 +23,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Git Documentation</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://git-scm.com/doc"><b>Git Documentation</b></a></p>
 </head>
 <body>
 EOF
@@ -37,11 +45,7 @@ sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Open a new terminal
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
-echo "GitSMC initial configuration"
-echo -n "Please enter your first GIT user and press [ENTER]: "
-read user
-git-adduser $user
-service lighttps restart
+/root/init.sh
 EOF
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
