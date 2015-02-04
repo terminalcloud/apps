@@ -25,6 +25,8 @@ It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with featu
 Spin up a new Terminal based on this snapshot and follow the on-screen instructions to set your first git user.
 Create at least a new user and repository by following the instructions below and use your favorite git client to access your repositories via http/s.
 
+By default, your git repo base URL is http://terminalservername-80/git/ or https    ://terminalservername-80/git/
+
 ### Adding new users 
 We provide a simple script called `git-adduser` to this purpose. Its syntax is as easy as: `git-adduser <username>`.
 This script will ask you for a password and will save the information in an encrypted file at `/etc/lighttpd/htdigest`. 
