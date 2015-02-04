@@ -23,7 +23,8 @@ It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with featu
 
 ## Usage
 Spin up a new Terminal based on this snapshot and follow the on-screen instructions to set your first git user.
-Create at least a new user and repository by following the instructions below and use your favorite git client to access your repositories via http/s.
+
+Create at least one new user and repository by following the instructions below and use your favorite git client to access your repositories via http/s.
 
 By default, your git repo base URL is http://terminalservername-80.terminal.com/git/ or https://terminalservername-80.terminal.com/git/ .
 
