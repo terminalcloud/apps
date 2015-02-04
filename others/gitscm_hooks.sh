@@ -8,14 +8,17 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
-## Create init file
+# Create init file
+touch /etc/lighttpd/htdigest
 cat > /root/init.sh << EOF
 echo "GitSMC initial configuration"
 echo -n "Please enter your first GIT user and press [ENTER]: "
 read user
-git-adduser $user
-service lighttps restart
+git-adduser \$user
+service lighttpd restart
 EOF
+
+chmod +x /root/init.sh
 
 # Making the file...
 cat > /root/info.html << EOF

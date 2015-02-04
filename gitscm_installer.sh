@@ -62,6 +62,7 @@ _EOF_
     chmod +x /usr/local/bin/git-*
 
     lighty-enable-mod auth cgi ssl gitrepo
+    touch /etc/lighttpd/htdigest
     rm /etc/lighttpd/conf-enabled/10-ssl.conf
 
     mkdir -p /var/cache/git/
