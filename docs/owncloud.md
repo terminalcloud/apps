@@ -38,8 +38,10 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ### Credentials
 
-- username: `admin`
+- username: `root`
 - password: `t3rminal`
+
+**Make sure to change your root password as soon you login into ownCloud by the first time**
 
 ---
 
@@ -59,6 +61,13 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/owncloud_installer.sh && bash owncloud_installer.sh`
+
+### Additional Information
+
+**MySQL Credentials**
+- username: owncloud
+- db name: owncloud
+- password:  terminal
 
 ---
 
