@@ -43,7 +43,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ---
 
-![1](http://i.imgur.com/zJvOVf9.png)
+![1](http://i.imgur.com/WAgpvUP.png)
 
 ---
 
