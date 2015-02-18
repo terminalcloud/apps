@@ -28,11 +28,8 @@ Just spin-up your Terminal based on this snapshot and click to "Check your insta
 
 #### Hacker Slides Terminal automatic installation:
 You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/akeneo_installer.sh && bash akeneo_installer.sh`
+`wget https://github.com/terminalcloud/apps/blob/master/snapfiles/hacker-slides_snapfile.sh && bash hacker-slides_snapfile.sh`
 
-### Demo information
-To help to undestand the functionality of the product, this terminal has demo information loaded on it.
-Feel free to delete that information and load your own data as needed.
 
 ---
 
