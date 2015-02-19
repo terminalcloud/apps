@@ -28,7 +28,8 @@ install(){
     tar -xzf kibana-3.1.2.tar.gz && mv kibana-3.1.2 kibana
     HOSTNAME=$(hostname)
     sed -i "s/\ elasticsearch\:.*/elasticsearch: \"http\:\/\/$HOSTNAME\-9200\.terminal\.com\"\,/g" /var/www/html/kibana/config.js
-
+    echo "http.cors.enabled: true" >> /etc/elasticsearch/elasticsearch.yml
+    echo "http.cors.allow-origin: \"http://$HOSTNAME-80.terminal.com\" " >> /etc/elasticsearch/elasticsearch.yml
     service logstash stop
     service elasticsearch restart
     service apache2 restart
