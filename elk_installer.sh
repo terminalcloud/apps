@@ -27,7 +27,7 @@ install(){
     cd /var/www/html; wget https://download.elasticsearch.org/kibana/kibana/kibana-3.1.2.tar.gz
     tar -xzf kibana-3.1.2.tar.gz && mv kibana-3.1.2 kibana
     HOSTNAME=$(hostname)
-    sed -i "s/\ elasticsearch\:.*/elalasticsearch: \"http\:\/\/$HOSTNAME-80\.terminal\.com\"\,/g" /var/www/kibana/config.js
+    sed -i "s/\ elasticsearch\:.*/elasticsearch: \"http\:\/\/$HOSTNAME\-9200\.terminal\.com\"\,/g" /var/www/html/kibana/config.js
 
     service logstash stop
     service elasticsearch restart
