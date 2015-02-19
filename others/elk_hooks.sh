@@ -4,6 +4,10 @@ name="elk"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+# Configuring Apps:
+HOSTNAME=$(hostname)
+sed -i "s/elasticsearch\:.*/elasticsearch: \"http\:\/\/$HOSTNAME\-9200\.terminal\.com\"\,/g" /var/www/html/kibana/config.js
+sed -i "s/http.cors.allow-origin\:.*/http.cors.allow-origin\:\ \"http\:\/\/$HOSTNAME\-80\.terminal\.com\" /g" /etc/elasticsearch/elasticsearch.yml
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
@@ -44,8 +48,5 @@ cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
 EOF
 
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << _EOF_
-HOSTNAME=$(hostname)
-sed -i "s/\ elasticsearch\:.*/elasticsearch: \"http\:\/\/$HOSTNAME\-9200\.terminal\.com\"\,/g" /var/www/html/kibana/config.js
-sed -i "s/http.cors.allow-origin\:.*/http.cors.allow-origin\:\ \"http\:\/\/$HOSTNAME\-80\.terminal\.com\" /g" /etc/elasticsearch/elasticsearch.yml
 service logstash stop; service elasticsearch restart; service apache2 restart; service logstash start
 _EOF_

@@ -30,7 +30,7 @@ Kibana’s dynamic dashboard panels are savable, shareable and exportable, displ
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot.
+Just spin up a new Terminal based on this snapshot and **open the port 9200**.
 
 - Logstash will be already and waiting for you to put configuration files at `/etc/logstash/config.d`
 - Elasticsearch will be already running on port `9200`
