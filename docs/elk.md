@@ -39,7 +39,7 @@ Just spin up a new Terminal based on this snapshot.
 
 ---
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/MFJ86MQ.png)
 
 ---
 
@@ -49,6 +49,7 @@ Just spin up a new Terminal based on this snapshot.
 - [Elasticsearch](http://www.elasticsearch.org/overview/elasticsearch/)
 - [Logstash](http://www.elasticsearch.org/overview/logstash)
 - [Kibana](http://www.elasticsearch.org/overview/kibana)
+- [Terminal Blog entry!](https://blog.terminal.com/elk-for-log-analysis)
 
 ---
 
