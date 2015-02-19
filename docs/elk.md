@@ -34,7 +34,7 @@ Just spin up a new Terminal based on this snapshot.
 
 - Logstash will be already and waiting for you to put configuration files at `/etc/logstash/config.d`
 - Elasticsearch will be already running on port `9200`
-- Kibana will be running http://yourterminalname-80.terminal.com/kibana
+- Kibana will be running http://terminalservername-80.terminal.com/kibana
 
 
 ---
