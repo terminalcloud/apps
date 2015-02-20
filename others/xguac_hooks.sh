@@ -18,8 +18,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/guacamole/#/client/c/Desktop"><b>See your Desktop here!</b></a></p>
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/guacamole/#"><b>Guacamole Interface</b></a></p>
+<div class="align-right"><a class="btn" id="exlink" target="_blank" href="http://$(hostname).terminal.com/guacamole/#/client/c/Desktop">See your desktop here</a></div>
 </head>
 <body>
 EOF

@@ -28,8 +28,7 @@ Keep in mind that the user experience may vary depending on the browser, locatio
 
 ### General Usage
 - Spin up a new Terminal based on this snapshot.
-- Access your desktop directly by pressing on "See your desktop here!".
-- For additional options like cliboard interface, access the "Guacamole interface".
+- Access your desktop directly by pressing on <div><a class="btn" id="exlink" target="_blank" href="http://terminalservername-8080.terminal.com/guacamole/#/client/c/Desktop">See your desktop here</a></div>.
 
 - Password for vnc user: `t3rminal` (*sudo all* granted)
 
