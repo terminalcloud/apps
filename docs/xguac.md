@@ -1,3 +1,5 @@
+---
+
 # Ubuntu 14.04 with XFCE4 and Guacamole  - Terminal
 
 This Terminal has a full Ubuntu 14.04 ready to use and install whatever you want.
@@ -28,7 +30,7 @@ Keep in mind that the user experience may vary depending on the browser, locatio
 
 ### General Usage
 - Spin up a new Terminal based on this snapshot.
-- Access your desktop directly by pressing on <div><a class="btn" id="exlink" target="_blank" href="http://terminalservername-8080.terminal.com/guacamole/#/client/c/Desktop">See your desktop here</a></div>.
+- Access your desktop directly by clicking on: <div><a class="btn" id="exlink" target="_blank" href="http://terminalservername-8080.terminal.com/guacamole/#/client/c/Desktop">See your desktop here</a></div>
 
 - Password for vnc user: `t3rminal` (*sudo all* granted)
 
@@ -42,6 +44,7 @@ You can also connect to the desktop using a VNC client directly.
 To do that, you have to use a **Unix based machine** (Like Linux or OS X), have **ssh** installed and configured on your system, ssh keys [installed at Terminal.com](https://www.terminal.com/settings/ssh_keys) and [ssh proxy](https://www.terminal.com/ssh) configured in your computer.
 
 Then,
+
 - Add your public ssh keys to the .ssh/authorized_keys file .
 - In your own computer execute `ssh -C root@terminalservername.terminal.com -L 5901:terminalservername:5901 `to start the ssh tunnel between your computer and the terminal Terminal. If everything is well configured, you will see the command prompt of your terminal Terminal.
 - Select your favorite VNC client and connect to localhost using the default port (5901). [In linux you just can execute `vncviewer localhost:5901`]
