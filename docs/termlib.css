@@ -2,6 +2,22 @@ html {
 font-family: Arial, Helvetica, sans-serif;
 }
 
+.btn {
+  padding: 12px 20px;
+  display: inline-block;
+  background-color: #1e5883;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a.btn:hover, a.btn:active{
+  background-color: #194a6e;
+}
+
+.align-right{
+  text-align: right;
+
 #exlink {
 	text-align: right;
 	color: #2C879B;
