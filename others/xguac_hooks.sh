@@ -18,7 +18,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<div class="align-right"><a class="btn" id="exlink" target="_blank" href="http://$(hostname).terminal.com/guacamole/#/client/c/Desktop">See your desktop here</a></div>
+<div class="align-right"><a class="btn" id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/guacamole/#/client/c/Desktop">See your desktop here</a></div>
 </head>
 <body>
 EOF
