@@ -35,7 +35,7 @@ root@ubuntu:~# curl localhost:7379/get/hello
 → {"get":"world"}
 ```
 
-You can also access Webdis externally on http://terminalservername-7379.terminal.com
+You can also access your Webdis installation externally by pointing to http://terminalservername-7379.terminal.com
 
 ---
 
