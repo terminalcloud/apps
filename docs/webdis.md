@@ -30,9 +30,9 @@ Access Redis though Webdis by going to on port 7379.
 
 
 ```
-root@ubuntu:~# curl localhost:7379/set/hello/world
+root@ubuntu:~# curl localhost:7379/set/hello/world \n
  {"set":[true,"OK"]}
-root@ubuntu:~# curl localhost:7379/get/hello
+root@ubuntu:~# curl localhost:7379/get/hello \n
  {"get":"world"}
 ```
 
