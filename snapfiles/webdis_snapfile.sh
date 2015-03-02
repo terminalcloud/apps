@@ -22,7 +22,7 @@ install(){
     tar -xvzf webdis-0.1.1.tar.gz
     cd webdis-0.1.1 && make && make install && cd ..
     rm -rf webdis-0.1.1 webdis-0.1.1.tag.gz
-    /etc/init.d/redis-server restart && /usr/local/bin/webdis /etc/webdis.prod.json && bash
+    /etc/init.d/redis-server restart && /usr/local/bin/webdis /etc/webdis.prod.json
 }
 
 install_hooks(){
@@ -75,6 +75,6 @@ ENDOFFILE
 chmod 777 /CL/hooks/startup.sh
 }
 
-install && install_hooks
+install ; install_hooks
 
 #RUN: echo "Installation done"
