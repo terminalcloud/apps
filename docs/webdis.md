@@ -26,7 +26,7 @@ Accessing /COMMAND/arg0/arg1/.../argN[.ext] on Webdis executes the command on Re
 Just spin up a new Terminal based on this snapshot. 
 Access Redis though Webdis by going to on port 7379.
 
-**Example:**
+Example:
 
 ```
 root@ubuntu:~# curl localhost:7379/set/hello/world
@@ -34,6 +34,7 @@ root@ubuntu:~# curl localhost:7379/set/hello/world
 root@ubuntu:~# curl localhost:7379/get/hello
 → {"get":"world"}
 ```
+
 ---
 
 ## Documentation
