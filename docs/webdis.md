@@ -49,7 +49,7 @@ You can also access your Webdis installation externally by pointing to http://te
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/snapfiles/webdis_snapfile.sh && bash webdis_snapfile.sh
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/snapfiles/webdis_snapfile.sh && bash webdis_snapfile.sh`
 
 ---
 
