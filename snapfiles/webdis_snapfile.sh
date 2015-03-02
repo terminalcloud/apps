@@ -10,6 +10,7 @@ source terlib.sh || (echo "cannot get the includes"; exit -1)
 
 install(){
     # Basics
+    pkg_update
     system_cleanup
     basics_install
 
@@ -21,7 +22,7 @@ install(){
     tar -xvzf webdis-0.1.1.tar.gz
     cd webdis-0.1.1 && make && make install && cd ..
     rm -rf webdis-0.1.1 webdis-0.1.1.tag.gz
-    /etc/init.d/redis-server start && /usr/local/bin/webdis /etc/webdis.prod.json && bash
+    /etc/init.d/redis-server restart && /usr/local/bin/webdis /etc/webdis.prod.json && bash
 }
 
 install_hooks(){

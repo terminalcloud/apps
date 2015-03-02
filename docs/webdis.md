@@ -48,7 +48,7 @@ root@qmaxquique3006:~# curl localhost:7379/get/hello
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/snapfiles/webdis_installer.sh && bash webdis_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/snapfiles/webdis_snapfile.sh && bash webdis_snapfile.sh
 
 ---
 
