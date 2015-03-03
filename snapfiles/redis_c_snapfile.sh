@@ -44,7 +44,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-8081.terminal.com/admin"><b>Redis Commander</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://\$(hostname)-8081.terminal.com"><b>Redis Commander</b></a></p>
 </head>
 <body>
 EOF

@@ -1,6 +1,6 @@
 # **Redis with Redis Commander** Terminal.com Snapshot
 
-*MINI_DESC.*
+*Redis Server and Web Management interface*
 
 ---
 
@@ -45,26 +45,28 @@ Redis-Commander is a node.js web application used to view, edit, and manage a Re
 ## Usage
 
 Just spin up a new Terminal based on this snapshot. Redis will be already running.
-Access the Redis Commander by clicking [here](https://terminalservername-8081-terminal.com).
+Access the Redis Commander by clicking [here](https://terminalservername-8081.terminal.com).
 
 
 ---
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/c52uzsX.png)
 
 ---
 
 ## Documentation
 
-- [Redis with Redis Commander website]()
-- [Documentation]()
+- [Redis Website](http://redis.io/)
+- [Redis Documentation](http://redis.io/documentation)
+- [Redis Support Page](http://redis.io/support)
+- [Redis Commander Main Page](http://joeferner.github.io/redis-commander/)
 
 ---
 
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/snapfiles/redis_c_snapfile.sh && bash redis_c_snapfile.sh
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/snapfiles/redis_c_snapfile.sh && bash redis_c_snapfile.sh`
 
 ---
 
