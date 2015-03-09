@@ -30,7 +30,7 @@ install_hooks(){
 
 #!/bin/bash
 
-name="Unindexed"
+name="unindexed"
 
 export PATH=\$PATH:/srv/cloudlabs/scripts
 
