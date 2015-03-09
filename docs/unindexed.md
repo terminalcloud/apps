@@ -6,7 +6,7 @@
 
 ## About Unindexed
 
-Unindexed is an experiment - prof of concept - software that will delete itself once it's indexed by Google.
+Unindexed is an experiment - proof of concept - software that will delete itself once it's indexed by Google.
 
 ---
 
@@ -14,6 +14,7 @@ Unindexed is an experiment - prof of concept - software that will delete itself 
 
 Just spin up a new Terminal based on this snapshot. 
 Access the application by clicking on "Check your installation here".
+
 Google query schedule is running using root's crontab.
 
 ---
