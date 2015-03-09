@@ -1,4 +1,5 @@
 #!/bin/bash
+#SNAP: https://www.terminal.com/snapshot/f2f554a3d2c7a899be901334ec6926c9d1a062ada1b7c3fdc31622d43649fec8
 # Script to deploy Unindexed at Terminal.com
 
 INSTALL_PATH="/root"
