@@ -5,7 +5,7 @@
 wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
 source terlib.sh || (echo "cannot get the includes"; exit -1)
 
-wget https://github.com/terminalcloud/terminal-tools/blob/master/script-terminals.py
+wget https://raw.githubusercontent.com/terminalcloud/terminal-tools/blob/master/script-terminals.py
 chmod +x script-terminals.py
 
 export PATH=$PATH:/srv/cloudlabs/scripts
@@ -38,7 +38,8 @@ auto_slave(){
 	cd /root
 	# Get Slave SID and 
 	sid=264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02 # Slave Snap Sid
-
+    wget https://raw.githubusercontent.com/terminalcloud/terminal-tools/master/script_terminals.py
+    chmod +x script_terminals.py
 	clear
 	echo 'How many slaves do you want to create? (each slave is a new Terminal)'
 	read num
@@ -49,9 +50,9 @@ auto_slave(){
 	echo '"3" for xLarge [4CPU] [6.4Gb RAM]'
 	read kind
 	case $kind in 
-		1) kind = "small" ;;
-		2) kind = "medium" ;;
-		3) kind = "xlarge" ;;
+		1) kind="small" ;;
+		2) kind="medium" ;;
+		3) kind="xlarge" ;;
 		*) echo "Invalid option, assuming Small"; kind = "small" ;;
 	esac
 
