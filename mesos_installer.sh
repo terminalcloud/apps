@@ -59,7 +59,7 @@ show(){
 }
 
 if [[ -z $1 ]]; then
-	install
+	install && show
 elif [[ $1 == "show" ]]; then 
 	show
 else
