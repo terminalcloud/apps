@@ -5,6 +5,9 @@
 wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
 source terlib.sh || (echo "cannot get the includes"; exit -1)
 
+wget https://github.com/terminalcloud/terminal-tools/blob/master/script-terminals.py
+chmod +x script-terminals.py
+
 export PATH=$PATH:/srv/cloudlabs/scripts
 
 # Server Configuration
@@ -35,8 +38,6 @@ auto_slave(){
 	cd /root
 	# Get Slave SID and 
 	sid=264be895334c010804e5c9179f6b856e4af19f1e68ec982be49177ebcc645b02 # Slave Snap Sid
-	wget https://raw.githubusercontent.com/terminalcloud/apps/master/others/mesos_slave.json
-	
 
 	clear
 	echo 'How many slaves do you want to create? (each slave is a new Terminal)'
@@ -48,10 +49,10 @@ auto_slave(){
 	echo '"3" for xLarge [4CPU] [6.4Gb RAM]'
 	read kind
 	case $kind in 
-		1) sed -i "s/cpuq/100/g" mesos_slave.json && sed -i "s/ramq/1600/g" mesos_slave.json ;;
-		2) sed -i "s/cpuq/200/g" mesos_slave.json && sed -i "s/ramq/3200/g" mesos_slave.json ;;
-		3) sed -i "s/cpuq/400/g" mesos_slave.json && sed -i "s/ramq/6400/g" mesos_slave.json ;;
-		*) echo "Invalid option, assuming Small"; sed -i "s/cpuq/100/g" mesos_slave.json && sed -i "s/ramq/1600/g" mesos_slave.json ;;
+		1) kind = "small" ;;
+		2) kind = "medium" ;;
+		3) kind = "xlarge" ;;
+		*) echo "Invalid option, assuming Small"; kind = "small" ;;
 	esac
 
 	/srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
@@ -61,20 +62,17 @@ auto_slave(){
 	read atoken
 	echo 'Trying to generate the Mesos Slaves at Terminal.com with the given tokens'
 
-	sed -i "s/utoken/$utoken/g" mesos_slave.json
-	sed -i "s/atoken/$atoken/g" mesos_slave.json
-	sed -i "s/sid/$sid/g" mesos_slave.json
-	sed -i "s/IP/$IP/g" mesos_slave.json
+    # Create slave configurator script
+    cat > slave.sh << EOF
+echo "$IP" > /root/.master
+EOF
 
-	for ((i=1;i<=$num;i++));
-		do 
-	    curl -L -X POST -H 'Content-Type: application/json' -d @mesos_slave.json api.terminal.com/v0.1/start_snapshot
-	    echo "Starting Slave $i ..."
-	    sleep 2
-    done
+    # Create the slave servers
+    ./script-terminals.py $num -b $sid -m startup_key -x slave.sh -u $utoken -a $atoken -s $kind -n $cl_name -p \'*\' -t multi
 
    	clear
-   	echo "if you want to add more slaves to this cluster in the future, just start a new Mesos Slave Snapshot and provide this IP address: $IP"
+   	echo "if you want to add more slaves to this cluster in the future, start a new Mesos Slave Snapshot, link it with this Master \
+   	node and and provide this IP address: $IP"
    }
 
 
@@ -98,4 +96,4 @@ esac
 /srv/cloudlabs/scripts/display.sh /root/info.html
 
 # Delete tokens
-rm /root/mesos_slave.json
+rm creds.json
