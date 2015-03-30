@@ -12,6 +12,7 @@ install(){
 	pkg_update
 	system_cleanup
 	basics_install
+	python_install
 
 	# Procedure: 
 	apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF
@@ -20,6 +21,9 @@ install(){
 	echo "deb http://repos.mesosphere.io/${DISTRO} ${CODENAME} main" | tee /etc/apt/sources.list.d/mesosphere.list
 	apt-get -y update
 	apt-get -y install mesos marathon
+
+	# Install terminalcloud python utils
+	pip install terminalcloud
 	# reboot
 }
 
@@ -55,7 +59,7 @@ show(){
 }
 
 if [[ -z $1 ]]; then
-	install && show
+	install
 elif [[ $1 == "show" ]]; then 
 	show
 else
