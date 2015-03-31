@@ -7,6 +7,7 @@ source terlib.sh || (echo "cannot get the includes"; exit -1)
 
 wget https://raw.githubusercontent.com/terminalcloud/terminal-tools/master/script-terminals.py
 chmod +x script-terminals.py
+apt-get update; apt-get -y install python-pip; pip install terminalcloud
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
