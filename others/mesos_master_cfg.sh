@@ -7,7 +7,7 @@ source terlib.sh || (echo "cannot get the includes"; exit -1)
 
 wget https://raw.githubusercontent.com/terminalcloud/terminal-tools/master/script-terminals.py
 chmod +x script-terminals.py
-apt-get update; apt-get -y install python-pip; pip install terminalcloud
+# apt-get update; apt-get -y install python-pip; pip install terminalcloud
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
@@ -70,7 +70,7 @@ echo "$IP" > /root/.master
 EOF
 
     # Create the slave servers
-    ./script-terminals.py $num -b $sid -m startup_key -x slave.sh -u $utoken -a $atoken -s $kind -n $cl_name -p \"*\" -t multi
+    ./script-terminals.py $num -b $sid -m startup_key -x slave.sh -u $utoken -a $atoken -s $kind -n $cl_name -p "*" -t multi
     clear
    	echo "if you want to add more slaves to this cluster in the future, start a new Mesos Slave Snapshot, link it with this Master \
    	node and and provide this IP address: $IP"
