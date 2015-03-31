@@ -70,7 +70,7 @@ EOF
 
     # Create the slave servers
     ./script-terminals.py $num -b $sid -m startup_key -x slave.sh -u $utoken -a $atoken -s $kind -n $cl_name -p \"*\" -t multi
-
+    clear
    	echo "if you want to add more slaves to this cluster in the future, start a new Mesos Slave Snapshot, link it with this Master \
    	node and and provide this IP address: $IP"
    }
