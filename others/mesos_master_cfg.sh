@@ -53,7 +53,7 @@ auto_slave(){
 		1) kind="small" ;;
 		2) kind="medium" ;;
 		3) kind="xlarge" ;;
-		*) echo "Invalid option, assuming Small"; kind = "small" ;;
+		*) echo "Invalid option, assuming Small"; kind="small" ;;
 	esac
 
 	/srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
