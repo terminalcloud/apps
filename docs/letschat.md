@@ -1,6 +1,6 @@
 # **Let's Chat** Terminal.com Snapshot
 
-*Self-Hosted Chat for Small Teams.*
+*Self-Hosted Chat for Small Teams*
 
 ---
 
@@ -23,7 +23,7 @@ It's designed to be easily deployable and fits well with small, intimate teams.
 - File Uploads
 - Hubot Friendly
 - Rest-like API
-- Transcrips / Chat History
+- Transcripts / Chat History
 - MIT licenced
 
 ---
@@ -48,7 +48,7 @@ Just spin up a new Terminal based on this snapshot. Access the application by cl
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/letschat_installer.sh && bash letschat_installer.sh.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/letschat_installer.sh && bash letschat_installer.sh`
 
 ---
 
