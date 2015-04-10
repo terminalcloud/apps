@@ -37,16 +37,21 @@ Zabbix provides agents to monitor remote hosts as well as Zabbix includes suppor
 Just spin up a new Terminal based on this snapshot. Access the admin section by clicking to 
 "Check your installation here".
 
+Login using the credentials below:
+
+- Username: `admin`
+- Password: `zabbix`
+
 
 ---
 
-![1](http://commons.wikimedia.org/wiki/File:Zabbix.png#/media/File:Zabbix.png)
+![1](http://upload.wikimedia.org/wikipedia/commons/9/99/Zabbix.png)
 
 ---
 
 ## Documentation
 
-- [Zabbit main site](https://www.zabbix.org)
+- [Zabbix main site](https://www.zabbix.org)
 - [Community Code](https://www.zabbix.org/wiki/Community_code)
 - [Community Training Program](https://www.zabbix.org/wiki/Community_Training_Program)
 - [Wiki](https://www.zabbix.org/wiki/Wiki_general)
