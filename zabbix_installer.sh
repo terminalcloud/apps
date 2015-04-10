@@ -19,7 +19,7 @@ install(){
 
 	# Procedure:
 	echo 'deb http://ppa.launchpad.net/tbfr/zabbix/ubuntu precise main' >> /etc/apt/sources.list
-	echo 'eb-src http://ppa.launchpad.net/tbfr/zabbix/ubuntu precise main' >> /etc/apt/sources.list
+	echo 'deb-src http://ppa.launchpad.net/tbfr/zabbix/ubuntu precise main' >> /etc/apt/sources.list
 	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C407E17D5F76A32B
 	apt-get update
 	apt-get install zabbix-server-mysql php5-mysql zabbix-frontend-php
