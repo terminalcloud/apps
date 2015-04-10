@@ -22,19 +22,49 @@ install(){
 	echo 'deb-src http://ppa.launchpad.net/tbfr/zabbix/ubuntu precise main' >> /etc/apt/sources.list
 	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C407E17D5F76A32B
 	apt-get update
-	apt-get install zabbix-server-mysql php5-mysql zabbix-frontend-php
+	apt-get install -y zabbix-server-mysql php5-mysql zabbix-frontend-php
 	echo DBPassword=zabbix >> /etc/zabbix/zabbix_server.conf
-	cd /usr/share/zabbix-server-mysql
-	gunzip *
-    mysql -u zabbix -p zabbix < schema.sql
-    mysql -u zabbix -p zabbix < images.sql
-    mysql -u zabbix -p zabbix < data.sql
+#	cd /usr/share/zabbix-server-mysql
+#	gunzip *
+#    mysql -uzabbix -pzabbix zabbix < schema.sql
+#    mysql -uzabbix -pzabbix zabbix < images.sql
+#    mysql -uzabbix -pzabbix zabbix < data.sql
+    sed -i 's/post_max_size = 8M/post_max_size = 32M/g' /etc/php5/apache2/php.ini
+    sed -i 's/max_execution_time = 30/max_execution_time = 300/g' /etc/php5/apache2/php.ini
+    sed -i 's/max_input_time = 60/max_input_time = 300/g' /etc/php5/apache2/php.ini
+    echo 'date.timezone = America/Los_Angeles' >>  /etc/php5/apache2/php.ini
+    chmod -R o+r /etc/zabbix/
+#cat > /etc/zabbix/zabbix.conf.php << EOF
+#<?php
+#// Zabbix GUI configuration file
+#global $DB;
+#
+#$DB['TYPE']     = 'MYSQL';
+#$DB['SERVER']   = 'localhost';
+#$DB['PORT']     = '0';
+#$DB['DATABASE'] = 'zabbix';
+#$DB['USER']     = 'zabbix';
+#$DB['PASSWORD'] = 'zabbix';
+#
+#// SCHEMA is relevant only for IBM_DB2 database
+#$DB['SCHEMA'] = '';
+#
+#$ZBX_SERVER      = '0.0.0.0';
+#$ZBX_SERVER_PORT = '10051';
+#$ZBX_SERVER_NAME = '';
+#
+#$IMAGE_FORMAT_DEFAULT = IMAGE_FORMAT_PNG;
+#?>
+#EOF
+
     cp /usr/share/doc/zabbix-frontend-php/examples/apache.conf /etc/apache2/conf-available/zabbix.conf
     a2enconf zabbix.conf
     a2enmod alias
     service apache2 restart
     sed -i 's/START\=no/START\=yes/g' /etc/default/zabbix-server
     service zabbix-server start
+
+    # Install local agent
     apt-get install zabbix-agent
     service zabbix-agent restart
 }
