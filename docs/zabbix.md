@@ -1,10 +1,10 @@
-# **Netflix's Vector** Terminal.com Snapshot
+# **Zabbix** Terminal.com Snapshot
 
 *On-Host Performance Monitoring Tool*
 
 ---
 
-## About Netflix's Vector
+## About Zabbix
 
 Zabbix is an open source software for networks and application monitoring. 
 Zabbix provides agents to monitor remote hosts as well as Zabbix includes support for monitoring via SNMP, TCP and ICMP checks.

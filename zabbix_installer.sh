@@ -14,15 +14,29 @@ install(){
 	basics_install
 	apache_install
 	mysql_install
+	mysql_setup zabbix zabbix zabbix
 	php5_install
 
 	# Procedure:
-	wget http://repo.zabbix.com/zabbix/2.2/ubuntu/pool/main/z/zabbix-release/zabbix-release_2.2-1+trusty_all.deb
-    dpkg -i zabbix-release_2.2-1+trusty_all.deb
-    apt-get -y install zabbix-server-mysql zabbix-frontend-php
-    cp /etc/zabbix/apache.conf /etc/apache2/sites-enabled/zabbix.conf
-    sed -i  's/\#php_value\ date\.timezone\ Europe\/Ria/php_value\ date\.timezone\ America\/Los_Angeles/g' /etc/apache2/sites-enabled/zabbix.conf
+	echo 'deb http://ppa.launchpad.net/tbfr/zabbix/ubuntu precise main' >> /etc/apt/sources.list
+	echo 'eb-src http://ppa.launchpad.net/tbfr/zabbix/ubuntu precise main' >> /etc/apt/sources.list
+	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C407E17D5F76A32B
+	apt-get update
+	apt-get install zabbix-server-mysql php5-mysql zabbix-frontend-php
+	echo DBPassword=zabbix >> /etc/zabbix/zabbix_server.conf
+	cd /usr/share/zabbix-server-mysql
+	gunzip *
+    mysql -u zabbix -p zabbix < schema.sql
+    mysql -u zabbix -p zabbix < images.sql
+    mysql -u zabbix -p zabbix < data.sql
+    cp /usr/share/doc/zabbix-frontend-php/examples/apache.conf /etc/apache2/conf-available/zabbix.conf
+    a2enconf zabbix.conf
+    a2enmod alias
     service apache2 restart
+    sed -i 's/START\=no/START\=yes/g' /etc/default/zabbix-server
+    service zabbix-server start
+    apt-get install zabbix-agent
+    service zabbix-agent restart
 }
 
 show(){
