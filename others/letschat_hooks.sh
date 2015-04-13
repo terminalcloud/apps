@@ -36,7 +36,7 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Open a new terminal and start the application
-echo "cd /root/letschat; LCB_HTTP_HOST=0.0.0.0 npm start" | /srv/cloudlabs/scripts/run_in_term.js
+echo "cd /root/lets-chat; LCB_HTTP_HOST=0.0.0.0 npm start" | /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
