@@ -20,6 +20,8 @@ install(){
     git clone https://github.com/sdelements/lets-chat.git
     cd lets-chat
     npm install
+    mkdir -p upoads
+    cp settings.yml.sample settings.yml
 	# LCB_HTTP_HOST=0.0.0.0 npm start
 }
 
