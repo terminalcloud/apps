@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+    <!-- The following 4 values need to be filled in to match your cluster configuration. If you leave them blank, Hadoop will not run on Mesos. -->
+    <property>
+        <name>mapred.job.tracker</name>
+        <value>IP:7676</value>
+    </property>
+
+    <!-- The web UI will bind -->
+    <property>
+        <name>mapred.job.tracker.http.address</name>
+        <value>IP:7676</value>
+    </property>
+
+    <!-- This identifies the mesos-master. E.g. zk://1.1.1.1:2181,2.2.2.2:2181,3.3.3.3:2181/mesos -->
+    <property>
+        <name>mapred.mesos.master</name>
+        <value>zk://IP:2181/mesos</value>
+    </property>
+
+    <!--
+      This property identifies the location of the modified hadoop distribution containing this XML file.
+      The mesos slave will download this distribution if a hadoop job is launched, extract the file and use the hadoop binary
+      to start the task tracker.
+      Sample hdfs://<hdfs-namenode-host & optional port>/hadoop-2.0.0-mr1-cdh4.2.1.tgz -> hdfs://namenode.mesosphere.io:9000/hadoop-2.0.0-mr1-cdh4.2.1.tgz
+    -->
+    <property>
+        <name>mapred.mesos.executor.uri</name>
+        <value>hdfs://IP/hadoop-2.0.0-mr1-cdh4.2.1.tgz</value>
+    </property>
+
+    <!--
+      The remaining properties do not require adjustment, but for running production jobs it's recommended to modify them
+      to optimize for different cluster & machine sizes.
+    -->
+    <property>
+        <name>mapred.mesos.slot.cpus</name>
+        <value>0.20</value>
+    </property>
+
+    <property>
+        <name>mapred.mesos.slot.disk</name>
+        <!-- The value is in MB. -->
+        <value>512</value>
+    </property>
+
+    <property>
+        <name>mapred.mesos.slot.mem</name>
+        <!-- Note that this is the total memory required for
+         JVM overhead (256 MB) and the heap (-Xmx) of the task.
+         The value is in MB. -->
+        <value>368</value>
+    </property>
+
+    <property>
+        <name>mapred.mesos.tasktracker.mem</name>
+        <value>368</value>
+    </property>
+
+    <property>
+        <name>mapred.mesos.total.map.slots.minimum</name>
+        <value>0</value>
+    </property>
+
+    <property>
+        <name>mapred.mesos.total.reduce.slots.minimum</name>
+        <value>0</value>
+    </property>
+
+
+    <!-- The values below should work out of the box but you might want to optimize some of them for running production jobs -->
+
+    <property>
+        <name>mapred.jobtracker.taskScheduler</name>
+        <value>org.apache.hadoop.mapred.MesosScheduler</value>
+    </property>
+
+    <property>
+        <name>mapred.mesos.taskScheduler</name>
+        <value>org.apache.hadoop.mapred.JobQueueTaskScheduler</value>
+    </property>
+
+    <!-- The MesosScheduler will record some stats in this file -->
+    <property>
+        <name>mapred.mesos.state.file</name>
+        <value>/tmp/jobtracker-state</value>
+    </property>
+
+
+    <!-- This is only relevant if a fixed slot policy is used -->
+    <property>
+        <name>mapred.tasktracker.map.tasks.maximum</name>
+        <value>10</value>
+    </property>
+
+    <!-- This is only relevant if a fixed slot policy is used -->
+    <property>
+        <name>mapred.tasktracker.reduce.tasks.maximum</name>
+        <value>10</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobtracker.expire.trackers.interval</name>
+        <value>60000</value>
+    </property>
+
+    <property>
+        <name>mapred.tasktracker.expiry.interval</name>
+        <value>60000</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobtracker.restart.recover</name>
+        <value>true</value>
+    </property>
+
+
+    <property>
+        <name>mapred.child.java.opts</name>
+        <value>-XX:+UseParallelGC -Xmx256m</value>
+    </property>
+
+    <property>
+        <name>mapreduce.tasktracker.dns.interface</name>
+        <value>eth0</value>
+    </property>
+
+    <!-- The reduce tasks start when 60% of the maps are done -->
+    <property>
+        <name>mapreduce.job.reduce.slowstart.completedmaps</name>
+        <value>0.60</value>
+    </property>
+
+    <property>
+        <name>mapred.reduce.slowstart.completed.maps</name>
+        <value>0.60</value>
+    </property>
+
+    <!-- This is important when the tasktracker serves tons of maps, TODO(*) templetize -->
+    <property>
+        <name>mapreduce.tasktracker.http.threads</name>
+        <value>8</value>
+    </property>
+
+    <property>
+        <name>tasktracker.http.threads</name>
+        <value>8</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.shuffle.parallelcopies</name>
+        <value>20</value>
+    </property>
+
+    <property>
+        <name>mapred.reduce.parallel.copies</name>
+        <value>20</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobtracker.handler.count</name>
+        <value>70</value>
+    </property>
+
+    <property>
+        <name>mapred.job.tracker.handler.count</name>
+        <value>70</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.shuffle.retry-delay.max.ms</name>
+        <value>10000</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.shuffle.connect.timeout</name>
+        <value>10000</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.shuffle.read.timeout</name>
+        <value>10000</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.shuffle.maxfetchfailures</name>
+        <value>4</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.shuffle.notify.readerror</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>mapreduce.map.output.compress</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>mapreduce.task.io.sort.mb</name>
+        <value>30</value>
+    </property>
+
+    <property>
+        <name>io.sort.mb</name>
+        <value>30</value>
+    </property>
+
+    <property>
+        <name>mapreduce.task.io.sort.factor</name>
+        <value>10</value>
+    </property>
+
+    <property>
+        <name>io.sort.factor</name>
+        <value>10</value>
+    </property>
+
+    <property>
+        <name>mapreduce.job.jvm.numtasks</name>
+        <value>-1</value>
+    </property>
+
+    <property>
+        <name>mapred.job.reuse.jvm.num.tasks</name>
+        <value>-1</value>
+    </property>
+
+    <property>
+        <name>mapreduce.job.ubertask.enable</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>mapreduce.job.speculative.speculativecap</name>
+        <value>0.01</value>
+    </property>
+
+    <property>
+        <name>webinterface.private.actions</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobtracker.webinterface.trusted</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>mapred.reduce.max.attempts</name>
+        <value>6</value>
+    </property>
+
+    <property>
+        <name>mapred.map.max.attempts</name>
+        <value>6</value>
+    </property>
+
+    <property>
+        <name>mapreduce.map.maxattempts</name>
+        <value>6</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.maxattempts</name>
+        <value>6</value>
+    </property>
+
+    <property>
+        <name>mapred.max.tracker.failures</name>
+        <value>6</value>
+    </property>
+
+    <property>
+        <name>mapreduce.job.maxtaskfailures.per.tracker</name>
+        <value>6</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.merge.memtomem.enabled</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>mapred.skip.map.max.skip.records</name>
+        <value>10</value>
+    </property>
+
+    <property>
+        <name>mapreduce.map.skip.maxrecords</name>
+        <value>10</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.skip.maxgroups</name>
+        <value>2</value>
+    </property>
+
+    <property>
+        <name>mapred.skip.reduce.max.skip.groups</name>
+        <value>2</value>
+    </property>
+
+    <property>
+        <name>mapreduce.fileoutputcommitter.marksuccessfuljobs</name>
+        <value>false</value>
+    </property>
+
+    <property>
+        <name>mapred.mesos.tasktracker.cpus</name>
+        <!-- This is the number of CPUs reserved for the container.-->
+        <value>0.15</value>
+    </property>
+
+
+</configuration>
