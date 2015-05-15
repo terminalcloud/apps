@@ -29,11 +29,11 @@
 
 
 ### General Notes
-This Terminal has a test key preconfigured on it. You may want to replace it by your own key from [here].(https://developer.worldweatheronline.com/auth/register)
+This Terminal has a test key preconfigured on it. You may want to replace it by your own key from [here.](https://developer.worldweatheronline.com/auth/register)
 
 ## Documentation
 
-- [**wego** Github Repo](https://github.com/schachmat/wego/)
+- [**wego**] Github Repo](https://github.com/schachmat/wego/)
 
 ---
 
