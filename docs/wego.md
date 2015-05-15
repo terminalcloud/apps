@@ -2,6 +2,8 @@
 
 **wego is a weather client for the terminal.**
 
+---
+
 ##Features
 
 - Show forecast for 1 to 5 days
