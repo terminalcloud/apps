@@ -1,6 +1,6 @@
 #!/bin/bash
 #SNAP: https://www.terminal.com/snapshot/f2f554a3d2c7a899be901334ec6926c9d1a062ada1b7c3fdc31622d43649fec8
-# Script to deploy NodeJS DevStack at Terminal.com
+# Script to deploy Wego at Terminal.com
 
 INSTALL_PATH="/root"
 
@@ -14,17 +14,12 @@ install(){
 	system_cleanup
 	basics_install
 
-	# Procedure: 
-	# Install nodejs, npm an mongodb
-	apt-get -y install nodejs npm mongodb
-	# Install bower, express and express generator
-	npm install -g bower
-	npm install -g express
-	npm install -g express-generator@4
-	# Install angular.js
-	bower install --allow-root angular#1.2.26 
-	# Get express examples
-	git clone https://github.com/strongloop/express.git
+    golang_install
+    cd "$INSTALL_PATH"
+    source /root/.gvm/scripts/gvm
+    go get github.com/schachmat/wego
+    #test_key=a107e4628b48ef654ae6c354f77e8
+    wego
 }
 
 install_hooks(){
@@ -33,7 +28,7 @@ install_hooks(){
 
 #!/bin/bash
 
-name="express"
+name="Wego"
 
 export PATH=\$PATH:/srv/cloudlabs/scripts
 
