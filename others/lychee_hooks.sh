@@ -19,6 +19,7 @@
 # Cloudlabs, INC. - 653 Harrison St, San Francisco, CA 94107.
 # http://www.terminal.com - help@terminal.com
 
+name="lychee"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
