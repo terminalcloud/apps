@@ -51,6 +51,7 @@ install(){
   dpkg-reconfigure locales
   apache_install
   apache_default_vhost zenphoto.conf $INSTALL_PATH/zenphoto
+  chmod -R 600 /var/www/zenphoto/zp-data
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 250M/g' /etc/php5/apache2/php.ini
   sed -i 's/memory_limit\ \=\ 128M/memory_limit\ \=\ 256M/g' /etc/php5/apache2/php.ini
