@@ -21,9 +21,9 @@ install(){
   apt-get -y install php5-ldap php5-imap
   php5enmod imap
   cd $INSTALL_PATH
-  wget https://github.com/zenphoto/zenphoto/archive/master.zip
-  unzip master.zip && rm master.zip
-  mv zenphoto-master zenphoto
+  wget https://github.com/zenphoto/zenphoto/archive/zenphoto-1.4.8.zip
+  unzip zenphoto-1.4.8.zip && rm zenphoto-1.4.8.zip
+  mv zenphoto-zenphoto-1.4.8 zenphoto
   chown -R www-data:www-data zenphoto
   export LANGUAGE=en_US.UTF-8
   export LANG=en_US.UTF-8

@@ -39,9 +39,9 @@ install(){
   apt-get -y install php5-ldap php5-imap
   php5enmod imap
   cd $INSTALL_PATH
-  wget https://github.com/zenphoto/zenphoto/archive/master.zip
-  unzip master.zip && rm master.zip
-  mv zenphoto-master zenphoto
+  wget https://github.com/zenphoto/zenphoto/archive/zenphoto-1.4.8.zip
+  unzip zenphoto-1.4.8.zip && rm zenphoto-1.4.8.zip
+  mv zenphoto-zenphoto-1.4.8 zenphoto
   chown -R www-data:www-data zenphoto
   export LANGUAGE=en_US.UTF-8
   export LANG=en_US.UTF-8
@@ -52,7 +52,7 @@ install(){
   apache_install
   apache_default_vhost zenphoto.conf $INSTALL_PATH/zenphoto
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
-  sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
+  sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 250M/g' /etc/php5/apache2/php.ini
   sed -i 's/memory_limit\ \=\ 128M/memory_limit\ \=\ 256M/g' /etc/php5/apache2/php.ini
   service apache2 restart
 }
