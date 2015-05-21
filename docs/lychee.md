@@ -8,7 +8,7 @@
 
 The perfect place to store all your photos. No storage limit, no compression, no loss in data. It even support and display your EXIF and IPTC Metadata. And if you want, you can make your photos public for your audience. With just one click.
 
-![1](http://lychee.electerious.com/assets/img/showcase.png)
+![1](http://lychee.electerious.com/assets/images/showcase.jpg)
 ---
 
 - **Manage** - Managing your photos has never been easier. Upload, move, rename, describe, delete or search your photos in seconds. All in one place, right from your browser.
