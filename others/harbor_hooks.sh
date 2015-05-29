@@ -27,30 +27,6 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
-# Updating Harbor to it latest version
-
-cd /root/harbor
-git checkout master
-git pull
-
-# Configuring Harbor Credentials
-
-/srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
-echo 'Please copy your API User token, paste it below and press enter:'
-read utoken
-echo 'Please copy your API Access token, paste it below and press enter: (if it does not exist please generate it)'
-read atoken
-
-# Generating SSH key
-echo 'Generating ssh key'
-ssh-keygen -f /root/.ssh/id_rsa -P ''
-
-
-# Launching Harbor by first time
-
-cd /root/harbor
-./harbor.py -u "$utoken" -a "$atoken" -p 8080 &
-cd /root
 
 
 # Making the file...
@@ -80,5 +56,22 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+cd /root/harbor
+git checkout master
+git pull
+
+/srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
+echo 'Please copy your API User token, paste it below and press enter:'
+read utoken
+echo 'Please copy your API Access token, paste it below and press enter: (if it does not exist please generate it)'
+read atoken
+
+echo 'Generating ssh key'
+ssh-keygen -f /root/.ssh/id_rsa -P ''
+
+
+cd /root/harbor
+./harbor.py -u "$utoken" -a "$atoken" -p 8080 &
+cd /root
 /srv/cloudlabs/scripts/display.sh /root/info.html
 EOF
