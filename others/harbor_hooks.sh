@@ -55,7 +55,7 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 
 # Showing up
-cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+cat > /root/setup.sh << EOF
 cd /root/harbor
 git checkout master
 git pull
@@ -71,7 +71,11 @@ ssh-keygen -f /root/.ssh/id_rsa -P ''
 
 
 cd /root/harbor
-./harbor.py -u "$utoken" -a "$atoken" -p 8080 &
+./harbor.py -u "\$utoken" -a "\$atoken" -p 8080 &
 cd /root
 /srv/cloudlabs/scripts/display.sh /root/info.html
+EOF
+
+cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+bash /root/setup.sh
 EOF
