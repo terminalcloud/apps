@@ -27,6 +27,11 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
+# Updating Harbor to it latest version
+
+cd /root/harbor
+git checkout master
+git pull
 
 # Configuring Harbor Credentials
 
@@ -44,7 +49,7 @@ ssh-keygen -f /root/.ssh/id_rsa -P ''
 # Launching Harbor by first time
 
 cd /root/harbor
-./harbor.py -U "$utoken" -A "$atoken" -p 8080 &
+./harbor.py -u "$utoken" -a "$atoken" -p 8080 &
 cd /root
 
 
@@ -54,8 +59,8 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="https://blog.terminal.com/harbor"><b>Harbor Launch Blog Post</b></a></p>
-<p id="exlink"><a id="exlink" target="_blank" href="https://blog.terminal.com/harbor"><b>Harbor Launch Blog Post</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="https://blog.terminal.com/harbor"><b>Harbor Blog Post</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="https://github.com/terminalcloud/harbor"><b>Harbor Github Repo</b></a></p>
 </head>
 <body>
 EOF
@@ -70,7 +75,7 @@ cat >> /root/info.html << EOF
 EOF
 
 # Convert links to external links
-sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html 
+sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 
 # Showing up
