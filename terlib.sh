@@ -76,6 +76,21 @@ php5_install(){
   fi
 }
 
+mariadb_install(){
+   [[ -z "$1" ]] && pass="root" || pass=$1
+    if [[ -f /etc/debian_version ]]; then
+    apt-get -y install software-properties-common
+    apt-key -y adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db
+    add-apt-repository 'deb http://mirror.edatel.net.co/mariadb//repo/10.0/ubuntu trusty main'
+    apt-get -y update
+    export DEBIAN_FRONTEND=noninteractive
+    debconf-set-selections <<< "mariadb-server-10.0 mysql-server/root_password password $pass"
+    debconf-set-selections <<< "mariadb-server-10.0 mysql-server/root_password_again password $pass"
+    apt-get install -y mariadb-server
+    fi
+}
+
+
 mysql_install(){ # Default pass for root user is "root", if no argument is given.
   [[ -z "$1" ]] && pass="root" || pass=$1
   if [[ -f /etc/debian_version ]]; then
