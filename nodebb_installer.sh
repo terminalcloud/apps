@@ -33,14 +33,14 @@ install(){
 
 	# Procedure: 
 	add-apt-repository -y ppa:chris-lea/node.js
+	add-apt-repository -y ppa:chris-lea/redis-server
 	apt-get -y update
 	apt-get -y install nodejs redis-server imagemagick build-essential
 	git clone https://github.com/NodeBB/NodeBB.git nodebb
 	cd nodebb
 	npm install
-	npm install -g forever
 	./nodebb setup
-	cd /root/nodebb && forever start app.js
+	./nodebb start
 }
 
 show(){
