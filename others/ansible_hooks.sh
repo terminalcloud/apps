@@ -19,7 +19,7 @@
 # Cloudlabs, INC. - 653 Harrison St, San Francisco, CA 94107.
 # http://www.terminal.com - help@terminal.com
 
-name='akeneo'
+name='ansible'
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
@@ -34,7 +34,6 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com"><b>Check your installation here!</b></a></p>
 </head>
 <body>
 EOF
