@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy Balero CMS at Terminal.com
+# Script to deploy SeoPanel CMS at Terminal.com
 # Cloudlabs, INC. Copyright (C) 2015
 #
 # This program is free software; you can redistribute it and/or modify
@@ -29,20 +29,22 @@ source terlib.sh || (echo "cannot get the includes"; exit -1)
 install(){
   # Basics
   system_cleanup
+  pkg_update
   basics_install
 
   # Procedure:
   php5_install
   mysql_install
-  mysql_setup balero balero terminal
+  mysql_setup seopanel seopanel terminal
   cd $INSTALL_PATH
-  wget -O balero.zip https://github.com/BaleroCMS/balerocms-src/archive/master.zip
-  unzip balero.zip && rm balero.zip
-  mv balerocms-src-master balero
-  chown -R www-data:www-data balero
-  mv /var/www/balero/site/etc/balero.config.xml.blank /var/www/balero/site/etc/balero.config.xml
+  wget -O seopanel.zip https://fossies.org/linux/www/seopanel.v.3.7.0.zip
+  unzip seopanel.zip && rm seopanel.zip
+
+  chown -R www-data:www-data seopanel
+  chmod 666 seopanel/config/sp-config.php
+
   apache_install
-  apache_default_vhost balero.conf $INSTALL_PATH/balero/
+  apache_default_vhost seopanel.conf $INSTALL_PATH/seopanel/
   echo "date.timezone = America/Los_Angeles" >> /etc/php5/apache2/php.ini
   sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 30M/g' /etc/php5/apache2/php.ini
   sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
@@ -52,9 +54,9 @@ install(){
 
 show(){
   # Get the startup script
-  wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/balero_hooks.sh
+  wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/seopanel_hooks.sh
   mkdir -p /CL/hooks/
-  mv balero_hooks.sh /CL/hooks/startup.sh
+  mv seopanel_hooks.sh /CL/hooks/startup.sh
   # Execute startup script by first to get the common files
   chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 }
