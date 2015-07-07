@@ -29,7 +29,7 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ### Credentials
 
-- username: `seopanel`
+- username: `spadmin`
 - password: `t3rminal`
 
 ---
