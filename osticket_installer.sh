@@ -32,7 +32,7 @@ install(){
 	basics_install
 
 	# Procedure: 
-	php5_install; apt-get -y php5-imap
+	php5_install; apt-get -y install php5-imap
 	mysql_install
 	mysql_setup osticket osticket terminal
 	cd $INSTALL_PATH
