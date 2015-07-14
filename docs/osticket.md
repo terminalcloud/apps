@@ -34,19 +34,22 @@ Just spin up a new Terminal based on this snapshot. Access the admin section by 
 
 ### Credentials
 
-- username: `admin`
+- username: `helpadmin`
 - password: `t3rminal`
 
 ---
 
-![1](IMAGE_URL)
+![1](http://i.imgur.com/w8YD1wd.png)
 
 ---
 
 ## Documentation
 
-- [OsTicket website]()
-- [Documentation]()
+- [OsTicket website](http://osticket.com/)
+- [Forum](http://osticket.com/forum)
+- [Wiki](http://osticket.com/wiki/)
+- [Blog](http://osticket.com/blog)
+- [Support](http://osticket.com/support)
 
 ---
 
