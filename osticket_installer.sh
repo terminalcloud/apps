@@ -32,7 +32,7 @@ install(){
 	basics_install
 
 	# Procedure: 
-	php5_install
+	php5_install; apt-get -y php5-imap
 	mysql_install
 	mysql_setup osticket osticket terminal
 	cd $INSTALL_PATH
@@ -40,7 +40,7 @@ install(){
 	unzip osTicket-v1.9.9-1-gbe2f138.zip -d osticket
 	chown -R www-data:www-data osticket
 	apache_install
-	apache_default_vhost osticket.conf $INSTALL_PATH/osticket
+	apache_default_vhost osticket.conf $INSTALL_PATH/osticket/upload
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
 	sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
 	sed -i 's/memory_limit\ \=\ 128M/memory_limit\ \=\ 256M/g' /etc/php5/apache2/php.ini
