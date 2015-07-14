@@ -33,6 +33,7 @@ install(){
 
 	# Procedure: 
 	php5_install; apt-get -y install php5-imap
+	php5enmod imap
 	mysql_install
 	mysql_setup osticket osticket terminal
 	cd $INSTALL_PATH
