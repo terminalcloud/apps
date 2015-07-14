@@ -38,6 +38,9 @@ install(){
 	cd $INSTALL_PATH
 	wget http://osticket.com/sites/default/files/download/osTicket-v1.9.9-1-gbe2f138.zip
 	unzip osTicket-v1.9.9-1-gbe2f138.zip -d osticket
+    cd osticket/upload
+	cp include/ost-sampleconfig.php include/ost-config.php
+	cd $INSTALL_PATH
 	chown -R www-data:www-data osticket
 	apache_install
 	apache_default_vhost osticket.conf $INSTALL_PATH/osticket/upload
