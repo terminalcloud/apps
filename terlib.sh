@@ -76,6 +76,25 @@ php5_install(){
   fi
 }
 
+php7_install(){
+  if [[ -f /etc/debian_version ]]; then
+      wget http://repos.zend.com/zend-server/early-access/php7/php-7.0-beta1-DEB-x86_64.tar.gz
+      tar xzPf php-7.0-beta1-DEB-x86_64.tar.gz
+      apt-get update && apt-get install -y libcurl4-openssl-dev libmcrypt-dev libxml2-dev libjpeg-dev libfreetype6-dev \
+      libmysqlclient-dev libt1-dev libgmp-dev libpspell-dev libicu-dev librecode-dev libxpm4 libjpeg62 zip
+      cp /usr/local/php7/libphp7.so /usr/lib/apache2/modules/
+      cp /usr/local/php7/php7.load /etc/apache2/mods-available/
+      HANDLER=$(echo "<FilesMatch \.php$>
+      SetHandler application/x-httpd-php
+      </FilesMatch>")
+      echo "$HANDLER" >> /etc/apache2/apache2.conf
+      a2dismod mpm_event
+      a2enmod mpm_prefork
+      a2enmod rewrite
+      a2enmod php7
+  fi
+}
+
 mariadb_install(){
    [[ -z "$1" ]] && pass="root" || pass=$1
     if [[ -f /etc/debian_version ]]; then
