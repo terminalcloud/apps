@@ -33,6 +33,7 @@ install(){
 	basics_install
 
 	# Procedure:
+	apache_install
 	php7_install
 	mysql_install
 	mysql_setup wordpress wordpress terminal
@@ -40,7 +41,6 @@ install(){
     wget http://wordpress.org/latest.tar.gz
     tar xzvf latest.tar.gz && rm latest.tar.gz
 	chown -R www-data:www-data wordpress
-	apache_install
 	apache_default_vhost wordpress.conf $INSTALL_PATH/wordpress
 	sed -i 's/upload_max_filesize\ \=\ 2M/upload_max_filesize\ \=\ 25M/g' /etc/php5/apache2/php.ini
 	sed -i 's/post_max_size\ \=\ 8M/post_max_size\ \=\ 32M/g' /etc/php5/apache2/php.ini
