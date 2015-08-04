@@ -34,7 +34,7 @@ install(){
 	# Procedure:
 	wget http://influxdb.s3.amazonaws.com/influxdb_0.9.2_amd64.deb
 	dpkg -i influxdb_0.9.2_amd64.deb
-    sed -i 's/\:8086/0\.0\.0\.0\:8086/s' /etc/opt/influxdb/influxdb.conf
+    sed -i 's/\:8086/0\.0\.0\.0\:8086/g' /etc/opt/influxdb/influxdb.conf
     service influxdb restart
 }
 
