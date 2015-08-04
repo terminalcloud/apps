@@ -29,7 +29,9 @@ Access the Influxdb CLI by executing `/opt/influxdb/influx`
 
 ### Web interface.
 
-In a Terminal, using the web interface is only supported over http.
+In a Terminal, using the **web interface is only supported over http** and the port `8086` must be publicly open.
+Due security reasons, we recommend to acoid using the web interface when working with sensible/private/important data.
+
 You will have to configure the web interface connection settings as follows:
 
 Host=terminalservername-8086.terminal.com 
