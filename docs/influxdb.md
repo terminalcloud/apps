@@ -22,7 +22,7 @@ analytics in a few hours.
 
 ---
 
-## Usage
+## Command line interface
 
 Spin up a new Terminal based on this snapshot. 
 Access the Influxdb CLI by executing `/opt/influxdb/influx`
@@ -35,7 +35,7 @@ You will have to configure the web interface connection settings as follows:
 Host=terminalservername-8086.terminal.com 
 Port=80
 
-Check the screenshot below:
+Check this example:
 
 ![1](http://i.imgur.com/aZZOXo2.png)
 
