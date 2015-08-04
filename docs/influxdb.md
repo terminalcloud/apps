@@ -53,7 +53,7 @@ Check this example:
 ### Snapshot Bootstrap Script
 
 This snapshot was created from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
-`wget https://raw.githubusercontent.com/terminalcloud/apps/master/influxfb_installer.sh && bash influxfb_installer.sh`
+`wget https://raw.githubusercontent.com/terminalcloud/apps/master/influxdb_installer.sh && bash influxfb_installer.sh`
 
 ---
 
