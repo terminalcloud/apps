@@ -25,7 +25,7 @@ See Also: [A full list of kernels available for other languages](https://github.
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the iPython Notebook interface (now called Jupyter) by cliking on
+Just spin up a new Terminal based on this snapshot. Access the iPython Notebook interface (now called Jupyter) by clicking on
 [Access Jupyter Here!](https://$(hostname)-8080.terminal.com)
 
 The Jupyter service will be running by default, but in case you need to stop/restart it we provide an Upstart script that can
