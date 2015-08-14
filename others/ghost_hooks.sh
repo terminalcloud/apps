@@ -54,6 +54,9 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
+# Configuring host name in config file
+sed -i "s/terminalservername/$(hostname)/g" /root/ghost/config.js
+
 # Open a new terminal
 echo | /srv/cloudlabs/scripts/run_in_term.js
 
