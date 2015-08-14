@@ -41,9 +41,11 @@ install(){
 	npm install -g forever
 	ln -s /usr/local/lib/node_modules/ghost/ ghost
 	mkdir -p /var/log/supervisor/
+
 	sed -i 's/127\.0\.0\.1/0\.0\.0\.0/g' /root/ghost/config.js
 	sed -i 's/2368/80/g' /root/ghost/config.js
 	sed -i 's/http\:\/\/my-ghost-blog\.com/https\:\/\/terminalservername\-80\.terminal\.com/g' /root/ghost/config.js
+
     cat > /etc/supervisor/conf.d/ghost.conf << EOF
 [program:ghost]
 command = node /root/ghost/index.js
