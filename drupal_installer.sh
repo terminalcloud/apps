@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy Drupal 7.32 at Terminal.com
+# Script to deploy Drupal 7.38 at Terminal.com
 # Cloudlabs, INC. Copyright (C) 2015
 #
 # This program is free software; you can redistribute it and/or modify
@@ -36,9 +36,9 @@ install(){
 	mysql_install
 	mysql_setup drupal drupal terminal
 	cd $INSTALL_PATH
-	wget http://ftp.drupal.org/files/projects/drupal-7.32.tar.gz
-	tar -xzf drupal-7.32.tar.gz
-	mv drupal-7.32 drupal
+	wget http://ftp.drupal.org/files/projects/drupal-7.38.tar.gz
+	tar -xzf drupal-7.38.tar.gz
+	mv drupal-7.38 drupal
 	chown -R www-data:www-data drupal
 	apache_install
 	apache_default_vhost drupal.conf $INSTALL_PATH/drupal
