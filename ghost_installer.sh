@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy NodeBB at Terminal.com
+# Script to deploy ghost at Terminal.com
 # Cloudlabs, INC. Copyright (C) 2015
 #
 # This program is free software; you can redistribute it and/or modify
@@ -31,16 +31,32 @@ install(){
 	system_cleanup
 	basics_install
 
-	# Procedure: 
-	add-apt-repository -y ppa:chris-lea/node.js
+	# Procedure:
+	cd $INSTALL_PATH
+	curl -sL https://deb.nodesource.com/setup | sudo bash -
 	apt-get -y update
-	apt-get -y install nodejs imagemagick build-essential
-	git clone https://github.com/NodeBB/NodeBB.git nodebb
-	cd nodebb
-	npm install
+	apt-get -y install nodejs build-essential libssl-dev supervisor
+	npm install -g npm
+	npm install -g ghost
 	npm install -g forever
-	./nodebb setup
-	cd /root/nodebb && forever start app.js
+	ln -s /usr/local/lib/node_modules/ghost/ ghost
+	mkdir -p /var/log/supervisor/
+	sed -i 's/127\.0\.0\.1/0\.0\.0\.0/g' /root/ghost/config.js
+	sed -i 's/2368/80/g' /root/ghost/config.js
+	sed -i 's/http\:\/\/my-ghost-blog\.com/https\:\/\/terminalservername\-80\.terminal\.com/g' /root/ghost/config.js
+    cat > /etc/supervisor/conf.d/ghost.conf << EOF
+[program:ghost]
+command = node /root/ghost/index.js
+directory = /root/ghost/
+user = root
+autostart = true
+autorestart = true
+stdout_logfile = /var/log/supervisor/ghost.log
+stderr_logfile = /var/log/supervisor/ghost_err.log
+environment = NODE_ENV="production"
+EOF
+    service supervisor restart
+    supervisorctl restart ghost
 }
 
 show(){
