@@ -23,7 +23,7 @@ designed to simplify the process of online publishing for individual bloggers as
 
 Just spin up a new Terminal based on this snapshot. 
 Access the [Ghost admin section](https://terminalservername-80.terminal.com/ghost) and start configuring your own Blog. 
-Once it's ready, you will be ready to start writing your first article!
+Once it's ready, you will be able to start writing your first article!
 
 If you want to use your own domain with the blog, follow the instructions [here](https://www.terminal.com/faq#cname) and 
 then change the `host` parameter in configuration file located at `/root/ghost/config.js`.
