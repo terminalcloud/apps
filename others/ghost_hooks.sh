@@ -34,7 +34,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/ghost"><b>Start Configuring your blog Here!</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="https://$(hostname)-80.terminal.com/ghost"><b>Start Configuring your blog Here!</b></a></p>
 </head>
 <body>
 EOF
