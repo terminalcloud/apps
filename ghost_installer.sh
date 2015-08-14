@@ -41,7 +41,7 @@ install(){
 	npm install -g forever
 	ln -s /usr/local/lib/node_modules/ghost/ ghost
 	mkdir -p /var/log/supervisor/
-
+    cp /root/ghost/config.example.js /root/ghost/config.js
 	sed -i "s/127\.0\.0\.1/0\.0\.0\.0/g" /root/ghost/config.js
 	sed -i "s/2368/80/g" /root/ghost/config.js
 	sed -i "s/http\:\/\/my-ghost-blog\.com/https\:\/\/terminalservername\-80\.terminal\.com/g" /root/ghost/config.js
