@@ -55,7 +55,7 @@ Jupyter will be running by default on port 8080. This and other settings can be 
 
 ---
 
-![1](http://i.imgur.com/B3VYPI2.png)
+![1](http://i.imgur.com/UvVgN3W.png)
 
 ---
 
