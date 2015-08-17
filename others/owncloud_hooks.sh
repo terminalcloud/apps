@@ -19,14 +19,12 @@
 # Cloudlabs, INC. - 653 Harrison St, San Francisco, CA 94107.
 # http://www.terminal.com - help@terminal.com
 
-
+export name='owncloud'
 export PATH=$PATH:/srv/cloudlabs/scripts
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
-
-sed -i
 
 # Making the file...
 cat > /root/info.html << EOF
