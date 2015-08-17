@@ -37,8 +37,8 @@ install(){
 	mysql_install
 	mysql_setup owncloud owncloud terminal
 	cd $INSTALL_PATH
-	wget https://download.owncloud.org/community/owncloud-8.0.0.tar.bz2
-    tar -xjvf owncloud-8.0.0.tar.bz2
+	wget https://download.owncloud.org/community/owncloud-8.1.1.tar.bz2
+    tar -xjvf owncloud-8.1.1.tar.bz2
   	chown -R www-data:www-data owncloud
   	apache_install
   	apache_default_vhost owncloud.conf $INSTALL_PATH/owncloud
