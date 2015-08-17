@@ -1,4 +1,4 @@
-# **ownCloud 8** Terminal.com Snapshot
+# **ownCloud 8.1* Terminal.com Snapshot
 
 *Access your data from all your devices, on an open platform you can extend and modify.*
 
