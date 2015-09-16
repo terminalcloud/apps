@@ -41,8 +41,8 @@ We're including [Marathon](https://github.com/mesosphere/marathon) as the defaul
 
 ---
 
-![1](http://ampcamp.berkeley.edu/3/exercises/img/mesos-webui-all-slaves640.png)
-![2](https://dw8zztroqvu2r.cloudfront.net/assets/marathon-0.6.0/mesosphere-marathon-app-list-8d86646c69aa58ae4762d2314d8e2900.png)
+![1](http://i.imgur.com/vmFOyny.png)
+![2](http://i.imgur.com/eY79tW8.png)
 
 ---
 
