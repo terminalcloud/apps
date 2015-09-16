@@ -75,7 +75,7 @@ auto_slave(){
 		*) echo "Invalid option, assuming Small"; kind="small" ;;
 	esac
 
-	/usr/bin/bash /srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
+	/bin/bash /srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
 	echo 'Please copy your API User token, paste it below and press enter:'
 	read utoken
 	echo 'Please copy your API Access token, paste it below and press enter: (if it does not exist please generate it)'
@@ -112,4 +112,4 @@ esac
 
 
 # Open the info page
-/usr/bin/bash /srv/cloudlabs/scripts/display.sh /root/info.html
+/bin/bash /srv/cloudlabs/scripts/display.sh /root/info.html
