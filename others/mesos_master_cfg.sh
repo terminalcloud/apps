@@ -75,8 +75,7 @@ auto_slave(){
 		*) echo "Invalid option, assuming Small"; kind="small" ;;
 	esac
 
-	/bin/sh /srv/cloudlabs/scripts/send_message.sh SERVERMESSAGE '{"type":"set_frame", "to":"html", "id":1, "info": {"url": "https://www.ter
-minal.com/settings/api"}}'
+	sh /srv/cloudlabs/scripts/browse.sh https://www.terminal.com/settings/api
 	echo 'Please copy your API User token, paste it below and press enter:'
 	read utoken
 	echo 'Please copy your API Access token, paste it below and press enter: (if it does not exist please generate it)'
@@ -113,4 +112,4 @@ esac
 
 
 # Open the info page
-    /bin/sh /srv/cloudlabs/scripts/send_message.sh SERVERMESSAGE '{"type":"set_frame", "to":"html", "id":1, "info": {"url": "localhost/home/"}}'
+sh /srv/cloudlabs/scripts/display.sh /root/info.html
