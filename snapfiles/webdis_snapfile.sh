@@ -75,6 +75,6 @@ ENDOFFILE
 chmod 777 /CL/hooks/startup.sh
 }
 
-install_hooks
+install && install_hooks
 
 #RUN: echo "Installation done"
