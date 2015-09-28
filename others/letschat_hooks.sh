@@ -63,5 +63,8 @@ sleep 1
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
 unset NODE_PATH
 cd /root/lets-chat; LCB_HTTP_HOST=0.0.0.0 npm start
+EOF
+
+cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
 /srv/cloudlabs/scripts/display.sh /root/info.html
 EOF

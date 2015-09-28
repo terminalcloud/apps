@@ -30,7 +30,7 @@ It's designed to be easily deployable and fits well with small, intimate teams.
 
 ## Usage
 
-Just spin up a new Terminal based on this snapshot. Access the application by clicking to "Let's Chat login".
+Just spin up a new Terminal based on this snapshot. Access the application by clicking to [Let's Chat login](http://terminalservername-5000.terminal.com).
 
 ---
 

@@ -38,6 +38,8 @@ install(){
     git clone https://github.com/sdelements/lets-chat.git
     cd lets-chat
     npm install
+    npm install passport-http@0.3.0 --save
+    npm install passport.socketio@3.6.1 --save
     mkdir -p upoads
     cp settings.yml.sample settings.yml
 	# LCB_HTTP_HOST=0.0.0.0 npm start
