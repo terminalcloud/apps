@@ -56,6 +56,8 @@ if [[ -z $1 ]]; then
 	install && show
 elif [[ $1 == "show" ]]; then 
 	show
+elif [[ $1 == "install" ]]; then
+    install
 else
 	echo "unknown parameter specified"
 fi
