@@ -55,16 +55,11 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
-# Make sure Mongo is running
-service mongodb restart
-sleep 1
 
 # Open a new terminal and start the application
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+/srv/cloudlabs/scripts/display.sh /root/info.html
+service mongodb restart
 unset NODE_PATH
 cd /root/lets-chat; LCB_HTTP_HOST=0.0.0.0 npm start
-EOF
-
-cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
-/srv/cloudlabs/scripts/display.sh /root/info.html
 EOF
