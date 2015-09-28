@@ -56,7 +56,7 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Make sure Mongo is running
-service mongod restart
+service mongodb restart
 sleep 1
 
 # Open a new terminal and start the application
