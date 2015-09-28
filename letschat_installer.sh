@@ -34,7 +34,7 @@ install(){
 	# Procedure: 
 	add-apt-repository -y ppa:chris-lea/node.js
 	apt-get -y update
-	apt-get -y install nodejs build-essential python mongodb
+	apt-get -y install nodejs build-essential python mongodb libkrb5-dev
     git clone https://github.com/sdelements/lets-chat.git
     cd lets-chat
     npm install
