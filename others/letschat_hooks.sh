@@ -22,9 +22,11 @@
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+name='letschat'
+
 # Getting the doc and styles
-wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
-wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
+wget -q -N --timeout=10 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
+wget -q -N --timeout=10 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
 
 # Making the file...
@@ -54,9 +56,8 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Open a new terminal and start the application
-echo "cd /root/lets-chat; LCB_HTTP_HOST=0.0.0.0 npm start" | /srv/cloudlabs/scripts/run_in_term.js
-
-# Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+unset NODE_PATH
+cd /root/lets-chat; LCB_HTTP_HOST=0.0.0.0 npm start
 /srv/cloudlabs/scripts/display.sh /root/info.html
 EOF
