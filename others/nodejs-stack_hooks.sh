@@ -27,7 +27,7 @@ wget -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/node_
 tar -xzf node_http.tgz
 sleep 3
 # Open a new terminal
-echo "node /root/server.js"| /srv/cloudlabs/scripts/run_in_term.js
+echo "cd /root/node_http; node /root/node_http/server.js"| /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
