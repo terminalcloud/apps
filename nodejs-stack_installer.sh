@@ -46,7 +46,7 @@ show(){
 	# Get the startup script
 	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/nodejs-stack_hooks.sh
 	mkdir -p /CL/hooks/
-	mv nodejs-stack_hooks.sh.sh /CL/hooks/startup.sh
+	mv nodejs-stack_hooks.sh /CL/hooks/startup.sh
 	# Execute startup script by first to get the common files
 	chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
 }
