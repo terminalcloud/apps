@@ -22,46 +22,87 @@
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+LOGFILE='/root/startup.log'
 name='letschat'
 
-# Getting the doc and styles
-wget -q -N --timeout=10 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
-wget -q -N --timeout=10 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
+
+######### BASE FUNCTIONS ##########
+
+log(){
+    timestamp=$(date +%Y-%m-%d-%H_%M_%S\|)
+    echo "$timestamp$1" >> $LOGFILE
+}
+
+get_ram_status() {
+    if [ $(uptime -p | wc -l) -eq 1 ] ; then
+    log 'RAMLESS'
+    return 1
+    elif [ $(uptime -p | cut -d ' ' -f2) -lt 3 ] ; then
+            log 'RAMLESS'
+            return 1
+            else
+                log 'RAM'
+                return 1
+    fi
+}
 
 
-# Making the file...
-cat > /root/info.html << EOF
+make_docs(){
+    # Getting the doc and styles
+    wget -q -N --timeout=10 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
+    wget -q -N --timeout=10 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
+
+
+    # Making the file...
+    cat > /root/info.html << EOF
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-5000.terminal.com"><b>Let's Chat login</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-5000.terminal.com"><b>Let\'s Chat login</b></a></p>
 </head>
 <body>
 EOF
 
-# Converting markdown file
-markdown "$name.md" >> /root/info.html
+    # Converting markdown file
+    markdown "$name.md" >> /root/info.html
 
-# Closing file
-cat >> /root/info.html << EOF
+    # Closing file
+    cat >> /root/info.html << EOF
 </body>
 </html>
 EOF
 
-# Convert links to external links
-sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html 
+    # Convert links to external links
+    sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
-# Update server URL in Docs
-sed -i "s/terminalservername/$(hostname)/g" /root/info.html
+    # Update server URL in Docs
+    sed -i "s/terminalservername/$(hostname)/g" /root/info.html
+}
 
-# Avoid Race condition issue
-service mongodb start
-sleep 10
+############################################
 
-# Open a new terminal and start the application
-cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
-/srv/cloudlabs/scripts/display.sh /root/info.html
+
+ramless(){
+    log 'Executing ramless commands'
+    #service mongodb start
+    #sleep 20
+}
+
+
+app_start(){
+    log 'Opening a new terminal to start the application and show logs'
+    cat | /srv/cloudlabs/scripts/run_in_term.js << EOF
 unset NODE_PATH
-cd /root/lets-chat; LCB_HTTP_HOST=0.0.0.0 npm start
+cd /root/lets-chat
+/srv/cloudlabs/scripts/display.sh /root/info.html
+LCB_HTTP_HOST=0.0.0.0 npm start
 EOF
+}
+
+
+################## MAIN ######################
+make_docs
+[[ $(get_ram_status) ]] || ramless
+app_start
+##############################################

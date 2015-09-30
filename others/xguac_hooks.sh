@@ -27,9 +27,9 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
-service vncserver start
-service guacd start
-service tomcat7 start
+#service vncserver start
+#service guacd start
+#service tomcat7 start
 
 # Making the file...
 cat > /root/info.html << EOF
