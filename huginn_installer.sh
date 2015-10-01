@@ -19,7 +19,6 @@
 # Cloudlabs, INC. - 653 Harrison St, San Francisco, CA 94107.
 # http://www.terminal.com - help@terminal.com
 
-INSTALL_PATH="/root"
 
 # Includes
 wget https://raw.githubusercontent.com/terminalcloud/apps/master/terlib.sh
@@ -32,11 +31,12 @@ install(){
 	basics_install
 
 	# Procedure:
-    apt-get -y install build-essential
     curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
-    apt-get install -y runit build-essential git zlib1g-dev libyaml-dev libssl-dev libgdbm-dev libreadline-dev \
+    apt-get update
+    apt-get install -y nodejs runit build-essential git zlib1g-dev libyaml-dev libssl-dev libgdbm-dev libreadline-dev \
     libncurses5-dev libffi-dev curl openssh-server checkinstall libxml2-dev libxslt-dev libcurl4-openssl-dev \
-    libicu-dev logrotate python-docutils pkg-config cmake nodejs graphviz libmysql-ruby ruby-mysql libmysqlclient-dev
+    libicu-dev logrotate python-docutils pkg-config cmake nodejs graphviz ruby-mysql libmysqlclient-dev
+
     # Ruby
     apt-get remove -y ruby1.8 ruby1.9
     mkdir /tmp/ruby && cd /tmp/ruby
@@ -49,8 +49,9 @@ install(){
     adduser --disabled-login --gecos 'Huginn' huginn
     # MySQL Install
     mysql_install
-    mysql_setup huginn_production huginn terminal
     mysql -uroot -proot -e"SET storage_engine=INNODB;"
+    service mysql restart
+    mysql_setup huginn_production huginn terminal
     mysql -uroot -proot -e"DROP DATABASE huginn_production;"
     # Repo
     cd /home/huginn
@@ -77,25 +78,20 @@ install(){
     # Change the config/unicorn.rb file
     sudo -u huginn -H sed -i 's/worker_processes.*/worker_processes\ 1/g' config/unicorn.rb
 
-    #sudo -u huginn -H bundle exec rake db:create RAILS_ENV=production
-    #sudo -u huginn -H bundle exec rake db:migrate RAILS_ENV=production
-    #sudo -u huginn -H bundle exec rake db:seed RAILS_ENV=production
+    sudo -u huginn -H bundle exec rake db:create RAILS_ENV=production
+    sudo -u huginn -H bundle exec rake db:migrate RAILS_ENV=production
+    sudo -u huginn -H bundle exec rake db:seed RAILS_ENV=production
 
     # Check the username and stuff here
-    #sudo -u huginn -H bundle exec rake db:seed RAILS_ENV=production SEED_USERNAME=admin SEED_PASSWORD=terminal
-    #sudo -u huginn -H bundle exec rake assets:precompile RAILS_ENV=production
+    sudo -u huginn -H bundle exec rake db:seed RAILS_ENV=production SEED_USERNAME=admin SEED_PASSWORD=terminal
+    sudo -u huginn -H bundle exec rake assets:precompile RAILS_ENV=production
 
     #rake production:export
-    #cp deployment/logrotate/huginn /etc/logrotate.d/huginn
+    cp deployment/logrotate/huginn /etc/logrotate.d/huginn
 }
 
 show(){
-	# Get the startup script
-	wget -q -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/nodejs-stack_hooks.sh
-	mkdir -p /CL/hooks/
-	mv nodejs-stack_hooks.sh /CL/hooks/startup.sh
-	# Execute startup script by first to get the common files
-	chmod 777 /CL/hooks/startup.sh && /CL/hooks/startup.sh
+	true
 }
 
 if [[ -z $1 ]]; then
