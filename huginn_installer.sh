@@ -67,24 +67,26 @@ install(){
     sudo -u huginn -H bundle install --deployment --without development test
 
     # Automating the thing here #
+    token=$(sudo -u huginn -H rake secret)
+    sudo -u huginn -H sed -i 's/APP_SECRET_TOKEN\=.*/APP_SECRET_TOKEN\='$token'/g' .env
     sudo -u huginn -H sed -i 's/DATABASE_NAME\=.*/DATABASE_NAME\=huginn_production/g' .env
     sudo -u huginn -H sed -i 's/DATABASE_USERNAME\=.*/DATABASE_USERNAME\=huginn/g' .env
     sudo -u huginn -H sed -i 's/DATABASE_PASSWORD\=.*/DATABASE_PASSWORD\=terminal/g' .env
     sudo -u huginn -H sed -i 's/\#\ RAILS_ENV.*/RAILS_ENV\=production/g' .env
-
+    sudo -u huginn -H sed -i 's/^DOMAIN=.*/DOMAIN='$(hostname)'-3000.terminal.com/g' .env
     # Change the config/unicorn.rb file
     sudo -u huginn -H sed -i 's/worker_processes.*/worker_processes\ 1/g' config/unicorn.rb
 
-    sudo -u huginn -H bundle exec rake db:create RAILS_ENV=production
-    sudo -u huginn -H bundle exec rake db:migrate RAILS_ENV=production
-    sudo -u huginn -H bundle exec rake db:seed RAILS_ENV=production
+    #sudo -u huginn -H bundle exec rake db:create RAILS_ENV=production
+    #sudo -u huginn -H bundle exec rake db:migrate RAILS_ENV=production
+    #sudo -u huginn -H bundle exec rake db:seed RAILS_ENV=production
 
     # Check the username and stuff here
-    sudo -u huginn -H bundle exec rake db:seed RAILS_ENV=production SEED_USERNAME=admin SEED_PASSWORD=terminal
-    sudo -u huginn -H bundle exec rake assets:precompile RAILS_ENV=production
+    #sudo -u huginn -H bundle exec rake db:seed RAILS_ENV=production SEED_USERNAME=admin SEED_PASSWORD=terminal
+    #sudo -u huginn -H bundle exec rake assets:precompile RAILS_ENV=production
 
-    rake production:export
-    cp deployment/logrotate/huginn /etc/logrotate.d/huginn
+    #rake production:export
+    #cp deployment/logrotate/huginn /etc/logrotate.d/huginn
 }
 
 show(){
