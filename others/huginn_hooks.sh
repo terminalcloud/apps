@@ -60,5 +60,6 @@ sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
 wget -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/huginn_setup.sh && chmod +x huginn_setup.sh
 /srv/cloudlabs/scripts/display.sh /root/info.html
+clear
 /root/huginn_setup.sh
 EOF
