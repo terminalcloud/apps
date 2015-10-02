@@ -27,7 +27,6 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 # Getting the doc and styles
 wget -q -N --timeout=10 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=10 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
-wget -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/huginn_setup.sh && chmod +x huginn_setup.sh
 
 # Making the file...
 cat > /root/info.html << EOF
@@ -56,9 +55,11 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
 # Open a new terminal
-echo "/root/huginn_setup.sh" | /srv/cloudlabs/scripts/run_in_term.js
+echo "clear" | /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
+wget -N https://raw.githubusercontent.com/terminalcloud/apps/master/others/huginn_setup.sh && chmod +x huginn_setup.sh
 /srv/cloudlabs/scripts/display.sh /root/info.html
+/root/huginn_setup.sh
 EOF
