@@ -23,6 +23,7 @@ name="huginn"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
+sleep 5
 
 # Getting the doc and styles
 wget -q -N --timeout=10 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
@@ -54,8 +55,6 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
 
-# Open a new terminal
-echo "clear" | /srv/cloudlabs/scripts/run_in_term.js
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
