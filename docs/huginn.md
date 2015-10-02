@@ -11,9 +11,9 @@ After the setup is done, access your application by clicking over [Check your in
 
 ---
 
-![](https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/your-agents.png =300x)
-![](https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/peaks.png =300x)
-![](https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/my-locations.png =300x)
+<img src="https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/your-agents.png" style="width: 600px;"/> 
+<img src="https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/peaks.png" style="width: 600px;"/>
+<img src="https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/my-locations.png" style="width: 600px;"/>
 
 ---
 
