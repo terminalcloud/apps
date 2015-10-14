@@ -19,7 +19,7 @@
 # Cloudlabs, INC. - 653 Harrison St, San Francisco, CA 94107.
 # http://www.terminal.com - help@terminal.com
 
-name="wordpress"
+name="openface"
 
 export PATH=$PATH:/srv/cloudlabs/scripts
 
@@ -27,13 +27,17 @@ export PATH=$PATH:/srv/cloudlabs/scripts
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/termlib.css && mv termlib.css /root/
 
+#service vncserver start
+#service guacd start
+#service tomcat7 start
+
 # Making the file...
 cat > /root/info.html << EOF
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/"><b>Finish your installation here!</b></a></p>
+<div class="align-right"><a class="btn" id="exlink" target="_blank" href="http://$(hostname)-8080.terminal.com/guacamole/#/client/c/Desktop">See your desktop here</a></div>
 </head>
 <body>
 EOF
@@ -52,11 +56,6 @@ sed -i 's/a\ href/a\ target\=\"\_blank\"\ href/g' /root/info.html
 
 # Update server URL in Docs
 sed -i "s/terminalservername/$(hostname)/g" /root/info.html
-
-# Open a new terminal
-echo | /srv/cloudlabs/scripts/run_in_term.js
-
-sleep 5
 
 # Showing up
 cat | /srv/cloudlabs/scripts/run_in_term.js	 << EOF
