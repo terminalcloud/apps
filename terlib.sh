@@ -236,7 +236,7 @@ xforwarding_setup(){
   sed -i 's/\#GSSAPICleanupCredentials\ yes/AddressFamily\ inet/g' /etc/ssh/sshd_config
   touch .Xauthority
   service ssh reload
-  echo "root:t3rminal" | chpasswd # This will set a weak password - DANGER
+  #echo "root:t3rminal" | chpasswd # This will set a weak password - DANGER
 }
 
 xrdp_install(){

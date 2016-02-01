@@ -40,7 +40,7 @@ install(){
 	npm install -g express
 	npm install -g express-generator@4
 	# Install angular.js
-	bower install --allow-root angular#1.2.26 
+	bower install --allow-root angular
 	# Get express examples
 	git clone https://github.com/strongloop/express.git
 }
