@@ -27,7 +27,7 @@ Just spin up a new Terminal based on this snapshot. Access Jenkins by clicking t
 
 This installation is not secured by password, only restricted by Terminal access to the Jenkins port (TCP 8080). 
 If want to open the port to access it direclty, please configure your access credentials first in 
-the [Credentials Section.](https://terminalservername:8080/credential-store)
+the [Credentials Section.](https://terminalservername.terminal.com:8080/credential-store)
 
 
 ---
