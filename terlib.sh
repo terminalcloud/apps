@@ -196,11 +196,12 @@ _EOF_
 }
 
 ruby_install(){
+  ln -sf /proc/self/fd /dev/fd
   gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
   curl -L get.rvm.io | bash -s stable # Requires Basics
   echo "source /usr/local/rvm/scripts/rvm" >> ~/.bashrc
   source ~/.bashrc
-  rvm install 2.1.2
+  rvm install ruby --latest
   rvm use current --default
   rvm rubygems current
   [[ $1 == "rails" ]] && gem install rails
@@ -217,7 +218,7 @@ python_install(){ # This will install django in /opt/myenv virtual-env
 postgres_install(){
   if [[ -f /etc/debian_version ]]; then
     apt-get -y install libpq-dev python-dev
-    apt-get -y install postgresql postgresql-contrib
+    apt-get -y install postgresql postgresql-contrib postgresql-client
     service postgresql start
   else
     yum -y install postgresql
