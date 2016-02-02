@@ -32,7 +32,6 @@ You may want to use your own domain with this terminal containter. Please follow
 
 
 ### Additional Information
-#### Resource Space Terminal automatic installation:
 You can replicate this Terminal from a [base snapshot](https://www.terminal.com/tiny/FzpHiTXG1K) by executing:
 `wget https://raw.githubusercontent.com/terminalcloud/apps/master/rails_installer.sh && bash rails_installer.sh`
 
