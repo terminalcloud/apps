@@ -259,7 +259,7 @@ xfce_install(){
 }
 
 java_install(){
-  apt-get -y install icedtea-7-plugin openjdk-7-jre openjdk-7-jdk
+  apt-get -y install openjdk-7-jre openjdk-7-jdk
 }
 
 java8_oracle_install(){
