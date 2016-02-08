@@ -1,4 +1,4 @@
-# **Werbmin** Terminal.com Snapshot
+# **Webmin** Terminal.com Snapshot
 
 *Minimal stack for running Terminal.com IDE and Webmin web administration tool.*
 
