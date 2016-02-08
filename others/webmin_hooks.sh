@@ -37,7 +37,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-10000.terminal.com/webasyst"><b>Access Webmin here</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-10000.terminal.com/"><b>Access Webmin here</b></a></p>
 </head>
 <body>
 EOF
