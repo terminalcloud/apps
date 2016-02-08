@@ -23,9 +23,9 @@ To access webmin just go to https://terminalservername.terminal.com and login wi
 
 
 
-#### Important Note:
+### **Important Note:**
 
-The first time you login webmin (immediately after login) it will lead you to a blank screen at https://terminal46224-1000.terminal.com:10000. 
+The first time you login webmin (immediately after login) it will lead you to a blank screen at https://terminalservername-1000.terminal.com:10000. 
 This is due a webmin harcoded redirection. To bypass that issue, just press "back" in your browser or refresh you browser before it happens.
 
 ---
