@@ -37,6 +37,7 @@ install(){
 	apt-get update
 	apt-get -y install --force-yes webmin
 	sed -i 's/ssl\=1/ssl\=0/g' /etc/webmin/miniserv.conf
+	echo root:t3rminal | chpasswd
 	/usr/share/webmin/changepass.pl /etc/webmin root t3rminal
 }
 
