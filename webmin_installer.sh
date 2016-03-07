@@ -30,14 +30,15 @@ install(){
 	system_cleanup
 	basics_install
 
-	# Procedure:
-	echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list
-	wget -q http://www.webmin.com/jcameron-key.asc -O- | sudo apt-key add -
+	# Procedure: 
+	add-apt-repository "deb http://download.webmin.com/download/repository sarge contrib"
+	add-apt-repository "deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib"
+	wget -q http://www.webmin.com/jcameron-key.asc -O- | apt-key add -
 	apt-get update
-	apt-get install -y webmin
+	apt-get -y install --force-yes webmin
+	sed -i 's/ssl\=1/ssl\=0/g' /etc/webmin/miniserv.conf
 	echo root:t3rminal | chpasswd
-	sed -i 's/ssl\=1/ssl\=1/g' /etc/webmin/miniserv.conf
-	service webmin restart
+	/usr/share/webmin/changepass.pl /etc/webmin root t3rminal
 }
 
 show(){
