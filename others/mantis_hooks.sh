@@ -19,16 +19,9 @@
 # Cloudlabs, INC. - 653 Harrison St, San Francisco, CA 94107.
 # http://www.terminal.com - help@terminal.com
 
-name="magento"
+name="mantis"
+
 export PATH=$PATH:/srv/cloudlabs/scripts
-
-# Update URL in database
-mysql -uroot -proot magento -e"UPDATE mg_core_config_data set value = 'http://$(hostname)-80.terminal.com/' where config_id = 6;"
-mysql -uroot -proot magento -e"UPDATE mg_core_config_data set value = 'http://$(hostname)-80.terminal.com/' where config_id = 7;"
-
-# Clean bad Cache files
-rm -r /var/www/magento/var/cache/*
-rm -r /var/www/magento/var/session/*
 
 # Getting the doc and styles
 wget -q -N --timeout=2 https://raw.githubusercontent.com/terminalcloud/apps/master/docs/"$name".md
@@ -41,8 +34,7 @@ cat > /root/info.html << EOF
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="termlib.css" />
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/"><b>Magento Frontend</b></a></p>
-<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/admin"><b>Magento Administration</b></a></p>
+<p id="exlink"><a id="exlink" target="_blank" href="http://$(hostname)-80.terminal.com/admin/install.php"><b>Finish you installation here</b></a></p>
 </head>
 <body>
 EOF
