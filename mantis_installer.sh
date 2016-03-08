@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to deploy Magento at Terminal.com
+# Script to deploy Mantis at Terminal.com
 # Cloudlabs, INC. Copyright (C) 2015
 #
 # This program is free software; you can redistribute it and/or modify
@@ -33,8 +33,7 @@ install(){
 
 	# Procedure: 
 	php5_install
-	mysql_install
-	mysql_setup mantis mantis terminal
+	mysql_install t3rminal
 	cd $INSTALL_PATH
 	wget https://sourceforge.net/projects/mantisbt/files/mantis-stable/1.2.19/mantisbt-1.2.19.zip
 	unzip mantisbt-1.2.19.zip

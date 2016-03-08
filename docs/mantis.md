@@ -16,7 +16,7 @@ Spin-up your Terminal based on this snapshot and click to the "Finish your insta
 ### Credentials:
 
 - DB Type: MySQL
-- DB username: admin
+- DB admin username: root
 - DB password: t3rminal
 
 
