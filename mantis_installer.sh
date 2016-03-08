@@ -38,7 +38,7 @@ install(){
 	cd $INSTALL_PATH
 	wget https://sourceforge.net/projects/mantisbt/files/mantis-stable/1.2.19/mantisbt-1.2.19.zip
 	unzip mantisbt-1.2.19.zip
-	mv mantisbt-1.2.19.zip mantisbt
+	mv mantisbt-1.2.19 mantisbt
 	chown -R www-data:www-data mantisbt
 	apache_install
 	apache_default_vhost maantis.conf $INSTALL_PATH/mantisbt
