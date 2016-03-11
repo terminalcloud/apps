@@ -287,3 +287,25 @@ pulldocker_install(){
   tar -xzf pulldocker.tgz -C /usr/local/bin
   chmod +x /usr/local/bin/pulldocker
 }
+
+filebeat_install(){
+  if [[ -f /etc/debian_version ]]; then
+    curl https://packages.elasticsearch.org/GPG-KEY-elasticsearch | sudo apt-key add -
+    echo "deb https://packages.elastic.co/beats/apt stable main" |  sudo tee -a /etc/apt/sources.list.d/beats.list
+    apt-get update && sudo apt-get -y install filebeat
+    update-rc.d filebeat defaults 95 10
+  else
+    rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch
+    cat > /etc/yum.repos.d/beats.repo << EOF
+[beats]
+name=Elastic Beats Repository
+baseurl=https://packages.elastic.co/beats/yum/el/\$basearch
+enabled=1
+gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch
+gpgcheck=1
+EOF
+    yum -y install filebeat
+    chkconfig --add filebeat
+  fi
+}
+
